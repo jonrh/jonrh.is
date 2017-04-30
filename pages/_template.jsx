@@ -9,13 +9,14 @@ module.exports = React.createClass({
       children: React.PropTypes.any,
     };
   },
+
   render() {
     return (
       <div>
         <div className="site-header">
           <PageLink to={"/"}>
             <h1>
-              Barebones Starter
+              jonrh.is
             </h1>
           </PageLink>
         </div>

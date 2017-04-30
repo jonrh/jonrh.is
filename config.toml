@@ -1,4 +1,2 @@
 siteTitle="jonrh.is"
-linkPrefix = "/gatsby-starter-barebones"
-
 noProductionJavascript = false

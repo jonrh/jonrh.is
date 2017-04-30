@@ -6,6 +6,20 @@ import PageLink from "../components/common/PageLink";
 
 class IndexPage extends Component {
   render() {
+    const blogPosts = this.props.route.pages.filter(page => {
+      return page.file.ext === "md" && page.data.date;
+    });
+
+    const blogPostLinks = blogPosts.map(page => {
+      return (
+        <li key={page.path}>
+          <PageLink to={page.path}>
+            {page.data.title}
+          </PageLink>
+        </li>
+      );
+    });
+
     return (
       <div>
         <Helmet
@@ -16,9 +30,10 @@ class IndexPage extends Component {
           ]}
         />
         <p>Welcome to the Gatsby Barebones Starter!</p>
-        <PageLink to={"/about"}>
-          About Page &gt;&gt;
-        </PageLink>
+
+        <ul>
+          {blogPostLinks}
+        </ul>
       </div>
     );
   }
