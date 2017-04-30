@@ -1,2 +1,5 @@
 # Ignore macOS Finder files
 .DS_Store
+
+# Webstorm IDe settings folder
+.idea/
