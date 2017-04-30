@@ -1,20 +1,27 @@
-import React from 'react'
-import { Link } from 'react-router'
-import { prefixLink } from 'gatsby-helpers'
-import Helmet from 'react-helmet'
-import { config } from 'config'
+import React, { Component } from "react";
+import Helmet from "react-helmet";
 
-export default class Index extends React.Component {
+import { config } from "config";
+import PageLink from "../components/common/PageLink";
+
+class IndexPage extends Component {
   render() {
     return (
       <div>
-        <h1>
-          Hi people
-        </h1>
-        <p>Welcome to your new Gatsby site.</p>
-        <p>Now go build something great.</p>
-        <Link to={prefixLink('/page-2/')}>Go to page 2</Link>
+        <Helmet
+          title={`${config.siteTitle} | Home`}
+          meta={[
+            { name: "description", content: "Sample" },
+            { name: "keywords", content: "sample, something" },
+          ]}
+        />
+        <p>Welcome to the Gatsby Barebones Starter!</p>
+        <PageLink to={"/about"}>
+          About Page &gt;&gt;
+        </PageLink>
       </div>
-    )
+    );
   }
 }
+
+export default IndexPage;

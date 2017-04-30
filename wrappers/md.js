@@ -1,22 +1,27 @@
-import React from 'react'
-import 'css/markdown-styles.css'
-import Helmet from 'react-helmet'
-import { config } from 'config'
+import React from "react";
+import Helmet from "react-helmet";
+
+import { config } from "config";
 
 module.exports = React.createClass({
   propTypes() {
     return {
       router: React.PropTypes.object,
-    }
+    };
   },
   render() {
-    const post = this.props.route.page.data
+    const page = this.props.route.page.data;
+    const description = page.description || "";
+    const keywords = page.keywords || "";
+    const meta = [
+      { name: "description", content: description },
+      { name: "keywords", content: keywords },
+    ];
     return (
       <div className="markdown">
-        <Helmet title={`${config.siteTitle} | ${post.title}`} />
-        <h1>{post.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: post.body }} />
+        <Helmet title={`${config.siteTitle} | ${page.title}`} meta={meta} />
+        <div dangerouslySetInnerHTML={{ __html: page.body }} />
       </div>
-    )
+    );
   },
-})
+});
