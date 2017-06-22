@@ -20,15 +20,30 @@ class Bio extends React.Component {
           alt={`Jón Rúnar Helgason`}
           style={{
             float: "left",
-            marginRight: rhythm(1 / 4),
+            marginRight: rhythm(1 / 2),
             marginBottom: 0,
-            width: rhythm(1),
-            height: rhythm(1),
+            width: rhythm(2.2),
+            height: rhythm(2.2),
           }}
         />
-        Written by
-        {" "}
+
         <strong>Jón Rúnar Helgason</strong>
+
+        <br />
+
+        <div className="socialicons">
+          <a href="https://twitter.com/jonrh">
+            <i className="fa fa-twitter fa-2x" aria-hidden="true" />
+          </a>
+          {" "}
+          <a href="https://is.linkedin.com/in/jonrh">
+            <i className="fa fa-linkedin fa-2x" aria-hidden="true" />
+          </a>
+          {" "}
+          <a href="https://github.com/jonrh">
+            <i className="fa fa-github fa-2x" aria-hidden="true" />
+          </a>
+        </div>
       </p>
     );
   }

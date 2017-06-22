@@ -1,8 +1,16 @@
 import React from "react";
 import Link from "gatsby-link";
 import { Container } from "react-responsive-grid";
-
 import { rhythm, scale } from "../utils/typography";
+
+// The Prism theme used to highlight source code in the blog
+require('prismjs/themes/prism-solarizedlight.css');
+
+// Font Awesome includes icons. I use it for social media icons. http://fontawesome.io/
+require("./../css/font-awesome.min.css");
+
+// My own manual CSS changes
+require("./../css/jonrh.css");
 
 class Template extends React.Component {
   render() {
@@ -14,8 +22,8 @@ class Template extends React.Component {
       header = (
         <h1
           style={{
-            ...scale(1.5),
-            marginBottom: rhythm(1.5),
+            ...scale(1.2),
+            marginBottom: rhythm(1.2),
             marginTop: 0,
           }}
         >
@@ -27,7 +35,8 @@ class Template extends React.Component {
             }}
             to={"/"}
           >
-            jonrh Dashboard Consulting
+            jonrh <br />
+            Dashboard Consulting
           </Link>
         </h1>
       );

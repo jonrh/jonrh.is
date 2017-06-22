@@ -1,0 +1,26 @@
+/* Social icons are the Twitter, GitHub, LinkedIn icons I use */
+.socialicons a {
+    margin-right: 0.5em;
+
+    /* Don't show link underline */
+    box-shadow: none;
+}
+
+a.gatsby-resp-image-link {
+    /* Don't show link underline under images. This is a non-ideal hack as it overwrites CSS. */
+    box-shadow: none;
+}
+
+ul {
+    /* So lists don't stick out to the right. This is a non-ideal hack as it overwrites CSS. */
+    margin-left: 2.5em;
+}
+
+ol {
+    /* So lists don't stick out to the right. This is a non-ideal hack as it overwrites CSS. */
+    margin-left: 2.5em;
+}
+
+li {
+    margin-bottom: 0;
+}
