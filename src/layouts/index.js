@@ -7,7 +7,9 @@ import { rhythm, scale } from "../utils/typography";
 class Template extends React.Component {
   render() {
     const { location, children } = this.props;
+
     let header;
+
     if (location.pathname === "/") {
       header = (
         <h1
@@ -25,7 +27,7 @@ class Template extends React.Component {
             }}
             to={"/"}
           >
-            Gatsby Starter Blog
+            jonrh Dashboard Consulting
           </Link>
         </h1>
       );
@@ -46,7 +48,7 @@ class Template extends React.Component {
             }}
             to={"/"}
           >
-            Gatsby Starter Blog
+            jonrh Dashboard Consulting
           </Link>
         </h3>
       );

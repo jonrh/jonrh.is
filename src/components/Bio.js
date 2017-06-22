@@ -1,43 +1,37 @@
-import React from "react"
+import React from "react";
 
 // Import typefaces
-import "typeface-montserrat"
-import "typeface-merriweather"
+import "typeface-montserrat";
+import "typeface-merriweather";
 
-import profilePic from "./profile-pic.jpg"
-import { rhythm } from "../utils/typography"
+import profilePic from "./profile-pic.png";
+import { rhythm } from "../utils/typography";
 
 class Bio extends React.Component {
   render() {
     return (
       <p
         style={{
-          marginBottom: rhythm(2.5),
+          marginBottom: rhythm(1),
         }}
       >
         <img
           src={profilePic}
-          alt={`Kyle Mathews`}
+          alt={`Jón Rúnar Helgason`}
           style={{
             float: "left",
             marginRight: rhythm(1 / 4),
             marginBottom: 0,
-            width: rhythm(2),
-            height: rhythm(2),
+            width: rhythm(1),
+            height: rhythm(1),
           }}
         />
         Written by
         {" "}
-        <strong>Kyle Mathews</strong>
-        {" "}
-        who lives and works in San Francisco building useful things.
-        {" "}
-        <a href="https://twitter.com/kylemathews">
-          You should follow him on Twitter
-        </a>
+        <strong>Jón Rúnar Helgason</strong>
       </p>
-    )
+    );
   }
 }
 
-export default Bio
+export default Bio;

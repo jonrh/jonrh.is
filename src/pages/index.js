@@ -56,7 +56,10 @@ query IndexQuery {
       title
     }
   }
-  allMarkdownRemark {
+  
+  # Sort the blog posts by date descending. Not sure why frontmatter___ has to be in front, just 
+  # did the same as some code I saw: https://github.com/gatsbyjs/gatsby/pull/1177/files
+  allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC}) {
     edges {
       node {
         fields {
