@@ -4,10 +4,13 @@
 # Webstorm IDe settings folder
 .idea/
 
+# Other various items
+npm-debug.log
 
 ###############################################################################
 #                      GatsbyJS (came with running gatbsy new)
 ###############################################################################
+.cache/
 node_modules/
 public/
 .gatsby-context.js

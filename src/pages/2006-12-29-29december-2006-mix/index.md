@@ -1,0 +1,27 @@
+---
+title: 29December 2006 mix
+date: "2006-12-29T00:00:00Z"
+path: "/29december-2006-mix/"
+---
+
+Download link: 29December 2006 mix
+
+## Tracklisting
+
+1. Add2Basket – “Lovey-Dovey (Vocal Mix With Less Instruments)” [Add2Basket Records] – 0:00
+2. AxEr – “321” [Pryda Friends] – 7:32
+3. Libex, Giorgio Prezioso – “Xperimental Scratch” [Pryda Friends] – 13:48
+4. Trashtalk – “Tank Girl (Hystereo Rebrand)” [Craft Music] – 18:55
+5. Gabriel & Dresden – “Dangerous Power (Discount Rhino Dubber Ducky Mix)” [Organized Nature] –
+24:20
+6. Jerome Isma-Ae – “Stars In Your Head” [Jee Productions] – 29:26
+7. Reflekt – “Shine feat. Deline Bass (Seb & Jay P’s Type Mix)” [Mono-Type] – 36:55
+8. The Freaks – “The Creeps (Vandalism Mix)” [Azuli] – 43:27
+9. Robot Needs Oil – “Volta (Oliver Giacomotto Remix)” [Definitive Recordings] – 49:22
+10. Da BoogieBoys – “EXSS (Dee’s Excessive Dub)” [12.Inch.Recordings] – 56:25
+11. Jerome Isma-Ae – “Rokit” [Craft Music] – 1:01:35
+12. Dyson vs Blende – “Satisfaction (Blende’s Clearly Superior Mix)” [Plasmapool Productions] –
+1:07:22
+
+**Notes**: Electro/Progressive House mix. Done with [Traktor 3](https://www.native-instruments.com/en/)
+and encoded with Lame 3.97 using the V0 preset.

@@ -2,24 +2,47 @@
   "name": "jonrh.is",
   "description": "Personal website, statically generated with GatbsyJS",
   "author": "Jón Rúnar Helgason",
-
   "version": "1.0.0",
   "license": "MIT",
-  "repository": "https://github.com/Rusta/gatsby-starter-barebones",
-
+  "repository": "https://github.com/jonrh/jonrh.is",
   "dependencies": {
-    "gatsby": "^0.12.45",
-    "react": "^15.4.2",
-    "react-helmet": "^5.0.3"
+    "gatsby": "next",
+    "gatsby-link": "next",
+    "gatsby-plugin-google-analytics": "next",
+    "gatsby-plugin-manifest": "next",
+    "gatsby-plugin-offline": "next",
+    "gatsby-plugin-preact": "next",
+    "gatsby-plugin-sharp": "next",
+    "gatsby-remark-copy-linked-files": "next",
+    "gatsby-remark-prismjs": "^1.0.0-alpha13-alpha.435e0178",
+    "gatsby-remark-responsive-iframe": "next",
+    "gatsby-remark-responsive-image": "next",
+    "gatsby-remark-smartypants": "next",
+    "gatsby-source-filesystem": "next",
+    "gatsby-transformer-remark": "next",
+    "gatsby-transformer-sharp": "next",
+    "lodash": "^4.15.0",
+    "moment": "^2.14.1",
+    "react-helmet": "^4.0.0",
+    "react-responsive-grid": "^0.3.3",
+    "react-typography": "^0.15.0",
+    "safe-access": "^0.1.0",
+    "typeface-merriweather": "^0.0.25",
+    "typeface-montserrat": "^0.0.24",
+    "typography": "^0.15.8",
+    "typography-theme-wordpress-2016": "^0.15.1",
+    "underscore.string": "^3.2.3"
   },
-
-  "main": "n/a",
-
+  "devDependencies": {
+    "gh-pages": "^0.12.0"
+  },
   "scripts": {
+    "dev": "gatsby develop",
+    "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "develop": "gatsby develop",
     "build": "gatsby build",
     "deploy": "gatsby build --prefix-links && gh-pages -d public",
-    "develop": "gatsby develop",
-    "format": "prettier --print-width 100 --trailing-comma all --write \"pages/*.js\" \"utils/*.js\" \"wrappers/*.js\" \"html.js\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"
   }
 }
