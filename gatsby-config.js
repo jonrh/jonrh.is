@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Starter Blog",
-    author: "Kyle Mathews",
+    title: "jonrh Dashboard Consulting",
+    author: "Jón Rúnar Helgason",
   },
   plugins: [
     {
@@ -43,4 +43,4 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
   ],
-}
+};

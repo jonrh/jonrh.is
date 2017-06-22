@@ -1,13 +1,13 @@
-import React from "react"
-import Link from "gatsby-link"
-import { Container } from "react-responsive-grid"
+import React from "react";
+import Link from "gatsby-link";
+import { Container } from "react-responsive-grid";
 
-import { rhythm, scale } from "../utils/typography"
+import { rhythm, scale } from "../utils/typography";
 
 class Template extends React.Component {
   render() {
-    const { location, children } = this.props
-    let header
+    const { location, children } = this.props;
+    let header;
     if (location.pathname === "/") {
       header = (
         <h1
@@ -28,7 +28,7 @@ class Template extends React.Component {
             Gatsby Starter Blog
           </Link>
         </h1>
-      )
+      );
     } else {
       header = (
         <h3
@@ -49,7 +49,7 @@ class Template extends React.Component {
             Gatsby Starter Blog
           </Link>
         </h3>
-      )
+      );
     }
     return (
       <Container
@@ -61,7 +61,7 @@ class Template extends React.Component {
         {header}
         {children()}
       </Container>
-    )
+    );
   }
 }
 
@@ -69,6 +69,6 @@ Template.propTypes = {
   children: React.PropTypes.function,
   location: React.PropTypes.object,
   route: React.PropTypes.object,
-}
+};
 
-export default Template
+export default Template;
