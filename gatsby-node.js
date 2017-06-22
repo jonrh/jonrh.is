@@ -1,15 +1,20 @@
-const _ = require("lodash");
-const Promise = require("bluebird");
-const path = require("path");
-const select = require(`unist-util-select`);
-const fs = require(`fs-extra`);
+const _ = require("lodash")
+const Promise = require("bluebird")
+const path = require("path")
+const select = require(`unist-util-select`)
+const fs = require(`fs-extra`)
+
+/**
+ * It seems that with my current Prettier settings this file breaks on a format. Don't have the
+ * time yet to investigate but I suspect a trailing comma is at fault.
+ */
 
 exports.createPages = ({ graphql, boundActionCreators }) => {
-  const { createPage } = boundActionCreators;
+  const { createPage } = boundActionCreators
 
   return new Promise((resolve, reject) => {
-    const pages = [];
-    const blogPost = path.resolve("./src/templates/blog-post.js");
+    const pages = []
+    const blogPost = path.resolve("./src/templates/blog-post.js")
     resolve(
       graphql(
         `
@@ -24,11 +29,11 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           }
         }
       }
-    `,
+    `
       ).then(result => {
         if (result.errors) {
-          console.log(result.errors);
-          reject(result.errors);
+          console.log(result.errors)
+          reject(result.errors)
         }
 
         // Create blog posts pages.
@@ -39,35 +44,35 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             context: {
               slug: edge.node.fields.slug,
             },
-          });
-        });
-      }),
-    );
-  });
-};
+          })
+        })
+      })
+    )
+  })
+}
 
 // Add custom slug for blog posts to both File and MarkdownRemark nodes.
 exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
-  const { createNodeField } = boundActionCreators;
+  const { createNodeField } = boundActionCreators
 
   switch (node.internal.type) {
-    case "File":
-      const parsedFilePath = path.parse(node.relativePath);
-      const slug = `/${parsedFilePath.dir}/`;
+    case 'File':
+      const parsedFilePath = path.parse(node.relativePath)
+      const slug = `/${parsedFilePath.dir}/`
       createNodeField({
         node,
-        fieldName: "slug",
-        fieldValue: slug,
-      });
-      return;
+        fieldName: 'slug',
+        fieldValue: slug
+      })
+      return
 
-    case "MarkdownRemark":
-      const fileNode = getNode(node.parent);
+    case 'MarkdownRemark':
+      const fileNode = getNode(node.parent)
       createNodeField({
         node,
-        fieldName: "slug",
+        fieldName: 'slug',
         fieldValue: fileNode.fields.slug,
-      });
-      return;
+      })
+      return
   }
-};
+}
