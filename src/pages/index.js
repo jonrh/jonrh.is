@@ -34,7 +34,17 @@ class BlogIndex extends React.Component {
     return (
       <div>
         <Helmet title={get(this, "props.data.site.siteMetadata.title")} />
+
+        <p>
+          <Link to={"/about"}><span>About Me</span></Link>
+          <span style={{marginRight: 15}}> </span>
+          <Link to={"/about"}><span>Dashboard Consulting</span></Link>
+        </p>
+
         <Bio />
+
+
+
         <ul>
           {pageLinks}
         </ul>

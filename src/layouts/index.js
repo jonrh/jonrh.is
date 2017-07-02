@@ -12,7 +12,7 @@ require("./../css/font-awesome.min.css");
 // My own manual CSS changes
 require("./../css/jonrh.css");
 
-class Template extends React.Component {
+export default class Template extends React.Component {
   render() {
     const { location, children } = this.props;
 
@@ -81,5 +81,3 @@ Template.propTypes = {
   location: React.PropTypes.object,
   route: React.PropTypes.object,
 };
-
-export default Template;
