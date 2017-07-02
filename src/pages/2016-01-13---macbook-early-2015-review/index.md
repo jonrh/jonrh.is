@@ -4,4 +4,48 @@ date: "2016-01-13T00:00:00Z"
 path: "/macbook-early-2015-review/"
 ---
 
-Todo: add content.
+Over the holidays I had a chance to try for 3 weeks the new MacBook, Early 2015 model. When it was
+announced I was pretty sceptical of it.
+
+My initial concerns:
+
++ Intel Core M processor might be painfully slow
++ No USB type A slot
++ Gold is a gimmicky colour
++ Force touchpad would not feel as good
+
+![MacBook Early 2015 gold](./macbook_2015.png)
+
+To my surprise the CPU held up very well. I was running two IDEs (WebStorm & DataGrip), Sublime,
+10 - 20 tabs in Chrome, plus some other smaller programs. I was pleasantly surprised to see no
+noticeable difference compared to my 4 core 15" MBP.
+
+The lack of USB type A slot is a bit of a bummer but a necessary one. The only thing I connect to
+my computers these days are external drives. Since USB-C is backward compatible it's easy to fix by
+getting the right cables or using an adapter.
+
+Before using the computer I thought the gold colour was very gimmicky and unappealing. In my mind
+there were only two allowed laptop colours; grey and black. However it really grew on me. Pictures
+don't do it justice, it looks much better up close. If I were to get myself another computer I'd
+seriously consider the gold.
+
+The keyboard and the force touchpad are my favourite things. It took some time getting used to but
+after about a week I started to **really** like it. Going back to my 15" MBP felt weird, I notice
+way more how wobbly and small the keys are. Physical clicks on the force touchpad require less
+force which better enables certain gestures. For example selecting a piece of text by clicking and
+dragging with one finger is way better, on the older touchpads I find the gesture unusable.
+
+Things I don't like about the MacBook:
+
++ No MagSafe :(
++ Pulling out of the USB-C slot can be awkward
++ No option for 16GB RAM
++ It's sort of required to buy an adapter and they are **expensive**
+
+Overall I really like this portable little machine. I'd recommend it primarily for casual users
+doing light work: browsing, writing, school etc. For those users the machine will age the best
+since I suspect the non-upgradeable 8GB RAM will be the limiting factor after 2-4 years. I enjoyed
+programming on it but I'd rather have my 15" MBP for longer sessions.
+
+**Tl;dr**: *Initially very sceptical about the Early 2015 MacBook but was pleasantly
+surprised after 3 weeks of use. Would recommend for casual users and school*.
