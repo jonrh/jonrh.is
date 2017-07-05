@@ -19,10 +19,10 @@ export default class About extends React.Component {
         <p>
           <ul>
             <li>Independent dashboard consultant & frontend software engineer</li>
-            <li>Available for contract work in June 2017.</li>
-            <li>Currently working on a mobile dashboard app for iOS written in React Native.</li>
+            <li>Available for contract work in September 2017.</li>
+            <li>Currently working on two iOS and Android mobile dashboards written in React Native.</li>
             <li>Very interested in functional programming: Elm, PureScript, ReasonML, Haskell, etc.</li>
-            <li>Working remotely from Galway, Ireland. From Iceland.</li>
+            <li>Icelander working remotely from Galway, Ireland.</li>
           </ul>
 
           <ul>
