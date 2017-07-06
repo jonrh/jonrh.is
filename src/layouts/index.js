@@ -4,7 +4,12 @@ import { Container } from "react-responsive-grid";
 import { rhythm, scale } from "../utils/typography";
 
 // The Prism theme used to highlight source code in the blog
-require('prismjs/themes/prism-solarizedlight.css');
+// Todo: Figure out a better way to load the prism-solarized theme. I manually copied the CSS file
+// from the node_modules folder and into the project CSS folder. That's probably not ideal but not
+// the worst. I did that because it was causing an error in the Chrome developer console. I took
+// a screenshot of it at 2017.07.11 22:10
+//require('prismjs/themes/prism-solarizedlight.css');
+require("./../css/prism-solarizedlight.css");
 
 // Font Awesome includes icons. I use it for social media icons. http://fontawesome.io/
 require("./../css/font-awesome.min.css");
