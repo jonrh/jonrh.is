@@ -10,7 +10,7 @@ import { rhythm } from "../utils/typography";
 class Bio extends React.Component {
   render() {
     return (
-      <p
+      <div
         style={{
           marginBottom: rhythm(1),
         }}
@@ -44,7 +44,7 @@ class Bio extends React.Component {
             <i className="fa fa-github fa-2x" aria-hidden="true" />
           </a>
         </div>
-      </p>
+      </div>
     );
   }
 }
