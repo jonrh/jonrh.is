@@ -1,6 +1,7 @@
 ---
 title: From Wordpress to GatsbyJS
 date: "2017-07-12T00:00:00Z"
+path: "/from-wordpress-to-gatsbyjs/"
 draft: true
 ---
 

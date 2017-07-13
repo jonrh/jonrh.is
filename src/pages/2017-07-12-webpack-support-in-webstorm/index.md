@@ -1,6 +1,7 @@
 ---
 title: Webpack support in WebStorm
 date: "2017-07-12T00:00:00Z"
+path: "/webpack-support-in-webstorm/"
 draft: true
 ---
 

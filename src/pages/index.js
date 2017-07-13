@@ -14,11 +14,12 @@ class BlogIndex extends React.Component {
     const siteTitle = get(this, "props.data.site.siteMetadata.title");
     const posts = get(this, "props.data.allMarkdownRemark.edges");
     posts.forEach(post => {
-      if (post.node.path !== "/404/") {
-        const title = get(post, "node.frontmatter.title") || post.node.path;
+      if (post.node.path !== "/404/" && post.node.fields.slug !== "/undefined/") {
+        const title = get(post, "node.frontmatter.title") || post.node.fields.slug;
+
         pageLinks.push(
           <li
-            key={post.node.path}
+            key={post.node.fields.slug}
             style={{
               marginBottom: rhythm(1 / 4),
             }}
