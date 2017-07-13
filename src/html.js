@@ -3,8 +3,7 @@ import { TypographyStyle } from "react-typography";
 import Helmet from "react-helmet";
 
 import typography from "./utils/typography";
-import favicon from "./pages/favicon.ico"; // Default empty favicon
-import favicon2 from "./pages/favicon2.ico";
+import favicon from "./pages/favicon.ico";
 
 let stylesStr;
 if (process.env.NODE_ENV === `production`) {
@@ -29,7 +28,7 @@ module.exports = React.createClass({
           <meta charSet="utf-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          <link rel="shortcut icon" href={favicon2} />
+          <link rel="shortcut icon" href={favicon} />
           {this.props.headComponents}
           <TypographyStyle typography={typography} />
           {css}
