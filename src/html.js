@@ -14,7 +14,7 @@ if (process.env.NODE_ENV === `production`) {
   }
 }
 
-module.exports = React.createClass({
+export default class Html extends React.Component {
   render() {
     const head = Helmet.rewind();
     let css;
@@ -24,23 +24,23 @@ module.exports = React.createClass({
 
     return (
       <html lang="en">
-        <head>
-          <meta charSet="utf-8" />
-          <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          <link rel="shortcut icon" href={favicon} />
-          {this.props.headComponents}
-          <TypographyStyle typography={typography} />
-          {css}
-          {head.title.toComponent()}
-          {head.meta.toComponent()}
-          {head.link.toComponent()}
-        </head>
-        <body>
-          <div id="___gatsby" dangerouslySetInnerHTML={{ __html: this.props.body }} />
-          {this.props.postBodyComponents}
-        </body>
+      <head>
+        <meta charSet="utf-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href={favicon} />
+        {this.props.headComponents}
+        <TypographyStyle typography={typography} />
+        {css}
+        {head.title.toComponent()}
+        {head.meta.toComponent()}
+        {head.link.toComponent()}
+      </head>
+      <body>
+      <div id="___gatsby" dangerouslySetInnerHTML={{ __html: this.props.body }} />
+      {this.props.postBodyComponents}
+      </body>
       </html>
     );
-  },
-});
+  }
+}
