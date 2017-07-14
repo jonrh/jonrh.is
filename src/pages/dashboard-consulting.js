@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import Link from "gatsby-link";
 import get from "lodash/get";
 import Helmet from "react-helmet";
@@ -172,7 +173,7 @@ export default class Consulting extends React.Component {
 }
 
 Consulting.propTypes = {
-  route: React.PropTypes.object,
+  route: PropTypes.object,
 };
 
 export const pageQuery = graphql`
