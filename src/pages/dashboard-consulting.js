@@ -133,12 +133,45 @@ export default class Consulting extends React.Component {
           </li>
         </ul>
 
-        <img src={bdmonitor1} alt="Biomass Daily sea cages dashboard" />
-        <img src={bdmonitor2} alt="Biomass Daily weight trendgraph" />
-        <img src={bdmonitor3} alt="Biomass Daily weight distribution" />
-        <img src={bdmonitor4} alt="Biomass Daily Feed Conversion Ratio" />
-        <img src={bdmonitor5} alt="Biomass Daily Login" />
+        <img src={bdmonitor1} alt="BD Monitor login and home screen" />
+        <img src={bdmonitor2} alt="BD Monitor Summary & Settings" />
+        <img src={bdmonitor3} alt="BD Monitor History" />
+        <img src={bdmonitor4} alt="BD Monitor Utilisation" />
+        <img src={bdmonitor5} alt="BD Monitor sea cage detail view" />
 
+
+        <h4 id="biomass-daily"><a href="#biomass-daily">#</a>Web Dashboard: biomassdaily.com</h4>
+        <p>
+          Access is restricted to users of the Biomass Daily system. The system has been in daily
+          active use by Vaki's customers and employees since its launch in 2015.
+        </p>
+
+        <p>Main features:</p>
+
+        <ul>
+          <li><strong>Dashboard</strong> of current operational status of hardware in the field.</li>
+          <li><strong>Trend analysis</strong> of weight data to see how population is progressing.</li>
+          <li><strong>Distribution</strong> analysis to observe weight distribution and health of population.</li>
+          <li><strong>Administration</strong> section to manage users and privileges.</li>
+          <li><strong>Secure Login</strong> with username and email.</li>
+          <li><strong>Multiple languages</strong>: English, Spanish, Norwegian &amp; Icelandic.</li>
+        </ul>
+
+        <p>Technical implementation:</p>
+
+        <ul>
+          <li>
+            <strong>Single page application</strong> web site. Written in JavaScript (version ES5) 
+            and structured in the <a href="https://facebook.github.io/react/">React</a> library.
+            User interface structure provided by Bootstrap. More technical details can be found in
+            my blog post: <a href="http://jonrh.is/retrospective-on-react/">Retrospective on
+            React</a>.
+          </li>
+          <li>
+            <strong>Backend</strong> provides all data through a web service API and JSON. Written
+            and maintained by Vaki in C# and Microsoft SQL Server database.
+          </li>
+        </ul>
 
         <h3 id="ja-gadget-widget"><a href="#ja-gadget-widget">#</a>Já.is Gadget/Widget</h3>
         <p>
