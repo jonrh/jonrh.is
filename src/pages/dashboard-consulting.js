@@ -173,6 +173,12 @@ export default class Consulting extends React.Component {
           </li>
         </ul>
 
+        <img src={bd_dashboard} alt="Biomass Daily sea cages dashboard" />
+        <img src={bd_trendgraph} alt="Biomass Daily weight trendgraph" />
+        <img src={bd_distribution} alt="Biomass Daily weight distribution" />
+        <img src={bd_fcr} alt="Biomass Daily Feed Conversion Ratio" />
+        <img src={bd_login} alt="Biomass Daily Login" />
+
         <h3 id="ja-gadget-widget"><a href="#ja-gadget-widget">#</a>Já.is Gadget/Widget</h3>
         <p>
           This was the project that sparked my interest and lead me to where I am today. A very small 1-2 week project I worked on back in 2010 for <a href="https://ja.is/">Já.is</a>, the official phonebook registry of Iceland. Super simple <a href="https://en.wikipedia.org/wiki/Dashboard_(macOS)">OSX Widget</a> and <a href="https://en.wikipedia.org/wiki/Windows_Desktop_Gadgets">Windows Gadget</a> dashboard tools, obsolete today as operating systems have dropped support. You would start typing some name and it would drop down an autocomplete menu of possible results. Once enter was pressed it would redirect to the ja.is website.
