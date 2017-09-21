@@ -54,8 +54,6 @@ My favourite talks in no specific order:
 * **[Eloy Durán][eloy]**: *[Integrating React Native into an existing native codebase][eloytalk]*. With React Native maintenance and onboarding became easier for Artsy. It provided a simpler mental model (compared to MVC and MVVM), simpler and more efficient networking, de-siloed people, improved DX and an expansion to an Android app became more feasible. React Native was brought into the app via a CocoaPods wrapper package and included in the main app. This meant that the native iOS app could be worked on independently of React Native code.
 
 
-
-
 ## Dinner Party
 The highlight of the conference for me was the the dinner party. Callstack leased a beautiful outdoor venue by the river with booze and a marvellous selection of grilled food.
 
@@ -68,14 +66,14 @@ The event started at 18:00 and the last few people left at 01:00. This was the p
 Photo by [Callstack][rneuphotos].
 
 ![Dinner party. Photo by Emil Lindell.](./dinnerparty2.jpg)
-From left: Bogdan, me, ?, [Álvaro][alvaro], [Emil][emil]. Photo by Emil Lindell.
+From left: Bogdan, me, [Josef][josef], [Álvaro][alvaro], [Emil][emil]. Photo by Emil Lindell.
 
 ![Afterparty at Callstack's office](./callstack_afterparty.jpg)
 Afterparty at Callstack's office. [Photo](https://twitter.com/annalankauf/status/905872231544352768) by Anna Lankauf.
 
 
 ## Conclusion
-I have to say that I (everyone) was seriously impressed with the expert job that Callstack did at organising the conference.
+I have to say that I (everyone) was seriously impressed with the expert job that Callstack did at organising the conference. 
 
 * Schedule was on time.
 * All talks were recorded and uploaded.
@@ -83,10 +81,7 @@ I have to say that I (everyone) was seriously impressed with the expert job that
 * No questions after each talk, kept good temp.
 * Ibis Style Hotel catering was excellent, good lunch, drinks, and snacks available throughout the day.
 
-
-If I'm still working with React Native after about a year I will for sure try to attend React Native Europe 2018 in Wrocław.
-
-
+It was absolutely worth it to go. So many brilliant and smart individuals to chat and party with. If I'm still working with React Native after about a year I will for sure try to attend React Native Europe 2018 in Wrocław.
 
 
 
@@ -110,3 +105,4 @@ If I'm still working with React Native after about a year I will for sure try to
 [alvaro]: https://twitter.com/alvaromb
 [emil]: https://twitter.com/Emil_Lindell
 [rneuphotos]: https://blog.callstack.io/react-native-eu-2017-photos-1e0a7b032802
+[josef]: https://twitter.com/jsfroth
