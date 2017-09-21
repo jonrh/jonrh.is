@@ -35,8 +35,8 @@ jobs:
           key: dependency-cache-{{ checksum "package.json" }}
 
       - run:
-          name: Install npm dependencies
-          command: npm install
+          name: Install Node dependencies with Yarn
+          command: yarn install
 
       - save_cache:
           key: dependency-cache-{{ checksum "package.json" }}
@@ -45,7 +45,7 @@ jobs:
 
       - run:
           name: Build GatsbyJS site, i.e. generate the public/ folder
-          command: npm run build
+          command: yarn run build
 
       - deploy:
           name: Deploy site to AWS S3
