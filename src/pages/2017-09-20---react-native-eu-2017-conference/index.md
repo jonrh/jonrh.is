@@ -6,6 +6,7 @@ draft: false
 ---
 
 ![React Native EU 2017 conference banner at Hotel Ibis](./react_native_banner.jpg)
+Photo by [Callstack][rneuphotos].
 
 Between September 4. - 7. I attended the first [React Native conference](https://react-native.eu/), held in the charming city of Wrocław (pronounced *vrots-waff*) in Poland. I decided to go pretty much as soon as tickets were available for sale. I was able to acquire super early bird tickets for €200 and the workshop ticket was €170.
 
@@ -13,17 +14,17 @@ Poland and Wrocław really surprised me in a good way, great food and night life
 
 ## Workshops
 ![Text](./jonrh_workshop.jpg)
-Me at the workshop.
+Me at the workshop. Photo by [Callstack][rneuphotos].
 
 Due to flight rescheduling I was unfortunately not able to make it to the first day of the workshops. On the second day I attended *Track I* which covered *GraphQL* with [Ville Immonen][ville] & [Mikhail Novikov][mikhail].
 
 ![Text](./graphql_workshop.jpg)
-Ville & Mikhail.
+Ville & Mikhail. Photo by [Callstack][rneuphotos].
 
 The second workshop of the day was *Animation and Interaction* by [Phil Plückthun][phil] & [Jani Eväkallio][jani]. Before the workshop I had always shied away from animations and interactions, thinking they were too complicated. It was brilliant to be shown wrong. To animate or make things interactive you essentially wrap your views with components and tweak some number props until things look & feel nice.
 
 ![Text](./animation_workshop.jpg)
-Phil & Jani.
+Phil & Jani. Photo by [Callstack][rneuphotos].
 
 The workshops generally used Expo which was a perfect fit to get things up and running quickly on the mobile devices. Below are GitHub links to the material of each workshop that you can work on in your own time:
 
@@ -33,11 +34,12 @@ The workshops generally used Expo which was a perfect fit to get things up and r
 * [Using GraphQL with React Native][graphqlworkshop]
 
 ## Talks
+The talks were varied but one strong theme that I noticed was work on how React Native can fill in the remaining UX gaps compared to native.
+
 All the talks are available on YouTube on the [React Native EU channel](https://www.youtube.com/channel/UCUNE_g1mQPuyW975WjgjYxA/videos).
 
 ![Text](./audience.jpg)
-
-<!--I had been following most of the speakers on Twitter and was already familiar with some of their work. The types of talks I generally favour are stories of experience. For example how was the React Native experience at a company, what worked well, what were the challenges and how were they solved.-->
+Photo by [Callstack][rneuphotos].
 
 My favourite talks in no specific order:
 
@@ -58,13 +60,15 @@ My favourite talks in no specific order:
 The highlight of the conference for me was the the dinner party. Callstack leased a beautiful outdoor venue by the river with booze and a marvellous selection of grilled food.
 
 ![Dinner party outdoor venue](./dinnerparty.jpg)
+Photo by [Callstack][rneuphotos].
 
-The event started at 18:00 and the last few people left at 01:00. This was the perfect environment to have great conversations and to really get to know people. In fact, this was the primary reason why I went, to meet the people.
+The event started at 18:00 and the last few people left at 01:00. This was the perfect environment to have great conversations and to really get to know people. 
 
 ![Dinner BBQ](./dinner_bbq.jpg)
+Photo by [Callstack][rneuphotos].
 
 ![Dinner party. Photo by Emil Lindell.](./dinnerparty2.jpg)
-Dinner party. Photo by Emil Lindell.
+From left: Bogdan, me, ?, [Álvaro][alvaro], [Emil][emil]. Photo by Emil Lindell.
 
 ![Afterparty at Callstack's office](./callstack_afterparty.jpg)
 Afterparty at Callstack's office. [Photo](https://twitter.com/annalankauf/status/905872231544352768) by Anna Lankauf.
@@ -76,14 +80,13 @@ I have to say that I (everyone) was seriously impressed with the expert job that
 * Schedule was on time.
 * All talks were recorded and uploaded.
 * Chill room with comfortable lean back chairs.
-* No questions after each talk. 
+* No questions after each talk, kept good temp.
 * Ibis Style Hotel catering was excellent, good lunch, drinks, and snacks available throughout the day.
 
 
 If I'm still working with React Native after about a year I will for sure try to attend React Native Europe 2018 in Wrocław.
 
 
-*Photos taken from the [React Native EU 2017 photo gallery](https://blog.callstack.io/react-native-eu-2017-photos-1e0a7b032802)*.
 
 
 
@@ -104,3 +107,6 @@ If I'm still working with React Native after about a year I will for sure try to
 [navigationworkshop]: https://github.com/callstack/workshop-navigation
 [graphqlworkshop]: https://github.com/reindexio/react-native-graphql-workshop
 [universalworkshop]: https://github.com/callstack/talk-universal-react
+[alvaro]: https://twitter.com/alvaromb
+[emil]: https://twitter.com/Emil_Lindell
+[rneuphotos]: https://blog.callstack.io/react-native-eu-2017-photos-1e0a7b032802
