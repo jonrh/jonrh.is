@@ -31,6 +31,22 @@ jobs:
               export PATH=~/.local/bin:$PATH
               pip install awscli --upgrade --user
 
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+
+      - run:
+          name: Install npm dependencies
+          command: npm install
+
+      - save_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths:
+              - ./node_modules
+
+      - run:
+          name: Build GatsbyJS site, i.e. generate the public/ folder
+          command: npm run build
+
       - deploy:
           name: Deploy site to AWS S3
           # There are two deployments. If there is a new commit on the dev branch we push the
