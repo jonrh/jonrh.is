@@ -61,12 +61,19 @@ jobs:
           # Apparently each CircleCI step is run in a separate terminal session. That means that
           # the command aws that we put on the path in the awscli installation step is not on the
           # path. As a workaround I just call it directly from its full location: ~/.local/bin/aws
+          #
+          # After each S3 bucket has been updated with the new content we invalidate the CloudFront
+          # distributions (the thing that caches the static assets all over the world).
+          # $CLOUDFRONTDEVJONRHISDISTID and $CLOUDFRONTJONRHISDISTID are environment variables
+          # defined at circleci.com.
           command: |
             if [ "${CIRCLE_BRANCH}" == "dev" ]; then
                 ~/.local/bin/aws s3 sync public/ s3://dev.jonrh.is/ --delete
+                ~/.local/bin/aws cloudfront create-invalidation --distribution-id $CLOUDFRONTDEVJONRHISDISTID --paths '/*'
             elif [ "${CIRCLE_BRANCH}" == "master" ]; then
                 rm public/robots.txt # Only push robots.txt to dev.jonrh.is
                 ~/.local/bin/aws s3 sync public/ s3://jonrh.is/ --delete
+                ~/.local/bin/aws cloudfront create-invalidation --distribution-id $CLOUDFRONTJONRHISDISTID --paths '/*'
             else
                 echo "Not dev or master branch so not deploying"
             fi
