@@ -27,8 +27,8 @@ export default class Consulting extends React.Component {
   render() {
     return (
       <div>
-        <Helmet title={get(this, "props.data.site.siteMetadata.title") +" - Dashboard Consultant"} />
-        <h1>Dashboard Consultant</h1>
+        <Helmet title={get(this, "props.data.site.siteMetadata.title") +" - Dashboard Consulting"} />
+        <h1>Dashboard Consulting</h1>
 
         <p style={{textDecoration: "underline"}}>
           <strong>I help companies create bespoke dashboards their customers want to use</strong>

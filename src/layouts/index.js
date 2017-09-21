@@ -42,7 +42,7 @@ export default class Template extends React.Component {
             to={"/"}
           >
             jonrh <br />
-            Dashboard Consulting
+            Dashboard Consultant
           </Link>
         </h1>
       );
