@@ -71,7 +71,7 @@ Afterparty at Callstack's office. [Photo](https://twitter.com/annalankauf/status
 
 
 ## Conclusion
-I have to say that I (everyone) was seriously impressed with the expert job that Callsdtack did at organising the conference.
+I have to say that I (everyone) was seriously impressed with the expert job that Callstack did at organising the conference.
 
 * Schedule was on time.
 * All talks were recorded and uploaded.

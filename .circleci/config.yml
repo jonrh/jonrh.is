@@ -32,14 +32,14 @@ jobs:
               pip install awscli --upgrade --user
 
       - restore_cache:
-          key: dependency-cache-{{ checksum "package.json" }}
+          key: dependency-cache-{{ checksum "yarn.lock" }}
 
       - run:
           name: Install Node dependencies with Yarn
           command: yarn install
 
       - save_cache:
-          key: dependency-cache-{{ checksum "package.json" }}
+          key: dependency-cache-{{ checksum "yarn.lock" }}
           paths:
               - ./node_modules
 
