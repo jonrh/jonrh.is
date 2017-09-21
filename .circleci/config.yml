@@ -1,0 +1,56 @@
+# Javascript Node CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-javascript/ for more details
+#
+version: 2
+
+jobs:
+  build:
+    docker:
+      - image: circleci/node:8.1.4
+
+    steps:
+      - checkout
+
+      - run:
+          name: Install awscli, doesn't come by default with the node:8.1.4 image
+          # Python 2.7 comes by default with the Ubuntu container CircleCI uses.
+          # However it doesn't comes with python-dev which is required for installing pip. If not
+          # installed there will be an error when installing some package called "wheel". The
+          # next two commands fetches the pip install script and installs pip. After installing
+          # pip we add pip to the path (so we can subsequently use the command "pip"). This is
+          # required because awscli has other dependencies which requires the existence of pip on
+          # the path. Finally we install awscli.
+          #
+          # It should be noted this is a pretty ugly hack to get awscli in a Node container. In
+          # CircleCI v1 the images came by default with awscli, so this mess wasn't required.
+          command: |
+              sudo apt-get install python-dev
+              curl -O https://bootstrap.pypa.io/get-pip.py
+              python get-pip.py --user
+              export PATH=~/.local/bin:$PATH
+              pip install awscli --upgrade --user
+
+      - deploy:
+          name: Deploy site to AWS S3
+          # There are two deployments. If there is a new commit on the dev branch we push the
+          # contents of the public/ folder to the dev.jonrh.is AWS S3 bucket.
+          # If the branch is master we push the contents of the public/ folder to the
+          # jonrh.is bucket on AWS S3. When deploying to the master branch we also
+          # delete the robots.txt file. That file advises search engine bots not to index that
+          # site. We want that to apply for dev.jonrh.is because if we did not it
+          # would hurt the search engine performance of the main site (duplicate content is
+          # punished).
+          #
+          # Apparently each CircleCI step is run in a separate terminal session. That means that
+          # the command aws that we put on the path in the awscli installation step is not on the
+          # path. As a workaround I just call it directly from its full location: ~/.local/bin/aws
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "dev" ]; then
+                ~/.local/bin/aws s3 sync public/ s3://dev.jonrh.is/ --delete
+            elif [ "${CIRCLE_BRANCH}" == "master" ]; then
+                rm public/robots.txt # Only push robots.txt to dev.jonrh.is
+                ~/.local/bin/aws s3 sync public/ s3://jonrh.is/ --delete
+            else
+                echo "Not dev or master branch so not deploying"
+            fi
