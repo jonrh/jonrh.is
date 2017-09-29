@@ -63,7 +63,8 @@ jobs:
                 ~/.local/bin/aws s3 sync public/ s3://dev.jonrh.is/ --delete
                 ~/.local/bin/aws cloudfront create-invalidation --distribution-id $CLOUDFRONTDEVJONRHISDISTID --paths '/*'
             elif [ "${CIRCLE_BRANCH}" == "master" ]; then
-                rm public/robots.txt # Only push robots.txt to dev.jonrh.is
+                # See https://github.com/jonrh/jonrh.is/issues/18
+                #rm public/robots.txt # Only push robots.txt to dev.jonrh.is
                 ~/.local/bin/aws s3 sync public/ s3://jonrh.is/ --delete
                 ~/.local/bin/aws cloudfront create-invalidation --distribution-id $CLOUDFRONTJONRHISDISTID --paths '/*'
             else
