@@ -66,19 +66,21 @@ The event started at 18:00 and the last few people left at 01:00. This was the p
 Photo by [Callstack][rneuphotos].
 
 ![Dinner party. Photo by Emil Lindell.](./dinnerparty2.jpg)
-From left: Bogdan, me, [Josef][josef], [Álvaro][alvaro], [Emil][emil]. Photo by Emil Lindell.
+From left: [Bogdan][bogdan], [me][jonrhtwitter], [Josef][josef], [Álvaro][alvaro], [Emil][emil].
+Photo by Emil
+Lindell.
 
 ![Afterparty at Callstack's office](./callstack_afterparty.jpg)
-Afterparty at Callstack's office. [Photo](https://twitter.com/annalankauf/status/905872231544352768) by Anna Lankauf.
+Day 2 afterparty at Callstack's office. [Photo](https://twitter.com/annalankauf/status/905872231544352768) by Anna Lankauf.
 
 
 ## Conclusion
-I have to say that I (everyone) was seriously impressed with the expert job that Callstack did at organising the conference. 
+I have to say that I (everyone) was seriously impressed with the expert job that Callstack did at organising the conference. If your company needs React / React Native consulting I'd seriously consider Callstack.
 
 * Schedule was on time.
 * All talks were recorded and uploaded.
 * Chill room with comfortable lean back chairs.
-* No questions after each talk, kept good temp.
+* No questions after each talk, kept good tempo.
 * Ibis Style Hotel catering was excellent, good lunch, drinks, and snacks available throughout the day.
 
 It was absolutely worth it to go. So many brilliant and smart individuals to chat and party with. If I'm still working with React Native after about a year I will for sure try to attend React Native Europe 2018 in Wrocław.
@@ -106,3 +108,5 @@ It was absolutely worth it to go. So many brilliant and smart individuals to cha
 [emil]: https://twitter.com/Emil_Lindell
 [rneuphotos]: https://blog.callstack.io/react-native-eu-2017-photos-1e0a7b032802
 [josef]: https://twitter.com/jsfroth
+[bogdan]: https://twitter.com/nothossu
+[jonrhtwitter]: https://twitter.com/jonrh
