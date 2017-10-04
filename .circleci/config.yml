@@ -44,11 +44,8 @@ jobs:
           # There are two deployments. If there is a new commit on the dev branch we push the
           # contents of the public/ folder to the dev.jonrh.is AWS S3 bucket.
           # If the branch is master we push the contents of the public/ folder to the
-          # jonrh.is bucket on AWS S3. When deploying to the master branch we also
-          # delete the robots.txt file. That file advises search engine bots not to index that
-          # site. We want that to apply for dev.jonrh.is because if we did not it
-          # would hurt the search engine performance of the main site (duplicate content is
-          # punished).
+          # jonrh.is bucket on AWS S3. The --delete flag means we delete files in the S3 buckets if
+          # they don't exist in the public/ folder.
           #
           # Apparently each CircleCI step is run in a separate terminal session. That means that
           # the command aws that we put on the path in the awscli installation step is not on the
@@ -60,11 +57,15 @@ jobs:
           # defined at circleci.com.
           command: |
             if [ "${CIRCLE_BRANCH}" == "dev" ]; then
+                # If we are deploying to the dev branch add a robots.txt file to the public foler.
+                # The file signals to search engine crawlers that they should not scan this site.
+                # I don't want dev.jonrh.is to be searchable, it's only intended for development.
+                echo 'User-agent: *
+                Disallow: /' > public/robots.txt
+
                 ~/.local/bin/aws s3 sync public/ s3://dev.jonrh.is/ --delete
                 ~/.local/bin/aws cloudfront create-invalidation --distribution-id $CLOUDFRONTDEVJONRHISDISTID --paths '/*'
             elif [ "${CIRCLE_BRANCH}" == "master" ]; then
-                # See https://github.com/jonrh/jonrh.is/issues/18
-                #rm public/robots.txt # Only push robots.txt to dev.jonrh.is
                 ~/.local/bin/aws s3 sync public/ s3://jonrh.is/ --delete
                 ~/.local/bin/aws cloudfront create-invalidation --distribution-id $CLOUDFRONTJONRHISDISTID --paths '/*'
             else
