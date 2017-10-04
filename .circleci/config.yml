@@ -60,10 +60,8 @@ jobs:
                 # If we are deploying to the dev branch add a robots.txt file to the public foler.
                 # The file signals to search engine crawlers that they should not scan this site.
                 # I don't want dev.jonrh.is to be searchable, it's only intended for development.
-                cat <<END >public/robots.txt
-                User-agent: *
-                Disallow: /
-                END
+                echo 'User-agent: *
+            Disallow: /' > public/robots.txt
 
                 ~/.local/bin/aws s3 sync public/ s3://dev.jonrh.is/ --delete
                 ~/.local/bin/aws cloudfront create-invalidation --distribution-id $CLOUDFRONTDEVJONRHISDISTID --paths '/*'
