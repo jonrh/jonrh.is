@@ -60,6 +60,8 @@ jobs:
                 # If we are deploying to the dev branch add a robots.txt file to the public foler.
                 # The file signals to search engine crawlers that they should not scan this site.
                 # I don't want dev.jonrh.is to be searchable, it's only intended for development.
+                # Notice that the second line is not indented. This is on purpose. Otherwise it
+                # will be indented. I tried outputting the file with EOF/END without luck.
                 echo 'User-agent: *
             Disallow: /' > public/robots.txt
 
