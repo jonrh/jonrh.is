@@ -74,6 +74,3 @@ export default class About extends React.Component {
 About.propTypes = {
     route: PropTypes.object,
 };
-
-commit:ef6095
-WIP on dev: Auto stash before revert of "Updated project dependencies to latest versions"
