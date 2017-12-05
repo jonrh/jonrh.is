@@ -24,7 +24,6 @@
     "moment": "2.19.2",
     "prop-types": "15.6.0",
     "react-helmet": "5.2.0",
-    "react-responsive-grid": "0.3.4",
     "react-typography": "0.16.5",
     "safe-access": "0.1.0",
     "typeface-merriweather": "0.0.45",
