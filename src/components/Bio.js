@@ -4,7 +4,7 @@ import React from "react";
 import "typeface-montserrat";
 import "typeface-merriweather";
 
-import profilePic from "./profile-pic-2017.png";
+import profilePic from "../images/profile-pic-2017.png";
 import { rhythm } from "../utils/typography";
 
 class Bio extends React.Component {
