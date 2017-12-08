@@ -64,8 +64,8 @@ hardware in datacenters.
 ### What I do
 
 * **Exchange**: Kraken.
-* **Hot wallets**: Jaxx & Copay until I get my Ledger Nano S.
-* **Cold wallet**: Ledger Nano S (on backorder).
+* **Hot wallets**: Jaxx & Copay.
+* **Cold wallet**: Ledger Nano S.
 
 I look at bitcoin as a long term (5-30 years) storage of value: digital gold. Transaction fees can
 range from €0.5 to €4, so the only thing I will do with bitcoins is to hold on to them, buy other
