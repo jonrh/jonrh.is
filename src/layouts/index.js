@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Link from "gatsby-link";
-import { Container } from "react-responsive-grid";
 import { rhythm, scale } from "../utils/typography";
 
 // The Prism theme used to highlight source code in the blog
@@ -68,16 +67,17 @@ export default class Template extends React.Component {
         </h3>
       );
     }
+
     return (
-      <Container
-        style={{
-          maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-        }}
-      >
+      <div style={{
+        maxWidth: "42rem",
+        marginLeft: "auto",
+        marginRight: "auto",
+        padding: "2.6rem 1.3rem"
+      }}>
         {header}
         {children()}
-      </Container>
+      </div>
     );
   }
 }
