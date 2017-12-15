@@ -1,8 +1,6 @@
-const _ = require("lodash")
-const Promise = require("bluebird")
-const path = require("path")
-const select = require(`unist-util-select`)
-const fs = require(`fs-extra`)
+const _ = require("lodash");
+const Promise = require("bluebird");
+const path = require("path");
 
 /**
  * It seems that with my current Prettier settings this file breaks on a format. Don't have the
@@ -10,10 +8,10 @@ const fs = require(`fs-extra`)
  */
 
 exports.createPages = ({ graphql, boundActionCreators }) => {
-  const { createPage } = boundActionCreators
+  const { createPage } = boundActionCreators;
 
   return new Promise((resolve, reject) => {
-    const pages = []
+    const pages = [];
     const blogPost = path.resolve("./src/templates/blog-post.js")
     resolve(
       graphql(
@@ -49,7 +47,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       })
     )
   })
-}
+};
 
 // Add custom slug for blog posts to both File and MarkdownRemark nodes.
 exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
@@ -61,8 +59,8 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
       const slug = `/${parsedFilePath.dir.split(`---`)[1]}/`;
       createNodeField({
         node,
-        fieldName: 'slug',
-        fieldValue: slug
+        name: 'slug',
+        value: slug
       });
       return;
 
@@ -70,9 +68,9 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
       const fileNode = getNode(node.parent)
       createNodeField({
         node,
-        fieldName: 'slug',
-        fieldValue: fileNode.fields.slug,
-      })
+        name: 'slug',
+        value: fileNode.fields.slug,
+      });
       return
   }
-}
+};
