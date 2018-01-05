@@ -1,3 +1,14 @@
+/* Apparently GatsbyJS doesn't like global CSS files. This file is one such but apparently a
+ * hack. GatsbyJS docs encourage the usage of Typography.js (a lib made by Kyle Mathews). I'm
+ * not too thrilled about it. I use it here and there as leftovers from the starter blog.
+ * However this is where I generally define my own custom CSS. See more here:
+ *
+ *     https://www.gatsbyjs.org/tutorial/part-two/
+ *     https://github.com/gatsbyjs/gatsby-starter-blog/issues/51
+ *
+ * Long term I think it might make sense to go for CSS Modules, Glamor, Styled Components, etc.
+ */
+
 /* Social icons are the Twitter, GitHub, LinkedIn icons I use */
 .socialicons a {
     margin-right: 0.5em;
@@ -27,4 +38,14 @@ li {
 
 a {
     color: #ff3f00;
+}
+
+body {
+    /* Make all text justified on the page. This might be too broad, p and li might be enough. */
+    text-align: justify;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    /* All text is justified on the page, don't make it so in headers. Titles can get choppy. */
+    text-align: start;
 }
