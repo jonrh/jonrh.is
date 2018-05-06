@@ -1,14 +1,33 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Link from "gatsby-link";
-import get from "lodash/get";
 import Helmet from "react-helmet";
 import { rhythm, scale } from "../utils/typography";
+import moment from "moment";
 
 import Bio from "../components/Bio";
 import profilePic from "../images/profile-pic-2017.png";
 
 export default class About extends React.Component {
+  /**
+   * Returns the duration of my frontend experience. Calculated so I don't have
+   * to update it every year. Moment humanize() uses rounding.
+   *
+   * Examples:
+   *  "4 years" requested at 2018-04-30.
+   *  "4 years" after 53 months (4 years and 5 months)
+   *  "5 years" after 54 months (4 years and 6 months)
+   */
+  getFrontendExperienceInYears() {
+    const ru = 3;
+    const ucd = 12;
+    const vaki = 13;
+    const bespokedashboards = moment().diff("2016-08-01", "months", true);
+    const totalFrontendExperienceInMonths = ru + ucd + vaki + bespokedashboards;
+
+    return moment.duration(totalFrontendExperienceInMonths, "months").humanize()
+  }
+
   render() {
     return (
       <div>
@@ -27,18 +46,18 @@ export default class About extends React.Component {
           <li>Icelander working remotely from Galway, Ireland.</li>
         </ul>
 
-        <p><strong>Recent dashboard work</strong>:</p>
+        <p><strong>Recent work</strong>:</p>
         <ul>
-          <li>Klukkinn: super simple timeclock for trade professionals. <a href="https://itunes.apple.com/us/app/klukkinn/id1309092162">iOS</a> & <a href="https://play.google.com/store/apps/details?id=is.klukkinn.app">Android</a>.</li>
+          <li><a href="https://www.activitystream.com/">Activity Stream</a>: ongoing contract constructing various web dashboards.</li>
+          <li><a href="https://klukkinn.is">Klukkinn</a>: SaaS timeclock for tradesmen. <a href="https://itunes.apple.com/us/app/klukkinn/id1309092162">iOS</a> & <a href="https://play.google.com/store/apps/details?id=is.klukkinn.app">Android</a> apps.</li>
           <li>BD Monitor: auxiliary <a href="https://appsto.re/us/CHXChb.i">iOS</a> & <a href="https://play.google.com/store/apps/details?id=is.vaki.bdhm">Android</a> mobile dashboard for Biomass Daily.</li>
-          <li><Link to={"/retrospective-on-react"}>Biomass Daily</Link> web dashboard for <a href="http://vaki.is/">Vaki</a>.</li>
-          <li>Web dashboards made with React and mobile apps with React Native.</li>
+          <li><Link to={"/retrospective-on-react"}>Biomass Daily</Link> web dashboard for <a href="http://vaki.is/">Vaki</a>. Made with React.</li>
         </ul>
 
         <p><strong>Background</strong>:</p>
         <ul>
-          <li>Frontend: 3 years in JavaScript, React & React Native.</li>
-          <li>Backend: 2 years in Python, Java, SQL, and others.</li>
+          <li>Frontend: {this.getFrontendExperienceInYears()}. JavaScript, TypeScript, React & React Native.</li>
+          <li>Backend: 2 years. Python, NodeJS, Java, SQL, and others.</li>
           <li>MSc in Computer Science from <a href="https://www.ucd.ie/">University College Dublin</a>.</li>
           <li>BSc in Computer Science from <a href="https://en.ru.is/">Reykjavík University</a>.</li>
           <li>Interested in functional programming: ReasonML, Elm, PureScript, etc.</li>
