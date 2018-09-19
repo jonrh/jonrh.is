@@ -42,13 +42,13 @@ export default class About extends React.Component {
         <ul>
           <li>I help companies create bespoke product dashboards.</li>
           <li>Independent dashboard consultant & frontend software engineer.</li>
-          <li>Fully booked for the foreseeable future.</li>
+          <li>Available for React Native mobile development in Jan 2019.</li>
           <li>Icelander working remotely from Galway, Ireland.</li>
         </ul>
 
         <p><strong>Recent work</strong>:</p>
         <ul>
-          <li><a href="https://www.activitystream.com/">Activity Stream</a>: ongoing contract constructing various web dashboards.</li>
+          <li><a href="https://www.activitystream.com/">Activity Stream</a>: dashboard engineer contractor, Nov 2017 - Dec 2018.</li>
           <li><a href="https://timavera.is">Tímavera</a>: SaaS time clock for tradesmen. <a href="https://itunes.apple.com/us/app/klukkinn/id1309092162">iOS</a> & <a href="https://play.google.com/store/apps/details?id=is.klukkinn.app">Android</a> apps.</li>
           <li>BD Monitor: auxiliary <a href="https://appsto.re/us/CHXChb.i">iOS</a> & <a href="https://play.google.com/store/apps/details?id=is.vaki.bdhm">Android</a> mobile dashboard for Biomass Daily.</li>
           <li><Link to={"/retrospective-on-react"}>Biomass Daily</Link> web dashboard for <a href="http://vaki.is/">Vaki</a>. Made with React.</li>
