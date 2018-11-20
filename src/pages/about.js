@@ -42,7 +42,7 @@ export default class About extends React.Component {
         <ul>
           <li>I help companies create bespoke product dashboards.</li>
           <li>Independent dashboard consultant & frontend software engineer.</li>
-          <li>Available for React Native mobile development in Jan 2019.</li>
+          <li>Available for React Native mobile development in March 2019.</li>
           <li>Icelander working remotely from Galway, Ireland.</li>
         </ul>
 
