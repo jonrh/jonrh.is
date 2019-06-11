@@ -32,11 +32,11 @@ class Bio extends React.Component {
         <br />
 
         <div className="socialicons">
-          <a href="https://twitter.com/jonrh">
-            <i className="fa fa-twitter fa-2x" aria-hidden="true" />
+          <a href="mailto:hi@jonrh.is">
+            <i className="fa fa-envelope fa-2x" aria-hidden="true" />
           </a>
           {" "}
-          <a href="https://is.linkedin.com/in/jonrh">
+          <a href="https://linkedin.com/in/jonrh">
             <i className="fa fa-linkedin fa-2x" aria-hidden="true" />
           </a>
           {" "}
