@@ -38,20 +38,19 @@ export default class About extends React.Component {
           <img src={profilePic} alt={`Jón Rúnar Helgason`} />
         </div>
 
-        <p><strong>My name is Jón Rúnar Helgason</strong>:</p>
+        <p><strong>Hello! My name is Jón Rúnar Helgason</strong>:</p>
         <ul>
-          <li>I help companies create bespoke product dashboards.</li>
-          <li>Independent dashboard consultant & frontend software engineer.</li>
-          <li>Available for React Native mobile development in March 2019.</li>
+          <li>I help companies deliver streamlined and robust websites & apps.</li>
+          <li>Frontend Software Engineer & Independent Dashboard Consultant.</li>
+          <li>Available for remote hire, React and or React Native mobile development.</li>
           <li>Icelander working remotely from Galway, Ireland.</li>
         </ul>
 
         <p><strong>Recent work</strong>:</p>
         <ul>
-          <li><a href="https://www.activitystream.com/">Activity Stream</a>: dashboard engineer contractor, Nov 2017 - Dec 2018.</li>
-          <li><a href="https://timavera.is">Tímavera</a>: SaaS time clock for tradesmen. <a href="https://itunes.apple.com/us/app/klukkinn/id1309092162">iOS</a> & <a href="https://play.google.com/store/apps/details?id=is.klukkinn.app">Android</a> apps.</li>
-          <li>BD Monitor: auxiliary <a href="https://appsto.re/us/CHXChb.i">iOS</a> & <a href="https://play.google.com/store/apps/details?id=is.vaki.bdhm">Android</a> mobile dashboard for Biomass Daily.</li>
-          <li><Link to={"/retrospective-on-react"}>Biomass Daily</Link> web dashboard for <a href="http://vaki.is/">Vaki</a>. Made with React.</li>
+          <li><a href="https://timavera.is">Tímavera</a>: Time tracking for contractors SaaS. <a href="https://itunes.apple.com/us/app/klukkinn/id1309092162">iOS</a> & <a href="https://play.google.com/store/apps/details?id=is.klukkinn.app">Android</a> apps.</li>
+          <li><Link to="/dashboard-consulting#bd-monitor">BD Monitor</Link>: mobile dashboard app, <a href="https://appsto.re/us/CHXChb.i">iOS</a> & <a href="https://play.google.com/store/apps/details?id=is.vaki.bdhm">Android</a>.</li>
+          <li><Link to="/dashboard-consulting#biomass-daily">Biomass Daily</Link> web dashboard for <a href="http://vaki.is/">Vaki</a>.</li>
         </ul>
 
         <p><strong>Background</strong>:</p>
@@ -64,7 +63,7 @@ export default class About extends React.Component {
         </ul>
 
         <p>
-          <strong>Services</strong>:<br />
+          <strong>Dashboard Consulting Services</strong>:<br />
           I help companies create product dashboards, in other words: a dashboard for your product used by your
           customers. Essentially I take care of the frontend while your company can focus on a good backend. We
           will be a good fit if you:
@@ -80,12 +79,13 @@ export default class About extends React.Component {
 
         <ul>
           <li>Email: <a href="mailto:hi@jonrh.is">hi@jonrh.is</a></li>
-          <li>Twitter: <a href="https://twitter.com/jonrh">@jonrh</a></li>
           <li>GitHub: <a href="https://github.com/jonrh">jonrh</a></li>
-          <li>Mastodon: <a href="https://mastodon.social/@jonrh">jonrh</a></li>
           <li>LinkedIn: <a href="https://linkedin.com/in/jonrh/">https://linkedin.com/in/jonrh/</a></li>
+          <li>Mastodon: <a href="https://mastodon.social/@jonrh">jonrh</a></li>
           <li>IRC, Freenode: jonrh</li>
         </ul>
+
+        <p>I'm no longer on Twitter nor Facebook products.</p>
 
         <hr style={{marginBottom: rhythm(1)}}/>
         <Bio />
