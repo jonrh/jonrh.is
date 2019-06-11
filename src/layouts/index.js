@@ -41,7 +41,6 @@ export default class Template extends React.Component {
             to={"/"}
           >
             jonrh <br />
-            Dashboard Consultant
           </Link>
         </h1>
       );
@@ -62,7 +61,7 @@ export default class Template extends React.Component {
             }}
             to={"/"}
           >
-            jonrh Dashboard Consultant
+            jonrh
           </Link>
         </h3>
       );
