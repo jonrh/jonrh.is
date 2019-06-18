@@ -34,10 +34,6 @@ export default class About extends React.Component {
         <Helmet title={"jonrh - About Me"} />
         <h1>About Me</h1>
 
-        <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <img src={profilePic} alt={`Jón Rúnar Helgason`} />
-        </div>
-
         <p><strong>Hello! My name is Jón Rúnar Helgason</strong>:</p>
         <ul>
           <li>I help companies deliver streamlined and robust websites & apps.</li>
@@ -85,7 +81,7 @@ export default class About extends React.Component {
           <li>IRC, Freenode: jonrh</li>
         </ul>
 
-        <p>I'm no longer on Twitter nor Facebook products.</p>
+        <p>No longer available on Twitter nor Facebook products.</p>
 
         <hr style={{marginBottom: rhythm(1)}}/>
         <Bio />
