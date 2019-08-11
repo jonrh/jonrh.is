@@ -76,11 +76,10 @@ export default class About extends React.Component {
           <li>Email: <a href="mailto:hi@jonrh.is">hi@jonrh.is</a></li>
           <li>GitHub: <a href="https://github.com/jonrh">jonrh</a></li>
           <li>LinkedIn: <a href="https://linkedin.com/in/jonrh/">https://linkedin.com/in/jonrh/</a></li>
-          <li>Mastodon: <a href="https://mastodon.social/@jonrh">jonrh</a></li>
+          {/* For now hide Mastodon, I'm not really using it any more */}
+          {/*<li>Mastodon: <a href="https://mastodon.social/@jonrh">jonrh</a></li>*/}
           <li>IRC, Freenode: jonrh</li>
         </ul>
-
-        <p>No longer available on Twitter nor Facebook products.</p>
 
         <hr style={{marginBottom: "2em"}}/>
         <Bio />
