@@ -35,6 +35,7 @@ nav ul {
     flex-wrap: wrap;
     list-style: none;
     margin-top: 1rem;
+    margin-left: 0;
 }
 
 nav li {
