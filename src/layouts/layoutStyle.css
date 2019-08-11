@@ -45,11 +45,6 @@ nav li {
 
 nav li a {
     padding: 0.25rem 0.5rem;
-    box-shadow: none;
-}
-
-nav li a:hover {
-    box-shadow: 0 1px 0 0 currentColor;
 }
 
 .container {
