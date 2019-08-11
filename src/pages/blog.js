@@ -32,15 +32,17 @@ export default class Blog extends React.Component {
     const posts = get(this, "props.data.allMarkdownRemark.edges");
 
     posts.forEach(post => {
-        const {slug} = post.node.fields; // Example value: "/react-native-eu-2017-conference/"
-        if (post.node.path !== "/404/" && slug !== "/undefined/" && !hiddenPosts.includes(slug)) {
+      const {slug} = post.node.fields; // Example value: "/react-native-eu-2017-conference/"
+      const postIsNotDraft = slug !== "/undefined/";
+      const postIsNotHidden = !hiddenPosts.includes(slug);
 
+      if (post.node.path !== "/404/" && postIsNotDraft && postIsNotHidden) {
         pageLinks.push(
           <li key={slug}>
             <Link style={{ boxShadow: "none" }} to={slug}>
               {post.node.frontmatter.title}
             </Link>
-          </li>,
+          </li>
         );
       }
     });
