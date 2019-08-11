@@ -1,7 +1,7 @@
 import React from "react";
 
 const config = "YWNjZXNzVG9rZW46ICJlODFjYjFlYTNiODg0MGE1OWJjYWZhNjM2MmE3OTU2OCIs";
-const config2 = new Buffer(string, "base64").toString("ascii");
+const config2 = new Buffer(config, "base64").toString("ascii");
 
 const rollbarHeaderScript =
   <script dangerouslySetInnerHTML={{__html:
