@@ -1,0 +1,59 @@
+.header {
+    text-align: center;
+}
+
+.header img {
+    display: block;
+    width: 100px;
+    height: 100px;
+
+    margin-top: 25px;
+    margin-right: auto;
+    margin-bottom: 1em;
+    margin-left: auto;
+
+    border: 2px solid white;
+    border-radius: 50px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.35);
+}
+
+.profileName {
+    color: #444;
+
+    font-size: 1.2em;
+    font-weight: 800;
+
+    box-shadow: none;
+}
+
+.profileName:hover {
+    box-shadow: 0 1px 0 0 currentColor;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 1rem;
+}
+
+nav li {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+nav li a {
+    padding: 0.25rem 0.5rem;
+    box-shadow: none;
+}
+
+nav li a:hover {
+    box-shadow: 0 1px 0 0 currentColor;
+}
+
+.container {
+    max-width: 42rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0rem 1.3rem 2.6rem 1.3rem;
+}

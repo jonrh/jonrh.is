@@ -1,7 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Link from "gatsby-link";
+
 import { rhythm, scale } from "../utils/typography";
+import profilePic2 from "../images/profile-pic-2017-with-colours.png";
 
 // The Prism theme used to highlight source code in the blog
 // Todo: Figure out a better way to load the prism-solarized theme. I manually copied the CSS file
@@ -17,65 +19,54 @@ require("./../css/font-awesome.min.css");
 // My own manual CSS changes
 require("./../css/jonrh.css");
 
+require("./layoutStyle.css");
+
+
+const SocialIcons = () => {
+  return (
+    <div className="socialicons">
+      <a href="mailto:hi@jonrh.is">
+        <i className="fa fa-envelope fa-2x" aria-hidden="true" />
+      </a>
+      {" "}
+      <a href="https://github.com/jonrh">
+        <i className="fa fa-github fa-2x" aria-hidden="true" />
+      </a>
+      {" "}
+      <a href="https://linkedin.com/in/jonrh">
+        <i className="fa fa-linkedin fa-2x" aria-hidden="true" />
+      </a>
+    </div>
+  );
+};
+
 export default class Template extends React.Component {
   render() {
-    const { location, children } = this.props;
-
-    let header;
-
-    if (location.pathname === "/") {
-      header = (
-        <h1
-          style={{
-            ...scale(1.2),
-            marginBottom: rhythm(1.2),
-            marginTop: 0,
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: "none",
-              textDecoration: "none",
-              color: "inherit",
-            }}
-            to={"/"}
-          >
-            jonrh <br />
-          </Link>
-        </h1>
-      );
-    } else {
-      header = (
-        <h3
-          style={{
-            fontFamily: "Montserrat, sans-serif",
-            marginTop: 0,
-            marginBottom: rhythm(-1),
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: "none",
-              textDecoration: "none",
-              color: "inherit",
-            }}
-            to={"/"}
-          >
-            jonrh
-          </Link>
-        </h3>
-      );
-    }
+    const { children } = this.props;
 
     return (
-      <div style={{
-        maxWidth: "42rem",
-        marginLeft: "auto",
-        marginRight: "auto",
-        padding: "2.6rem 1.3rem"
-      }}>
-        {header}
-        {children()}
+      <div>
+        <div className="header">
+          <a href="/">
+            <img src={profilePic2} alt={`Jón Rúnar Helgason`} />
+          </a>
+
+          <a href="/" className="profileName">Jón Rúnar Helgason</a>
+
+          <SocialIcons />
+        </div>
+
+        <div className="container">
+          <nav>
+            <ul>
+              <li><Link to="/about">About Me</Link></li>
+              <li><Link to="/blog">Blog</Link></li>
+              <li><Link to="/dashboard-consulting">Dashboard Consulting</Link></li>
+            </ul>
+          </nav>
+
+          {children()}
+        </div>
       </div>
     );
   }
