@@ -1,9 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Link from "gatsby-link";
-import get from "lodash/get";
 import Helmet from "react-helmet";
-import { rhythm, scale } from "../utils/typography";
 
 import Bio from "../components/Bio";
 
@@ -204,7 +201,7 @@ export default class Consulting extends React.Component {
           Tap into my dashboard expertise and let's make an awesome dashboard together. If you think I would be a great fit to help you bring added value to your customers, I'd love to hear from you. Please don't hesitate to get in touch at <a href="mailto:hi@jonrh.is">hi@jonrh.is</a>
         </p>
 
-        <hr style={{marginBottom: rhythm(1)}}/>
+        <hr style={{marginBottom: "2em"}}/>
         <Bio />
       </div>
     );

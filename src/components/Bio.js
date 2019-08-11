@@ -5,14 +5,13 @@ import "typeface-montserrat";
 import "typeface-merriweather";
 
 import profilePic from "../images/profile-pic-2017.png";
-import { rhythm } from "../utils/typography";
 
 class Bio extends React.Component {
   render() {
     return (
       <div
         style={{
-          marginBottom: rhythm(1),
+          marginBottom: "1em",
         }}
       >
         <img
@@ -20,10 +19,10 @@ class Bio extends React.Component {
           alt={`Jón Rúnar Helgason`}
           style={{
             float: "left",
-            marginRight: rhythm(1 / 2),
+            marginRight: "1em",
             marginBottom: 0,
-            width: rhythm(2.2),
-            height: rhythm(2.2),
+            width: "4em",
+            height: "4em",
           }}
         />
 

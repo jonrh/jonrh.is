@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import Link from "gatsby-link";
 
-import { rhythm, scale } from "../utils/typography";
 import profilePic2 from "../images/profile-pic-2017-with-colours.png";
 
 // The Prism theme used to highlight source code in the blog
@@ -59,7 +58,7 @@ export default class Template extends React.Component {
         <div className="container">
           <nav>
             <ul>
-              <li><Link to="/about">About Me</Link></li>
+              <li><Link to="/about">About</Link></li>
               <li><Link to="/blog">Blog</Link></li>
               <li><Link to="/dashboard-consulting">Dashboard Consulting</Link></li>
             </ul>

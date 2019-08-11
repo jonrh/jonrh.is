@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import Link from "gatsby-link";
 import Helmet from "react-helmet";
-import { rhythm, scale } from "../utils/typography";
 import moment from "moment";
 
 import Bio from "../components/Bio";
@@ -31,8 +30,8 @@ export default class About extends React.Component {
   render() {
     return (
       <div>
-        <Helmet title={"jonrh - About Me"} />
-        <h1>About Me</h1>
+        <Helmet title={"jonrh - About"} />
+        <h1>About</h1>
 
         <p><strong>Hello! My name is Jón Rúnar Helgason</strong>:</p>
         <ul>
@@ -83,7 +82,7 @@ export default class About extends React.Component {
 
         <p>No longer available on Twitter nor Facebook products.</p>
 
-        <hr style={{marginBottom: rhythm(1)}}/>
+        <hr style={{marginBottom: "2em"}}/>
         <Bio />
       </div>
     );
