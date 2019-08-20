@@ -39,9 +39,6 @@ draft: false
 + **Gaming**: Nintendo [Switch][switch] & [Pro Controller][procontroller]
 + Fountain pen & notebook
 
-<!-- MAYBE-PICTURE-OF-CHARING-MOUSE-&-HEADPHONES -->
-![My desk and chair](./desk_front.jpg)
-
 ## Software
 
 + **Development**: [WebStorm](https://www.jetbrains.com/webstorm/), [PyCharm](https://www.jetbrains.com/pycharm/), [DataGrip](https://www.jetbrains.com/datagrip/), [Xcode](https://developer.apple.com/xcode/), [Android Studio](https://developer.android.com/studio/), [Sublime Text](https://www.sublimetext.com)
@@ -53,7 +50,7 @@ draft: false
 + **Productivity**: [Qbserve](https://qotoqot.com/qbserve/), [Timing](https://timingapp.com)
 + **Terminal**: [iTerm](https://iterm2.com)
 
-
+![My desk and chair](./desk_front.jpg)
 ![My desk and chair](./desk_side.jpg)
 
 
