@@ -60,7 +60,8 @@ export default class Template extends React.Component {
             <ul>
               <li><Link to="/about">About</Link></li>
               <li><Link to="/blog">Blog</Link></li>
-              <li><Link to="/dashboard-consulting">Dashboard Consulting</Link></li>
+              {/*<li><Link to="/dashboard-consulting">Dashboard Consulting</Link></li>*/}
+              <li><Link to="/portfolio">Portfolio</Link></li>
             </ul>
           </nav>
 
