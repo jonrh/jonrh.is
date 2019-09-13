@@ -5,9 +5,11 @@ import Helmet from "react-helmet";
 import Bio from "../components/Bio";
 
 /** Images */
-import as_dashboard_framed from "./../images/consulting/activitystream_dashboard_framed.png";
 import timavera_dashboard from "./../images/consulting/timavera_dashboard.png";
 import timavera_app from "./../images/consulting/timavera_app.png";
+import malco_dark from "./../images/malco_dark.png";
+import jonogmarteinn_dark from "./../images/jonogmarteinn_dark.png";
+import as_dashboard_framed from "./../images/consulting/activitystream_dashboard_framed.png";
 import bd_dashboard from "./../images/consulting/bd_dashboard.png";
 import bd_distribution from "./../images/consulting/bd_distribution.png";
 import bd_fcr from "./../images/consulting/bd_fcr.png";
@@ -38,6 +40,7 @@ export default class Portfolio extends React.Component {
         </p>
         <ul>
           <li><a href="#timavera">Tímavera</a></li>
+          <li><a href="#websitesemail">Websites & Email for Contractors</a></li>
           <li><a href="#activitystream">Activity Stream</a></li>
           <li><a href="#bd-monitor">Vaki: mobile dashboard app</a></li>
           <li><a href="#biomass-daily">Vaki: web dashboard</a></li>
@@ -54,6 +57,17 @@ export default class Portfolio extends React.Component {
         </p>
         <img src={timavera_app} alt="Tímavera timeclock mobile app" />
         <img src={timavera_dashboard} alt="Web dashboard for Tímavera time tracking" />
+
+        <h2 id="websitesemail"><a href="#websitesemail">#</a>Websites & Email for Contractors</h2>
+        <p>2018 - Current</p>
+        <p>
+          Digital presence for contractors. Company branded email using leading providers such as
+          Fastmail and Gmail. Websites showcasing area of expertise, past projects or simple
+          contact pages. <a href="https://malco.is">malco.is</a> & {" "}
+          <a href="https://jonogmarteinn.is">jonogmarteinn.is</a>.
+        </p>
+        <img src={malco_dark} alt="UI Design of Activity Stream dashboard" />
+        <img src={jonogmarteinn_dark} alt="UI Design of Activity Stream dashboard" />
 
         <h2 id="activitystream"><a href="#activitystream">#</a>Activity Stream</h2>
         <p>2017 - 2018</p>
