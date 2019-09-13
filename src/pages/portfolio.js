@@ -66,8 +66,8 @@ export default class Portfolio extends React.Component {
           contact pages. <a href="https://malco.is">malco.is</a> & {" "}
           <a href="https://jonogmarteinn.is">jonogmarteinn.is</a>.
         </p>
-        <img src={malco_dark} alt="UI Design of Activity Stream dashboard" />
-        <img src={jonogmarteinn_dark} alt="UI Design of Activity Stream dashboard" />
+        <img src={malco_dark} alt="Screenshot from malco.is, a simple site with contact details" />
+        <img src={jonogmarteinn_dark} alt="Screenshot from jonogmarteinn.is" />
 
         <h2 id="activitystream"><a href="#activitystream">#</a>Activity Stream</h2>
         <p>2017 - 2018</p>
