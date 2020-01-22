@@ -5,7 +5,6 @@ import Helmet from "react-helmet";
 import moment from "moment";
 
 import Bio from "../components/Bio";
-import profilePic from "../images/profile-pic-2017.png";
 
 export default class About extends React.Component {
   /**
@@ -44,8 +43,8 @@ export default class About extends React.Component {
         <p><strong>Recent work</strong>:</p>
         <ul>
           <li><a href="https://timavera.is">Tímavera</a>: Time tracking for contractors SaaS. <a href="https://itunes.apple.com/us/app/klukkinn/id1309092162">iOS</a> & <a href="https://play.google.com/store/apps/details?id=is.klukkinn.app">Android</a> apps.</li>
-          <li><Link to="/dashboard-consulting#bd-monitor">BD Monitor</Link>: mobile dashboard app, <a href="https://appsto.re/us/CHXChb.i">iOS</a> & <a href="https://play.google.com/store/apps/details?id=is.vaki.bdhm">Android</a>.</li>
-          <li><Link to="/dashboard-consulting#biomass-daily">Biomass Daily</Link> web dashboard for <a href="http://vaki.is/">Vaki</a>.</li>
+          <li><Link to="/portfolio#bd-monitor">BD Monitor</Link>: mobile dashboard app, <a href="https://appsto.re/us/CHXChb.i">iOS</a> & <a href="https://play.google.com/store/apps/details?id=is.vaki.bdhm">Android</a>.</li>
+          <li><Link to="/portfolio#biomass-daily">Biomass Daily</Link> web dashboard for <a href="http://vakiiceland.is/">Vaki</a>.</li>
         </ul>
 
         <p><strong>Background</strong>:</p>
@@ -76,8 +75,6 @@ export default class About extends React.Component {
           <li>Email: <a href="mailto:hi@jonrh.is">hi@jonrh.is</a></li>
           <li>GitHub: <a href="https://github.com/jonrh">jonrh</a></li>
           <li>LinkedIn: <a href="https://linkedin.com/in/jonrh/">https://linkedin.com/in/jonrh/</a></li>
-          {/* For now hide Mastodon, I'm not really using it any more */}
-          {/*<li>Mastodon: <a href="https://mastodon.social/@jonrh">jonrh</a></li>*/}
           <li>IRC, Freenode: jonrh</li>
         </ul>
 

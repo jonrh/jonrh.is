@@ -17,8 +17,8 @@ export default class BlogIndex extends React.Component {
         </p>
 
         <p>
-          I'm a co-founder of the micro SaaS <a href="https://timavera.is">Tímavera</a>, a simple
-          time tracking solution for tradesmen.
+          I'm a co-founder of the micro SaaS <a href="https://timavera.is">Tímavera</a>, a
+          deliberately simple time tracking solution for contractors.
         </p>
       </div>
     );

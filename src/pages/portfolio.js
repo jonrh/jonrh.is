@@ -33,7 +33,7 @@ export default class Portfolio extends React.Component {
 
         <h1>Portfolio</h1>
         <p>
-          Over the years I’ve specialised in designing and constructing front end applications,
+          Over the years I’ve specialised in designing and constructing frontend applications,
           that is websites and mobile apps for iPhone and Android. More specifically the type of
           apps that I’ve specialised in are bespoke dashboards that add insights and convenience
           for the customers & employees of a company.
@@ -50,44 +50,55 @@ export default class Portfolio extends React.Component {
         <h2 id="timavera"><a href="#previous-work">#</a>Tímavera</h2>
         <p>2017 - Current</p>
         <p>
-          Time tracking for tradesmen. Designed for small companies with simple needs: track
-          projects, hours & locations. Frontend engineering, devops & daily operations. Made the
-          iOS & Android apps with JavaScript and React Native. Website with React. Set up
-          continuous deployments with CircleCI & Docker.
+          Time tracking for contractors. Designed for small companies with simple needs: track
+          projects, hours & locations. Frontend engineering, devops, customer support and daily
+          operations. Made the iOS & Android apps with JavaScript and React Native. Website with
+          React. Set up continuous deployments with CircleCI & Docker. {" "}
+          <a href="https://timavera.com">timavera.com</a>
         </p>
+
         <img src={timavera_app} alt="Tímavera timeclock mobile app" />
         <img src={timavera_dashboard} alt="Web dashboard for Tímavera time tracking" />
 
-        <h2 id="websitesemail"><a href="#websitesemail">#</a>Websites & Email for Contractors</h2>
+        <h2 id="websitesemail"><a href="#websitesemail">#</a>Branded Websites & Email</h2>
         <p>2018 - Current</p>
         <p>
-          Digital presence for contractors. Company branded email using leading providers such as
-          Fastmail and Gmail. Websites showcasing area of expertise, past projects or simple
-          contact pages. <a href="https://malco.is">malco.is</a> & {" "}
-          <a href="https://jonogmarteinn.is">jonogmarteinn.is</a>.
+          Digital presence for individuals and companies. Branded email using leading providers
+          such as Fastmail and Gmail. Websites showcasing area of expertise, past projects or simple
+          contact pages.
         </p>
-        <img src={malco_dark} alt="Screenshot from malco.is, a simple site with contact details" />
+
+        <p>
+          <ul>
+            <li><a href="https://jonogmarteinn.is">jonogmarteinn.is</a></li>
+            <li><a href="https://malco.is">malco.is</a></li>
+            <li><a href="https://sonjajayz.com">sonjajayz.com</a> work in progress</li>
+          </ul>
+        </p>
+
         <img src={jonogmarteinn_dark} alt="Screenshot from jonogmarteinn.is" />
+        <img src={malco_dark} alt="Screenshot from malco.is, a simple site with contact details" />
 
         <h2 id="activitystream"><a href="#activitystream">#</a>Activity Stream</h2>
         <p>2017 - 2018</p>
         <p>
           Operations intelligence for Live Entertainment & Sports. Iceland’s Startup of the Year in
           2017 and AI/ML Startup of the Year in 2018. Created and maintained dashboards and
-          visualisations for the AI engine. JavaScript, TypeScript & Mithril. Remote contractor.
+          visualisations for the AI engine. JavaScript, TypeScript & Mithril. Remote contractor. {" "}
+          <a href="https://www.activitystream.com/">activitystream.com</a>
         </p>
         <img src={as_dashboard_framed} alt="UI Design of Activity Stream dashboard" />
 
         <h2 id="vaki"><a href="#vaki">#</a>Vaki</h2>
         <p>
-          Vaki Aquaculture Systems Ltd. (acquired by Pentair AES) is the industry leader in fish
-          counting and size estimation of live fish. Vaki offers a variety of solutions but the one
-          I worked on was the{" "}
-          <a href="https://pentairaes.com/products/stock-control-management/vaki">Biomass Daily system</a>.
+          Vaki Aquaculture Systems Ltd. is the industry leader in fish counting and size estimation
+          of live fish. Vaki offers a variety of solutions but the one I worked on was the{" "}
+          <a href="https://vakiiceland.is/biomass-daily/">Biomass Daily system</a>.
           The gist of it is this: you are a company that operates fish farms. On each farm there are
           multiple sea cages with salmon. You rent hardware frames from Vaki and lower them into
-          the sea cages. As the salmon swim through the frames their weight is estimated. This
-          data is then aggregated and analysed in various dashboards.
+          the sea cages. As the salmon swim through the frames their weight is measured. This data
+          is then aggregated and analysed in various dashboards. {" "}
+          <a href="https://vakiiceland.is/">vakiiceland.is</a>
         </p>
         <img src={bd_frames_and_fish} alt="Biomass Daily frames" />
 
@@ -97,7 +108,8 @@ export default class Portfolio extends React.Component {
           This project was about creating an auxiliary mobile app to monitor the status of the
           hardware frames that run 24/7 capturing size estimations. Before this app, users would
           check the current hardware status on a PC. With an app the process became more convenient 
-          for the site managers, who are often on the move.
+          for the site managers, who are often on the move. Product development from sketches all
+          the way to a finished mobile app.
         </p>
         <p>
           The app was written in JavaScript ES2015 and React Native.

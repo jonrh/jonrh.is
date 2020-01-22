@@ -1,7 +1,7 @@
 ---
-title: 2019 Setup
+title: My Remote Setup in 2019
 date: "2019-08-18T19:00:00Z"
-path: "/2019-setup/"
+path: "/my-remote-setup-in-2019/"
 draft: false
 ---
 
@@ -18,7 +18,7 @@ draft: false
 + **Wireless mouse**: [Logitech G903][mouse]
 + **Headphones**: [Bose QC35][headphones]
 + **Chair**: [Hermann Miller Aeron][chair]
-+ **Desk**: [Västanby][desk] Ikea dining table
++ **Desk**: [Västanby][desk]
 + **2FA**: [Yubikey][2fa]
 
 <!--
@@ -41,16 +41,21 @@ draft: false
 
 ## Software
 
-+ **Development**: [WebStorm](https://www.jetbrains.com/webstorm/), [PyCharm](https://www.jetbrains.com/pycharm/), [DataGrip](https://www.jetbrains.com/datagrip/), [Xcode](https://developer.apple.com/xcode/), [Android Studio](https://developer.android.com/studio/), [Sublime Text](https://www.sublimetext.com)
-+ **Browsers**: [Firefox](https://www.mozilla.org/firefox/) (primary), [Chrome](https://www.google.com/chrome/) (development), [Safari](https://www.apple.com/safari/) (backup)
-+ **Chat**: [Slack](https://slack.com) (work), [Signal](https://www.signal.org), [Telegram](https://telegram.org)
-+ **VPN**: [IVPN](https://www.ivpn.net)
-+ **Email**: [Fastmail](https://www.fastmail.com)
-+ **Task managment**: [Todoist](https://todoist.com)
++ **Development IDEs**: [WebStorm](https://www.jetbrains.com/webstorm/), [PyCharm](https://www.jetbrains.com/pycharm/), [DataGrip](https://www.jetbrains.com/datagrip/), [Xcode](https://developer.apple.com/xcode/), [Android Studio](https://developer.android.com/studio/)
++ **Text editors**: [MacDown](https://github.com/MacDownApp/macdown) (markdown), [Sublime Text](https://www.sublimetext.com) (general)
++ **Task managment**: [Asana](https://asana.com/) (work), [Todoist](https://todoist.com) (personal)
++ **Chat**: [Slack](https://slack.com) (work), [Signal](https://www.signal.org) & [Telegram](https://telegram.org) (personal)
 + **Productivity**: [Qbserve](https://qotoqot.com/qbserve/), [Timing](https://timingapp.com)
++ **Notes**: [Notes](https://en.wikipedia.org/wiki/Notes_(Apple)) on macOS & iOS
++ **Version control**: [GitKraken](https://www.gitkraken.com/)
++ **Browsers**: [Chrome](https://www.google.com/chrome/) & [Safari](https://www.apple.com/safari/)
++ **Time tracking**: [Tímavera](https://timavera.com/)
 + **Terminal**: [iTerm](https://iterm2.com)
++ **Email**: [Fastmail](https://www.fastmail.com)
++ **VPN**: [IVPN](https://www.ivpn.net)
 
 ![My desk and chair](./desk_front.jpg)
+
 ![My desk and chair](./desk_side.jpg)
 
 
