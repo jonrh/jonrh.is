@@ -20,7 +20,7 @@ The website is formatted with [Prettier](https://github.com/prettier/prettier) w
 ```
 
 ## Deployments
-The site is automatically deployed with CircleCI, see the file [`.circleci/config.yml`](./.circleci/config.yml). There are two automatic deployments. When commits are pushed to the `master` branch [jonrh.is](https://jonrh.is) is automatically updated. When the `dev` branch is pushed it will update [dev.jonrh.is](https://dev.jonrh.is). Furthermore when deployments are done on dev.jonrh.is an extra `robots.txt` file is added to signal to search engines that dev.jonrh.is should not be indexed.
+The site is automatically deployed with CircleCI, see the file [`.circleci/config.yml`](./.circleci/config.yml). There are two automatic deployments. When commits are pushed to the `master` branch [jonrh.is](https://jonrh.is) is automatically updated. When the `dev` branch is pushed it will update [dev.jonrh.is](https://dev.jonrh.is).
 
 ## Develop
 While developing locally run the following command:
