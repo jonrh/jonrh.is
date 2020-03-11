@@ -1,7 +1,5 @@
 # Javascript Node CircleCI 2.0 configuration file
-#
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
-#
 version: 2
 
 jobs:
@@ -13,23 +11,20 @@ jobs:
       - checkout
 
       - run:
-          name: Install awscli, doesn't come by default with the node:8.1.4 image
-          # Python 2.7 comes by default with the Ubuntu container CircleCI uses.
-          # However it doesn't comes with python-dev which is required for installing pip. If not
-          # installed there will be an error when installing some package called "wheel". The
-          # next two commands fetches the pip install script and installs pip. After installing
-          # pip we add pip to the path (so we can subsequently use the command "pip"). This is
-          # required because awscli has other dependencies which requires the existence of pip on
-          # the path. Finally we install awscli.
+          name: Install AWS command line interface to be able to deploy to S3 and CloudFront later
+          # Installs the AWS command line interface v2 so we can deploy our frontend assets to S3
+          # and invalidate the CloudFront cache in later steps. Another option to do this would be
+          # to use the circleci/aws-cli orb but at the time of writing it can only install AWS cli
+          # v1. There are no API differences but v1 requires Python and a bunch of other stuff
+          # whereas AWS cli v2 is a self contained binary (faster and simpler to set up).
           #
-          # It should be noted this is a pretty ugly hack to get awscli in a Node container. In
-          # CircleCI v1 the images came by default with awscli, so this mess wasn't required.
+          # https://circleci.com/docs/2.0/using-orbs/
+          # https://circleci.com/orbs/registry/orb/circleci/aws-cli
+          # https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-linux.html
           command: |
-              sudo apt-get install python-dev
-              curl -O https://bootstrap.pypa.io/get-pip.py
-              python get-pip.py --user
-              export PATH=~/.local/bin:$PATH
-              pip install awscli --upgrade --user
+            curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+            unzip awscliv2.zip
+            sudo ./aws/install
 
       - run:
           name: Install Node dependencies with Yarn
@@ -47,14 +42,17 @@ jobs:
           # jonrh.is bucket on AWS S3. The --delete flag means we delete files in the S3 buckets if
           # they don't exist in the public/ folder.
           #
-          # Apparently each CircleCI step is run in a separate terminal session. That means that
-          # the command aws that we put on the path in the awscli installation step is not on the
-          # path. As a workaround I just call it directly from its full location: ~/.local/bin/aws
-          #
           # After each S3 bucket has been updated with the new content we invalidate the CloudFront
           # distributions (the thing that caches the static assets all over the world).
           # $CLOUDFRONTDEVJONRHISDISTID and $CLOUDFRONTJONRHISDISTID are environment variables
           # defined at circleci.com.
+          #
+          # The environment variable AWS_PAGER defined before the CloudFront commands is a
+          # temporary fix for a bug in AWS cli v2. At the time of writing AWS cli v2 requires a
+          # pager program, by default the command `less`. And lucky for us `less` is not available
+          # in the CircleCI containers we run in. The good news is we can configure AWS cli to not
+          # use any pager (the empty string "") and instead just print the entire output of results
+          # out. For this case it's completely fine. See: https://github.com/aws/aws-cli/issues/5038
           command: |
             if [ "${CIRCLE_BRANCH}" == "dev" ]; then
                 # If we are deploying to the dev branch add a robots.txt file to the public foler.
@@ -65,11 +63,15 @@ jobs:
                 echo 'User-agent: *
             Disallow: /' > public/robots.txt
 
-                ~/.local/bin/aws s3 sync public/ s3://dev.jonrh.is/ --delete
-                ~/.local/bin/aws cloudfront create-invalidation --distribution-id $CLOUDFRONTDEVJONRHISDISTID --paths '/*'
+                aws s3 sync public/ s3://dev.jonrh.is/ --delete
+                AWS_PAGER="" aws cloudfront create-invalidation \
+                  --distribution-id $CLOUDFRONTDEVJONRHISDISTID \
+                  --paths '/*'
             elif [ "${CIRCLE_BRANCH}" == "master" ]; then
-                ~/.local/bin/aws s3 sync public/ s3://jonrh.is/ --delete
-                ~/.local/bin/aws cloudfront create-invalidation --distribution-id $CLOUDFRONTJONRHISDISTID --paths '/*'
+                aws s3 sync public/ s3://jonrh.is/ --delete
+                AWS_PAGER="" aws cloudfront create-invalidation \
+                  --distribution-id $CLOUDFRONTJONRHISDISTID \
+                  --paths '/*'
             else
                 echo "Not dev or master branch so not deploying"
             fi
