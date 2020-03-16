@@ -34,10 +34,10 @@ export default class About extends React.Component {
 
         <p><strong>Hello! My name is Jón Rúnar Helgason</strong>:</p>
         <ul>
-          <li>I help companies deliver streamlined and robust websites & apps.</li>
+          <li>I help contractors track time so they can be awesome at their trade.</li>
           <li>Frontend Software Engineer & Independent Dashboard Consultant.</li>
-          <li>Available for remote hire, React and or React Native mobile development.</li>
           <li>Icelander working remotely from Galway, Ireland.</li>
+          <li>Not available for new opportunities at this time.</li>
         </ul>
 
         <p><strong>Recent work</strong>:</p>
