@@ -26,7 +26,7 @@ export default class BlogIndex extends React.Component {
       <Layout>
         <Helmet title="jonrh" />
 
-        <h1>Hi, I'm Jón Rúnar 👋</h1>
+        <h1>Hi, I'm Jón Rúnar <span role="img" aria-label="waving hand">👋</span></h1>
 
         <p>
           I am a co-founder <a href="https://timavera.com">Tímavera</a>, a time tracking app that
@@ -34,8 +34,10 @@ export default class BlogIndex extends React.Component {
         </p>
 
         <p>
-          From Iceland 🇮🇸 but been living and working remotely from Galway in Ireland 🇮🇪 for
-          the past {this.getYearsLivedInIreland()}.
+          From Iceland <span role="img" aria-label="Irish flag">🇮🇸</span> but been living and
+          working remotely from Galway in Ireland{" "}
+          <span role="img" aria-label="Irish flag">🇮🇪</span>{" "}
+          for the past {this.getYearsLivedInIreland()}.
         </p>
 
         <p>
