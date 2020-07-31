@@ -4,6 +4,7 @@ import Link from "gatsby-link";
 import Helmet from "react-helmet";
 import moment from "moment";
 
+import Layout from "./../layouts/";
 import Bio from "../components/Bio";
 
 export default class About extends React.Component {
@@ -28,7 +29,7 @@ export default class About extends React.Component {
 
   render() {
     return (
-      <div>
+      <Layout>
         <Helmet title={"jonrh - About"} />
         <h1>About</h1>
 
@@ -80,7 +81,7 @@ export default class About extends React.Component {
 
         <hr style={{marginBottom: "2em"}}/>
         <Bio />
-      </div>
+      </Layout>
     );
   }
 }

@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 
+import Layout from "./../layouts/";
 import Bio from "../components/Bio";
 
 /** Images */
@@ -28,7 +29,7 @@ import mockup from "./../images/consulting/mockup.png";
 export default class Portfolio extends React.Component {
   render() {
     return (
-      <div>
+      <Layout>
         <Helmet title={"jonrh - Portfolio"} />
 
         <h1>Portfolio</h1>
@@ -194,7 +195,7 @@ export default class Portfolio extends React.Component {
 
         <hr style={{marginBottom: "2em"}}/>
         <Bio />
-      </div>
+      </Layout>
     );
   }
 }
@@ -202,13 +203,3 @@ export default class Portfolio extends React.Component {
 Portfolio.propTypes = {
   route: PropTypes.object,
 };
-
-export const pageQuery = graphql`
-query PortfolioQuery {
-  site {
-    siteMetadata {
-      title
-    }
-  }
-}
-`;

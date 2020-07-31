@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 
 import Bio from "../components/Bio";
+import Layout from "./../layouts/";
 
 /** Images */
 import bd_dashboard from "./../images/consulting/bd_dashboard.png";
@@ -23,8 +24,8 @@ import mockup from "./../images/consulting/mockup.png";
 export default class Consulting extends React.Component {
   render() {
     return (
-      <div>
-        <Helmet title={"jonrh - Dashboard Consulting"} />
+      <Layout>
+        <Helmet title="jonrh - Dashboard Consulting" />
         <h1>Dashboard Consulting</h1>
 
         <p style={{textDecoration: "underline"}}>
@@ -203,7 +204,7 @@ export default class Consulting extends React.Component {
 
         <hr style={{marginBottom: "2em"}}/>
         <Bio />
-      </div>
+      </Layout>
     );
   }
 }
@@ -211,13 +212,3 @@ export default class Consulting extends React.Component {
 Consulting.propTypes = {
   route: PropTypes.object,
 };
-
-export const pageQuery = graphql`
-query ConsultingQuery {
-  site {
-    siteMetadata {
-      title
-    }
-  }
-}
-`;
