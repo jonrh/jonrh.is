@@ -1,19 +1,30 @@
----
-title: Chris Lake mini mix
-date: "2007-04-16T00:00:00Z"
-path: "/chris-lake-mini-mix/"
----
+import React from "react";
 
-Download link: Chris Lake mini mix
+import Layout from "./../../layouts";
 
-## Tracklisting
+const Post = () => {
+  return (
+    <Layout>
+      <h1>Chris Lake mini mix</h1>
+      <p>April 16, 2007</p>
 
-1. Lifelike & Kris Menace – “Discopolis (Chris Lake remix)” – 0:00
-2. Chris Lake – “Release” – 4:10
-3. Stretch & Vern – “Guttersnipe (Chris Lake remix)” – 6:30
-4. Noir – “My MTV (Chris Lake remix)” – 8:30
-5. Robbie Williams ft. Pet Shop Boys – “She’s Madonna (Chris Lake remix)” – 12:30
-6. Rene Amesz – “Fragile (Chris Lake remix)” – 14:10
-7. Sebastien Leger & Chris Lake – “Aqualight” – 17:30
-8. Ramsay (aka Chris Lake) – “Shake That Thing” – 19:30
-9. Chris Lake ft. Laura V – “Changes (Dirty South remix)” – 23:30
+      <div>
+        <p>Download link: Chris Lake mini mix</p>
+        <h2>Tracklisting</h2>
+        <ol>
+          <li>Lifelike & Kris Menace – “Discopolis (Chris Lake remix)” – 0:00</li>
+          <li>Chris Lake – “Release” – 4:10</li>
+          <li>Stretch & Vern – “Guttersnipe (Chris Lake remix)” – 6:30</li>
+          <li>Noir – “My MTV (Chris Lake remix)” – 8:30</li>
+          <li>Robbie Williams ft. Pet Shop Boys – “She’s Madonna (Chris Lake remix)” – 12:30</li>
+          <li>Rene Amesz – “Fragile (Chris Lake remix)” – 14:10</li>
+          <li>Sebastien Leger & Chris Lake – “Aqualight” – 17:30</li>
+          <li>Ramsay (aka Chris Lake) – “Shake That Thing” – 19:30</li>
+          <li>Chris Lake ft. Laura V – “Changes (Dirty South remix)” – 23:30</li>
+        </ol>
+      </div>
+    </Layout>
+  );
+};
+
+export default Post;

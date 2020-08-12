@@ -1,32 +1,41 @@
----
-title: 20June 2009 mix
-date: "2009-06-21T00:00:00Z"
-path: "/20june-2009-mix/"
----
+import React from "react";
+import Layout from "./../../layouts";
 
-Download link: 20June 2009 mix
+const Post = () => {
+  return (
+    <Layout>
+      <h1>20June 2009 mix</h1>
+      <p>June 21, 2009</p>
 
-## Tracklisting
+      <div>
+        <p>Download link: 20June 2009 mix</p>
+        <h2>Tracklisting</h2>
+        <ol>
+          <li>Joris Voorn – “Incident” – 0:00</li>
+          <li>Valentino Kanzyani – “Paradox (Hertz remix)” – 2:16</li>
+          <li>Anton-X – “Lowis (Marko Nastic remix)” – 3:40</li>
+          <li>Marko Nastic – “Flojd” – 5:03</li>
+          <li>Marko Nastic – “Shut Up And Dance” – 7:22</li>
+          <li>Marko Nastic – “Shake it” – 9:14</li>
+          <li>The Advent vs. Industrialyzer – “Not Guilty” – 10:58</li>
+          <li>Marko Nastic – “Hit Maniac” – 13:10</li>
+          <li>DJ ESP – “Stick It To The Man” – 14:05</li>
+          <li>Eric Entrena, D-Unity – “Drugs and Stuff” – 16:31</li>
+          <li>Pedro Delgardo – “Alzir On (Marko Nastic remix)” – 17:41</li>
+          <li>Elton D – “Nico (Hertz remix)” – 20:35</li>
+          <li>Elton D – “Marimbondo” – 22:52</li>
+          <li>Hertz – “Lucky 13” – 24:43</li>
+          <li>357, Marko Nastic – “Haussseee” – 27:02</li>
+          <li>Olivier Giacomotto, Alec Marqx – “Split” – 29:06</li>
+          <li>Ignition Technician – “Tale of Lost Love” – 30:57</li>
+          <li>Raul Mezcolanza – “Kenye” – 33:26</li>
+          <li>Valentino Kanzyani – “Metal Cage” – 36:22</li>
+          <li>Green Velvet – “La La Land (Zzino vs Filterheadz remix)” – 39:37</li>
+        </ol>
+        <p><strong>Notes</strong>: 45 min hard techno mixtape, done with Ableton Live 7.</p>
+      </div>
+    </Layout>
+  );
+};
 
-1. Joris Voorn – “Incident” – 0:00
-2. Valentino Kanzyani – “Paradox (Hertz remix)” – 2:16
-3. Anton-X – “Lowis (Marko Nastic remix)” – 3:40
-4. Marko Nastic – “Flojd” – 5:03
-5. Marko Nastic – “Shut Up And Dance” – 7:22
-6. Marko Nastic – “Shake it” – 9:14
-7. The Advent vs. Industrialyzer – “Not Guilty” – 10:58
-8. Marko Nastic – “Hit Maniac” – 13:10
-9. DJ ESP – “Stick It To The Man” – 14:05
-10. Eric Entrena, D-Unity – “Drugs and Stuff” – 16:31
-11. Pedro Delgardo – “Alzir On (Marko Nastic remix)” – 17:41
-12. Elton D – “Nico (Hertz remix)” – 20:35
-13. Elton D – “Marimbondo” – 22:52
-14. Hertz – “Lucky 13” – 24:43
-15. 357, Marko Nastic – “Haussseee” – 27:02
-16. Olivier Giacomotto, Alec Marqx – “Split” – 29:06
-17. Ignition Technician – “Tale of Lost Love” – 30:57
-18. Raul Mezcolanza – “Kenye” – 33:26
-19. Valentino Kanzyani – “Metal Cage” – 36:22
-20. Green Velvet – “La La Land (Zzino vs Filterheadz remix)” – 39:37
-
-**Notes**: 45 min hard techno mixtape, done with Ableton Live 7.
+export default Post;
