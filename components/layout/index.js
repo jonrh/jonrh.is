@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import Link from "gatsby-link";
 
 import profilePic2 from "../images/profile-pic-2017-with-colours.png";
@@ -65,15 +64,9 @@ export default class Template extends React.Component {
             </ul>
           </nav>
 
-          {children()}
+          {children}
         </div>
       </div>
     );
   }
 }
-
-Template.propTypes = {
-  children: PropTypes.func,
-  location: PropTypes.object,
-  route: PropTypes.object,
-};
