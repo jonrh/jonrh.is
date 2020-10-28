@@ -1,35 +1,16 @@
 import React from "react";
-import PropTypes from "prop-types";
-import Helmet from "react-helmet";
+import Head from "next/head";
 
+import Layout from "../components/layout";
 import Bio from "../components/Bio";
-
-/** Images */
-import timavera_dashboard from "./../images/consulting/timavera_dashboard.png";
-import timavera_app from "./../images/consulting/timavera_app.png";
-import malco_dark from "./../images/malco_dark.png";
-import jonogmarteinn_dark from "./../images/jonogmarteinn_dark.png";
-import as_dashboard_framed from "./../images/consulting/activitystream_dashboard_framed.png";
-import bd_dashboard from "./../images/consulting/bd_dashboard.png";
-import bd_distribution from "./../images/consulting/bd_distribution.png";
-import bd_fcr from "./../images/consulting/bd_fcr.png";
-import bd_frames_and_fish from "./../images/consulting/bd_frames_and_fish.png";
-import bd_login from "./../images/consulting/bd_login.png";
-import bd_trendgraph from "./../images/consulting/bd_trendgraph.png";
-import bdmonitor1 from "./../images/consulting/bdmonitor1.png";
-import bdmonitor2 from "./../images/consulting/bdmonitor2.png";
-import bdmonitor3 from "./../images/consulting/bdmonitor3.png";
-import bdmonitor4 from "./../images/consulting/bdmonitor4.png";
-import bdmonitor5 from "./../images/consulting/bdmonitor5.png";
-import ja_combined from "./../images/consulting/ja_combined.png";
-import mockup from "./../images/consulting/mockup.png";
-
 
 export default class Portfolio extends React.Component {
   render() {
     return (
-      <div>
-        <Helmet title={"jonrh - Portfolio"} />
+      <Layout>
+        <Head>
+          <title>jonrh - Portfolio</title>
+        </Head>
 
         <h1>Portfolio</h1>
         <p>
@@ -57,8 +38,8 @@ export default class Portfolio extends React.Component {
           <a href="https://timavera.com">timavera.com</a>
         </p>
 
-        <img src={timavera_app} alt="Tímavera timeclock mobile app" />
-        <img src={timavera_dashboard} alt="Web dashboard for Tímavera time tracking" />
+        <img src="/images/consulting/timavera_app.png" alt="Tímavera timeclock mobile app" />
+        <img src="/images/consulting/timavera_dashboard.png" alt="Web dashboard for Tímavera time tracking" />
 
         <h2 id="websitesemail"><a href="#websitesemail">#</a>Branded Websites & Email</h2>
         <p>2018 - Current</p>
@@ -76,8 +57,8 @@ export default class Portfolio extends React.Component {
           </ul>
         </p>
 
-        <img src={jonogmarteinn_dark} alt="Screenshot from jonogmarteinn.is" />
-        <img src={malco_dark} alt="Screenshot from malco.is, a simple site with contact details" />
+        <img src="/images/jonogmarteinn_dark.png" alt="Screenshot from jonogmarteinn.is" />
+        <img src="/images/malco_dark.png" alt="Screenshot from malco.is, a simple site with contact details" />
 
         <h2 id="activitystream"><a href="#activitystream">#</a>Activity Stream</h2>
         <p>2017 - 2018</p>
@@ -87,7 +68,7 @@ export default class Portfolio extends React.Component {
           visualisations for the AI engine. JavaScript, TypeScript & Mithril. Remote contractor. {" "}
           <a href="https://www.activitystream.com/">activitystream.com</a>
         </p>
-        <img src={as_dashboard_framed} alt="UI Design of Activity Stream dashboard" />
+        <img src="/images/consulting/activitystream_dashboard_framed.png" alt="UI Design of Activity Stream dashboard" />
 
         <h2 id="vaki"><a href="#vaki">#</a>Vaki</h2>
         <p>
@@ -100,7 +81,7 @@ export default class Portfolio extends React.Component {
           is then aggregated and analysed in various dashboards. {" "}
           <a href="https://vakiiceland.is/">vakiiceland.is</a>
         </p>
-        <img src={bd_frames_and_fish} alt="Biomass Daily frames" />
+        <img src="/images/consulting/bd_frames_and_fish.png" alt="Biomass Daily frames" />
 
         <h3 id="bd-monitor"><a href="#bd-monitor">#</a>iPhone App: BD Monitor</h3>
         <p>2016 - 2017</p>
@@ -115,13 +96,13 @@ export default class Portfolio extends React.Component {
           The app was written in JavaScript ES2015 and React Native.
         </p>
 
-        <img src={mockup} alt="Early mockups demonstrating bottom navigation and History view" />
+        <img src="/images/consulting/mockup.png" alt="Early mockups demonstrating bottom navigation and History view" />
 
-        <img src={bdmonitor1} alt="BD Monitor login and home screen" />
-        <img src={bdmonitor2} alt="BD Monitor Summary & Settings" />
-        <img src={bdmonitor3} alt="BD Monitor History" />
-        <img src={bdmonitor4} alt="BD Monitor Utilisation" />
-        <img src={bdmonitor5} alt="BD Monitor sea cage detail view" />
+        <img src="/images/consulting/bdmonitor1.png" alt="BD Monitor login and home screen" />
+        <img src="/images/consulting/bdmonitor2.png" alt="BD Monitor Summary & Settings" />
+        <img src="/images/consulting/bdmonitor3.png" alt="BD Monitor History" />
+        <img src="/images/consulting/bdmonitor4.png" alt="BD Monitor Utilisation" />
+        <img src="/images/consulting/bdmonitor5.png" alt="BD Monitor sea cage detail view" />
 
 
         <h4 id="biomass-daily"><a href="#biomass-daily">#</a>Web Dashboard: biomassdaily.com</h4>
@@ -158,11 +139,11 @@ export default class Portfolio extends React.Component {
           </li>
         </ul>
 
-        <img src={bd_dashboard} alt="Biomass Daily sea cages dashboard" />
-        <img src={bd_trendgraph} alt="Biomass Daily weight trendgraph" />
-        <img src={bd_distribution} alt="Biomass Daily weight distribution" />
-        <img src={bd_fcr} alt="Biomass Daily Feed Conversion Ratio" />
-        <img src={bd_login} alt="Biomass Daily Login" />
+        <img src="/images/consulting/bd_dashboard.png" alt="Biomass Daily sea cages dashboard" />
+        <img src="/images/consulting/bd_trendgraph.png" alt="Biomass Daily weight trendgraph" />
+        <img src="/images/consulting/bd_distribution.png" alt="Biomass Daily weight distribution" />
+        <img src="/images/consulting/bd_fcr.png" alt="Biomass Daily Feed Conversion Ratio" />
+        <img src="/images/consulting/bd_login.png" alt="Biomass Daily Login" />
 
         <h2 id="ja-gadget-widget"><a href="#ja-gadget-widget">#</a>Já.is Gadget & Widget</h2>
         <p>
@@ -177,7 +158,7 @@ export default class Portfolio extends React.Component {
         </p>
 
         <img
-          src={ja_combined}
+          src="/images/consulting/ja_combined.png"
           alt="Screenshot of the Já.is OSX Widget and Windows Gadget"
           style={{
             display: "block",
@@ -194,21 +175,7 @@ export default class Portfolio extends React.Component {
 
         <hr style={{marginBottom: "2em"}}/>
         <Bio />
-      </div>
+      </Layout>
     );
   }
 }
-
-Portfolio.propTypes = {
-  route: PropTypes.object,
-};
-
-export const pageQuery = graphql`
-query PortfolioQuery {
-  site {
-    siteMetadata {
-      title
-    }
-  }
-}
-`;

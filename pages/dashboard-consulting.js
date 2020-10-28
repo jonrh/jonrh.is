@@ -1,30 +1,17 @@
 import React from "react";
-import PropTypes from "prop-types";
-import Helmet from "react-helmet";
+import Head from "next/head";
 
+import Layout from "../components/layout";
 import Bio from "../components/Bio";
-
-/** Images */
-import bd_dashboard from "./../images/consulting/bd_dashboard.png";
-import bd_distribution from "./../images/consulting/bd_distribution.png";
-import bd_fcr from "./../images/consulting/bd_fcr.png";
-import bd_frames_and_fish from "./../images/consulting/bd_frames_and_fish.png";
-import bd_login from "./../images/consulting/bd_login.png";
-import bd_trendgraph from "./../images/consulting/bd_trendgraph.png";
-import bdmonitor1 from "./../images/consulting/bdmonitor1.png";
-import bdmonitor2 from "./../images/consulting/bdmonitor2.png";
-import bdmonitor3 from "./../images/consulting/bdmonitor3.png";
-import bdmonitor4 from "./../images/consulting/bdmonitor4.png";
-import bdmonitor5 from "./../images/consulting/bdmonitor5.png";
-import ja_combined from "./../images/consulting/ja_combined.png";
-import mockup from "./../images/consulting/mockup.png";
-
 
 export default class Consulting extends React.Component {
   render() {
     return (
-      <div>
-        <Helmet title={"jonrh - Dashboard Consulting"} />
+      <Layout>
+        <Head>
+          <title>jonrh - Dashboard Consulting</title>
+        </Head>
+
         <h1>Dashboard Consulting</h1>
 
         <p style={{textDecoration: "underline"}}>
@@ -92,7 +79,7 @@ export default class Consulting extends React.Component {
           the sea cages. As the salmon swim through the frames their weight is estimated. This
           data is then aggregated and analysed in various dashboards.
         </p>
-        <img src={bd_frames_and_fish} alt="Biomass Daily frames" />
+        <img src="/images/consulting/bd_frames_and_fish.png" alt="Biomass Daily frames" />
 
         <h3 id="bd-monitor"><a href="#bd-monitor">#</a>iPhone App: BD Monitor</h3>
         <p>
@@ -101,7 +88,10 @@ export default class Consulting extends React.Component {
           would check the current hardware status on a PC. With an app the process became
           significantly more convenient for the site managers, who are often on the move.
         </p>
-        <img src={mockup} alt="Early mockups demonstrating bottom navigation and History view" />
+        <img
+          src="/images/consulting/mockup.png"
+          alt="Early mockups demonstrating bottom navigation and History view"
+        />
 
         <p>Main features:</p>
 
@@ -130,11 +120,11 @@ export default class Consulting extends React.Component {
           </li>
         </ul>
 
-        <img src={bdmonitor1} alt="BD Monitor login and home screen" />
-        <img src={bdmonitor2} alt="BD Monitor Summary & Settings" />
-        <img src={bdmonitor3} alt="BD Monitor History" />
-        <img src={bdmonitor4} alt="BD Monitor Utilisation" />
-        <img src={bdmonitor5} alt="BD Monitor sea cage detail view" />
+        <img src="/images/consulting/bdmonitor1.png" alt="BD Monitor login and home screen" />
+        <img src="/images/consulting/bdmonitor2.png" alt="BD Monitor Summary & Settings" />
+        <img src="/images/consulting/bdmonitor3.png" alt="BD Monitor History" />
+        <img src="/images/consulting/bdmonitor4.png" alt="BD Monitor Utilisation" />
+        <img src="/images/consulting/bdmonitor5.png" alt="BD Monitor sea cage detail view" />
 
 
         <h4 id="biomass-daily"><a href="#biomass-daily">#</a>Web Dashboard: biomassdaily.com</h4>
@@ -170,11 +160,11 @@ export default class Consulting extends React.Component {
           </li>
         </ul>
 
-        <img src={bd_dashboard} alt="Biomass Daily sea cages dashboard" />
-        <img src={bd_trendgraph} alt="Biomass Daily weight trendgraph" />
-        <img src={bd_distribution} alt="Biomass Daily weight distribution" />
-        <img src={bd_fcr} alt="Biomass Daily Feed Conversion Ratio" />
-        <img src={bd_login} alt="Biomass Daily Login" />
+        <img src="/images/consulting/bd_dashboard.png" alt="Biomass Daily sea cages dashboard" />
+        <img src="/images/consulting/bd_trendgraph.png" alt="Biomass Daily weight trendgraph" />
+        <img src="/images/consulting/bd_distribution.png" alt="Biomass Daily weight distribution" />
+        <img src="/images/consulting/bd_fcr.png" alt="Biomass Daily Feed Conversion Ratio" />
+        <img src="/images/consulting/bd_login.png" alt="Biomass Daily Login" />
 
         <h3 id="ja-gadget-widget"><a href="#ja-gadget-widget">#</a>Já.is Gadget/Widget</h3>
         <p>
@@ -182,7 +172,7 @@ export default class Consulting extends React.Component {
         </p>
 
         <img
-          src={ja_combined}
+          src="/images/consulting/ja_combined.png"
           alt="Screenshot of the Já.is OSX Widget and Windows Gadget"
           style={{
             display: "block",
@@ -203,21 +193,7 @@ export default class Consulting extends React.Component {
 
         <hr style={{marginBottom: "2em"}}/>
         <Bio />
-      </div>
+      </Layout>
     );
   }
 }
-
-Consulting.propTypes = {
-  route: PropTypes.object,
-};
-
-export const pageQuery = graphql`
-query ConsultingQuery {
-  site {
-    siteMetadata {
-      title
-    }
-  }
-}
-`;

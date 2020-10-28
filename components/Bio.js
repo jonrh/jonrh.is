@@ -1,11 +1,5 @@
 import React from "react";
 
-// Import typefaces
-import "typeface-montserrat";
-import "typeface-merriweather";
-
-import profilePic from "../images/profile-pic-2017.png";
-
 class Bio extends React.Component {
   render() {
     return (
@@ -15,7 +9,7 @@ class Bio extends React.Component {
         }}
       >
         <img
-          src={profilePic}
+          src="/images/profile-pic-2017.png"
           alt={`Jón Rúnar Helgason`}
           style={{
             float: "left",

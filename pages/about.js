@@ -1,9 +1,9 @@
 import React from "react";
-import PropTypes from "prop-types";
-import Link from "gatsby-link";
-import Helmet from "react-helmet";
+import Link from "next/link";
+import Head from "next/head";
 import moment from "moment";
 
+import Layout from "../components/layout";
 import Bio from "../components/Bio";
 
 export default class About extends React.Component {
@@ -28,8 +28,11 @@ export default class About extends React.Component {
 
   render() {
     return (
-      <div>
-        <Helmet title={"jonrh - About"} />
+      <Layout>
+        <Head>
+          <title>jonrh - About</title>
+        </Head>
+
         <h1>About</h1>
 
         <p><strong>Hello! My name is Jón Rúnar Helgason</strong>:</p>
@@ -43,8 +46,8 @@ export default class About extends React.Component {
         <p><strong>Recent work</strong>:</p>
         <ul>
           <li><a href="https://timavera.is">Tímavera</a>: Time tracking for contractors SaaS. <a href="https://itunes.apple.com/us/app/klukkinn/id1309092162">iOS</a> & <a href="https://play.google.com/store/apps/details?id=is.klukkinn.app">Android</a> apps.</li>
-          <li><Link to="/portfolio#bd-monitor">BD Monitor</Link>: mobile dashboard app, <a href="https://appsto.re/us/CHXChb.i">iOS</a> & <a href="https://play.google.com/store/apps/details?id=is.vaki.bdhm">Android</a>.</li>
-          <li><Link to="/portfolio#biomass-daily">Biomass Daily</Link> web dashboard for <a href="http://vakiiceland.is/">Vaki</a>.</li>
+          <li><Link href="/portfolio#bd-monitor">BD Monitor</Link>: mobile dashboard app, <a href="https://appsto.re/us/CHXChb.i">iOS</a> & <a href="https://play.google.com/store/apps/details?id=is.vaki.bdhm">Android</a>.</li>
+          <li><Link href="/portfolio#biomass-daily">Biomass Daily</Link> web dashboard for <a href="http://vakiiceland.is/">Vaki</a>.</li>
         </ul>
 
         <p><strong>Background</strong>:</p>
@@ -80,11 +83,7 @@ export default class About extends React.Component {
 
         <hr style={{marginBottom: "2em"}}/>
         <Bio />
-      </div>
+      </Layout>
     );
   }
 }
-
-About.propTypes = {
-    route: PropTypes.object,
-};

@@ -1,24 +1,15 @@
 import React from "react";
-import Link from "gatsby-link";
+import Link from "next/link";
+import Head from "next/head";
 
-import profilePic2 from "../images/profile-pic-2017-with-colours.png";
+// Import typefaces
+import "typeface-montserrat";
+import "typeface-merriweather";
 
-// The Prism theme used to highlight source code in the blog
-// Todo: Figure out a better way to load the prism-solarized theme. I manually copied the CSS file
-// from the node_modules folder and into the project CSS folder. That's probably not ideal but not
-// the worst. I did that because it was causing an error in the Chrome developer console. I took
-// a screenshot of it at 2017.07.11 22:10
-//require('prismjs/themes/prism-solarizedlight.css');
-require("./../css/prism-solarizedlight.css");
-
-// Font Awesome includes icons. I use it for social media icons. http://fontawesome.io/
-require("./../css/font-awesome.min.css");
-
-// My own manual CSS changes
-require("./../css/jonrh.css");
-
-require("./layoutStyle.css");
-
+// Legacy font theme from the days of GatsbyJS
+import Typography from "typography";
+import Wordpress2016 from "typography-theme-wordpress-2016";
+const typography = new Typography(Wordpress2016);
 
 const SocialIcons = () => {
   return (
@@ -44,9 +35,16 @@ export default class Template extends React.Component {
 
     return (
       <div>
+        <Head>
+          <style id="typography.js" dangerouslySetInnerHTML={{__html: typography.toString()}} />
+        </Head>
+
         <div className="header">
           <a href="/">
-            <img src={profilePic2} alt={`Jón Rúnar Helgason`} />
+            <img
+              src="/images/profile-pic-2017-with-colours.png"
+              alt="Profile of Jón Rúnar Helgason"
+            />
           </a>
 
           <a href="/" className="profileName">Jón Rúnar Helgason</a>
@@ -57,10 +55,9 @@ export default class Template extends React.Component {
         <div className="container">
           <nav>
             <ul>
-              <li><Link to="/about">About</Link></li>
-              <li><Link to="/blog">Blog</Link></li>
-              {/*<li><Link to="/dashboard-consulting">Dashboard Consulting</Link></li>*/}
-              <li><Link to="/portfolio">Portfolio</Link></li>
+              <li><Link href="/about">About</Link></li>
+              <li><Link href="/blog">Blog</Link></li>
+              <li><Link href="/portfolio">Portfolio</Link></li>
             </ul>
           </nav>
 
