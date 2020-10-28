@@ -1,17 +1,10 @@
----
-title: 26″ slim bicycle tire review
-date: "2010-10-01T00:00:00Z"
-path: "/26-slim-bicycle-tire-review/"
----
+import Image from "next/image";
+import Post from "../../components/Post";
 
-<!--
-    Todo: The link to the scott_onzo.jpg image becomes a hashed string. This might be nontrivial
-    to fix. The links below show how it can be done in JavaScript but I'm not sure how it would be
-    done in Markdown.
+<!-- Todo: center images -->
 
-    https://github.com/gatsbyjs/gatsby/blob/1.0/examples/image-processing/src/pages/index.js
-    https://image-processing.gatsbyjs.org/
--->
+<Post title="26″ slim bicycle tire review" date="October 1, 2010">
+
 Two years ago I started cycling on a regular basis and after a while it became evident to me that
 there must have existed better suited tires than the [tractor grooved](./scott_onzo.jpg) ones that I
 had on my mountain bike. My first slim bicycle tires where
@@ -21,24 +14,14 @@ inches in thickness when inflated. I did use them for about 1000km but in the en
 becoming too frequent, or about once every 2 weeks (to put that in perspective I commute 8km per
 day 5 days a week).
 
-![Bontrager Road Warrior 26"x1.5"](./bontrager_road_warrior.png)
+<Image
+  src="/images/26-slim-bicycle-tire-review/bontrager_road_warrior.png"
+  alt='Bontrager Road Warrior 26"x1.5"'
+  width={318}
+  height={395}
+/>
 
-<!--
-<p style="text-align: center;">
-    <a href="./bontrager_road_warrior.png">
-        <img
-            class="alignnone size-thumbnail wp-image-171"
-            title="Bontrager Road Warrior 26&quot;x1.5&quot;"
-            src="./bontrager_road_warrior.png"
-            alt="Bontrager Road Warrior 26&quot;x1.5&quot;"
-            width="150"
-            height="150"
-        />
-    </a>
-</p>
--->
-
-<table style="text-align: left;">
+<table style={{ textAlign: "left" }}>
     <tbody>
         <tr>
             <th>Pros</th>
@@ -76,9 +59,14 @@ on. In retrospect I learned
 and error. As mentioned earlier I’ve once had to change a flat tire on these but that change was
 a lot smoother.
 
-![Continental Ultra Gatorskin 26"x1.25"](./ultra_gatorskin.jpg)
+<Image
+  src="/images/26-slim-bicycle-tire-review/ultra_gatorskin.jpg"
+  alt='Continental Ultra Gatorskin 26"x1.25"'
+  width={470}
+  height={251}
+/>
 
-<table style="text-align: left;">
+<table style={{ textAlign: "left" }}>
     <tbody>
         <tr>
             <th>Pros</th>
@@ -116,3 +104,5 @@ tires are better than Bontrager Road Warrior. Although more expensive I firmly b
 they’ll pay up multiple times in the long run when it comes to mileage. On top of that, if the
 tires will maintain it’s excellent puncture resistance, allot of time and pain will be saved from
 fixing flat tires.
+
+</Post>

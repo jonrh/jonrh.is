@@ -1,8 +1,7 @@
----
-title: Retrospective on React
-date: "2016-03-13T00:00:00Z"
-path: "/retrospective-on-react/"
----
+import Image from "next/image";
+import Post from "../../components/Post";
+
+<Post title="Retrospective on React" date="March 13, 2016">
 
 This is a retrospective and a stack overview (tools used) of a software project I worked on from
 2014 to 2015.
@@ -48,7 +47,12 @@ circumstances. When this post was written I was in a course on Swift programming
 next few weeks I'll create an iOS app for the Biomass Daily system. Had we gone for a traditional
 ASP.Net website that would not have been possible.
 
-![Login for the new Biomass Daily system](./biomassdaily_login.png)
+<Image
+  src="/images/retrospective-on-react/biomassdaily_login.png"
+  alt="Login for the new Biomass Daily system"
+  width={1986}
+  height={1616}
+/>
 
 
 ## JS framework/library selection
@@ -76,7 +80,12 @@ I looked at a lot of frameworks/libs but the ones that stood out in my opinion w
 + [Mithril](https://lhorie.github.io/mithril/)
 + [React](https://facebook.github.io/react/)
 
-![Logos of the JavaScript frameworks I looked at](./js_frameworks.png)
+<Image
+  src="/images/retrospective-on-react/js_frameworks.png"
+  alt="Logos of the JavaScript frameworks I looked at: Angular, Vue, Mithril, React, Reactive.js"
+  width={602}
+  height={122}
+/>
 
 Ultimately we picked React with Vue in 2nd place and Mithril 3rd. The primary appeal of React was
 being able to more easily reuse our filters (components). Additionally we had heard very good
@@ -112,7 +121,12 @@ mere 30 lines of code, 15 of which are comments.
 After that experience I got renewed respect for Webpack. It's an incredibly powerful tool that can
 tackle really complicated builds, but it does require you to understand how it works.
 
-![Trend graph concept before implementation](./concept_trendgraph_simple.png)
+<Image
+  src="/images/retrospective-on-react/concept_trendgraph_simple.png"
+  alt="Trend graph concept before implementation"
+  width={976}
+  height={695}
+/>
 
 
 ### Flux
@@ -132,7 +146,12 @@ size. However towards the end I recall starting to have some difficulties expres
 data flows. I managed to express them so it wasn't a show stopper but I had started to look into
 alternatives to Reflux but never got around to it.
 
-![Trend Graph after implementation](./biomassdaily_trendgraph.png)
+<Image
+  src="/images/retrospective-on-react/biomassdaily_trendgraph.png"
+  alt="Trend Graph after implementation"
+  width={2758}
+  height={1860}
+/>
 
 
 ### Other Libraries
@@ -219,3 +238,5 @@ If 2015 was the year of React, 2016 will be the year of Elm.
 [17]: https://github.com/reactjs/react-router
 [18]: http://elm-lang.org/
 [19]: https://www.youtube.com/watch?v=FV0DXNB94NE
+
+</Post>
