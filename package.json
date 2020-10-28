@@ -1,47 +1,25 @@
 {
   "name": "jonrh.is",
-  "description": "Personal website, statically generated with GatbsyJS",
+  "description": "Personal website, statically generated with Next.js",
   "author": "Jón Rúnar Helgason",
   "version": "1.0.0",
   "license": "MIT",
   "repository": "https://github.com/jonrh/jonrh.is",
   "dependencies": {
-    "gatsby": "1.9.270",
-    "gatsby-link": "1.6.44",
-    "gatsby-plugin-manifest": "1.0.25",
-    "gatsby-plugin-offline": "1.0.18",
-    "gatsby-plugin-preact": "1.0.17",
-    "gatsby-plugin-sharp": "1.6.47",
-    "gatsby-remark-copy-linked-files": "1.5.35",
-    "gatsby-remark-prismjs": "1.2.24",
-    "gatsby-remark-responsive-iframe": "1.4.19",
-    "gatsby-remark-responsive-image": "next",
-    "gatsby-remark-smartypants": "1.4.12",
-    "gatsby-source-filesystem": "1.5.38",
-    "gatsby-transformer-remark": "1.7.42",
-    "gatsby-transformer-sharp": "1.6.26",
-    "lodash": "4.17.15",
+    "@mdx-js/loader": "1.6.19",
+    "@next/mdx": "10.0.0",
     "moment": "2.22.2",
-    "prop-types": "15.6.1",
-    "react-helmet": "5.2.0",
-    "react-typography": "0.16.13",
-    "safe-access": "0.1.0",
+    "next": "10.0.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
     "typeface-merriweather": "0.0.54",
     "typeface-montserrat": "0.0.54",
     "typography": "0.16.17",
-    "typography-theme-wordpress-2016": "0.15.10",
-    "underscore.string": "3.3.4"
-  },
-  "devDependencies": {
-    "gh-pages": "1.2.0"
+    "typography-theme-wordpress-2016": "0.15.10"
   },
   "scripts": {
-    "dev": "gatsby develop",
-    "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "develop": "gatsby develop",
-    "build": "gatsby build",
-    "deploy": "gatsby build --prefix-links && gh-pages -d public",
-    "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   }
 }
