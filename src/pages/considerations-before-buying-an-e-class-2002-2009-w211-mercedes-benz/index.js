@@ -47,7 +47,7 @@ const Post = () => {
 
       <img
         src={benz_meetup}
-        alt="A picture of lined up cars from an Icelandic Mercedes Benz meet up"
+        alt="Cars lined up at an Icelandic Mercedes Benz meet up"
       />
 
       <p>
@@ -62,7 +62,7 @@ const Post = () => {
 
       <img
         src={service_brake}
-        alt='Picture of dashboard in Mercedes W211 displaying the "Service brake Visit workshop!" warning message.'
+        alt='Dashboard in Mercedes W211 displaying the "Service brake Visit workshop!" warning message.'
       />
 
       <p>
