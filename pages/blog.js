@@ -57,22 +57,22 @@ export default class Blog extends React.Component {
           <li><a href="/deadmau5-ghosts-and-stuff-lyrics">Deadmau5 – Ghosts ‘n’ Stuff lyrics</a></li>
         </ul>
 
-        <h2>Old posts</h2>
-        <ul>
-          <li><a href="/16september-2006-mix">16september-2006-mix</a></li>
-          <li><a href="/23september-2006-mix">23september-2006-mix</a></li>
-          <li><a href="/4october-2006-mix">4october-2006-mix</a></li>
-          <li><a href="/7october-2006-mix">7october-2006-mix</a></li>
-          <li><a href="/28october-2006-mix">28october-2006-mix</a></li>
-          <li><a href="/29december-2006-mix">29december-2006-mix</a></li>
-          <li><a href="/28january-2007-mix">28january-2007-mix</a></li>
-          <li><a href="/8april-2007-mix">8april-2007-mix</a></li>
-          <li><a href="/chris-lake-mini-mix">chris-lake-mini-mix</a></li>
-          <li><a href="/6october-2007-mix">6october-2007-mix</a></li>
-          <li><a href="/25february-2008-mix">25february-2008-mix</a></li>
-          <li><a href="/20june-2009-mix">20june-2009-mix</a></li>
-          <li><a href="/how-i-use-beatport-on-a-mac">how-i-use-beatport-on-a-mac</a></li>
-        </ul>
+        {/*<h2>Old posts</h2>*/}
+        {/*<ul>*/}
+        {/*  <li><a href="/16september-2006-mix">16september-2006-mix</a></li>*/}
+        {/*  <li><a href="/23september-2006-mix">23september-2006-mix</a></li>*/}
+        {/*  <li><a href="/4october-2006-mix">4october-2006-mix</a></li>*/}
+        {/*  <li><a href="/7october-2006-mix">7october-2006-mix</a></li>*/}
+        {/*  <li><a href="/28october-2006-mix">28october-2006-mix</a></li>*/}
+        {/*  <li><a href="/29december-2006-mix">29december-2006-mix</a></li>*/}
+        {/*  <li><a href="/28january-2007-mix">28january-2007-mix</a></li>*/}
+        {/*  <li><a href="/8april-2007-mix">8april-2007-mix</a></li>*/}
+        {/*  <li><a href="/chris-lake-mini-mix">chris-lake-mini-mix</a></li>*/}
+        {/*  <li><a href="/6october-2007-mix">6october-2007-mix</a></li>*/}
+        {/*  <li><a href="/25february-2008-mix">25february-2008-mix</a></li>*/}
+        {/*  <li><a href="/20june-2009-mix">20june-2009-mix</a></li>*/}
+        {/*  <li><a href="/how-i-use-beatport-on-a-mac">how-i-use-beatport-on-a-mac</a></li>*/}
+        {/*</ul>*/}
 
         <hr />
         <Bio />
