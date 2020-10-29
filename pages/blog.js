@@ -36,6 +36,7 @@ export default class Blog extends React.Component {
         <h1>Blog</h1>
 
         <ul>
+          <li><a href="/60x60-meditation-challenge">60x60 Meditation challenge</a></li>
           <li><a href="/2019-setup">My Remote Setup in 2019</a></li>
           <li><a href="/react-native-eu-2017-conference">React Native EU 2017 Conference</a></li>
           <li><a href="/back-into-cryptocurrencies">Back into Cryptocurrencies</a></li>
