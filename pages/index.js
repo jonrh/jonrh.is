@@ -8,7 +8,7 @@ const Index = () => {
   return (
     <Layout>
       <Head>
-        <title>jonrh</title>
+        <title>jonrh - Jón Rúnar Helgason</title>
       </Head>
 
       <h1>Hi, I'm Jón Rúnar 👋</h1>
