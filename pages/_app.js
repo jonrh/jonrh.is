@@ -1,7 +1,5 @@
 import React from "react";
 
-// The Prism theme used to highlight source code in the blog
-import "../css/prism-solarizedlight.css";
 import "../css/jonrh.css";
 import "../components/layout/layoutStyle.css";
 
