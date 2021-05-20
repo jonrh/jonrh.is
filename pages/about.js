@@ -4,7 +4,6 @@ import Head from "next/head";
 import moment from "moment";
 
 import Layout from "../components/layout";
-import Bio from "../components/Bio";
 
 /**
  * Returns the duration of my frontend experience. Calculated so I don't have
@@ -66,9 +65,6 @@ const About = () => {
         <li>LinkedIn: <a href="https://linkedin.com/in/jonrh/">https://linkedin.com/in/jonrh/</a></li>
         <li>IRC, Libre.chat: jonrh</li>
       </ul>
-
-      <hr style={{marginBottom: "2em"}}/>
-      <Bio />
     </Layout>
   );
 };

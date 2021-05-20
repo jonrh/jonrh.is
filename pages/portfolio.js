@@ -2,7 +2,6 @@ import React from "react";
 import Head from "next/head";
 
 import Layout from "../components/layout";
-import Bio from "../components/Bio";
 
 const Portfolio = () => {
   return (
@@ -171,9 +170,6 @@ const Portfolio = () => {
         project planted a seed that would eventually lead me to specialising in dashboards as a
         career.
       </p>
-
-      <hr style={{marginBottom: "2em"}}/>
-      <Bio />
     </Layout>
   );
 };

@@ -2,7 +2,6 @@ import React from "react";
 import Head from "next/head";
 
 import Layout from "../components/layout";
-import Bio from "../components/Bio";
 
 // Slugs or path of a page that I (for now at least) don't want to show in the blog list
 // These are sound mixes that I did a long time ago. The primary reason for hiding them is that I
@@ -74,8 +73,6 @@ const Blog = () => {
       {/*  <li><a href="/how-i-use-beatport-on-a-mac">how-i-use-beatport-on-a-mac</a></li>*/}
       {/*</ul>*/}
 
-      <hr />
-      <Bio />
     </Layout>
   );
 };

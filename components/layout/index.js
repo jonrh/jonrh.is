@@ -11,24 +11,6 @@ import Typography from "typography";
 import Wordpress2016 from "typography-theme-wordpress-2016";
 const typography = new Typography(Wordpress2016);
 
-const SocialIcons = () => {
-  return (
-    <div className="socialicons">
-      <a href="mailto:hi@jonrh.is">
-        <i className="fa fa-envelope fa-2x" aria-hidden="true" />
-      </a>
-      {" "}
-      <a href="https://github.com/jonrh">
-        <i className="fa fa-github fa-2x" aria-hidden="true" />
-      </a>
-      {" "}
-      <a href="https://linkedin.com/in/jonrh">
-        <i className="fa fa-linkedin fa-2x" aria-hidden="true" />
-      </a>
-    </div>
-  );
-};
-
 const Template = ({ children }) => {
   return (
     <div>
@@ -45,8 +27,6 @@ const Template = ({ children }) => {
         </a>
 
         <a href="/" className="profileName">Jón Rúnar Helgason</a>
-
-        <SocialIcons />
       </div>
 
       <div className="container">

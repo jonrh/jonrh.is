@@ -2,7 +2,6 @@ import React from "react";
 import Head from "next/head";
 
 import Layout from "../components/layout";
-import Bio from "../components/Bio";
 
 const Consulting = () => {
   return (
@@ -189,9 +188,6 @@ const Consulting = () => {
       <p>
         Tap into my dashboard expertise and let's make an awesome dashboard together. If you think I would be a great fit to help you bring added value to your customers, I'd love to hear from you. Please don't hesitate to get in touch at <a href="mailto:hi@jonrh.is">hi@jonrh.is</a>
       </p>
-
-      <hr style={{marginBottom: "2em"}}/>
-      <Bio />
     </Layout>
   );
 };

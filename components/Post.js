@@ -2,7 +2,12 @@ import React from "react";
 import Head from "next/head";
 
 import Layout from "./layout";
-import Bio from "./Bio";
+
+const dateStyle = {
+  display: "block",
+  marginTop: "-1em",
+  marginBottom: "1.5em",
+};
 
 /** A template for a blog post page */
 const Post = ({title, date, children}) => {
@@ -13,22 +18,9 @@ const Post = ({title, date, children}) => {
       </Head>
 
       <h1>{title}</h1>
-      <p
-        style={{
-          display: "block",
-          marginTop: "-1em",
-          marginBottom: "1.5em",
-        }}
-      >
-        {date}
-      </p>
+      <p style={dateStyle}>{date}</p>
 
-      <div>
-        {children}
-      </div>
-
-      <hr />
-      <Bio />
+      <div>{children}</div>
     </Layout>
   );
 };
