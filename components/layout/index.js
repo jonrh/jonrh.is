@@ -29,41 +29,39 @@ const SocialIcons = () => {
   );
 };
 
-export default class Template extends React.Component {
-  render() {
-    const { children } = this.props;
+const Template = ({ children }) => {
+  return (
+    <div>
+      <Head>
+        <style id="typography.js" dangerouslySetInnerHTML={{__html: typography.toString()}} />
+      </Head>
 
-    return (
-      <div>
-        <Head>
-          <style id="typography.js" dangerouslySetInnerHTML={{__html: typography.toString()}} />
-        </Head>
+      <div className="header">
+        <a href="/">
+          <img
+            src="/images/profile-pic-2017-with-colours.png"
+            alt="Profile of Jón Rúnar Helgason"
+          />
+        </a>
 
-        <div className="header">
-          <a href="/">
-            <img
-              src="/images/profile-pic-2017-with-colours.png"
-              alt="Profile of Jón Rúnar Helgason"
-            />
-          </a>
+        <a href="/" className="profileName">Jón Rúnar Helgason</a>
 
-          <a href="/" className="profileName">Jón Rúnar Helgason</a>
-
-          <SocialIcons />
-        </div>
-
-        <div className="container">
-          <nav>
-            <ul>
-              <li><Link href="/about">About</Link></li>
-              <li><Link href="/blog">Blog</Link></li>
-              <li><Link href="/portfolio">Portfolio</Link></li>
-            </ul>
-          </nav>
-
-          {children}
-        </div>
+        <SocialIcons />
       </div>
-    );
-  }
-}
+
+      <div className="container">
+        <nav>
+          <ul>
+            <li><Link href="/about">About</Link></li>
+            <li><Link href="/blog">Blog</Link></li>
+            <li><Link href="/portfolio">Portfolio</Link></li>
+          </ul>
+        </nav>
+
+        {children}
+      </div>
+    </div>
+  );
+};
+
+export default Template;
