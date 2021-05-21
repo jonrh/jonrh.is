@@ -1,30 +1,12 @@
 import React from "react";
 import Link from "next/link";
 import Head from "next/head";
-import moment from "moment";
 
 import Layout from "../components/layout";
 
-/**
- * Returns the duration of my frontend experience. Calculated so I don't have
- * to update it every year. Moment humanize() uses rounding.
- *
- * Examples:
- *  "4 years" requested at 2018-04-30.
- *  "4 years" after 53 months (4 years and 5 months)
- *  "5 years" after 54 months (4 years and 6 months)
- */
-function getFrontendExperienceInYears() {
-  const ru = 3;
-  const ucd = 12;
-  const vaki = 13;
-  const bespokedashboards = moment().diff("2016-08-01", "months", true);
-  const totalFrontendExperienceInMonths = ru + ucd + vaki + bespokedashboards;
-
-  return moment.duration(totalFrontendExperienceInMonths, "months").humanize()
-}
-
 const About = () => {
+  const frontendYearsOfExperience = new Date().getUTCFullYear() - 2014;
+
   return (
     <Layout>
       <Head>
@@ -53,7 +35,7 @@ const About = () => {
 
       <p><strong>Background</strong>:</p>
       <ul>
-        <li>Frontend: {getFrontendExperienceInYears()}. JavaScript, TypeScript, React & React Native.</li>
+        <li>Frontend: {frontendYearsOfExperience} years. JavaScript, TypeScript, React & React Native.</li>
         <li>Backend: 2 years. Python, NodeJS, Java, SQL, and others.</li>
         <li>MSc in Computer Science from <a href="https://www.ucd.ie/">University College Dublin</a>.</li>
         <li>BSc in Computer Science from <a href="https://en.ru.is/">Reykjavík University</a>.</li>
