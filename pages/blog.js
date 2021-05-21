@@ -29,6 +29,7 @@ const Blog = () => {
     <Layout>
       <Head>
         <title>jonrh - Blog</title>
+        <meta name="description" content="Blog posts of Jón Rúnar Helgason dating back to 2008." />
       </Head>
 
       <h1>Blog</h1>

@@ -8,6 +8,8 @@ const Portfolio = () => {
     <Layout>
       <Head>
         <title>jonrh - Portfolio</title>
+        <meta name="description" content="Jón Rúnar Helgason's portfolio consists of frontend
+          engineering work in JavaScript, React and React Native. Dashboards, websites and apps." />
       </Head>
 
       <h1>Portfolio</h1>

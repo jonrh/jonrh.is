@@ -29,6 +29,9 @@ const About = () => {
     <Layout>
       <Head>
         <title>jonrh - About</title>
+        <meta name="description" content="Jón Rúnar Helgason is an Icelandic fullstack founder
+          and frontend software engineer. He is a Co-Founder of Tímavera, a time tracking app
+          for contractors." />
       </Head>
 
       <h1>About</h1>
