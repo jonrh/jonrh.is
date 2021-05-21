@@ -15,7 +15,8 @@ li {
 }
 
 a {
-    color: #ff3f00;
+    /* color: #ff3f00; Original value with 3.51 contrast ratio with white background */
+    color: #de3700;
 }
 
 body {
