@@ -14,10 +14,9 @@ const Portfolio = () => {
 
       <h1>Portfolio</h1>
       <p>
-        Over the years I’ve specialised in designing and constructing frontend applications,
-        that is websites and mobile apps for iPhone and Android. More specifically the type of
-        apps that I’ve specialised in are bespoke dashboards that add insights and convenience
-        for the customers & employees of a company.
+        Over the years I have specialised in product development. Mostly focused on
+        design and construction of frontend applications, that is websites and
+        mobile apps for iPhone and Android.
       </p>
       <ul>
         <li><a href="#timavera">Tímavera</a></li>
@@ -53,7 +52,6 @@ const Portfolio = () => {
         <ul>
           <li><a href="https://jonogmarteinn.is">jonogmarteinn.is</a></li>
           <li><a href="https://malco.is">malco.is</a></li>
-          <li><a href="https://sonjajayz.com">sonjajayz.com</a> work in progress</li>
         </ul>
       </p>
 
