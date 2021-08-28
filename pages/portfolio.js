@@ -21,6 +21,7 @@ const Portfolio = () => {
       <ul>
         <li><a href="#timavera">Tímavera</a></li>
         <li><a href="#websitesemail">Websites & Email for Contractors</a></li>
+        <li><a href="#tinycrm">Tiny CRM</a></li>
         <li><a href="#activitystream">Activity Stream</a></li>
         <li><a href="#bd-monitor">Vaki: mobile dashboard app</a></li>
         <li><a href="#biomass-daily">Vaki: web dashboard</a></li>
@@ -57,6 +58,21 @@ const Portfolio = () => {
 
       <img src="/images/jonogmarteinn_dark.png" alt="Screenshot from jonogmarteinn.is" />
       <img src="/images/malco_dark.png" alt="Screenshot from malco.is, a simple site with contact details" />
+
+      <h2 id="tinycrm"><a href="#tinycrm">Tiny CRM</a></h2>
+      <p>2021 - Current</p>
+      <p>
+        Hobby project with a friend.
+        Experimenting with new tech, UI & UX.
+        Aimed to be an intermediate CRM for those that need something better
+        than a text docu&shy;ment or a spreadsheet but something simpler and more
+        lightweight than the established CRMs.
+
+        See more at <a href="https://tinycrm.app">tinycrm.app</a>.
+        Currently in the very early days.
+        If interested to try it out send us a line
+        at <a href="mailto:tinycrm@tinycrm.app">tinycrm@tinycrm.app</a>.
+      </p>
 
       <h2 id="activitystream"><a href="#activitystream">#</a>Activity Stream</h2>
       <p>2017 - 2018</p>
