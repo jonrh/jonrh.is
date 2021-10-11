@@ -1,5 +1,6 @@
 .header {
     text-align: center;
+    font-family: monospace;
 }
 
 .header img {
@@ -15,6 +16,7 @@
 
     font-size: 1.2em;
     font-weight: 800;
+    text-decoration: none;
 
     box-shadow: none;
 }
@@ -29,6 +31,8 @@ nav ul {
     list-style: none;
     margin-top: 1rem;
     margin-left: 0;
+    padding-left: 0;
+    font-family: monospace;
 }
 
 nav li {
@@ -38,11 +42,13 @@ nav li {
 
 nav li a {
     padding: 0.25rem 0.5rem;
+    text-decoration: none;
+    box-shadow: 0 1px 0 0 currentColor;
 }
 
 .container {
     max-width: 42rem;
     margin-left: auto;
     margin-right: auto;
-    padding: 0rem 1.3rem 2.6rem 1.3rem;
+    padding: 0 1.3rem 2.6rem 1.3rem;
 }
