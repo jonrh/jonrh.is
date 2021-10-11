@@ -21,7 +21,7 @@ const Template = ({ children }) => {
       <div className="header">
         <a href="/">
           <img
-            src="/images/profile-pic-2017-with-colours.png"
+            src="/images/profile-pic-2017-dither.png"
             alt="Profile of Jón Rúnar Helgason"
           />
         </a>
