@@ -1,23 +1,9 @@
 import React from "react";
 import Link from "next/link";
-import Head from "next/head";
 
-// Import typefaces
-import "typeface-montserrat";
-import "typeface-merriweather";
-
-// Legacy font theme from the days of GatsbyJS
-import Typography from "typography";
-import Wordpress2016 from "typography-theme-wordpress-2016";
-const typography = new Typography(Wordpress2016);
-
-const Template = ({ children }) => {
+const Layout = ({ children }) => {
   return (
     <div>
-      <Head>
-        <style id="typography.js" dangerouslySetInnerHTML={{__html: typography.toString()}} />
-      </Head>
-
       <div className="header">
         <a href="/">
           <img
@@ -44,4 +30,4 @@ const Template = ({ children }) => {
   );
 };
 
-export default Template;
+export default Layout;
