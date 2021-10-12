@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
       <div className="header">
         <a href="/">
           <img
-            src="/images/profile-pic-2017-dither.png"
+            src="/images/profile-pic-2017-dither-dark.png"
             alt="Profile of Jón Rúnar Helgason"
           />
         </a>
