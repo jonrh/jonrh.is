@@ -22,3 +22,18 @@ parameters:
 --print-width 100
 --trailing-comma all
 ```
+
+## Image dithering recipe
+Photoshop -> File -> Export -> Save for web (Legacy)
+
+* File format: PNG-8
+* Colors: 2
+* Dither: 100%
+* Color reduction algorithm: Perceptual / Selective
+* Dither algorithm: Diffusion
+* Web Snap: 0%
+* Matte: None
+* Metadata: None
+* Re-assign darker colour to #000 and assign as transparency colour
+* Re-assign lighter colour to #ff7b00
+* Save image, re-size if needed
