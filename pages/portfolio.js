@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 
 import Layout from "../components/layout";
+import Dither from "../components/Dither";
 
 const Portfolio = () => {
   return (
@@ -38,8 +39,16 @@ const Portfolio = () => {
         <a href="https://timavera.com">timavera.com</a>
       </p>
 
-      <img src="/images/consulting/timavera_app.png" alt="Tímavera timeclock mobile app" />
-      <img src="/images/consulting/timavera_dashboard.png" alt="Web dashboard for Tímavera time tracking" />
+      <Dither
+        src="/images/portfolio/timavera_app.png"
+        alt="Tímavera timeclock mobile app"
+        width={1959} height={1065}
+      />
+      <Dither
+        src="/images/portfolio/timavera_dashboard.png"
+        alt="Web dashboard for Tímavera time tracking"
+        width={1227} height={1107}
+      />
 
       <h2 id="websitesemail"><a href="#websitesemail">#</a>Branded Websites & Email</h2>
       <p>2018 - Current</p>
@@ -56,8 +65,16 @@ const Portfolio = () => {
         </ul>
       </p>
 
-      <img src="/images/jonogmarteinn_dark.png" alt="Screenshot from jonogmarteinn.is" />
-      <img src="/images/malco_dark.png" alt="Screenshot from malco.is, a simple site with contact details" />
+      <Dither
+        src="/images/portfolio/jonogmarteinn_dark.png"
+        alt="Screenshot from jonogmarteinn.is"
+        width={1202} height={1078}
+      />
+      <Dither
+        src="/images/portfolio/malco_light.png"
+        alt="Screenshot from malco.is, a simple site with contact details"
+        width={1202} height={1078}
+      />
 
       <h2 id="tinycrm"><a href="#tinycrm">Tiny CRM</a></h2>
       <p>2021 - Current</p>
@@ -82,7 +99,7 @@ const Portfolio = () => {
         visualisations for the AI engine. JavaScript, TypeScript & Mithril. Remote contractor. {" "}
         <a href="https://www.activitystream.com/">activitystream.com</a>
       </p>
-      <img src="/images/consulting/activitystream_dashboard_framed.png" alt="UI Design of Activity Stream dashboard" />
+      <img src="/images/portfolio/activitystream_dashboard_framed.png" alt="UI Design of Activity Stream dashboard" />
 
       <h2 id="vaki"><a href="#vaki">#</a>Vaki</h2>
       <p>
@@ -95,7 +112,7 @@ const Portfolio = () => {
         is then aggregated and analysed in various dashboards. {" "}
         <a href="https://vakiiceland.is/">vakiiceland.is</a>
       </p>
-      <img src="/images/consulting/bd_frames_and_fish.png" alt="Biomass Daily frames" />
+      <img src="/images/portfolio/bd_frames_and_fish.png" alt="Biomass Daily frames" />
 
       <h3 id="bd-monitor"><a href="#bd-monitor">#</a>iPhone App: BD Monitor</h3>
       <p>2016 - 2017</p>
@@ -110,13 +127,13 @@ const Portfolio = () => {
         The app was written in JavaScript ES2015 and React Native.
       </p>
 
-      <img src="/images/consulting/mockup.png" alt="Early mockups demonstrating bottom navigation and History view" />
+      <img src="/images/portfolio/mockup.png" alt="Early mockups demonstrating bottom navigation and History view" />
 
-      <img src="/images/consulting/bdmonitor1.png" alt="BD Monitor login and home screen" />
-      <img src="/images/consulting/bdmonitor2.png" alt="BD Monitor Summary & Settings" />
-      <img src="/images/consulting/bdmonitor3.png" alt="BD Monitor History" />
-      <img src="/images/consulting/bdmonitor4.png" alt="BD Monitor Utilisation" />
-      <img src="/images/consulting/bdmonitor5.png" alt="BD Monitor sea cage detail view" />
+      <img src="/images/portfolio/bdmonitor1.png" alt="BD Monitor login and home screen" />
+      <img src="/images/portfolio/bdmonitor2.png" alt="BD Monitor Summary & Settings" />
+      <img src="/images/portfolio/bdmonitor3.png" alt="BD Monitor History" />
+      <img src="/images/portfolio/bdmonitor4.png" alt="BD Monitor Utilisation" />
+      <img src="/images/portfolio/bdmonitor5.png" alt="BD Monitor sea cage detail view" />
 
 
       <h4 id="biomass-daily"><a href="#biomass-daily">#</a>Web Dashboard: biomassdaily.com</h4>
@@ -153,11 +170,11 @@ const Portfolio = () => {
         </li>
       </ul>
 
-      <img src="/images/consulting/bd_dashboard.png" alt="Biomass Daily sea cages dashboard" />
-      <img src="/images/consulting/bd_trendgraph.png" alt="Biomass Daily weight trendgraph" />
-      <img src="/images/consulting/bd_distribution.png" alt="Biomass Daily weight distribution" />
-      <img src="/images/consulting/bd_fcr.png" alt="Biomass Daily Feed Conversion Ratio" />
-      <img src="/images/consulting/bd_login.png" alt="Biomass Daily Login" />
+      <img src="/images/portfolio/bd_dashboard.png" alt="Biomass Daily sea cages dashboard" />
+      <img src="/images/portfolio/bd_trendgraph.png" alt="Biomass Daily weight trendgraph" />
+      <img src="/images/portfolio/bd_distribution.png" alt="Biomass Daily weight distribution" />
+      <img src="/images/portfolio/bd_fcr.png" alt="Biomass Daily Feed Conversion Ratio" />
+      <img src="/images/portfolio/bd_login.png" alt="Biomass Daily Login" />
 
       <h2 id="ja-gadget-widget"><a href="#ja-gadget-widget">#</a>Já.is Gadget & Widget</h2>
       <p>
@@ -172,7 +189,7 @@ const Portfolio = () => {
       </p>
 
       <img
-        src="/images/consulting/ja_combined.png"
+        src="/images/portfolio/ja_combined.png"
         alt="Screenshot of the Já.is OSX Widget and Windows Gadget"
         style={{
           display: "block",
