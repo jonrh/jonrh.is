@@ -10,13 +10,12 @@ html {
 body {
     /* Make all text justified on the page. This might be too broad, p and li might be enough. */
     text-align: justify;
-    background: #222;
-    color: #ddd;
+    background: #191919;
+    color: #c8c8c8;
 }
 
 a {
-    color: #ff3f00; /* Original value with 3.51 contrast ratio with white background */
-    /*color: #de3700;*/ /* Value used in light mode */
+    color: #ff7b00;
 }
 
 h1, h2, h3, h4, h5, h6 {
