@@ -37,3 +37,8 @@ Photoshop -> File -> Export -> Save for web (Legacy)
 * Re-assign darker colour to #000 and assign as transparency colour
 * Re-assign lighter colour to #ff7b00
 * Save image, re-size if needed
+
+Screenshots:
+* Image -> Adjustments -> Gradient Map -> #00000 to #ff7b00
+* Colors: 32
+* Dither algorithm: Pattern
