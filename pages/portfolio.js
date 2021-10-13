@@ -71,7 +71,7 @@ const Portfolio = () => {
         width={1202} height={1078}
       />
       <Dither
-        src="/images/portfolio/malco_light.png"
+        src="/images/portfolio/malco_dark.png"
         alt="Screenshot from malco.is, a simple site with contact details"
         width={1202} height={1078}
       />
@@ -99,7 +99,11 @@ const Portfolio = () => {
         visualisations for the AI engine. JavaScript, TypeScript & Mithril. Remote contractor. {" "}
         <a href="https://www.activitystream.com/">activitystream.com</a>
       </p>
-      <img src="/images/portfolio/activitystream_dashboard_framed.png" alt="UI Design of Activity Stream dashboard" />
+      <Dither
+        src="/images/portfolio/activitystream_dashboard_framed.png"
+        alt="UI Design of Activity Stream dashboard"
+        width={1921} height={1119}
+      />
 
       <h2 id="vaki"><a href="#vaki">#</a>Vaki</h2>
       <p>
@@ -112,7 +116,11 @@ const Portfolio = () => {
         is then aggregated and analysed in various dashboards. {" "}
         <a href="https://vakiiceland.is/">vakiiceland.is</a>
       </p>
-      <img src="/images/portfolio/bd_frames_and_fish.png" alt="Biomass Daily frames" />
+      <Dither
+        src="/images/portfolio/bd_frames_and_fish.png"
+        alt="Biomass Daily frames"
+        width={655} height={272}
+      />
 
       <h3 id="bd-monitor"><a href="#bd-monitor">#</a>iPhone App: BD Monitor</h3>
       <p>2016 - 2017</p>
@@ -127,13 +135,37 @@ const Portfolio = () => {
         The app was written in JavaScript ES2015 and React Native.
       </p>
 
-      <img src="/images/portfolio/mockup.png" alt="Early mockups demonstrating bottom navigation and History view" />
+      <Dither
+        src="/images/portfolio/mockup.png"
+        alt="Early mockups demonstrating bottom navigation and History view"
+        width={1024} height={508}
+      />
 
-      <img src="/images/portfolio/bdmonitor1.png" alt="BD Monitor login and home screen" />
-      <img src="/images/portfolio/bdmonitor2.png" alt="BD Monitor Summary & Settings" />
-      <img src="/images/portfolio/bdmonitor3.png" alt="BD Monitor History" />
-      <img src="/images/portfolio/bdmonitor4.png" alt="BD Monitor Utilisation" />
-      <img src="/images/portfolio/bdmonitor5.png" alt="BD Monitor sea cage detail view" />
+      <Dither
+        src="/images/portfolio/bdmonitor1.png"
+        alt="BD Monitor login and home screen"
+        width={700} height={700}
+      />
+      <Dither
+        src="/images/portfolio/bdmonitor2.png"
+        alt="BD Monitor Summary & Settings"
+        width={700} height={700}
+      />
+      <Dither
+        src="/images/portfolio/bdmonitor3.png"
+        alt="BD Monitor History"
+        width={700} height={700}
+      />
+      <Dither
+        src="/images/portfolio/bdmonitor4.png"
+        alt="BD Monitor Utilisation"
+        width={700} height={700}
+      />
+      <Dither
+        src="/images/portfolio/bdmonitor5.png"
+        alt="BD Monitor sea cage detail view"
+        width={700} height={700}
+      />
 
 
       <h4 id="biomass-daily"><a href="#biomass-daily">#</a>Web Dashboard: biomassdaily.com</h4>
@@ -170,11 +202,31 @@ const Portfolio = () => {
         </li>
       </ul>
 
-      <img src="/images/portfolio/bd_dashboard.png" alt="Biomass Daily sea cages dashboard" />
-      <img src="/images/portfolio/bd_trendgraph.png" alt="Biomass Daily weight trendgraph" />
-      <img src="/images/portfolio/bd_distribution.png" alt="Biomass Daily weight distribution" />
-      <img src="/images/portfolio/bd_fcr.png" alt="Biomass Daily Feed Conversion Ratio" />
-      <img src="/images/portfolio/bd_login.png" alt="Biomass Daily Login" />
+      <Dither
+        src="/images/portfolio/bd_dashboard.png"
+        alt="Biomass Daily sea cages dashboard"
+        width={2758} height={1860}
+      />
+      <Dither
+        src="/images/portfolio/bd_trendgraph.png"
+        alt="Biomass Daily weight trendgraph"
+        width={2758} height={1860}
+      />
+      <Dither
+        src="/images/portfolio/bd_distribution.png"
+        alt="Biomass Daily weight distribution"
+        width={2758} height={1860}
+      />
+      <Dither
+        src="/images/portfolio/bd_fcr.png"
+        alt="Biomass Daily Feed Conversion Ratio"
+        width={2758} height={1860}
+      />
+      <Dither
+        src="/images/portfolio/bd_login.png"
+        alt="Biomass Daily Login"
+        width={2758} height={1860}
+      />
 
       <h2 id="ja-gadget-widget"><a href="#ja-gadget-widget">#</a>Já.is Gadget & Widget</h2>
       <p>
@@ -188,14 +240,10 @@ const Portfolio = () => {
         Once enter was pressed it would redirect to the <em>ja.is</em> website.
       </p>
 
-      <img
+      <Dither
         src="/images/portfolio/ja_combined.png"
         alt="Screenshot of the Já.is OSX Widget and Windows Gadget"
-        style={{
-          display: "block",
-          marginLeft: "auto",
-          marginRight: "auto",
-        }}
+        width={369} height={230}
       />
 
       <p>
