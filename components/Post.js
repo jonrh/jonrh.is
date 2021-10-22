@@ -15,6 +15,7 @@ const Post = ({title, date, children}) => {
     <Layout>
       <Head>
         <title>{title}</title>
+        <meta name="author" content="Jón Rúnar Helgason" />
       </Head>
 
       <h1>{title}</h1>

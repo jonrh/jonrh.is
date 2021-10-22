@@ -1,9 +1,14 @@
 import React from "react";
 import Link from "next/link";
+import Head from "next/head";
 
 const Layout = ({ children }) => {
   return (
     <div>
+      <Head>
+        <meta name="author" content="Jón Rúnar Helgason" />
+      </Head>
+
       <div className="header">
         <a href="/">
           <picture>
