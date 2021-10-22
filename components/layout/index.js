@@ -6,10 +6,13 @@ const Layout = ({ children }) => {
     <div>
       <div className="header">
         <a href="/">
-          <img
-            src="/images/jon-runar-helgason.webp"
-            alt="Profile of Jón Rúnar Helgason"
-          />
+          <picture>
+            <source srcSet="/images/jon-runar-helgason.webp" type="image/webp" />
+            <img
+              src="/images/jon-runar-helgason.png"
+              alt="Profile of Jón Rúnar Helgason"
+            />
+          </picture>
         </a>
 
         <a href="/" className="profileName">Jón Rúnar Helgason</a>
