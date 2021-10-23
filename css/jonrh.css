@@ -40,3 +40,12 @@ img {
 pre {
     white-space: pre-wrap;
 }
+
+li {
+    /*
+    The extra top and bottom margin on <li> elements makes it easier to click
+    on links in list items on mobile. Fixes a reduced SEO Lighthouse score.
+    Tap targets are not sized appropriately: https://web.dev/tap-targets/
+    */
+    margin: 0.5em 0;
+}
