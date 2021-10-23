@@ -19,6 +19,7 @@ const Portfolio = () => {
         design and construction of frontend applications, that is websites and
         mobile apps for iPhone and Android.
       </p>
+
       <ul>
         <li><a href="#timavera">Tímavera</a></li>
         <li><a href="#websitesemail">Websites & Email for Contractors</a></li>
@@ -58,12 +59,10 @@ const Portfolio = () => {
         contact pages.
       </p>
 
-      <p>
-        <ul>
-          <li><a href="https://jonogmarteinn.is">jonogmarteinn.is</a></li>
-          <li><a href="https://malco.is">malco.is</a></li>
-        </ul>
-      </p>
+      <ul>
+        <li><a href="https://jonogmarteinn.is">jonogmarteinn.is</a></li>
+        <li><a href="https://malco.is">malco.is</a></li>
+      </ul>
 
       <Dither
         src="/images/portfolio/jonogmarteinn_dark.png"
