@@ -62,6 +62,7 @@ const Portfolio = () => {
       <ul>
         <li><a href="https://jonogmarteinn.is">jonogmarteinn.is</a></li>
         <li><a href="https://malco.is">malco.is</a></li>
+        <li><a href="https://konnismidur.is">konnismidur.is</a></li>
       </ul>
 
       <Dither
