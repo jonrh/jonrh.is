@@ -37,6 +37,8 @@ recommend the below approach because it breaks TotalFinder's code signature. The
 however mentioned to include a hidden feature to more easily use a custom icon in a future
 TotalFinder release. Fingers crossed!
 
+<div style={{ textAlign: "left", overflowWrap: "break-word" }}>
+
 1. In TotalFinder preferences, make sure "Keep original Dock icon" is unchecked.
 
 <Image
@@ -52,8 +54,7 @@ TotalFinder release. Fingers crossed!
 
 3. Drill further: <em>/System/Library/ScriptingAdditions/TotalFinder.osax/Contents/Resources/</em> and open the package contents of <em>TotalFinder.bundle</em>
 
-4. Drill again further:
-/System/Library/ScriptingAdditions/TotalFinder.osax/Contents/Resources/TotalFinder.bundle/Contents/Resources/`
+4. Drill again further: <em>/System/Library/ScriptingAdditions/TotalFinder.osax/Contents/Resources/TotalFinder.bundle/Contents/Resources/</em>
 
 5. The icon you have to replace is the file <strong>TotalFinderIcon2.icns</strong>. Replace it with
 your desired icon.
@@ -69,6 +70,8 @@ your desired icon.
 Terminal: `killall Finder`
 
 7. Finder will restart, give it a few seconds then run TotalFinder from the Applications folder.
+
+</div>
 
 <Image
   src="/images/custom-totalfinder-icon-in-osx-el-capitan/cmd_tab.png"
