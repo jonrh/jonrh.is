@@ -7,8 +7,6 @@
 # Other various items relating to Node, Yarn & NPM
 node_modules/
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 
 # Next.js
 /.next/
