@@ -22,7 +22,7 @@ const About = () => {
       <ul>
         <li>I help contractors <a href="https://timavera.com">track time</a> so they can be awesome at their trade.</li>
         <li>Fullstack Founder & Frontend Software Engineer.</li>
-        <li>Available for hire to create bespoke websites.</li>
+        <li>Currently unavailable for hire.</li>
       </ul>
 
       <p><strong>Recent work</strong>:</p>
@@ -39,7 +39,7 @@ const About = () => {
         <li>Backend: 2 years. Python, NodeJS, Java, SQL, and others.</li>
         <li>MSc in Computer Science from <a href="https://www.ucd.ie/">University College Dublin</a>.</li>
         <li>BSc in Computer Science from <a href="https://en.ru.is/">Reykjavík University</a>.</li>
-        <li>Interests: Next.js & Vercel, FaunaDB, serverless.</li>
+        <li>Interests: Deno & Deno Deploy, FaunaDB, serverless.</li>
       </ul>
 
       <p><strong>I can be contacted via</strong>:</p>
