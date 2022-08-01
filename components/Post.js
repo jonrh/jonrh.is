@@ -24,8 +24,21 @@ function metaDescriptionQualityCheck(metaDescription, title, date) {
   }
 }
 
+/** A direct link to the GitHub source if path is defined */
+const Path = ({ path }) => {
+  if (!path) return null;
+
+  const url = `https://github.com/jonrh/jonrh.is/blob/main/pages/${path}/index.mdx`;
+
+  return (
+    <p style={{ textAlign: "center", marginTop: "5em" }}>
+      <a href={url}>History & source</a>
+    </p>
+  )
+};
+
 /** A template for a blog post page */
-const Post = ({title, date, metaDescription, children}) => {
+const Post = ({title, path, date, metaDescription, children}) => {
   metaDescriptionQualityCheck(metaDescription, title, date);
 
   return (
@@ -40,6 +53,8 @@ const Post = ({title, date, metaDescription, children}) => {
       <p style={dateStyle}>{date}</p>
 
       <div>{children}</div>
+
+      <Path path={path} />
     </Layout>
   );
 };
