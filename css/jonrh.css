@@ -50,3 +50,11 @@ li {
     */
     margin: 0.5em 0;
 }
+
+p {
+    /* Add automatic hyphenation. Works if the HTML lang attribute is set. */
+    hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+}
