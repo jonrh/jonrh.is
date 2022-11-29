@@ -15,7 +15,7 @@ const Portfolio = () => {
 
       <h1>Portfolio</h1>
       <p>
-        Over the years I have specialised in product development. Mostly focused on
+        Specialised in product development over the years. Mostly focused on
         design and construction of frontend applications, that is websites and
         mobile apps for iPhone and Android.
       </p>
@@ -94,7 +94,7 @@ const Portfolio = () => {
       <h2 id="activitystream"><a href="#activitystream">#</a>Activity Stream</h2>
       <p>2017 - 2018</p>
       <p>
-        Operations intelligence for Live Entertainment & Sports. Iceland’s Startup of the Year in
+        Business intelligence for Live Entertainment & Sports. Iceland’s Startup of the Year in
         2017 and AI/ML Startup of the Year in 2018. Created and maintained dashboards and
         visualisations for the AI engine. JavaScript, TypeScript & Mithril. Remote contractor. {" "}
         <a href="https://www.activitystream.com/">activitystream.com</a>
@@ -107,14 +107,14 @@ const Portfolio = () => {
 
       <h2 id="vaki"><a href="#vaki">#</a>Vaki</h2>
       <p>
-        Vaki Aquaculture Systems Ltd. is the industry leader in fish counting and size estimation
-        of live fish. Vaki offers a variety of solutions but the one I worked on was the{" "}
-        <a href="https://vakiiceland.is/biomass-daily/">Biomass Daily system</a>.
-        The gist of it is this: you are a company that operates fish farms. On each farm there are
-        multiple sea cages with salmon. You rent hardware frames from Vaki and lower them into
-        the sea cages. As the salmon swim through the frames their weight is measured. This data
-        is then aggregated and analysed in various dashboards. {" "}
-        <a href="https://vakiiceland.is/">vakiiceland.is</a>
+        Vaki Aquaculture Systems Ltd. is the industry leader in fish counting
+        and size estimation of live fish. Worked on the{" "}
+        <a href="https://vakiiceland.is/biomass-daily/">Biomass Daily</a> system.
+
+        A company operating salmon farms would rent hardware frames from Vaki
+        and place them in the se cages. As the salmon swim through the frames
+        their weight is measured. This data is then aggregated and analysed in
+        various dashboards. <a href="https://vakiiceland.is/">vakiiceland.is</a>
       </p>
       <Dither
         src="/images/portfolio/bd_frames_and_fish.png"
@@ -230,14 +230,16 @@ const Portfolio = () => {
 
       <h2 id="ja-gadget-widget"><a href="#ja-gadget-widget">#</a>Já.is Gadget & Widget</h2>
       <p>
-        This was the project that sparked my interest in frontend development. A very small 1-2
-        week project I worked on back in 2010 for <a href="https://ja.is/">Já.is</a>, the
-        official phonebook registry of Iceland. Super simple{" "}
-        <a href="https://en.wikipedia.org/wiki/Dashboard_(macOS)">OSX Widget</a> and{" "}
+        A small 1-2 week summer internship project back in 2010 for{" "}
+        <a href="https://ja.is/">Já.is</a>, the official phonebook registry of
+        Iceland. Super simple{" "}
+        <a href="https://en.wikipedia.org/wiki/Dashboard_(macOS)">OSX Widget</a>{" "}
+        and{" "}
         <a href="https://en.wikipedia.org/wiki/Windows_Desktop_Gadgets">Windows Gadget</a>{" "}
-        dashboard tools, obsolete today as operating systems have dropped support. You would
-        start typing some name and it would drop down an autocomplete menu of possible results.
-        Once enter was pressed it would redirect to the <em>ja.is</em> website.
+        dashboard tools, obsolete today as operating systems have dropped
+        support. By typing a name it would drop down an autocomplete menu of
+        possible results. Once enter was pressed it would redirect to the ja.is
+        website.
       </p>
 
       <Dither
@@ -247,9 +249,9 @@ const Portfolio = () => {
       />
 
       <p>
-        This was one of the most fun projects I worked on. I didn't know it at the time but this
-        project planted a seed that would eventually lead me to specialising in dashboards as a
-        career.
+        A very fun project to work on. Did not know it at the time but this
+        project planted a seed that would eventually grow into a career in
+        frontend and product development.
       </p>
     </Layout>
   );
