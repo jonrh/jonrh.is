@@ -4,6 +4,16 @@ import Head from "next/head";
 import Layout from "../components/layout";
 import Dither from "../components/Dither";
 
+/**
+ * Custom h2 - h4 headings with a visible # link in the front. Enables linking
+ * directly to a certain heading. Suitable on a large page like the portfolio.
+ */
+const noUnderline = { textDecoration: "none" };
+const Anchor = ({ id }) => <a href={`#${id}`} style={noUnderline}>#</a>;
+const H2 = ({ id, title }) => <h2 id={id}><Anchor id={id} /> {title}</h2>;
+const H3 = ({ id, title }) => <h3 id={id}><Anchor id={id} /> {title}</h3>;
+const H4 = ({ id, title }) => <h4 id={id}><Anchor id={id} /> {title}</h4>;
+
 /** 2-column grid wrapper */
 const TwoImagesSideBySide = ({children}) => {
   const style = {
@@ -45,7 +55,7 @@ const Portfolio = () => {
         <li><a href="#ja-gadget-widget">Já.is: Widget & Gadget</a></li>
       </ul>
 
-      <h2 id="timavera"><a href="#previous-work">#</a>Tímavera</h2>
+      <H2 id="timavera" title="Tímavera" />
       <p>2017 - Current</p>
       <p>
         Time tracking for contractors. Designed for small companies with simple
@@ -117,7 +127,7 @@ const Portfolio = () => {
         width={1650} height={748}
       />
 
-      <h2 id="websitesemail"><a href="#websitesemail">#</a>Branded Websites & Email</h2>
+      <H2 id="websitesemail" title="Branded Websites & Email" />
       <p>2018 - Current</p>
       <p>
         Digital presence for individuals and companies. Branded email using leading providers
@@ -144,7 +154,7 @@ const Portfolio = () => {
         width={1202} height={1078}
       />
 
-      <h2 id="tinycrm"><a href="#tinycrm">Tiny CRM</a></h2>
+      <H2 id="tinycrm" title="Tiny CRM" />
       <p>2021 - Current</p>
       <p>
         Hobby project with a friend.
@@ -159,7 +169,7 @@ const Portfolio = () => {
         at <a href="mailto:tinycrm@tinycrm.app">tinycrm@tinycrm.app</a>.
       </p>
 
-      <h2 id="activitystream"><a href="#activitystream">#</a>Activity Stream</h2>
+      <H2 id="activitystream" title="Activity Stream" />
       <p>2017 - 2018</p>
       <p>
         Business intelligence for Live Entertainment & Sports. Iceland’s Startup of the Year in
@@ -173,7 +183,7 @@ const Portfolio = () => {
         width={1921} height={1119}
       />
 
-      <h2 id="vaki"><a href="#vaki">#</a>Vaki</h2>
+      <H2 id="vaki" title="Vaki" />
       <p>
         Vaki Aquaculture Systems Ltd. is the industry leader in fish counting
         and size estimation of live fish. Worked on the{" "}
@@ -190,7 +200,7 @@ const Portfolio = () => {
         width={655} height={272}
       />
 
-      <h3 id="bd-monitor"><a href="#bd-monitor">#</a>iPhone App: BD Monitor</h3>
+      <H3 id="bd-monitor" title="iPhone App: BD Monitor" />
       <p>2016 - 2017</p>
       <p>
         This project was about creating an auxiliary mobile app to monitor the status of the
@@ -235,8 +245,7 @@ const Portfolio = () => {
         width={700} height={700}
       />
 
-
-      <h4 id="biomass-daily"><a href="#biomass-daily">#</a>Web Dashboard: biomassdaily.com</h4>
+      <H4 id="biomass-daily" title="Web Dashboard: biomassdaily.com" />
       <p>2014 - 2015</p>
       <p>
         Access is restricted to users of the Biomass Daily system. The system has been in daily
@@ -296,7 +305,7 @@ const Portfolio = () => {
         width={2758} height={1860}
       />
 
-      <h2 id="ja-gadget-widget"><a href="#ja-gadget-widget">#</a>Já.is Gadget & Widget</h2>
+      <H2 id="ja-gadget-widget" title="Já.is Gadget & Widget" />
       <p>
         A small 1-2 week summer internship project back in 2010 for{" "}
         <a href="https://ja.is/">Já.is</a>, the official phonebook registry of
