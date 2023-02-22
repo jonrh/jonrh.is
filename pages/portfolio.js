@@ -242,11 +242,13 @@ const Portfolio = () => {
         website.
       </p>
 
-      <Dither
-        src="/images/portfolio/ja_combined.png"
-        alt="Screenshot of the Já.is OSX Widget and Windows Gadget"
-        width={369} height={230}
-      />
+      <div style={{ display: "flex", justifyContent: "center"}} >
+        <Dither
+          src="/images/portfolio/ja_combined.png"
+          alt="Screenshot of the Já.is OSX Widget and Windows Gadget"
+          width={369} height={230}
+        />
+      </div>
 
       <p>
         A very fun project to work on. Did not know it at the time but this
