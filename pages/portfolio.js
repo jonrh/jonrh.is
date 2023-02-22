@@ -4,13 +4,28 @@ import Head from "next/head";
 import Layout from "../components/layout";
 import Dither from "../components/Dither";
 
+/** 2-column grid wrapper */
+const TwoImagesSideBySide = ({children}) => {
+  const style = {
+    display: "grid",
+    gridTemplateColumns: "repeat(2, minmax(0, 1fr))",
+  };
+
+  return (
+    <div style={style}>
+      {children}
+    </div>
+  );
+};
+
 const Portfolio = () => {
   return (
     <Layout>
       <Head>
         <title>jonrh - Portfolio</title>
-        <meta name="description" content="Jón Rúnar Helgason's portfolio consists of frontend
-          engineering work in JavaScript, React and React Native. Dashboards, websites and apps." />
+        <meta name="description" content="Jón Rúnar Helgason's portfolio
+          consists of frontend engineering work in JavaScript, React and React
+          Native. Dashboards, websites and apps." />
       </Head>
 
       <h1>Portfolio</h1>
@@ -33,22 +48,73 @@ const Portfolio = () => {
       <h2 id="timavera"><a href="#previous-work">#</a>Tímavera</h2>
       <p>2017 - Current</p>
       <p>
-        Time tracking for contractors. Designed for small companies with simple needs: track
-        projects, hours & locations. Frontend engineering, devops, customer support and daily
-        operations. Made the iOS & Android apps with JavaScript and React Native. Website with
-        React. Set up continuous deployments with CircleCI & Docker. {" "}
+        Time tracking for contractors. Designed for small companies with simple
+        needs: track projects, hours & locations. Frontend engineering, devops,
+        customer support and daily operations. Made the iOS & Android apps with
+        JavaScript and React Native. Website with React. Python & Flask API.
+        Set up continuous deployments with CircleCI & Docker. {" "}
         <a href="https://timavera.com">timavera.com</a>
       </p>
 
+      <TwoImagesSideBySide>
+        <Dither
+          src="/images/portfolio/timavera/1_login.png"
+          alt="Tímavera mobile app on the login screen. Inputs: company,
+           employee name, and password."
+          width={1659} height={2622}
+        />
+        <Dither
+          src="/images/portfolio/timavera/2_projects.png"
+          alt="Tímavera mobile app on the projects screen. Shows buttons for
+           Project A, Jobsite B, Contract C, and Installation D."
+          width={1659} height={2622}
+        />
+      </TwoImagesSideBySide>
+
+      <TwoImagesSideBySide>
+        <Dither
+          src="/images/portfolio/timavera/3_clocked_in.png"
+          alt="Tímavera mobile app on the clocked in screen. Clocked into
+           Project A, elapsed time is 03:13:37. A square stop buttons to stop
+           or clock out and a plus button for adding a comment or an image."
+          width={1659} height={2622}
+        />
+        <Dither
+          src="/images/portfolio/timavera/4_comment.png"
+          alt="Tímavera mobile app on a screen to add a comment to a time
+           entry. Comment: Foudation complete. Bought materials for $1337.
+           Buttons shown are to add the comment and a button for adding an
+           image."
+          width={1659} height={2622}
+        />
+      </TwoImagesSideBySide>
+
+      <TwoImagesSideBySide>
+        <Dither
+          src="/images/portfolio/timavera/5_entries.png"
+          alt="Tímavera mobile app screen showing a list of time entries.
+           Time entries are grouped by day and show the time when clocked in
+           and clocked out along with total duration in hours as well as
+           the name of the project."
+          width={1659} height={2622}
+        />
+        <Dither
+          src="/images/portfolio/timavera/6_entry.png"
+          alt="Tímavera mobile app screen showing a detail screen for a single
+           time entry. Duration: 7.00 hours. Start: 08:00 Wed 4 Jan 2023.
+           End: 15:00, Wed 4 Jan 2023. Project: Project A. Comment: 12:00,
+           Foundation complete. Bought materials for $1337."
+          width={1659} height={2622}
+        />
+      </TwoImagesSideBySide>
+
       <Dither
-        src="/images/portfolio/timavera_app.png"
-        alt="Tímavera timeclock mobile app"
-        width={1959} height={1065}
-      />
-      <Dither
-        src="/images/portfolio/timavera_dashboard.png"
-        alt="Web dashboard for Tímavera time tracking"
-        width={1227} height={1107}
+        src="/images/portfolio/timavera/timavera_dashboard.png"
+        alt="Screenshot of the Tímavera web dashboard. Shown is a table
+        containing 3 time entries. The main pages are Time Entries, Projects,
+        Employees, Report. The time entries table can then be filtered by
+        calendar dates, project, and or employee."
+        width={1650} height={748}
       />
 
       <h2 id="websitesemail"><a href="#websitesemail">#</a>Branded Websites & Email</h2>
@@ -65,10 +131,12 @@ const Portfolio = () => {
         <li><a href="https://konnismidur.is">konnismidur.is</a></li>
       </ul>
 
+      <br />
+
       <Dither
-        src="/images/portfolio/jonogmarteinn_dark.png"
-        alt="Screenshot from jonogmarteinn.is"
-        width={1202} height={1078}
+        src="/images/portfolio/litasyn/litasyn.png"
+        alt="Screenshot from litasyn.is"
+        width={1974} height={1634}
       />
       <Dither
         src="/images/portfolio/malco_dark.png"
