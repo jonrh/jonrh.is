@@ -18,20 +18,20 @@ const About = () => {
 
       <h1>About</h1>
 
-      <p><strong>Hello! My name is Jón Rúnar Helgason</strong>:</p>
+      <p><strong>Currently</strong>:</p>
       <ul>
         <li>Helping contractors <a href="https://timavera.com">track time</a> so they can focus on their trade.</li>
         <li>Fullstack Founder & Frontend Software Engineer.</li>
         <li>Living in Seattle, Washington, USA.</li>
-        <li>Currently unavailable for hire.</li>
+        <li>Available for hire.</li>
       </ul>
 
       <p><strong>Recent work</strong>:</p>
       <ul>
         <li><a href="https://timavera.is">Tímavera</a>: Time tracking for contractors SaaS. <a href="https://itunes.apple.com/us/app/klukkinn/id1309092162">iOS</a> & <a href="https://play.google.com/store/apps/details?id=is.klukkinn.app">Android</a> apps.</li>
-        <li><a href="https://litasyn.is">litasyn.is.is</a>: website for a master painter in Iceland.</li>
-        <li><Link href="/portfolio#bd-monitor">BD Monitor</Link>: mobile dashboard app, <a href="https://appsto.re/us/CHXChb.i">iOS</a> & <a href="https://play.google.com/store/apps/details?id=is.vaki.bdhm">Android</a>.</li>
-        <li><Link href="/portfolio#biomass-daily">Biomass Daily</Link> web dashboard for <a href="http://vakiiceland.is/">Vaki</a>.</li>
+        <li><a href="https://litasyn.is">litasyn.is</a>: website for a master painter in Iceland.</li>
+        <li><Link href="/portfolio#bd-monitor">BD Monitor</Link>: mobile dashboard app.</li>
+        <li><Link href="/portfolio#biomass-daily">Biomass Daily</Link> web dashboard for <a href="https://vakiiceland.is/">Vaki</a>.</li>
       </ul>
 
       <p><strong>Background</strong>:</p>
