@@ -3,6 +3,7 @@ import Link from "next/link";
 import Head from "next/head";
 
 import Layout from "../components/layout";
+import Dither from "../components/Dither";
 
 const About = () => {
   const frontendYearsOfExperience = new Date().getUTCFullYear() - 2014;
@@ -51,6 +52,8 @@ const About = () => {
         <li>LinkedIn: <a href="https://linkedin.com/in/jonrh/">https://linkedin.com/in/jonrh/</a></li>
         <li>IRC, Libre.chat: jonrh</li>
       </ul>
+
+      <Dither src="/images/about/jonrh7.png" alt="kek" width={2069} height={2122} />
     </Layout>
   );
 };
