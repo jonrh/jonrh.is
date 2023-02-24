@@ -53,7 +53,10 @@ const About = () => {
         <li>IRC, Libre.chat: jonrh</li>
       </ul>
 
-      <Dither src="/images/about/jonrh7.png" alt="kek" width={2069} height={2122} />
+      <Dither
+        src="/images/about/jonrh.png" width={2069} height={2122}
+        alt="Jón Rúnar Helgason looking to the sunset wearing sun glasses."
+      />
     </Layout>
   );
 };
