@@ -7,8 +7,8 @@
   "repository": "https://github.com/jonrh/jonrh.is",
   "dependencies": {
     "@mdx-js/loader": "2.3.0",
-    "@next/mdx": "13.1.6",
-    "next": "13.1.6",
+    "@next/mdx": "13.4.7",
+    "next": "13.4.7",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
