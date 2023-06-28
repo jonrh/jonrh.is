@@ -35,6 +35,7 @@ const Blog = () => {
       <h1>Blog</h1>
 
       <ul>
+        <li><a href="/using-husky-and-asdf-with-fork">Using Husky and asdf with Fork</a></li>
         <li><a href="/set-macvim-as-default-text-editor-on-macos">Set MacVim as default text editor on macOS</a></li>
         <li><a href="/asdf-with-nix-on-macos">asdf with Nix on macOS</a></li>
         <li><a href="/60x60-meditation-challenge">60x60 Meditation challenge</a></li>
