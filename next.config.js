@@ -7,7 +7,9 @@ const nextConfig = {
   i18n: {
     locales: ["en"],
     defaultLocale: "en",
-  }
+  },
+  // Highlight unsafe React lifecycles, legacy APIs, etc. in dev mode.
+  reactStrictMode: true,
 };
 
 const nextConfigWithMDX = withMDX(nextConfig);
