@@ -24,7 +24,6 @@ const About = () => {
         <li>Helping contractors <a href="https://timavera.com">track time</a> so they can focus on their trade.</li>
         <li>Fullstack Founder & Frontend Software Engineer.</li>
         <li>Living in Seattle, Washington, USA.</li>
-        <li>Available for hire.</li>
       </ul>
 
       <p><strong>Recent work</strong>:</p>
