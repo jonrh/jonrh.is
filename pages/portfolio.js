@@ -190,7 +190,7 @@ const Portfolio = () => {
         <a href="https://vakiiceland.is/biomass-daily/">Biomass Daily</a> system.
 
         A company operating salmon farms would rent hardware frames from Vaki
-        and place them in the se cages. As the salmon swim through the frames
+        and place them in the sea cages. As the salmon swim through the frames
         their weight is measured. This data is then aggregated and analysed in
         various dashboards. <a href="https://vakiiceland.is/">vakiiceland.is</a>
       </p>
