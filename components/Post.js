@@ -59,4 +59,21 @@ const Post = ({title, path, date, metaDescription, children}) => {
   );
 };
 
+export const Page = ({title, path, metaDescription, children}) => {
+  return (
+    <Layout>
+      <Head>
+        <title>{title}</title>
+        <meta name="author" content="Jón Rúnar Helgason" />
+        <meta name="description" content={metaDescription} />
+      </Head>
+
+      <h1>{title}</h1>
+      {children}
+
+      <Path path={path} />
+    </Layout>
+  )
+};
+
 export default Post;
