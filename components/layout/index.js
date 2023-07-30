@@ -27,6 +27,7 @@ const Layout = ({ children }) => {
         <nav>
           <ul>
             <li><Link href="/blog">Blog</Link></li>
+            <li><Link href="/tools">Tools</Link></li>
             <li><Link href="/portfolio">Portfolio</Link></li>
             <li><Link href="/about">About</Link></li>
           </ul>
