@@ -69,10 +69,7 @@ const Tools = () => {
         <li><strong>Laptop</strong>: <a href={mba}>13.6" MacBook Air M2</a>, 10-core, 24GB RAM, 2TB SSD</li>
         <li><strong>Phone</strong>: <a href={phone}>iPhone 13 mini</a> 256GB</li>
         <li><strong>Main Monitor</strong>: Dell 42.5" UltraSharp <a href={dellU4320Q}>U4320Q</a>, 3840x2160</li>
-        <li><strong>Extra Monitors</strong>: 2x Dell 25" UltraSharp <a href={dell25}>U2515H</a>, 2560x1440</li>
-        <li><strong>Monitor Mounts</strong>: SilverStone <a href={silverstone22}>SST-ARM22BC</a> & <a href={silverstone11}>SST-ARM11BC</a></li>
         <li><strong>Keyboard</strong>: <a href={keyboard}>Apple Magic Keyboard</a></li>
-        <li><strong>Wireless mouse</strong>: <a href={mouse}>Logitech G903</a></li>
         <li><strong>Headphones</strong>: <a href={airpodspro}>AirPods Pro 2nd gen</a></li>
         <li><strong>2FA</strong>: <a href={yubikey}>Yubikey</a></li>
         <li><strong>Microphone</strong>: <RodeWirelessGo2 /></li>
@@ -188,6 +185,28 @@ const Tools = () => {
         The winning formula was how small the overall package is.
       </p>
 
+      <h3>5th Nov 2022</h3>
+      <p>
+        Handed down two Dell 25" UltraSharp <a href={dell25}>U2515H</a>{" "}
+        (2560x1440) monitors along with SilverStone{" "}
+        <a href={silverstone22}>SST-ARM22BC</a> &{" "}
+        <a href={silverstone11}>SST-ARM11BC</a> monitor mounts. Great monitors
+        and mounts that have many more years left. The exact monitors are no
+        longer sold but a Dell UltraSharp has always proved exceptional. Would
+        not hesitate to buy the exact monitor mounts again. It was such a game
+        changer to have them, desk became a lot less cluttered, better looking,
+        and easier to clean.
+      </p>
+      <p>
+        Handed down as well a <a href={mouse}>Logitech G903</a> wireless mouse.
+        It was okay. Expensive and ugly but tracked exceptionally well. Used it
+        directly on the desk. After some time the left clicker started to ghost
+        and occasionally double click on single clicks which was annoying. The
+        infinity scroll wheel is bar-none the best scroll wheel. It was
+        available on some high-end Logitech mice. A massive quality of life
+        improvement if scrolling a lot in very large documents.
+      </p>
+
       <h3>28th Jul 2022</h3>
       Upgraded to a 13.6" MacBook Air M2 from 15" MacBook Pro Late-2013.
 
@@ -203,6 +222,8 @@ const Tools = () => {
         <li><a href={watch}>Apple Watch 4</a>. Jan 2019 - Nov 2022.</li>
         <li><a href={ipadpro}>iPad Pro 11</a> & <a href={applepencil}>Apple Pencil 2nd gen</a>. Jan 2019 - Nov 2022.</li>
         <li><a href={airpodspro}>AirPods Pro 1st gen</a>. Aug 2021 - Nov 2022.</li>
+        <li>2x <a href={dell25}>Dell 25" UltraSharp U2515H</a>. Oct 2016 - Nov 2022.</li>
+        <li><a href={mouse}>Logitech G903</a>. Nov 2017 - Nov 2022.</li>
       </ul>
 
       {/* ========================= Past software ========================== */}
