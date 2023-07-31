@@ -37,6 +37,7 @@ const datagrip = "https://www.jetbrains.com/datagrip/";
 const astudio = "https://developer.android.com/studio/";
 
 const RodeWirelessGo2 = () => <a href="https://rode.com/en-us/microphones/wireless/wirelessgoii">Røde Wireless Go II</a>;
+const AnkerPowerCore24K = () => <a href="https://www.anker.com/products/a1289">Anker PowerCore 24K</a>;
 
 const Tools = () => {
   return (
@@ -73,6 +74,7 @@ const Tools = () => {
         <li><strong>2FA</strong>: <a href={yubikey}>Yubikey</a></li>
         <li><strong>Microphone</strong>: <RodeWirelessGo2 /></li>
         <li><strong>Gaming</strong>: Nintendo <a href={nswitch}>Switch</a> & <a href={procontroller}>Pro Controller</a></li>
+        <li><strong>Battery</strong>: <AnkerPowerCore24K /></li>
       </ul>
 
       {/* ============================ Software ============================ */}
@@ -133,6 +135,10 @@ const Tools = () => {
 
       {/* =========================== Changelog ============================ */}
       <h2 id="changelog">Changelog</h2>
+      <h3>2nd July 2023</h3>
+      Bought <AnkerPowerCore24K />. Intended as an external battery for the
+      MacBook Air M2. Lasts for about 1.2x charges.
+
       <h3>22nd May 2023</h3>
       <a href={macmini}>Mac Mini Late-2018</a> given away as a hand-me-down. A
       great machine that still has a lot left in it. Did not see much use after
