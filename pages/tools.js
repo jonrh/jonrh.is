@@ -21,7 +21,6 @@ const procontroller = "https://en.m.wikipedia.org/wiki/Nintendo_Switch_Pro_Contr
 const yubikey = "https://www.yubico.com";
 const applepencil = "https://en.m.wikipedia.org/wiki/Apple_Pencil";
 const toothfairy = "https://apps.apple.com/us/app/toothfairy/id1191449274?mt=12";
-const arc = "https://arc.net/";
 const orion = "https://browser.kagi.com/";
 const safari = "https://www.apple.com/safari/";
 const chrome = "https://www.google.com/chrome/";
@@ -36,8 +35,12 @@ const pycharm = "https://www.jetbrains.com/pycharm/";
 const datagrip = "https://www.jetbrains.com/datagrip/";
 const astudio = "https://developer.android.com/studio/";
 
+{/* =============================== Hardware =============================== */}
 const RodeWirelessGo2 = () => <a href="https://rode.com/en-us/microphones/wireless/wirelessgoii">Røde Wireless Go II</a>;
 const AnkerPowerCore24K = () => <a href="https://www.anker.com/products/a1289">Anker PowerCore 24K</a>;
+
+{/* =============================== Software =============================== */}
+const Arc = () => <a href="https://arc.net">Arc</a>;
 
 const Tools = () => {
   return (
@@ -86,7 +89,7 @@ const Tools = () => {
           <ul>
             <li><a href={orion}>Orion</a> - primary</li>
             <li><a href={safari}>Safari</a> - secondary</li>
-            <li><a href={arc}>Arc</a> - work, multiple profiles</li>
+            <li><Arc /> - work, multiple profiles</li>
             <li><a href={chrome}>Chrome</a> - work</li>
             <li><a href={firefox}>Firefox</a> - rare dev testing</li>
           </ul>
@@ -145,6 +148,13 @@ const Tools = () => {
       acquiring the 13.6" MacBook Air M2. Have owned three Mac Minis in the
       past and they have all been great, small, and cost effective machines.
       Some of Apple's finest work.
+
+      <h3>26th Jan 2023</h3>
+      Started using <Arc />. A Chromium based browser for power users.
+      First-class support for multiple profiles and better tab management.
+      Convenient when managing multiple separate logins for the same or similar
+      set of websites (Gmail, Google Ads, etc). Non-pinned tabs automatically
+      clear up the next day.
 
       <h3>9th Nov 2022</h3>
       Upgraded to AirPods Pro 2nd gen from 1st gen.
