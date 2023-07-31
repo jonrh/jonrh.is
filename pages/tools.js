@@ -36,6 +36,8 @@ const pycharm = "https://www.jetbrains.com/pycharm/";
 const datagrip = "https://www.jetbrains.com/datagrip/";
 const astudio = "https://developer.android.com/studio/";
 
+const RodeWirelessGo2 = () => <a href="https://rode.com/en-us/microphones/wireless/wirelessgoii">Røde Wireless Go II</a>;
+
 const Tools = () => {
   return (
     <Page
@@ -69,7 +71,7 @@ const Tools = () => {
         <li><strong>Wireless mouse</strong>: <a href={mouse}>Logitech G903</a></li>
         <li><strong>Headphones</strong>: <a href={airpodspro}>AirPods Pro 2nd gen</a></li>
         <li><strong>2FA</strong>: <a href={yubikey}>Yubikey</a></li>
-        <li><strong>Microphone</strong>: Rode Wireless Go II</li>{/* bought Aug 2021 */}
+        <li><strong>Microphone</strong>: <RodeWirelessGo2 /></li>
         <li><strong>Gaming</strong>: Nintendo <a href={nswitch}>Switch</a> & <a href={procontroller}>Pro Controller</a></li>
       </ul>
 
@@ -118,7 +120,7 @@ const Tools = () => {
       <h2 id="notes">Notes</h2>
       <ul>
         <li>
-          Currently still have the Rode Wireless Go II but no longer actively
+          Currently still have the <RodeWirelessGo2 /> but no longer actively
           using it. A really great wireless microphone in a small package.
           Bought to improve audio quality in VoIP calls but not making nearly
           as many calls as before. The AirPods Pro 2 are good enough for
@@ -172,6 +174,9 @@ const Tools = () => {
 
       <h3>28th July 2022</h3>
       Upgraded to a 13.6" MacBook Air M2 from 15" MacBook Pro Late-2013.
+
+      <h3>25th August 2021</h3>
+      Bought <RodeWirelessGo2 /> wireless microphone.
 
       {/* ========================= Past hardware ========================== */}
       <h2 id="past-hardware">Past hardware</h2>
