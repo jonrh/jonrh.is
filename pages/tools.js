@@ -1,165 +1,200 @@
+import React from "react";
+
 import { Page } from "../components/Post";
 
-<Page
-  title="Tools"
-  path="tools"
-  metaDescription="A list of current and past hardware and software tools."
->
+const macmini = "https://everymac.com/systems/apple/mac_mini/specs/mac-mini-core-i7-3.2-late-2018-specs.html";
+const mba = "https://everymac.com/systems/apple/macbook-air/specs/macbook-air-m2-8-core-cpu-10-core-gpu-13-2022-specs.html";
+const dellU4320Q = "https://www.dell.com/en-us/work/shop/dell-ultrasharp-43-4k-usb-c-monitor-u4320q/apd/210-avke/monitors-monitor-accessories";
+const dell25 = "https://www.tftcentral.co.uk/reviews/dell_u2515h.htm";
+const silverstone22 = "https://www.silverstonetek.com/product.php?pid=412";
+const silverstone11 = "https://www.silverstonetek.com/product.php?pid=408";
+const keyboard = "https://en.m.wikipedia.org/wiki/Magic_Keyboard";
+const mouse = "https://www.logitechg.com/en-us/products/gaming-mice/g903-wireless-gaming-mouse.html";
+const chair = "https://en.m.wikipedia.org/wiki/Aeron_chair";
+const desk = "https://m2.ikea.com/us/en/p/vaestanby-table-dark-brown-vaestana-dark-brown-s59040344/";
+const airpodspro = "https://en.wikipedia.org/wiki/AirPods_Pro";
+const phone = "https://en.wikipedia.org/wiki/IPhone_13";
+const tablet = "https://en.wikipedia.org/wiki/IPad_Pro";
+const ipadpro = "https://en.wikipedia.org/wiki/IPad_Pro";
+const watch = "https://en.m.wikipedia.org/wiki/Apple_Watch";
+const nswitch = "https://www.nintendo.com/switch/";
+const procontroller = "https://en.m.wikipedia.org/wiki/Nintendo_Switch_Pro_Controller";
+const yubikey = "https://www.yubico.com";
+const applepencil = "https://en.m.wikipedia.org/wiki/Apple_Pencil";
+const toothfairy = "https://apps.apple.com/us/app/toothfairy/id1191449274?mt=12";
+const arc = "https://arc.net/";
+const orion = "https://browser.kagi.com/";
+const safari = "https://www.apple.com/safari/";
+const chrome = "https://www.google.com/chrome/";
+const firefox = "https://www.mozilla.org/en-US/firefox/new/";
+const onep = "https://1password.com/";
+const rectangle = "https://rectangleapp.com/";
+const photoshop = "https://en.wikipedia.org/wiki/Adobe_Photoshop";
+const illustrator = "https://en.wikipedia.org/wiki/Adobe_Illustrator";
+const kagi = "https://kagi.com/";
+const webstorm = "https://www.jetbrains.com/webstorm/";
+const pycharm = "https://www.jetbrains.com/pycharm/";
+const datagrip = "https://www.jetbrains.com/datagrip/";
+const astudio = "https://developer.android.com/studio/";
 
-A list of current and past hardware and software tools.
+const Tools = () => {
+  return (
+    <Page
+      title="Tools"
+      path="tools"
+      metaDescription="A list of current and past hardware and software tools."
+    >
+      <p>A list of current and past hardware and software tools.</p>
+      <p>Last updated: July 31, 2023.</p>
 
-Last updated: July 30, 2023.
+      Table of contents:
+      <ul>
+        <li><a href="#hardware">Hardware</a></li>
+        <li><a href="#software">Software</a></li>
+        <li><a href="#techstack">Preferred tech stack</a></li>
+        <li><a href="#notes">Notes</a></li>
+        <li><a href="#changelog">Changelog</a></li>
+        <li><a href="#past-hardware">Past hardware</a></li>
+        <li><a href="#past-software">Past software</a></li>
+      </ul>
 
-Table of contents:
-+ [Hardware](#hardware)
-+ [Software](#software)
-+ [Preferred tech stack](#techstack)
-+ [Notes](#notes)
-+ [Changelog](#changelog)
-+ [Past hardware](#past-hardware)
-+ [Past software](#past-software)
+      {/* ============================ Hardware ============================ */}
+      <h2 id="hardware">Hardware</h2>
+      <ul>
+        <li><strong>Laptop</strong>: <a href={mba}>13.6" MacBook Air M2</a>, 10-core, 24GB RAM, 2TB SSD</li>
+        <li><strong>Phone</strong>: <a href={phone}>iPhone 13 mini</a> 256GB</li>
+        <li><strong>Main Monitor</strong>: Dell 42.5" UltraSharp <a href={dellU4320Q}>U4320Q</a>, 3840x2160</li>
+        <li><strong>Extra Monitors</strong>: 2x Dell 25" UltraSharp <a href={dell25}>U2515H</a>, 2560x1440</li>
+        <li><strong>Monitor Mounts</strong>: SilverStone <a href={silverstone22}>SST-ARM22BC</a> & <a href={silverstone11}>SST-ARM11BC</a></li>
+        <li><strong>Keyboard</strong>: <a href={keyboard}>Apple Magic Keyboard</a></li>
+        <li><strong>Wireless mouse</strong>: <a href={mouse}>Logitech G903</a></li>
+        <li><strong>Headphones</strong>: <a href={airpodspro}>AirPods Pro 2nd gen</a></li>
+        <li><strong>2FA</strong>: <a href={yubikey}>Yubikey</a></li>
+        <li><strong>Microphone</strong>: Rode Wireless Go II</li>{/* bought Aug 2021 */}
+        <li><strong>Gaming</strong>: Nintendo <a href={nswitch}>Switch</a> & <a href={procontroller}>Pro Controller</a></li>
+      </ul>
 
-<h2 id="hardware">Hardware</h2>
-+ **Laptop**: [13.6" MacBook Air M2][mba], 10-core, 24GB RAM, 2TB SSD
-+ **Phone**: [iPhone 13 mini][phone] 256GB
-+ **Main Monitor**: Dell 42.5" UltraSharp [U4320Q][dellU4320Q], 3840x2160
-+ **Extra Monitors**: 2x Dell 25" UltraSharp [U2515H][dell25], 2560x1440
-+ **Monitor Mounts**: SilverStone [SST-ARM22BC][silverstone22] &
-[SST-ARM11BC][silverstone11]
-+ **Keyboard**: [Apple Magic Keyboard][keyboard]
-+ **Wireless mouse**: [Logitech G903][mouse]
-+ **Headphones**: [AirPods Pro 2nd gen][airpodspro]
-+ **2FA**: [Yubikey][2fa]
-+ **Microphone**: Rode Wireless Go II {/* bought Aug 2021 */}
-+ **Gaming**: Nintendo [Switch][switch] & [Pro Controller][procontroller]
+      {/* ============================ Software ============================ */}
+      <h2 id="software">Software</h2>
+      <ul>
+        <li><strong>IDEs</strong>: <a href={webstorm}>WebStorm</a>, <a href={pycharm}>PyCharm</a>, <a href={datagrip}>DataGrip</a>, <a href={astudio}>Android Studio</a></li>
+        <li>
+          <strong>Browsers</strong>:
+          <ul>
+            <li><a href={orion}>Orion</a> - primary</li>
+            <li><a href={safari}>Safari</a> - secondary</li>
+            <li><a href={arc}>Arc</a> - work, multiple profiles</li>
+            <li><a href={chrome}>Chrome</a> - work</li>
+            <li><a href={firefox}>Firefox</a> - rare dev testing</li>
+          </ul>
+        </li>
+        <li><strong>Search engine</strong>: <a href={kagi}>Kagi</a></li>
+        <li><strong>Task management</strong>: <a href="https://asana.com/">Asana</a> (work), <a href="https://todoist.com">Todoist</a> (personal)</li>
+        <li><strong>Chat</strong>: <a href="https://slack.com">Slack</a> (work), <a href="https://www.signal.org">Signal</a> & <a href="https://telegram.org">Telegram</a> (personal)</li>
+        <li><strong>Productivity</strong>: <a href="https://qotoqot.com/qbserve/">Qbserve</a>, <a href="https://timingapp.com">Timing</a></li>
+        <li><strong>Notes</strong>: <a href="(https://en.wikipedia.org/wiki/Notes_(Apple)">Notes</a> on macOS & iOS</li>
+        <li><strong>Text editors</strong>: <a href="https://github.com/macvim-dev/macvim">MacVim</a> (general)</li>
+        <li><strong>Version control</strong>: <a href="https://www.gitkraken.com/">GitKraken</a></li>
+        <li><strong>Time tracking</strong>: <a href="https://timavera.com/">Tímavera</a></li>
+        <li><strong>Terminal</strong>: <a href="https://sw.kovidgoyal.net/kitty/">Kitty</a> & <a href="https://iterm2.com">iTerm</a></li>
+        <li><strong>Email</strong>: <a href="https://www.fastmail.com">Fastmail</a></li>
+        <li><strong>VPN</strong>: <a href="https://www.ivpn.net">IVPN</a></li>
+        <li><strong>Images</strong>: <a href={photoshop}>Photoshop</a>, <a href={illustrator}>Illustrator</a></li>
+        <li><strong>Window manager</strong>: <a href={rectangle}>Rectangle</a></li>
+        <li><strong>Secrets</strong>: <a href={onep}>1Password</a></li>
+        <li><strong>Utils</strong>: <a href={toothfairy}>ToothFairy</a></li>
+      </ul>
 
-<h2 id="software">Software</h2>
-+ **IDEs**: [WebStorm](https://www.jetbrains.com/webstorm/),
-  [PyCharm](https://www.jetbrains.com/pycharm/),
-  [DataGrip](https://www.jetbrains.com/datagrip/),
-  [Android Studio](https://developer.android.com/studio/)
-+ **Browsers**:
-  + [Orion][orion] - primary
-  + [Safari][safari] - secondary
-  + [Arc][arc] - work, multiple profiles
-  + [Chrome][chrome] - work
-  + [Firefox][firefox] - rare dev testing
-+ **Search engine**: [Kagi][kagi]
-+ **Task managment**: [Asana](https://asana.com/) (work),
-[Todoist](https://todoist.com) (personal)
-+ **Chat**: [Slack](https://slack.com) (work),
-[Signal](https://www.signal.org) &
-[Telegram](https://telegram.org) (personal)
-+ **Productivity**: [Qbserve](https://qotoqot.com/qbserve/),
-[Timing](https://timingapp.com)
-+ **Notes**: [Notes](https://en.wikipedia.org/wiki/Notes_(Apple)) on macOS & iOS
-+ **Text editors**: [MacVim](https://github.com/macvim-dev/macvim) (general)
-+ **Version control**: [GitKraken](https://www.gitkraken.com/)
-+ **Time tracking**: [Tímavera](https://timavera.com/)
-+ **Terminal**: [Kitty](https://sw.kovidgoyal.net/kitty/) &
-[iTerm](https://iterm2.com)
-+ **Email**: [Fastmail](https://www.fastmail.com)
-+ **VPN**: [IVPN](https://www.ivpn.net)
-+ **Images**: [Photoshop][photoshop], [Illustrator][illustrator]
-+ **Window manager**: [Rectangle][rectangle]
-+ **Secrets**: [1Password][1p]
-+ **Utils**: [ToothFairy][toothfairy]
+      {/* ====================== Preferred tech stack ====================== */}
+      <h2 id="techstack">Preferred tech stack</h2>
+      <ul>
+        <li><strong>Infrastructure</strong>: AWS, Vercel, Deno Deploy</li>
+        <li><strong>Framework</strong>: Next.js</li>
+        <li><strong>Database</strong>: Fauna</li>
+        <li><strong>CSS frameworks</strong>: Tailwind, Bootstrap</li>
+        <li><strong>Programming language</strong>: JavaScript</li>
+      </ul>
 
-<h2 id="techstack">Preferred tech stack</h2>
-+ **Infrastructure**: AWS, Vercel, Deno Deploy
-+ **Framework**: Next.js
-+ **Database**: Fauna
-+ **CSS frameworks**: Tailwind, Bootstrap
-+ **Programming language**: JavaScript
+      {/* ============================= Notes ============================== */}
+      <h2 id="notes">Notes</h2>
+      <ul>
+        <li>
+          Currently still have the Rode Wireless Go II but no longer actively
+          using it. A really great wireless microphone in a small package.
+          Bought to improve audio quality in VoIP calls but not making nearly
+          as many calls as before. The AirPods Pro 2 are good enough for
+          occasional customer calls. Would recommend the Wireless Go II to
+          office workers that make regular customer calls or audio/video team
+          meetings. If making frequent calls a purpose built wired headset
+          would probably be best.
+        </li>
+      </ul>
 
-<h2 id="notes">Notes</h2>
-+ Currently still have the Rode Wireless Go II but no longer actively using it.
-  A really great wireless microphone in a small package. Bought to improve
-  audio quality in VoIP calls but not making nearly as many calls as before.
-  The AirPods Pro 2 are good enough for occasional customer calls. Would
-  recommend the Wireless Go II to office workers that make regular customer
-  calls or audio/video team meetings. If making frequent calls a purpose
-  built wired headset would probably be best.
+      {/* =========================== Changelog ============================ */}
+      <h2 id="changelog">Changelog</h2>
+      <h3>22nd May 2023</h3>
+      <a href={macmini}>Mac Mini Late-2018</a> given away as a hand-me-down. A
+      great machine that still has a lot left in it. Did not see much use after
+      acquiring the 13.6" MacBook Air M2. Have owned three Mac Minis in the
+      past and they have all been great, small, and cost effective machines.
+      Some of Apple's finest work.
 
+      <h3>9th November 2022</h3>
+      Upgraded to AirPods Pro 2nd gen from 1st gen.
 
-<h2 id="changelog">Changelog</h2>
-### 22nd May 2023
-[Mac Mini Late-2018][macmini] given away as a hand-me-down. A great machine
-that still has a lot left in it. Did not see much use after acquiring the 13"
-MacBook Air M2. Have owned three Mac Minis in the past and they have all been
-great, small, and cost effective machines. Some of Apple's finest work.
+      <h3>8th November 2022</h3>
+      <p>
+        <a href={watch}>Apple Watch 4</a> given away as a hand-me-down. Did not
+        get a new watch. Liked the sleep and health tracking of the device but
+        not enough to warrant buying a new watch. Enjoy having a free arm more.
+      </p>
 
-### 9th November 2022
-Upgraded to AirPods Pro 2nd gen from 1st gen.
+      <p>
+        <a href={ipadpro}>iPad Pro 11"</a> & <a href={applepencil}>Apple Pencil
+        2nd gen</a> given away as hand-me-down. The iPad and pencil was great
+        for signing PDFs and general browsing. However the device did not live
+        up to expectations doing frontend development work. The hardware is
+        great but the device is seriously hamstrung by the operating system.
+      </p>
 
-### 8th November 2022
-[Apple Watch 4][watch] given away as a hand-me-down. Did not get a new watch.
-Liked the sleep and health tracking of the device but not enough to warrant
-buying a new watch. Enjoy having a free arm more.
+      <p>
+        <a href={airpodspro}>AirPods Pro</a> given away as hand-me-down.
+        Amazing headphones that still had decent amount of life left. Although
+        they had been used a lot (4-8h per day) and battery capacity was
+        reduced. Upgraded to the AirPods Pro 2nd gen. Was initially very
+        sceptical about the AirPods Pro but decided to give it a try on a
+        recommendation of others. Used Bose QC-35 before which had slightly
+        better sound and active noise cancelling. However the QC-35 would often
+        have connection issues especially when switching between multiple
+        devices. The AirPods switched more or less seamlessly between devices,
+        sounded good enough, and had good enough active noise cancellation.
+        The winning formula was how small the overall package is.
+      </p>
 
-[iPad Pro 11"][ipadpro] & [Apple Pencil 2nd gen][applepencil] given away as
-hand-me-down. The iPad and pencil was great for signing PDFs and general
-browsing. However the device did not live up to expectations doing frontend
-development work. The hardware is great but the device is seriously hamstrung
-by the operating system.
+      <h3>28th July 2022</h3>
+      Upgraded to a 13.6" MacBook Air M2 from 15" MacBook Pro Late-2013.
 
-[AirPods Pro][airpodspro] given away as hand-me-down. Amazing headphones that
-still had decent amount of life left. Although they had been used a lot (4-8h
-per day) and battery capacity was reduced. Upgraded to the AirPods Pro 2nd gen.
-Was initially very sceptical about the AirPods Pro but decided to give it a try
-on a recommendation of others. Used Bose QC-35 before which had slightly better
-sound and active noise cancelling. However the QC-35 would often have
-connection issues especially when switching between multiple devices. The
-AirPods switched more or less seamlessly between devices, sounded good enough,
-and had good enough active noise cancellation. The winning formula was how
-small the overall package is.
+      {/* ========================= Past hardware ========================== */}
+      <h2 id="past-hardware">Past hardware</h2>
+      History of hardware used in the past.
 
-### 28th July 2022
-Upgraded to a 13.6" MacBook Air M2 from 15" MacBook Pro Late-2013.
+      <ul>
+        <li><a href={macmini}>Mac Mini Late-2018</a>, 6-core, 64GB RAM, 2TB SSD. Jan 2019 - May 2023.</li>
+        <li><a href={watch}>Apple Watch 4</a>. Jan 2019 - Nov 2022.</li>
+        <li><a href={ipadpro}>iPad Pro 11</a> & <a href={applepencil}>Apple Pencil 2nd gen</a>. Jan 2019 - Nov 2022.</li>
+        <li><a href={airpodspro}>AirPods Pro 1st gen</a>. Aug 2021 - Nov 2022.</li>
+      </ul>
 
-<h2 id="past-hardware">Past hardware</h2>
-History of hardware used in the past.
+      {/* ========================= Past software ========================== */}
+      <h2 id="past-software">Past software</h2>
+      History of software used in the past.
 
-+ [Mac Mini Late-2018][macmini], 6-core, 64GB RAM, 2TB SSD. Jan 2019 - May 2023.
-+ [Apple Watch 4][watch]. Jan 2019 - Nov 2022.
-+ [iPad Pro 11][ipadpro] & [Apple Pencil 2nd gen][applepencil]. Jan 2019 -
-  Nov 2022.
-+ [AirPods Pro 1st gen][airpodspro]. Aug 2021 - Nov 2022.
+      <ul>
+        <li>DuckDuckGo</li>
+      </ul>
 
-<h2 id="past-software">Past software</h2>
-History of software used in the past.
+    </Page>
+  );
+};
 
-+ DuckDuckGo.
-
-[macmini]: https://everymac.com/systems/apple/mac_mini/specs/mac-mini-core-i7-3.2-late-2018-specs.html
-[mba]: https://everymac.com/systems/apple/macbook-air/specs/macbook-air-m2-8-core-cpu-10-core-gpu-13-2022-specs.html
-[dellU4320Q]: https://www.dell.com/en-us/work/shop/dell-ultrasharp-43-4k-usb-c-monitor-u4320q/apd/210-avke/monitors-monitor-accessories
-[dell25]: https://www.tftcentral.co.uk/reviews/dell_u2515h.htm
-[silverstone22]: https://www.silverstonetek.com/product.php?pid=412
-[silverstone11]: https://www.silverstonetek.com/product.php?pid=408
-[keyboard]: https://en.m.wikipedia.org/wiki/Magic_Keyboard
-[mouse]: https://www.logitechg.com/en-us/products/gaming-mice/g903-wireless-gaming-mouse.html
-[chair]: https://en.m.wikipedia.org/wiki/Aeron_chair
-[desk]: https://m2.ikea.com/us/en/p/vaestanby-table-dark-brown-vaestana-dark-brown-s59040344/
-[airpodspro]: https://en.wikipedia.org/wiki/AirPods_Pro
-[phone]: https://en.wikipedia.org/wiki/IPhone_13
-[tablet]: https://en.wikipedia.org/wiki/IPad_Pro
-[ipadpro]: https://en.wikipedia.org/wiki/IPad_Pro
-[watch]: https://en.m.wikipedia.org/wiki/Apple_Watch
-[switch]: https://www.nintendo.com/switch/
-[procontroller]: https://en.m.wikipedia.org/wiki/Nintendo_Switch_Pro_Controller
-[2fa]: https://www.yubico.com
-[applepencil]: https://en.m.wikipedia.org/wiki/Apple_Pencil
-[toothfairy]: https://apps.apple.com/us/app/toothfairy/id1191449274?mt=12
-[arc]: https://arc.net/
-[orion]: https://browser.kagi.com/
-[safari]: https://www.apple.com/safari/
-[chrome]: https://www.google.com/chrome/
-[firefox]: https://www.mozilla.org/en-US/firefox/new/
-[1p]: https://1password.com/
-[rectangle]: https://rectangleapp.com/
-[photoshop]: https://en.wikipedia.org/wiki/Adobe_Photoshop
-[illustrator]: https://en.wikipedia.org/wiki/Adobe_Illustrator
-[kagi]: https://kagi.com/
-
-</Page>
+export default Tools;
