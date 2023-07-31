@@ -135,7 +135,7 @@ const Tools = () => {
 
       {/* =========================== Changelog ============================ */}
       <h2 id="changelog">Changelog</h2>
-      <h3>2nd July 2023</h3>
+      <h3>2nd Jul 2023</h3>
       Bought <AnkerPowerCore24K />. Intended as an external battery for the
       MacBook Air M2. Lasts for about 1.2x charges.
 
@@ -146,10 +146,10 @@ const Tools = () => {
       past and they have all been great, small, and cost effective machines.
       Some of Apple's finest work.
 
-      <h3>9th November 2022</h3>
+      <h3>9th Nov 2022</h3>
       Upgraded to AirPods Pro 2nd gen from 1st gen.
 
-      <h3>8th November 2022</h3>
+      <h3>8th Nov 2022</h3>
       <p>
         <a href={watch}>Apple Watch 4</a> given away as a hand-me-down. Did not
         get a new watch. Liked the sleep and health tracking of the device but
@@ -178,10 +178,10 @@ const Tools = () => {
         The winning formula was how small the overall package is.
       </p>
 
-      <h3>28th July 2022</h3>
+      <h3>28th Jul 2022</h3>
       Upgraded to a 13.6" MacBook Air M2 from 15" MacBook Pro Late-2013.
 
-      <h3>25th August 2021</h3>
+      <h3>25th Aug 2021</h3>
       Bought <RodeWirelessGo2 /> wireless microphone.
 
       {/* ========================= Past hardware ========================== */}
