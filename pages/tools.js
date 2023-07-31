@@ -14,7 +14,6 @@ const chair = "https://en.m.wikipedia.org/wiki/Aeron_chair";
 const desk = "https://m2.ikea.com/us/en/p/vaestanby-table-dark-brown-vaestana-dark-brown-s59040344/";
 const airpodspro = "https://en.wikipedia.org/wiki/AirPods_Pro";
 const phone = "https://en.wikipedia.org/wiki/IPhone_13";
-const tablet = "https://en.wikipedia.org/wiki/IPad_Pro";
 const ipadpro = "https://en.wikipedia.org/wiki/IPad_Pro";
 const watch = "https://en.m.wikipedia.org/wiki/Apple_Watch";
 const nswitch = "https://www.nintendo.com/switch/";
