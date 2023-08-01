@@ -67,13 +67,13 @@ const Tools = () => {
       <h2 id="hardware">Hardware</h2>
       <ul>
         <li><strong>Laptop</strong>: <a href={mba}>13.6" MacBook Air M2</a>, 10-core, 24GB RAM, 2TB SSD</li>
+        <li><strong>Monitor / TV</strong>: Dell 42.5" UltraSharp <a href={dellU4320Q}>U4320Q</a>, 3840x2160</li>
         <li><strong>Phone</strong>: <a href={phone}>iPhone 13 mini</a> 256GB</li>
-        <li><strong>Main Monitor</strong>: Dell 42.5" UltraSharp <a href={dellU4320Q}>U4320Q</a>, 3840x2160</li>
         <li><strong>Headphones</strong>: <a href={airpodspro}>AirPods Pro 2nd gen</a></li>
-        <li><strong>2FA</strong>: <a href={yubikey}>Yubikey</a></li>
         <li><strong>Microphone</strong>: <RodeWirelessGo2 /></li>
         <li><strong>Gaming</strong>: Nintendo <a href={nswitch}>Switch</a> & <a href={procontroller}>Pro Controller</a></li>
         <li><strong>Battery</strong>: <AnkerPowerCore24K /></li>
+        <li><strong>2FA</strong>: <a href={yubikey}>Yubikey</a></li>
       </ul>
 
       {/* ============================ Software ============================ */}
@@ -120,6 +120,14 @@ const Tools = () => {
       {/* ============================= Notes ============================== */}
       <h2 id="notes">Notes</h2>
       <ul>
+        <li>
+          Been trying to work mostly outdoors after acquiring the MacBook Air
+          M2 so the Dell 42.5" UltraSharp <a href={dellU4320Q}>U4320Q</a>{" "}
+          monitor is personally mostly used as a TV. Partner uses it a lot when
+          working from home. A great monitor with a massive screen real estate.
+          The monitor runs at a native 3840x2160 resolution (4K) which is like
+          having 4x 1920x1080 monitors except in one panel.
+        </li>
         <li>
           Currently still have the <RodeWirelessGo2 /> but no longer actively
           using it. A really great wireless microphone in a small package.
