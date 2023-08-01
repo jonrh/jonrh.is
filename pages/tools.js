@@ -136,25 +136,37 @@ const Tools = () => {
       {/* =========================== Changelog ============================ */}
       <h2 id="changelog">Changelog</h2>
       <h3>2nd Jul 2023</h3>
-      Bought <AnkerPowerCore24K />. Intended as an external battery for the
-      MacBook Air M2. Lasts for about 1.2x charges.
+      <p>
+        Bought <AnkerPowerCore24K />. Intended as an external battery for the
+        MacBook Air M2. Lasts for about 1.2x charges.
+      </p>
 
       <h3>22nd May 2023</h3>
-      <a href={macmini}>Mac Mini Late-2018</a> given away as a hand-me-down. A
-      great machine that still has a lot left in it. Did not see much use after
-      acquiring the 13.6" MacBook Air M2. Have owned three Mac Minis in the
-      past and they have all been great, small, and cost effective machines.
-      Some of Apple's finest work.
+      <p>
+        <a href={macmini}>Mac Mini Late-2018</a> given away as a hand-me-down.
+        A great machine that still has a lot left in it. Did not see much use
+        after acquiring the 13.6" MacBook Air M2. Have owned three Mac Minis in
+        the past and they have all been great, small, and cost effective
+        machines. Some of Apple's finest work.
+      </p>
+      <p>
+        Also gave away <a href={keyboard}>Apple Magic Keyboard</a> to go along
+        with the Mac Mini. Fantastic keyboard. Been a big fan of Apple
+        keyboards throughout the years. Best tried so far. Even prefer it to
+        mechanical keyboards because of the much shorter key travel distance.
+      </p>
 
       <h3>26th Jan 2023</h3>
-      Started using <Arc />. A Chromium based browser for power users.
-      First-class support for multiple profiles and better tab management.
-      Convenient when managing multiple separate logins for the same or similar
-      set of websites (Gmail, Google Ads, etc). Non-pinned tabs automatically
-      clear up the next day.
+      <p>
+        Started using <Arc />. A Chromium based browser for power users.
+        First-class support for multiple profiles and better tab management.
+        Convenient when managing multiple separate logins for the same or
+        similar set of websites (Gmail, Google Ads, etc). Non-pinned tabs
+        automatically clear up the next day.
+      </p>
 
       <h3>9th Nov 2022</h3>
-      Upgraded to AirPods Pro 2nd gen from 1st gen.
+      <p>Upgraded to AirPods Pro 2nd gen from 1st gen.</p>
 
       <h3>8th Nov 2022</h3>
       <p>
@@ -208,10 +220,10 @@ const Tools = () => {
       </p>
 
       <h3>28th Jul 2022</h3>
-      Upgraded to a 13.6" MacBook Air M2 from 15" MacBook Pro Late-2013.
+      <p>Upgraded to a 13.6" MacBook Air M2 from 15" MacBook Pro Late-2013.</p>
 
       <h3>25th Aug 2021</h3>
-      Bought <RodeWirelessGo2 /> wireless microphone.
+      <p>Bought <RodeWirelessGo2 /> wireless microphone.</p>
 
       {/* ========================= Past hardware ========================== */}
       <h2 id="past-hardware">Past hardware</h2>
