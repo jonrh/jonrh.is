@@ -69,7 +69,6 @@ const Tools = () => {
         <li><strong>Laptop</strong>: <a href={mba}>13.6" MacBook Air M2</a>, 10-core, 24GB RAM, 2TB SSD</li>
         <li><strong>Phone</strong>: <a href={phone}>iPhone 13 mini</a> 256GB</li>
         <li><strong>Main Monitor</strong>: Dell 42.5" UltraSharp <a href={dellU4320Q}>U4320Q</a>, 3840x2160</li>
-        <li><strong>Keyboard</strong>: <a href={keyboard}>Apple Magic Keyboard</a></li>
         <li><strong>Headphones</strong>: <a href={airpodspro}>AirPods Pro 2nd gen</a></li>
         <li><strong>2FA</strong>: <a href={yubikey}>Yubikey</a></li>
         <li><strong>Microphone</strong>: <RodeWirelessGo2 /></li>
