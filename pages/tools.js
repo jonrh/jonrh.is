@@ -230,12 +230,13 @@ const Tools = () => {
       History of hardware used in the past.
 
       <ul>
-        <li><a href={macmini}>Mac Mini Late-2018</a>, 6-core, 64GB RAM, 2TB SSD. Jan 2019 - May 2023.</li>
-        <li><a href={watch}>Apple Watch 4</a>. Jan 2019 - Nov 2022.</li>
-        <li><a href={ipadpro}>iPad Pro 11</a> & <a href={applepencil}>Apple Pencil 2nd gen</a>. Jan 2019 - Nov 2022.</li>
-        <li><a href={airpodspro}>AirPods Pro 1st gen</a>. Aug 2021 - Nov 2022.</li>
-        <li>2x <a href={dell25}>Dell 25" UltraSharp U2515H</a>. Oct 2016 - Nov 2022.</li>
-        <li><a href={mouse}>Logitech G903</a>. Nov 2017 - Nov 2022.</li>
+        <li><strong>Workstation</strong>: <a href={macmini}>Mac Mini Late-2018</a>, 6-core, 64GB RAM, 2TB SSD. Jan 2019 - May 2023.</li>
+        <li><strong>Keyboard</strong>: <a href={keyboard}>Apple Magic Keyboard</a>. Jan 2019 - May 2023.</li>
+        <li><strong>Watch</strong>: <a href={watch}>Apple Watch 4</a>. Jan 2019 - Nov 2022.</li>
+        <li><strong>Tablet</strong>: <a href={ipadpro}>iPad Pro 11</a> & <a href={applepencil}>Apple Pencil 2nd gen</a>. Jan 2019 - Nov 2022.</li>
+        <li><strong>Headphones</strong>: <a href={airpodspro}>AirPods Pro 1st gen</a>. Aug 2021 - Nov 2022.</li>
+        <li><strong>Monitors</strong>: 2x <a href={dell25}>Dell 25" UltraSharp U2515H</a>. Oct 2016 - Nov 2022.</li>
+        <li><strong>Wireless mouse</strong>: <a href={mouse}>Logitech G903</a>. Nov 2017 - Nov 2022.</li>
       </ul>
 
       {/* ========================= Past software ========================== */}
