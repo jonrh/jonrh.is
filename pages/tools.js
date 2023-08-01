@@ -112,10 +112,10 @@ const Tools = () => {
       <h2 id="techstack">Preferred tech stack</h2>
       <ul>
         <li><strong>Infrastructure</strong>: AWS, Vercel, Deno Deploy</li>
-        <li><strong>Framework</strong>: Next.js</li>
-        <li><strong>Database</strong>: Fauna</li>
+        <li><strong>Frameworks</strong>: Next.js, React Native & Expo</li>
         <li><strong>CSS frameworks</strong>: Tailwind, Bootstrap</li>
         <li><strong>Programming language</strong>: JavaScript</li>
+        <li><strong>Database</strong>: Fauna</li>
       </ul>
 
       {/* ============================= Notes ============================== */}
