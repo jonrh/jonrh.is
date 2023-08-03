@@ -38,6 +38,8 @@ const astudio = "https://developer.android.com/studio/";
 {/* =============================== Hardware =============================== */}
 const RodeWirelessGo2 = () => <a href="https://rode.com/en-us/microphones/wireless/wirelessgoii">Røde Wireless Go II</a>;
 const AnkerPowerCore24K = () => <a href="https://www.anker.com/products/a1289">Anker PowerCore 24K</a>;
+const MagSafeDuoCharger = () => <a href="https://support.apple.com/en-us/HT211925">MagSafe Duo Charger</a>;
+const Compact35WDualUSBC = () => <a href="https://support.apple.com/en-us/HT213263">Compact 35W Dual USB-C</a>;
 
 {/* =============================== Software =============================== */}
 const Arc = () => <a href="https://arc.net">Arc</a>;
@@ -73,6 +75,7 @@ const Tools = () => {
         <li><strong>Microphone</strong>: <RodeWirelessGo2 /></li>
         <li><strong>Gaming</strong>: Nintendo <a href={nswitch}>Switch</a> & <a href={procontroller}>Pro Controller</a></li>
         <li><strong>Battery</strong>: <AnkerPowerCore24K /></li>
+        <li><strong>Chargers</strong>: <MagSafeDuoCharger /> & <Compact35WDualUSBC /></li>
         <li><strong>2FA</strong>: <a href={yubikey}>Yubikey</a></li>
       </ul>
 
@@ -227,7 +230,13 @@ const Tools = () => {
       </p>
 
       <h3>28th Jul 2022</h3>
-      <p>Upgraded to a 13.6" MacBook Air M2 from 15" MacBook Pro Late-2013.</p>
+      <p>
+        Upgraded to a 13.6" MacBook Air M2 from 15" MacBook Pro Late-2013. Came
+        with <Compact35WDualUSBC />.
+      </p>
+
+      <h3>4th Oct 2021</h3>
+      <p>Bought <MagSafeDuoCharger/>.</p>
 
       <h3>25th Aug 2021</h3>
       <p>Bought <RodeWirelessGo2 /> wireless microphone.</p>
