@@ -44,6 +44,8 @@ const Compact35WDualUSBC = () => <a href="https://support.apple.com/en-us/HT2132
 {/* =============================== Software =============================== */}
 const Arc = () => <a href="https://arc.net">Arc</a>;
 const Fork = () => <a href="https://fork.dev">Fork</a>;
+const Qbserve = () => <a href="https://qotoqot.com/qbserve">Qbserve</a>;
+const Timing = () => <a href="https://timingapp.com">Timing</a>;
 
 const Tools = () => {
   return (
@@ -97,7 +99,6 @@ const Tools = () => {
         <li><strong>Search engine</strong>: <a href={kagi}>Kagi</a></li>
         <li><strong>Task management</strong>: <a href="https://asana.com/">Asana</a> (work), <a href="https://todoist.com">Todoist</a> (personal)</li>
         <li><strong>Chat</strong>: <a href="https://slack.com">Slack</a> (work), <a href="https://www.signal.org">Signal</a> & <a href="https://telegram.org">Telegram</a> (personal)</li>
-        <li><strong>Productivity</strong>: <a href="https://qotoqot.com/qbserve/">Qbserve</a>, <a href="https://timingapp.com">Timing</a></li>
         <li><strong>Notes</strong>: <a href="(https://en.wikipedia.org/wiki/Notes_(Apple)">Notes</a> on macOS & iOS</li>
         <li><strong>Text editors</strong>: <a href="https://github.com/macvim-dev/macvim">MacVim</a> (general)</li>
         <li><strong>Version control</strong>: <Fork /> & <a href="https://www.gitkraken.com/">GitKraken</a></li>
@@ -233,6 +234,15 @@ const Tools = () => {
         improvement if scrolling a lot in very large documents.
       </p>
 
+      <h3>29th Jul 2022</h3>
+      <p>
+        After upgrading to the M2 MacBook Air the Mac Mini did not see much use
+        any more. Also did not install <Qbserve /> nor <Timing /> again. Both
+        great software. Would recommend for keeping track of productivity and
+        time ledger programs used. Might use again later but do not currently
+        have as much use for them.
+      </p>
+
       <h3>28th Jul 2022</h3>
       <p>
         Upgraded to a 13.6" MacBook Air M2 from 15" MacBook Pro Late-2013. Came
@@ -264,7 +274,9 @@ const Tools = () => {
       History of software used in the past.
 
       <ul>
-        <li>DuckDuckGo</li>
+        <li><strong>Search engine</strong>: DuckDuckGo</li>
+        <li><strong>Productivity</strong>: <Qbserve />. Jun 2016 - May 2023.</li>
+        <li><strong>Productivity</strong>: <Timing />. May 2018 - May 2023.</li>
       </ul>
 
     </Page>
