@@ -43,6 +43,7 @@ const Compact35WDualUSBC = () => <a href="https://support.apple.com/en-us/HT2132
 
 {/* =============================== Software =============================== */}
 const Arc = () => <a href="https://arc.net">Arc</a>;
+const Fork = () => <a href="https://fork.dev">Fork</a>;
 
 const Tools = () => {
   return (
@@ -52,7 +53,7 @@ const Tools = () => {
       metaDescription="A list of current and past hardware and software tools."
     >
       <p>A list of current and past hardware and software tools.</p>
-      <p>Last updated: July 31, 2023.</p>
+      <p>Last updated: August 3, 2023.</p>
 
       Table of contents:
       <ul>
@@ -99,7 +100,7 @@ const Tools = () => {
         <li><strong>Productivity</strong>: <a href="https://qotoqot.com/qbserve/">Qbserve</a>, <a href="https://timingapp.com">Timing</a></li>
         <li><strong>Notes</strong>: <a href="(https://en.wikipedia.org/wiki/Notes_(Apple)">Notes</a> on macOS & iOS</li>
         <li><strong>Text editors</strong>: <a href="https://github.com/macvim-dev/macvim">MacVim</a> (general)</li>
-        <li><strong>Version control</strong>: <a href="https://www.gitkraken.com/">GitKraken</a></li>
+        <li><strong>Version control</strong>: <Fork /> & <a href="https://www.gitkraken.com/">GitKraken</a></li>
         <li><strong>Time tracking</strong>: <a href="https://timavera.com/">Tímavera</a></li>
         <li><strong>Terminal</strong>: <a href="https://sw.kovidgoyal.net/kitty/">Kitty</a> & <a href="https://iterm2.com">iTerm</a></li>
         <li><strong>Email</strong>: <a href="https://www.fastmail.com">Fastmail</a></li>
@@ -150,6 +151,9 @@ const Tools = () => {
         Bought <AnkerPowerCore24K />. Intended as an external battery for the
         MacBook Air M2. Lasts for about 1.2x charges.
       </p>
+
+      <h3>28th Jun 2023</h3>
+      <p>Started trying out <Fork /> as an alternative to GitKraken.</p>
 
       <h3>22nd May 2023</h3>
       <p>
