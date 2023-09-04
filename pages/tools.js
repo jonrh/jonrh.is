@@ -103,7 +103,7 @@ const Tools = () => {
         <li><strong>Text editors</strong>: <a href="https://github.com/macvim-dev/macvim">MacVim</a> (general)</li>
         <li><strong>Version control</strong>: <Fork /> & <a href="https://www.gitkraken.com/">GitKraken</a></li>
         <li><strong>Time tracking</strong>: <a href="https://timavera.com/">Tímavera</a></li>
-        <li><strong>Terminal</strong>: <a href="https://sw.kovidgoyal.net/kitty/">Kitty</a> & <a href="https://iterm2.com">iTerm</a></li>
+        <li><strong>Terminal</strong>: <a href="https://sw.kovidgoyal.net/kitty/">Kitty</a></li>
         <li><strong>Email</strong>: <a href="https://www.fastmail.com">Fastmail</a></li>
         <li><strong>VPN</strong>: <a href="https://www.ivpn.net">IVPN</a></li>
         <li><strong>Images</strong>: <a href={photoshop}>Photoshop</a>, <a href={illustrator}>Illustrator</a></li>
