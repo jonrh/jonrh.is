@@ -8,12 +8,12 @@ import Post from "../../components/Post";
   for Next.js & Vercel with latest changes."
 >
   A recipe for a staging or preview environment on a static subdomain with the
-  latest changes when using Next.js and Vercel. Examples:
+  latest changes when using Next.js v14, Vercel, and GitHub Actions. Examples:
 
   + preview.example.com
   + staging.example.com
 
-  When deploying Next.js projects on Vercel the preview deployment URLs
+  When deploying Next.js projects on Vercel, the preview deployment URLs
   are unique and constantly changing. What motivated this work was integrating
   with a third party billing provider that needed a stable staging URL.
 
@@ -22,8 +22,8 @@ import Post from "../../components/Post";
   1. Permanently reserve the git branch name `preview`.
   2. Automatically update `preview` to latest with a GitHub Action.
   3. Assign preview.example.com to the `preview` branch.
-  4. Adds noindex HTTP header to `preview` deployments.
-  5. Returns correct `robots.txt` for production and previews.
+  4. Add noindex HTTP header to `preview` deployments.
+  5. Return correct `robots.txt` for production and previews.
 
   With this in place the website will not suffer duplicate content penalty
   from the preview subdomain which could otherwise negatively effect SEO
@@ -50,7 +50,7 @@ import Post from "../../components/Post";
   ## Vercel System Environment Variables
   For any of this to work the Next.js project will need to be aware of the
   the branch name that is being deployed. When deploying the project with
-  Vercel the "*Automatically expose System Environment Variables*" checkbox
+  Vercel, the "*Automatically expose System Environment Variables*" checkbox
   needs to be ticked. It can be found under Project -> Settings ->
   Environment Variables. The environment variable we are interested in is
   `VERCEL_GIT_COMMIT_REF` which is the git branch name that is being deployed.
