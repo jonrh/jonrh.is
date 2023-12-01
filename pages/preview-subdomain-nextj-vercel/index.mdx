@@ -1,0 +1,169 @@
+import Post from "../../components/Post";
+
+<Post
+  title="Static preview subdomain for Next.js & Vercel"
+  path="preview-subdomain-nextj-vercel"
+  date="December 1, 2023"
+  metaDescription="How to set up a staging subdomain like preview.example.com
+  for Next.js & Vercel with latest changes."
+>
+  A recipe for a staging or preview environment on a static subdomain with the
+  latest changes when using Next.js and Vercel. Examples:
+
+  + preview.example.com
+  + staging.example.com
+
+  When deploying Next.js projects on Vercel the preview deployment URLs
+  are unique and constantly changing. What motivated this work was integrating
+  with a third party billing provider that needed a stable staging URL.
+
+  Recipe overview:
+
+  1. Permanently reserve the git branch name `preview`.
+  2. Automatically update `preview` to latest with a GitHub Action.
+  3. Assign preview.example.com to the `preview` branch.
+  4. Adds noindex HTTP header to `preview` deployments.
+  5. Returns correct `robots.txt` for production and previews.
+
+  With this in place the website will not suffer duplicate content penalty
+  from the preview subdomain which could otherwise negatively effect SEO
+  rankings. Everything is in addition to the regular preview deployments and
+  URLs. Next.js v14 is assumed.
+
+  ## Subdomain / branch
+  In Vercel it is possible to specify that all deployments on a certain git
+  branch will be hosted on a given subdomain. Follow these steps to add a
+  subdomain for a given branch:
+
+  1. Vercel -> Project -> Settings -> Domain
+  2. Add the subdomain: preview.example.com
+  3. Press *Edit* on the new subdomain
+  4. Change *Git Branch* to `preview`
+  5. Hit Save
+
+  Something to be aware of is that when adding a subdomain for a branch is
+  that Next.js / Vercel will no longer automatically add the
+  `x-robots-tag: noindex` HTTP header like it does by default for all
+  preview deployments (all branches except `main`). This will be addressed
+  below in the `next.config.json`.
+
+  ## Vercel System Environment Variables
+  For any of this to work the Next.js project will need to be aware of the
+  the branch name that is being deployed. When deploying the project with
+  Vercel the "*Automatically expose System Environment Variables*" checkbox
+  needs to be ticked. It can be found under Project -> Settings ->
+  Environment Variables. The environment variable we are interested in is
+  `VERCEL_GIT_COMMIT_REF` which is the git branch name that is being deployed.
+  When the branch name is `main` production is assumed, and then a staging
+  environment is assumed when the branch name is `preview`.
+
+  ## noindex HTTP header
+  Adds a `x-robots-tag: noindex` HTTP header to all endpoints when a deployment
+  is on the `preview` branch. By default Vercel adds the same header to all
+  regular preview deployments but at the time of writing when a subdomain is
+  specified for a branch it no longer applies. This setting code manually
+  performs the same task.
+
+  ```javascript
+  const isPreviewBranch = process.env.VERCEL_GIT_COMMIT_REF === "preview";
+  const defaultHeaders = [];
+  const headersOnPreview = [
+    {
+      source: "/:slug*",
+      headers: [
+        {
+          key: "x-robots-tag",
+          value: "noindex",
+        },
+      ],
+    },
+  ];
+
+  /** @type {import('next').NextConfig} */
+  const nextConfig = {
+    async headers() {
+      return isPreviewBranch ? headersOnPreview : defaultHeaders;
+    },
+  };
+
+  module.exports = nextConfig;
+  ```
+
+  ## robots.txt
+  ```javascript
+  // If the branch name is "main"
+  const isProduction = process.env.VERCEL_GIT_COMMIT_REF === "main";
+
+  const production = {
+    rules: {
+      userAgent: "*",
+      allow: "/",
+    }
+  };
+
+  const preview = {
+    rules: {
+      userAgent: "*",
+      disallow: "/",
+    }
+  };
+
+  export default function robots() {
+    return isProduction ? production : preview;
+  }
+  ```
+
+  This generates the following `robots.txt` in production which permits
+  all search engines indexing on all routes:
+
+  ```
+  User-Agent: *
+  Allow: /
+  ```
+
+  Conversely on all other preview deployments the contents of `robots.txt`
+  will be to respectfully request all bots (search engines) to not index any
+  routes on the website:
+
+  ```
+  User-Agent: *
+  Disallow: /
+  ```
+
+## GitHub Action
+
+  Below is the GitHub Action that automatically updates the `preview` branch
+  to the latest commit that was pushed on any other branch.
+
+  The `.github/workflows/preview.yml` file:
+
+  ```yml
+  name: Preview
+  on:
+    push:
+      branches-ignore:
+        - preview # avoids endless recursion
+
+  jobs:
+    preview:
+      name: Update preview branch
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout repository
+        uses: actions/checkout@v4
+
+        - name: Overwrite preview branch
+          run: |
+            # Fetch & checkout preview branch,
+            # reset to pushed commit and force
+            # overwrite the preview branch
+            git fetch origin preview
+            git checkout preview
+            git reset --hard ${{ github.sha }}
+            git push -f origin preview
+  ```
+
+  In the current configuration the `preview` branch is also updated with
+  changes pushed to production (`main` branch). If that is not desirable
+  just add "`- main`" to the `branches-ignore` list.
+</Post>
