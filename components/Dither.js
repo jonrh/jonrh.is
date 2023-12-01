@@ -37,4 +37,27 @@ const Dither = ({src, alt, width, height, webp}) => {
   );
 };
 
+/**
+ * A dithered image that links to the original source image in colour. This
+ * variant is for statically imported images instead of image route strings.
+ * The benefit is that the images can be co-located along with the post source
+ * instead of having to be located separately in the public folder. This was an
+ * early limitation of Next.js. Another benefit is that the image width and
+ * height do not to be passed in. Next.js <Image /> is able to infer it at
+ * build time.
+ *
+ * @param original {object} a statically imported image object, example:
+ *   `import img1 from "./image1.png"`. Used to link to the original image.
+ *   Will result in a string like "/_next/static/media/image1.98cb2cda.png".
+ * @param dither {object} a statically imported image object
+ * @param alt {string} image alt text
+ */
+export const DitherV2 = ({original, dither, alt}) => {
+  return (
+    <a href={original.src}>
+      <Image src={dither} alt={alt} unoptimized={true} />
+    </a>
+  );
+};
+
 export default Dither;

@@ -1,4 +1,11 @@
 import Post from "../../components/Post";
+import { DitherV2 } from "../../components/Dither";
+
+import pic1o from "./vercel-subdomain-branch.png";
+import pic1d from "./vercel-subdomain-branch-dither.png";
+
+import pic2o from "./vercel-system-environment-variables.png";
+import pic2d from "./vercel-system-environment-variables-dither.png";
 
 <Post
   title="Static preview subdomain for Next.js & Vercel"
@@ -41,6 +48,12 @@ import Post from "../../components/Post";
   4. Change *Git Branch* to `preview`
   5. Hit Save
 
+  <DitherV2 original={pic1o} dither={pic1d} alt="A configuration panel for a
+  subdomain with fields for Domain set to 'preview.example.com', Redirect
+  option set to 'No Redirect', and Git Branch set to 'preview'. Below are
+  buttons for 'Remove', 'Cancel', and 'Save', with a link to 'View DNS Records
+  & More for plinth.is'." />
+
   Something to be aware of is that when adding a subdomain for a branch is
   that Next.js / Vercel will no longer automatically add the
   `x-robots-tag: noindex` HTTP header like it does by default for all
@@ -56,6 +69,10 @@ import Post from "../../components/Post";
   `VERCEL_GIT_COMMIT_REF` which is the git branch name that is being deployed.
   When the branch name is `main` production is assumed, and then a staging
   environment is assumed when the branch name is `preview`.
+
+  <DitherV2 original={pic2o} dither={pic2d} alt="Screenshot from the Vercel
+  dashboard, the option Automatically expose System Environment Variables is
+  ticked" />
 
   ## noindex HTTP header
   Adds a `x-robots-tag: noindex` HTTP header to all endpoints when a deployment
