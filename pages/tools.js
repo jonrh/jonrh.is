@@ -116,7 +116,7 @@ const Tools = () => {
         <li><strong>Chat</strong>: <a href="https://slack.com">Slack</a> (work), <a href="https://www.signal.org">Signal</a> & <a href="https://telegram.org">Telegram</a> (personal)</li>
         <li><strong>Notes</strong>: <a href="(https://en.wikipedia.org/wiki/Notes_(Apple)">Notes</a> on macOS & iOS</li>
         <li><strong>Text editors</strong>: <a href="https://github.com/macvim-dev/macvim">MacVim</a> (general)</li>
-        <li><strong>Version control</strong>: <Fork /> & <a href="https://www.gitkraken.com/">GitKraken</a></li>
+        <li><strong>Version control</strong>: <a href="https://www.gitkraken.com/">GitKraken</a></li>
         <li><strong>Time tracking</strong>: <a href="https://timavera.com/">Tímavera</a></li>
         <li><strong>Terminal</strong>: <a href="https://sw.kovidgoyal.net/kitty/">Kitty</a></li>
         <li><strong>Email</strong>: <a href="https://www.fastmail.com">Fastmail</a></li>
@@ -167,6 +167,13 @@ const Tools = () => {
         Wrote a <a href="/anker-powercore-24k-review">review</a> on
         the <AnkerPowerCore24K/> external battery after 1 year of use. It has
         become a must have companion for the MacBook Air M2.
+      </p>
+
+      <h3>5th Oct 2023</h3>
+      <p>
+        Stopped using <Fork />. It is still installed and serves as a fallback
+        if GitKraken acts up. Ultimately found the flow of GitKraken to be
+        more suitable.
       </p>
 
       <h3>2nd Jul 2023</h3>
