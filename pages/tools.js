@@ -2,6 +2,21 @@ import React from "react";
 
 import { Page } from "../components/Post";
 
+// Todo
+// + maybe: list old phones + chargers
+// + maybe: mention a note that I do use Flask (Tímavera tech stack)
+// + update Asana
+// + review other software used
+// + maybe: add Revolut as business banking
+// + list 15" MacBook Pro Late-2013
+// + list 37.5" ultrasharp
+// + list brother printer
+// + list scanner used in Ireland
+// + other tech used in Ireland?
+// + logitech brio
+// + Services: Rollbar / Sentry / Imgix, etc
+// + Maybe: airtags, bought oct 4th 2021
+
 const macmini = "https://everymac.com/systems/apple/mac_mini/specs/mac-mini-core-i7-3.2-late-2018-specs.html";
 const mba = "https://everymac.com/systems/apple/macbook-air/specs/macbook-air-m2-8-core-cpu-10-core-gpu-13-2022-specs.html";
 const dellU4320Q = "https://www.dell.com/en-us/work/shop/dell-ultrasharp-43-4k-usb-c-monitor-u4320q/apd/210-avke/monitors-monitor-accessories";
@@ -55,7 +70,7 @@ const Tools = () => {
       metaDescription="A list of current and past hardware and software tools."
     >
       <p>A list of current and past hardware and software tools.</p>
-      <p>Last updated: August 3, 2023.</p>
+      <p>Last updated: June 10, 2024.</p>
 
       Table of contents:
       <ul>
@@ -147,6 +162,13 @@ const Tools = () => {
 
       {/* =========================== Changelog ============================ */}
       <h2 id="changelog">Changelog</h2>
+      <h3>10th Jun 2024</h3>
+      <p>
+        Wrote a <a href="/anker-powercore-24k-review">review</a> on
+        the <AnkerPowerCore24K/> external battery after 1 year of use. It has
+        become a must have companion for the MacBook Air M2.
+      </p>
+
       <h3>2nd Jul 2023</h3>
       <p>
         Bought <AnkerPowerCore24K />. Intended as an external battery for the
