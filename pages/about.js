@@ -13,8 +13,8 @@ const About = () => {
       <Head>
         <title>jonrh - About</title>
         <meta name="description" content="Jón Rúnar Helgason is an Icelandic
-          fullstack founder and frontend software engineer. He is a Co-Founder
-          of Tímavera, a time tracking app for contractors." />
+          fullstack founder and software engineer. He is a Co-Founder of
+          Tímavera, a time tracking app for contractors." />
       </Head>
 
       <h1>About</h1>
@@ -22,7 +22,7 @@ const About = () => {
       <p><strong>Currently</strong>:</p>
       <ul>
         <li>Helping contractors <a href="https://timavera.com">track time</a> so they can focus on their trade.</li>
-        <li>Fullstack Founder & Frontend Software Engineer.</li>
+        <li>Founder & Software Engineer.</li>
         <li>Living in Seattle, Washington, USA.</li>
       </ul>
 

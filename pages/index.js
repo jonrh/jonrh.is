@@ -10,8 +10,8 @@ const Index = () => {
       <Head>
         <title>jonrh - Jón Rúnar Helgason</title>
         <meta name="description" content="Jón Rúnar Helgason is an Icelandic
-          fullstack founder and frontend software engineer. Cofounder of
-          Tímavera, a time tracking app for contractors." />
+          fullstack founder and software engineer. Cofounder of Tímavera, a
+          time tracking app for contractors." />
       </Head>
 
       <h1 style={{textAlign: "center"}}>Jón Rúnar Helgason</h1>
