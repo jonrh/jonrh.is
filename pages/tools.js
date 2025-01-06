@@ -49,6 +49,7 @@ const webstorm = "https://www.jetbrains.com/webstorm/";
 const pycharm = "https://www.jetbrains.com/pycharm/";
 const datagrip = "https://www.jetbrains.com/datagrip/";
 const astudio = "https://developer.android.com/studio/";
+const chatgpt = "https://openai.com";
 
 {/* =============================== Hardware =============================== */}
 const RodeWirelessGo2 = () => <a href="https://rode.com/en-us/microphones/wireless/wirelessgoii">Røde Wireless Go II</a>;
@@ -61,6 +62,7 @@ const Arc = () => <a href="https://arc.net">Arc</a>;
 const Fork = () => <a href="https://fork.dev">Fork</a>;
 const Qbserve = () => <a href="https://qotoqot.com/qbserve">Qbserve</a>;
 const Timing = () => <a href="https://timingapp.com">Timing</a>;
+const ChatGPT = () => <a href="https://openai.com">ChatGPT Plus</a>;
 
 // Experimental code formatting to maximize HTML content per line
 const Content = () => (<>
@@ -102,9 +104,10 @@ Table of contents:
       <li><a href={safari}>Safari</a> - secondary</li>
       <li><Arc /> - work, multiple profiles</li>
       <li><a href={chrome}>Chrome</a> - work</li>
-      <li><a href={firefox}>Firefox</a> - rare dev testing</li>
+      <li><a href={firefox}>Firefox</a> - dev testing</li>
     </ul>
   </li>
+  <li><strong>AI</strong>: <ChatGPT /> (OpenAI)</li>
   <li><strong>Search engine</strong>: <a href={kagi}>Kagi</a></li>
   <li><strong>Task management</strong>: <a href="https://asana.com/">Asana</a> (work), <a href="https://todoist.com">Todoist</a> (personal)</li>
   <li><strong>Chat</strong>: <a href="https://slack.com">Slack</a> (work), <a href="https://www.signal.org">Signal</a> & <a href="https://telegram.org">Telegram</a> (personal)</li>
@@ -215,6 +218,11 @@ Table of contents:
   with the Mac Mini. Fantastic keyboard. Been a big fan of Apple
   keyboards throughout the years. Best tried so far. Even prefer it to
   mechanical keyboards because of the much shorter key travel distance.
+</p>
+
+<h3>16th Mar 2023</h3>
+<p>
+  Subscribed to a <ChatGPT /> subscription with OpenAI for access to ChatGPT 4.
 </p>
 
 <h3>26th Jan 2023</h3>
