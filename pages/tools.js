@@ -65,7 +65,7 @@ const Timing = () => <a href="https://timingapp.com">Timing</a>;
 // Experimental code formatting to maximize HTML content per line
 const Content = () => (<>
 <p>A list of current and past hardware and software tools.</p>
-<p>Last updated: June 10, 2024.</p>
+<p>Last updated: January 6, 2025.</p>
 
 Table of contents:
 <ul>
@@ -85,7 +85,6 @@ Table of contents:
   <li><strong>Monitor / TV</strong>: Dell 42.5" UltraSharp <a href={dellU4320Q}>U4320Q</a>, 3840x2160</li>
   <li><strong>Phone</strong>: <a href={phone}>iPhone 13 mini</a> 256GB</li>
   <li><strong>Headphones</strong>: <a href={airpodspro}>AirPods Pro 2nd gen</a></li>
-  <li><strong>Microphone</strong>: <RodeWirelessGo2 /></li>
   <li><strong>Gaming</strong>: Nintendo <a href={nswitch}>Switch</a> & <a href={procontroller}>Pro Controller</a></li>
   <li><strong>Battery</strong>: <AnkerPowerCore24K /></li>
   <li><strong>Chargers</strong>: <MagSafeDuoCharger /> & <Compact35WDualUSBC /></li>
@@ -143,20 +142,43 @@ Table of contents:
     The monitor runs at a native 3840x2160 resolution (4K) which is like
     having 4x 1920x1080 monitors except in one panel.
   </li>
-  <li>
-    Currently still have the <RodeWirelessGo2 /> but no longer actively
-    using it. A really great wireless microphone in a small package.
-    Bought to improve audio quality in VoIP calls but not making nearly
-    as many calls as before. The AirPods Pro 2 are good enough for
-    occasional customer calls. Would recommend the Wireless Go II to
-    office workers that make regular customer calls or audio/video team
-    meetings. If making frequent calls a purpose built wired headset
-    would probably be best.
-  </li>
 </ul>
 
 {/* =========================== Changelog ============================ */}
 <h2 id="changelog">Changelog</h2>
+<h3>1st Jul 2024</h3>
+<p>
+  Loaned a friend the <RodeWirelessGo2/> wireless microphone. May or may not
+  turn out to be a permanent loan.
+</p>
+<p>
+  A great wireless microphone in a small package. Used it a lot when making
+  regular VoIP calls. Saw little to no use after moving multiple timezones.
+  The AirPods Pro 2 were good enough for occasional customer calls.
+</p>
+<p>
+  In my setup I clipped the WG II mic to my shirt, used AirPods Pro for
+  incoming audio and the WG II receiver plugged into my computer via USB-C.
+  This resulted in a noticeably better incoming and outgoing audio quality.
+  The AirPods Pro could dedicate the entire Bluetooth bandwidth to what I
+  would hear instead of chopping the bandwidth in half for handling both
+  directions with a way worse mic. A major selling point of it to me was being
+  able to freely walk around in my office while on calls.
+</p>
+<p>
+  It could be a bit of a fumble to get working correctly. macOS was not great
+  at remembering or properly handling audio device preferences. If the AirPods
+  Pro re-connected macOS would for example sometimes set the mic input to the
+  Airpods even though there was a way better mic already connected. Maybe there
+  is software out there that could enforce a firm preferences.
+</p>
+<p>
+  Would recommend it or the newer variants of it to tech-savvy workers that
+  want improved audio quality or the option to walk or pace around while on
+  calls. If strictly seated or making a lot of calls a purpose built wired
+  headset would probably be more suitable and reliable.
+</p>
+
 <h3>10th Jun 2024</h3>
 <p>
   Wrote a <a href="/anker-powercore-24k-review">review</a> on
@@ -284,6 +306,7 @@ Table of contents:
 History of hardware used in the past.
 
 <ul>
+  <li><strong>Microphone</strong>: <RodeWirelessGo2/>. Aug 2021 - Jul 2024.</li>
   <li><strong>Workstation</strong>: <a href={macmini}>Mac Mini Late-2018</a>, 6-core, 64GB RAM, 2TB SSD. Jan 2019 - May 2023.</li>
   <li><strong>Keyboard</strong>: <a href={keyboard}>Apple Magic Keyboard</a>. Jan 2019 - May 2023.</li>
   <li><strong>Watch</strong>: <a href={watch}>Apple Watch 4</a>. Jan 2019 - Nov 2022.</li>
