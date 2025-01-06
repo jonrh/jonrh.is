@@ -29,11 +29,15 @@ const Blog = () => {
     <Layout>
       <Head>
         <title>jonrh - Blog</title>
-        <meta name="description" content="Blog posts by Jón Rúnar Helgason since 2008." />
+        <meta
+          name="description"
+          content="Blog posts by Jón Rúnar Helgason since 2008."
+        />
       </Head>
 
       <h1>Blog</h1>
 
+      {/* prettier-ignore */}
       <ul>
         <li><a href="/anker-powercore-24k-review">Anker PowerCore 24K power bank review</a></li>
         <li><a href="/preview-subdomain-nextj-vercel">Static preview subdomain for Next.js & Vercel</a></li>
@@ -78,7 +82,6 @@ const Blog = () => {
       {/*  <li><a href="/20june-2009-mix">20june-2009-mix</a></li>*/}
       {/*  <li><a href="/how-i-use-beatport-on-a-mac">how-i-use-beatport-on-a-mac</a></li>*/}
       {/*</ul>*/}
-
     </Layout>
   );
 };

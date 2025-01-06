@@ -13,7 +13,7 @@ import Image from "next/image";
  *     WebP version which should be used instead of PNG. WebP typically
  *     has a better compression ratio than PNG.
  */
-const Dither = ({src, alt, width, height, webp}) => {
+const Dither = ({ src, alt, width, height, webp }) => {
   // Replace the .jpg / .jpeg / .gif / .png file
   // ending with "-dither.png" or "-dither.webp".
   // File name convention:
@@ -52,7 +52,7 @@ const Dither = ({src, alt, width, height, webp}) => {
  * @param dither {object} a statically imported image object
  * @param alt {string} image alt text
  */
-export const DitherV2 = ({original, dither, alt}) => {
+export const DitherV2 = ({ original, dither, alt }) => {
   return (
     <a href={original.src}>
       <Image src={dither} alt={alt} unoptimized={true} />

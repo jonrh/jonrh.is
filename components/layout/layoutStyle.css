@@ -1,53 +1,53 @@
 .header {
-    text-align: center;
-    font-family: monospace;
+  text-align: center;
+  font-family: monospace;
 }
 
 .header img {
-    display: block;
-    width: 100px;
-    height: 100px;
+  display: block;
+  width: 100px;
+  height: 100px;
 
-    margin: 25px auto 1em;
+  margin: 25px auto 1em;
 }
 
 .profileName {
-    font-size: 1.2em;
-    font-weight: 800;
-    text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 800;
+  text-decoration: none;
 
-    box-shadow: none;
+  box-shadow: none;
 }
 
 .profileName:hover {
-    box-shadow: 0 1px 0 0 currentColor;
+  box-shadow: 0 1px 0 0 currentColor;
 }
 
 nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    margin-top: 1rem;
-    margin-left: 0;
-    padding-left: 0;
-    font-family: monospace;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-top: 1rem;
+  margin-left: 0;
+  padding-left: 0;
+  font-family: monospace;
 }
 
 nav li {
-    flex: 1;
-    text-align: center;
-    margin: 0;
+  flex: 1;
+  text-align: center;
+  margin: 0;
 }
 
 nav li a {
-    padding: 0.25rem 0.5rem;
-    text-decoration: none;
-    box-shadow: 0 1px 0 0 currentColor;
+  padding: 0.25rem 0.5rem;
+  text-decoration: none;
+  box-shadow: 0 1px 0 0 currentColor;
 }
 
 .container {
-    max-width: 42rem;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 1.3rem 2.6rem 1.3rem;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1.3rem 2.6rem 1.3rem;
 }

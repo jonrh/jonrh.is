@@ -1,0 +1,15 @@
+# Ignore artifacts:
+build
+coverage
+
+# Project specific:
+css/reset.css
+
+# 2025-01-06: Prettier does not seem to be able to handle MDX files very well.
+# Some files are okay, some files format inconsistently, some files just break.
+# Worth looking into enabling at a later date when time is more permitting.
+*.mdx
+
+# A large file containing mostly HTML content. Ignored and manually formatted
+# with some lines exceeding 80ch for improved readability and structure.
+pages/tools.js

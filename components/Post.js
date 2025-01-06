@@ -16,11 +16,15 @@ const dateStyle = {
  */
 function metaDescriptionQualityCheck(metaDescription, title, date) {
   if (!metaDescription) {
-    throw new Error(`Meta description is missing. Post: ${title}, date: ${date}.`);
+    throw new Error(
+      `Meta description is missing. Post: ${title}, date: ${date}.`,
+    );
   }
 
   if (metaDescription.length < 50 || metaDescription.length > 160) {
-    throw new Error(`Meta description is ${metaDescription.length} characters, should be 50-160.`);
+    throw new Error(
+      `Meta description is ${metaDescription.length} characters, should be 50-160.`,
+    );
   }
 }
 
@@ -34,11 +38,11 @@ const Path = ({ path }) => {
     <p style={{ textAlign: "center", marginTop: "5em" }}>
       <a href={url}>History & source</a>
     </p>
-  )
+  );
 };
 
 /** A template for a blog post page */
-const Post = ({title, path, date, metaDescription, children}) => {
+const Post = ({ title, path, date, metaDescription, children }) => {
   metaDescriptionQualityCheck(metaDescription, title, date);
 
   return (
@@ -59,7 +63,7 @@ const Post = ({title, path, date, metaDescription, children}) => {
   );
 };
 
-export const Page = ({title, path, metaDescription, children}) => {
+export const Page = ({ title, path, metaDescription, children }) => {
   return (
     <Layout>
       <Head>
@@ -73,7 +77,7 @@ export const Page = ({title, path, metaDescription, children}) => {
 
       <Path path={path} />
     </Layout>
-  )
+  );
 };
 
 export default Post;
