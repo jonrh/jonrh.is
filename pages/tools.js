@@ -48,8 +48,6 @@ const kagi = "https://kagi.com/";
 const webstorm = "https://www.jetbrains.com/webstorm/";
 const pycharm = "https://www.jetbrains.com/pycharm/";
 const datagrip = "https://www.jetbrains.com/datagrip/";
-const astudio = "https://developer.android.com/studio/";
-const chatgpt = "https://openai.com";
 
 {/* =============================== Hardware =============================== */}
 const RodeWirelessGo2 = () => <a href="https://rode.com/en-us/microphones/wireless/wirelessgoii">Røde Wireless Go II</a>;
@@ -63,6 +61,8 @@ const Fork = () => <a href="https://fork.dev">Fork</a>;
 const Qbserve = () => <a href="https://qotoqot.com/qbserve">Qbserve</a>;
 const Timing = () => <a href="https://timingapp.com">Timing</a>;
 const ChatGPT = () => <a href="https://openai.com">ChatGPT Plus</a>;
+const Xcode = () => <a href="https://developer.apple.com/xcode/">Xcode</a>;
+const Adstio = () => <a href="https://developer.android.com/studio">Android Studio</a>;
 
 // Experimental code formatting to maximize HTML content per line
 const Content = () => (<>
@@ -96,7 +96,7 @@ Table of contents:
 {/* ============================ Software ============================ */}
 <h2 id="software">Software</h2>
 <ul>
-  <li><strong>IDEs</strong>: <a href={webstorm}>WebStorm</a>, <a href={pycharm}>PyCharm</a>, <a href={datagrip}>DataGrip</a>, <a href={astudio}>Android Studio</a></li>
+  <li><strong>IDEs</strong>: <a href={webstorm}>WebStorm</a>, <a href={pycharm}>PyCharm</a>, <a href={datagrip}>DataGrip</a></li>
   <li>
     <strong>Browsers</strong>:
     <ul>
@@ -303,6 +303,21 @@ Table of contents:
   with <Compact35WDualUSBC />.
 </p>
 
+<h3>12th Jul 2022</h3>
+<p>
+  The Tímavera production app was converted from a standard React Native
+  project to Expo. In that transition there were no longer any underlying
+  native iOS and Android projects and hence I did not have to use{" "}
+  <Xcode /> and <Adstio /> anymore. I reluctantly had to use those for 6 years
+  while managing standard React Native projects since August 2016. Of the two
+  Android Studio was a clear winner. Google made a very smart move to build on
+  top of IntelliJ, in my opinion the best Java IDE there was at the time. A
+  comprehensive and robust developer tool. It felt like Xcode was not designed
+  by practicing developers and that it was burdened with legacy. For example
+  managing configuration in <i>Info.plist</i> and terrifying git diffs on
+  the <i>.xcodeproj</i> file.
+</p>
+
 <h3>4th Oct 2021</h3>
 <p>Bought <MagSafeDuoCharger/>.</p>
 
@@ -329,6 +344,13 @@ History of hardware used in the past.
 History of software used in the past.
 
 <ul>
+  <li>
+    <strong>IDEs</strong>:
+    <ul>
+      <li><Xcode />. Aug 2016 - Jul 2022.</li>
+      <li><Adstio />. Aug 2016 - Jul 2022.</li>
+    </ul>
+  </li>
   <li><strong>Search engine</strong>: DuckDuckGo</li>
   <li><strong>Productivity</strong>: <Qbserve />. Jun 2016 - May 2023.</li>
   <li><strong>Productivity</strong>: <Timing />. May 2018 - May 2023.</li>
