@@ -63,6 +63,8 @@ const Timing = () => <a href="https://timingapp.com">Timing</a>;
 const ChatGPT = () => <a href="https://openai.com">ChatGPT Plus</a>;
 const Xcode = () => <a href="https://developer.apple.com/xcode/">Xcode</a>;
 const Adstio = () => <a href="https://developer.android.com/studio">Android Studio</a>;
+const Skype = () => <a href="https://skype.com">Skype</a>;
+const Toky = () => <a href="https://toky.co">Toky</a>;
 
 // Experimental code formatting to maximize HTML content per line
 const Content = () => (<>
@@ -111,6 +113,7 @@ Table of contents:
   <li><strong>Search engine</strong>: <a href={kagi}>Kagi</a></li>
   <li><strong>Task management</strong>: <a href="https://asana.com/">Asana</a> (work), <a href="https://todoist.com">Todoist</a> (personal)</li>
   <li><strong>Chat</strong>: <a href="https://slack.com">Slack</a> (work), <a href="https://www.signal.org">Signal</a> & <a href="https://telegram.org">Telegram</a> (personal)</li>
+  <li><strong>VoIP</strong>: <Skype /> (personal), <Toky /> (business)</li>
   <li><strong>Notes</strong>: <a href="(https://en.wikipedia.org/wiki/Notes_(Apple)">Notes</a> on macOS & iOS</li>
   <li><strong>Text editors</strong>: <a href="https://github.com/macvim-dev/macvim">MacVim</a> (general)</li>
   <li><strong>Version control</strong>: <a href="https://www.gitkraken.com/">GitKraken</a></li>
@@ -318,11 +321,17 @@ Table of contents:
   the <i>.xcodeproj</i> file.
 </p>
 
+<h3>6th Jan 2022</h3>
+<p>Subscribed to <Toky /> business VoIP.</p>
+
 <h3>4th Oct 2021</h3>
 <p>Bought <MagSafeDuoCharger/>.</p>
 
 <h3>25th Aug 2021</h3>
 <p>Bought <RodeWirelessGo2 /> wireless microphone.</p>
+
+<h3>6th May 2019</h3>
+<p>Subscribed to <Skype /> VoIP with phone numbers.</p>
 
 {/* ========================= Past hardware ========================== */}
 <h2 id="past-hardware">Past hardware</h2>
