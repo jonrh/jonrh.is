@@ -72,7 +72,7 @@ const MacVim = () => <a href="https://github.com/macvim-dev/macvim">MacVim</a>;
 // Experimental code formatting to maximize HTML content per line
 const Content = () => (<>
 <p>A list of current and past hardware and software tools.</p>
-<p>Last updated: January 6, 2025.</p>
+<p>Last updated: January 8, 2025.</p>
 
 Table of contents:
 <ul>
