@@ -65,6 +65,7 @@ const Xcode = () => <a href="https://developer.apple.com/xcode/">Xcode</a>;
 const Adstio = () => <a href="https://developer.android.com/studio">Android Studio</a>;
 const Skype = () => <a href="https://skype.com">Skype</a>;
 const Toky = () => <a href="https://toky.co">Toky</a>;
+const Cursor = () => <a href="https://cursor.com">Cursor</a>;
 
 // Experimental code formatting to maximize HTML content per line
 const Content = () => (<>
@@ -98,7 +99,7 @@ Table of contents:
 {/* ============================ Software ============================ */}
 <h2 id="software">Software</h2>
 <ul>
-  <li><strong>IDEs</strong>: <a href={webstorm}>WebStorm</a>, <a href={pycharm}>PyCharm</a>, <a href={datagrip}>DataGrip</a></li>
+  <li><strong>IDEs</strong>: <a href={webstorm}>WebStorm</a>, <a href={pycharm}>PyCharm</a>, <a href={datagrip}>DataGrip</a>, <Cursor /></li>
   <li>
     <strong>Browsers</strong>:
     <ul>
@@ -152,6 +153,12 @@ Table of contents:
 
 {/* =========================== Changelog ============================ */}
 <h2 id="changelog">Changelog</h2>
+<h3>8th Jan 2025</h3>
+<p>
+  Started using <Cursor /> as an IDE. An AI-first code editor built on top of 
+  VSCode.
+</p>
+
 <h3>1st Jul 2024</h3>
 <p>
   Loaned a friend the <RodeWirelessGo2/> wireless microphone. May or may not
