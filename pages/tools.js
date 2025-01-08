@@ -66,6 +66,8 @@ const Adstio = () => <a href="https://developer.android.com/studio">Android Stud
 const Skype = () => <a href="https://skype.com">Skype</a>;
 const Toky = () => <a href="https://toky.co">Toky</a>;
 const Cursor = () => <a href="https://cursor.com">Cursor</a>;
+const Zed = () => <a href="https://zed.dev">Zed</a>;
+const MacVim = () => <a href="https://github.com/macvim-dev/macvim">MacVim</a>;
 
 // Experimental code formatting to maximize HTML content per line
 const Content = () => (<>
@@ -116,7 +118,7 @@ Table of contents:
   <li><strong>Chat</strong>: <a href="https://slack.com">Slack</a> (work), <a href="https://www.signal.org">Signal</a> & <a href="https://telegram.org">Telegram</a> (personal)</li>
   <li><strong>VoIP</strong>: <Toky /> (work), <Skype /> (personal)</li>
   <li><strong>Notes</strong>: <a href="(https://en.wikipedia.org/wiki/Notes_(Apple)">Notes</a> on macOS & iOS</li>
-  <li><strong>Text editors</strong>: <a href="https://github.com/macvim-dev/macvim">MacVim</a> (general)</li>
+  <li><strong>Text editors</strong>: <MacVim />, <Zed /></li>
   <li><strong>Version control</strong>: <a href="https://www.gitkraken.com/">GitKraken</a></li>
   <li><strong>Time tracking</strong>: <a href="https://timavera.com/">Tímavera</a></li>
   <li><strong>Terminal</strong>: <a href="https://sw.kovidgoyal.net/kitty/">Kitty</a></li>
@@ -157,6 +159,12 @@ Table of contents:
 <p>
   Started using <Cursor /> as an IDE. An AI-first code editor built on top of 
   VSCode.
+</p>
+
+<h3>1st Dec 2024</h3>
+<p>
+  Started using <Zed /> as a text editor. A high-performance, 
+  multiplayer code editor written in Rust.
 </p>
 
 <h3>1st Jul 2024</h3>
