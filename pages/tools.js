@@ -68,11 +68,12 @@ const Toky = () => <a href="https://toky.co">Toky</a>;
 const Cursor = () => <a href="https://cursor.com">Cursor</a>;
 const Zed = () => <a href="https://zed.dev">Zed</a>;
 const MacVim = () => <a href="https://github.com/macvim-dev/macvim">MacVim</a>;
+const SvelteKit = () => <a href="https://svelte.dev">SvelteKit</a>;
 
 // Experimental code formatting to maximize HTML content per line
 const Content = () => (<>
 <p>A list of current and past hardware and software tools.</p>
-<p>Last updated: January 8, 2025.</p>
+<p>Last updated: January 16, 2025.</p>
 
 Table of contents:
 <ul>
@@ -155,6 +156,9 @@ Table of contents:
 
 {/* =========================== Changelog ============================ */}
 <h2 id="changelog">Changelog</h2>
+<h3>16th Jan 2025</h3>
+<p>Started using <SvelteKit />.</p>
+
 <h3>8th Jan 2025</h3>
 <p>
   Started using <Cursor /> as an IDE. An AI-first code editor built on top of 
