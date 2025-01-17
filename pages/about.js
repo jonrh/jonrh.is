@@ -3,7 +3,9 @@ import Link from "next/link";
 import Head from "next/head";
 
 import Layout from "../components/layout";
-import Dither from "../components/Dither";
+import { DitherV2 } from "../components/Dither";
+
+import jonrhDither from "../public/images/about/jonrh-dither.png";
 
 const About = () => {
   const frontendYearsOfExperience = new Date().getUTCFullYear() - 2014;
@@ -104,11 +106,10 @@ const About = () => {
         <li>IRC, Libre.chat: jonrh</li>
       </ul>
 
-      <Dither
-        src="/images/about/jonrh.png"
-        width={2069}
-        height={2122}
-        alt="Jón Rúnar Helgason looking to the sunset wearing sun glasses."
+      <DitherV2
+        original={jonrhDither}
+        dither={jonrhDither}
+        alt="Jón Rúnar Helgason profile picture."
       />
     </Layout>
   );
