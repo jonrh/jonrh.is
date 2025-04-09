@@ -54,7 +54,7 @@ const RodeWirelessGo2 = () => <a href="https://rode.com/en-us/microphones/wirele
 const AnkerPowerCore24K = () => <a href="https://www.anker.com/products/a1289">Anker PowerCore 24K</a>;
 const MagSafeDuoCharger = () => <a href="https://support.apple.com/en-us/HT211925">MagSafe Duo Charger</a>;
 const Compact35WDualUSBC = () => <a href="https://support.apple.com/en-us/HT213263">Compact 35W Dual USB-C</a>;
-const InmotionV9 = () => <a href="https://www.inmotionworld.com/electric-unicycle/inmotion-v9">Inmotion V9</a>;
+const InmotionV9 = () => <a href="https://www.inmotionworld.com/electric-unicycle/v9-detail-page">Inmotion V9</a>;
 
 {/* =============================== Software =============================== */}
 const Arc = () => <a href="https://arc.net">Arc</a>;
