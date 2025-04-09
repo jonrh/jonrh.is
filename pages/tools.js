@@ -54,6 +54,7 @@ const RodeWirelessGo2 = () => <a href="https://rode.com/en-us/microphones/wirele
 const AnkerPowerCore24K = () => <a href="https://www.anker.com/products/a1289">Anker PowerCore 24K</a>;
 const MagSafeDuoCharger = () => <a href="https://support.apple.com/en-us/HT211925">MagSafe Duo Charger</a>;
 const Compact35WDualUSBC = () => <a href="https://support.apple.com/en-us/HT213263">Compact 35W Dual USB-C</a>;
+const InmotionV9 = () => <a href="https://www.inmotionworld.com/electric-unicycle/inmotion-v9">Inmotion V9</a>;
 
 {/* =============================== Software =============================== */}
 const Arc = () => <a href="https://arc.net">Arc</a>;
@@ -97,6 +98,7 @@ Table of contents:
   <li><strong>Battery</strong>: <AnkerPowerCore24K /></li>
   <li><strong>Chargers</strong>: <MagSafeDuoCharger /> & <Compact35WDualUSBC /></li>
   <li><strong>2FA</strong>: <a href={yubikey}>Yubikey</a></li>
+  <li><strong>EUC</strong>: <InmotionV9 /></li>
 </ul>
 
 {/* ============================ Software ============================ */}
@@ -156,6 +158,11 @@ Table of contents:
 
 {/* =========================== Changelog ============================ */}
 <h2 id="changelog">Changelog</h2>
+<h3>8th Apr 2025</h3>
+<p>
+  Started using the <InmotionV9 /> electric unicycle (EUC).
+</p>
+
 <h3>16th Jan 2025</h3>
 <p>Started using <SvelteKit />.</p>
 
