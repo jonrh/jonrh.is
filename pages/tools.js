@@ -70,6 +70,7 @@ const Cursor = () => <a href="https://cursor.com">Cursor</a>;
 const Zed = () => <a href="https://zed.dev">Zed</a>;
 const MacVim = () => <a href="https://github.com/macvim-dev/macvim">MacVim</a>;
 const SvelteKit = () => <a href="https://svelte.dev">SvelteKit</a>;
+const Claude = () => <a href="https://anthropic.com/claude">Claude 3.7</a>;
 
 // Experimental code formatting to maximize HTML content per line
 const Content = () => (<>
@@ -104,7 +105,7 @@ Table of contents:
 {/* ============================ Software ============================ */}
 <h2 id="software">Software</h2>
 <ul>
-  <li><strong>IDEs</strong>: <a href={webstorm}>WebStorm</a>, <a href={pycharm}>PyCharm</a>, <a href={datagrip}>DataGrip</a>, <Cursor /></li>
+  <li><strong>IDEs</strong>: <Cursor />, <a href={webstorm}>WebStorm</a>, <a href={pycharm}>PyCharm</a>, <a href={datagrip}>DataGrip</a></li>
   <li>
     <strong>Browsers</strong>:
     <ul>
@@ -115,7 +116,7 @@ Table of contents:
       <li><a href={firefox}>Firefox</a> - dev testing</li>
     </ul>
   </li>
-  <li><strong>AI</strong>: <ChatGPT /> (OpenAI)</li>
+  <li><strong>AI</strong>: <Claude /> (coding), <ChatGPT /> (personal)</li>
   <li><strong>Search engine</strong>: <a href={kagi}>Kagi</a></li>
   <li><strong>Task management</strong>: <a href="https://asana.com/">Asana</a> (work), <a href="https://todoist.com">Todoist</a> (personal)</li>
   <li><strong>Chat</strong>: <a href="https://slack.com">Slack</a> (work), <a href="https://www.signal.org">Signal</a> & <a href="https://telegram.org">Telegram</a> (personal)</li>
