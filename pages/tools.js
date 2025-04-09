@@ -160,7 +160,35 @@ Table of contents:
 <h2 id="changelog">Changelog</h2>
 <h3>8th Apr 2025</h3>
 <p>
-  Started using the <InmotionV9 /> electric unicycle (EUC).
+  Received the <InmotionV9 /> electric unicycle (EUC).
+</p>
+<p>
+  From Jan 2023 to Apr 2025 I rode 836km and 270 times on Lime scooters and eBikes.
+  What motivated me to get an EUC were the limitations of Lime:
+
+  <ul>
+    <li>Geo restricted zones. Many areas and shortcuts were off limits.</li>
+    <li>Unreliable or broken hardware. Low battery, flat tires, rusty brakes, etc.</li>
+    <li>Slow speed and weak torque. Hills and inclines were a challenge.</li>
+  </ul>
+  
+  Being able to tap into higher top speed and torque is a massive safety advantage when 
+  riding in the street to be able to better keep up with car traffic. The Lime scooters and eBikes 
+  really struggle going uphill which limits routes. Despite those limitations I think Lime is fantastic and will continue using it where bringing 
+  my own transport would be problematic. 
+</p>
+<p>
+  Originally I was leaning mostly towards Leaperkim Patton S, Lynx or Sherman L for my first EUC. 
+  Decided to go with the <InmotionV9 /> for these reasons:
+
+  <ul>
+    <li>Tubeless tires for riding safety.</li>
+    <li>UL2272 certification for battery safety.</li>
+    <li>Smaller and easier to learn.</li>
+  </ul>
+
+  If I end up liking the EUC riding style I could see myself complimenting
+  the <InmotionV9 /> later with a larger and faster model. Like the Sherman L.
 </p>
 
 <h3>16th Jan 2025</h3>
