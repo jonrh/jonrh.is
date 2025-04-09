@@ -74,7 +74,7 @@ const SvelteKit = () => <a href="https://svelte.dev">SvelteKit</a>;
 // Experimental code formatting to maximize HTML content per line
 const Content = () => (<>
 <p>A list of current and past hardware and software tools.</p>
-<p>Last updated: January 16, 2025.</p>
+<p>Last updated: April 8, 2025.</p>
 
 Table of contents:
 <ul>
