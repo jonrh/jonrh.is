@@ -139,9 +139,9 @@ Table of contents:
 <ul>
   <li><strong>Infrastructure</strong>: AWS, Vercel, Deno Deploy</li>
   <li><strong>Frameworks</strong>: Next.js, React Native & Expo</li>
-  <li><strong>CSS frameworks</strong>: Tailwind, Bootstrap</li>
+  <li><strong>CSS frameworks</strong>: Tailwind</li>
   <li><strong>Programming language</strong>: JavaScript</li>
-  <li><strong>Database</strong>: Fauna</li>
+  <li><strong>Database</strong>: PostgreSQL</li>
 </ul>
 
 {/* ============================= Notes ============================== */}
