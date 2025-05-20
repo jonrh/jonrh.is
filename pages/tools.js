@@ -19,6 +19,7 @@ import { Page } from "../components/Post";
 
 const macmini = "https://everymac.com/systems/apple/mac_mini/specs/mac-mini-core-i7-3.2-late-2018-specs.html";
 const mba = "https://everymac.com/systems/apple/macbook-air/specs/macbook-air-m2-8-core-cpu-10-core-gpu-13-2022-specs.html";
+const mbp_m4 = "https://everymac.com/systems/apple/macbook_pro/specs/macbook-pro-m4-max-16-core-cpu-40-core-gpu-16-2024-specs.html";
 const dellU4320Q = "https://www.dell.com/en-us/work/shop/dell-ultrasharp-43-4k-usb-c-monitor-u4320q/apd/210-avke/monitors-monitor-accessories";
 const dell25 = "https://www.tftcentral.co.uk/reviews/dell_u2515h.htm";
 const silverstone22 = "https://www.silverstonetek.com/product.php?pid=412";
@@ -55,6 +56,7 @@ const AnkerPowerCore24K = () => <a href="https://www.anker.com/products/a1289">A
 const MagSafeDuoCharger = () => <a href="https://support.apple.com/en-us/HT211925">MagSafe Duo Charger</a>;
 const Compact35WDualUSBC = () => <a href="https://support.apple.com/en-us/HT213263">Compact 35W Dual USB-C</a>;
 const InmotionV9 = () => <a href="https://www.inmotionworld.com/electric-unicycle/v9-detail-page">Inmotion V9</a>;
+const MbpM4 = () => <a href={mbp_m4}>14" MacBook Pro M4 Max</a>;
 
 {/* =============================== Software =============================== */}
 const Arc = () => <a href="https://arc.net">Arc</a>;
@@ -75,7 +77,7 @@ const Claude = () => <a href="https://anthropic.com/claude">Claude 3.7</a>;
 // Experimental code formatting to maximize HTML content per line
 const Content = () => (<>
 <p>A list of current and past hardware and software tools.</p>
-<p>Last updated: April 8, 2025.</p>
+<p>Last updated: May 19, 2025.</p>
 
 Table of contents:
 <ul>
@@ -91,7 +93,7 @@ Table of contents:
 {/* ============================ Hardware ============================ */}
 <h2 id="hardware">Hardware</h2>
 <ul>
-  <li><strong>Laptop</strong>: <a href={mba}>13.6" MacBook Air M2</a>, 10-core, 24GB RAM, 2TB SSD</li>
+  <li><strong>Laptop</strong>: <MbpM4 />, 16CPU/40GPU, 128GB RAM, 4TB SSD</li>
   <li><strong>Monitor / TV</strong>: Dell 42.5" UltraSharp <a href={dellU4320Q}>U4320Q</a>, 3840x2160</li>
   <li><strong>Phone</strong>: <a href={phone}>iPhone 13 mini</a> 256GB</li>
   <li><strong>Headphones</strong>: <a href={airpodspro}>AirPods Pro 2nd gen</a></li>
@@ -159,6 +161,12 @@ Table of contents:
 
 {/* =========================== Changelog ============================ */}
 <h2 id="changelog">Changelog</h2>
+<h3>19th May 2025</h3>
+<p>
+  Upgraded to a <MbpM4 /> from 13.6" MacBook Air M2. 
+  16-core CPU, 40-core GPU, 128GB RAM, 4TB SSD.
+</p>
+
 <h3>8th Apr 2025</h3>
 <p>
   Received the <InmotionV9 /> electric unicycle (EUC).
