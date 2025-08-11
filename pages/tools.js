@@ -125,7 +125,7 @@ Table of contents:
   <li><strong>Search engine</strong>: <a href={kagi}>Kagi</a></li>
   <li><strong>Task management</strong>: <a href="https://asana.com/">Asana</a> (work), <a href="https://todoist.com">Todoist</a> (personal)</li>
   <li><strong>Chat</strong>: <a href="https://slack.com">Slack</a> (work), <a href="https://www.signal.org">Signal</a> & <a href="https://telegram.org">Telegram</a> (personal)</li>
-  <li><strong>VoIP</strong>: <Toky /> (work), <Skype /> (personal)</li>
+  <li><strong>VoIP</strong>: <Toky /> (work)</li>
   <li><strong>Notes</strong>: <a href="(https://en.wikipedia.org/wiki/Notes_(Apple)">Notes</a> on macOS & iOS</li>
   <li><strong>Text editors</strong>: <MacVim />, <Zed /></li>
   <li><strong>Version control</strong>: <a href="https://www.gitkraken.com/">GitKraken</a></li>
@@ -204,6 +204,15 @@ Table of contents:
 <p>
   Upgraded to a <MbpM4 /> from 13.6" MacBook Air M2. 16-core CPU, 40-core GPU,
   128GB RAM, 4TB SSD.
+</p>
+
+<h3>5th May 2025</h3>
+<p>
+  Microsoft discontinued <Skype /> which was a real shame. Used it regularly
+  for 8 years to make international phone calls and send SMS using a
+  personal mobile phone number as a caller ID. Looked for other VoIP
+  alternatives throughout the years but none came close to the reliability,
+  call quality, low latency, convenience and cost effectiveness of Skype.
 </p>
 
 <h3>8th Apr 2025</h3>
@@ -473,6 +482,7 @@ History of software used in the past.
   <li><strong>Search engine</strong>: DuckDuckGo</li>
   <li><strong>Productivity</strong>: <Qbserve />. Jun 2016 - May 2023.</li>
   <li><strong>Productivity</strong>: <Timing />. May 2018 - May 2023.</li>
+  <li><strong>VoIP</strong>: <Skype />. Jun 2017 - May 2025</li>
 </ul>
 
 </>);
