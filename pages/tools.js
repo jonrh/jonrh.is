@@ -46,6 +46,7 @@ const rectangle = "https://rectangleapp.com/";
 const photoshop = "https://en.wikipedia.org/wiki/Adobe_Photoshop";
 const illustrator = "https://en.wikipedia.org/wiki/Adobe_Illustrator";
 const kagi = "https://kagi.com/";
+const macosTerminal = "https://en.wikipedia.org/wiki/Terminal_%28macOS%29";
 
 {/* =============================== Hardware =============================== */}
 const RodeWirelessGo2 = () => <a href="https://rode.com/en-us/microphones/wireless/wirelessgoii">Røde Wireless Go II</a>;
@@ -76,6 +77,7 @@ const Toky = () => <a href="https://toky.co">Toky</a>;
 const Zed = () => <a href="https://zed.dev">Zed</a>;
 const MacVim = () => <a href="https://github.com/macvim-dev/macvim">MacVim</a>;
 const SvelteKit = () => <a href="https://svelte.dev">SvelteKit</a>;
+const MacOsTerminal = () => <a href={macosTerminal}>Terminal</a>;
 
 // Experimental code formatting to maximize HTML content per line
 const Content = () => (<>
@@ -127,10 +129,10 @@ Table of contents:
   <li><strong>Chat</strong>: <a href="https://slack.com">Slack</a> (work), <a href="https://www.signal.org">Signal</a> & <a href="https://telegram.org">Telegram</a> (personal)</li>
   <li><strong>VoIP</strong>: <Toky /> (work)</li>
   <li><strong>Notes</strong>: <a href="(https://en.wikipedia.org/wiki/Notes_(Apple)">Notes</a> on macOS & iOS</li>
-  <li><strong>Text editors</strong>: <MacVim />, <Zed /></li>
+  <li><strong>Text editors</strong>: <Zed /></li>
   <li><strong>Version control</strong>: <a href="https://www.gitkraken.com/">GitKraken</a></li>
   <li><strong>Time tracking</strong>: <a href="https://timavera.com/">Tímavera</a></li>
-  <li><strong>Terminal</strong>: <a href="https://sw.kovidgoyal.net/kitty/">Kitty</a></li>
+  <li><strong>Terminal</strong>: <MacOsTerminal /></li>
   <li><strong>Email</strong>: <a href="https://www.fastmail.com">Fastmail</a></li>
   <li><strong>VPN</strong>: <a href="https://www.ivpn.net">IVPN</a></li>
   <li><strong>Images</strong>: <a href={photoshop}>Photoshop</a>, <a href={illustrator}>Illustrator</a></li>
@@ -198,6 +200,21 @@ Table of contents:
   edge. My development workflows necessitated a more performant machine,
   primarily more RAM. The charger was also fantastic. For those years it was
   the only charger I needed.
+</p>
+
+<h3>22nd May 2025</h3>
+<p>
+  Did not re-install <MacVim /> as a general purpose text editor after getting
+  a new computer. Over time <Zed /> took over as the default text editor when
+  having a quick peak or writing few lines in a config file. Nothing wrong
+  with MacVim, made Zed win over was being better at quickly browsing multiple
+  files or repositories. Zed booted up just about as quickly as MacVim did.
+</p>
+<p>
+  Likewise, did not re-install{" "}
+  <a href="https://sw.kovidgoyal.net/kitty/">Kitty</a>. A cool app but my
+  terminal use mostly takes place in panels in IDEs. For the rare exceptions
+  the default macOS Terminal app has been more than sufficient.
 </p>
 
 <h3>19th May 2025</h3>
@@ -453,7 +470,6 @@ History of hardware used in the past.
     <ul>
       <li><a href={mba}>13" MacBook Air M2</a>, 8c/10g, 24GB RAM, 2TB SSD. Jul 2022 - May 2025.</li>
       <li><a href={macmini}>Mac Mini Late-2018</a>, 6-core, 64GB RAM, 2TB SSD. Jan 2019 - May 2023.</li>
-      {/* Bought the 15" MBP Late-2013 1y used but not 100% when, 2014 is best guess. */}
       <li><a href={mbp2013}>15" MacBook Pro Late-2013</a>, 4-core, 16GB RAM, 1TB SSD. Oct 2014 - Jul 2022.</li>
     </ul>
   </li>
@@ -475,17 +491,41 @@ History of software used in the past.
   <li>
     <strong>IDEs</strong>:
     <ul>
-      <li><Xcode />. Aug 2016 - Jul 2022.</li>
-      <li><Adstio />. Aug 2016 - Jul 2022.</li>
+      <li><Xcode /> Aug 2016 - Jul 2022.</li>
+      <li><Adstio /> Aug 2016 - Jul 2022.</li>
     </ul>
   </li>
-  <li><strong>Search engine</strong>: DuckDuckGo</li>
-  <li><strong>Productivity</strong>: <Qbserve />. Jun 2016 - May 2023.</li>
-  <li><strong>Productivity</strong>: <Timing />. May 2018 - May 2023.</li>
-  <li><strong>VoIP</strong>: <Skype />. Jun 2017 - May 2025</li>
+  <li>
+    <strong>Productivity</strong>:
+    <ul>
+      <li><Qbserve /> Jun 2016 - May 2023.</li>
+      <li><Timing /> May 2018 - May 2023.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Search engines</strong>:
+    <ul>
+      <li>DuckDuckGo</li>
+      <li>Google</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Text editors</strong>:
+    <ul>
+      <li><MacVim /> Nov 2022 - May 2025.</li>
+      <li>Sublime</li>
+      <li>TextEdit</li>
+    </ul>
+  </li>
+  <li><strong>VoIP</strong>: <Skype /> Jun 2017 - May 2025.</li>
+  <li><strong>Terminals</strong>: <a href="https://sw.kovidgoyal.net/kitty/">Kitty</a>. Nov 2021 - May 2025.</li>
 </ul>
 
 </>);
+
+// Best guesses on start/end times:
+//  - Kitty start time.
+//  - Bought the 15" MBP Late-2013 1y used but not 100% when.
 
 const Tools = () => (
   <Page
