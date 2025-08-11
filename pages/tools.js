@@ -15,6 +15,10 @@ import { Page } from "../components/Post";
 // + logitech brio
 // + Services: Rollbar / Sentry / Imgix, etc
 // + Maybe: airtags, bought oct 4th 2021
+// + Handbrake
+// + Termius
+// + MacTex / TexShop
+// + Remove ToothFairy
 
 const mbp2013 = "https://everymac.com/systems/apple/macbook_pro/specs/macbook-pro-core-i7-2.6-15-dual-graphics-late-2013-retina-display-specs.html";
 const macmini = "https://everymac.com/systems/apple/mac_mini/specs/mac-mini-core-i7-3.2-late-2018-specs.html";
