@@ -46,9 +46,6 @@ const rectangle = "https://rectangleapp.com/";
 const photoshop = "https://en.wikipedia.org/wiki/Adobe_Photoshop";
 const illustrator = "https://en.wikipedia.org/wiki/Adobe_Illustrator";
 const kagi = "https://kagi.com/";
-const webstorm = "https://www.jetbrains.com/webstorm/";
-const pycharm = "https://www.jetbrains.com/pycharm/";
-const datagrip = "https://www.jetbrains.com/datagrip/";
 
 {/* =============================== Hardware =============================== */}
 const RodeWirelessGo2 = () => <a href="https://rode.com/en-us/microphones/wireless/wirelessgoii">Røde Wireless Go II</a>;
@@ -59,6 +56,12 @@ const InmotionV9 = () => <a href="https://www.inmotionworld.com/electric-unicycl
 const MbpM4 = () => <a href={mbp_m4}>14" MacBook Pro M4 Max</a>;
 
 {/* =============================== Software =============================== */}
+const Cursor = () => <a href="https://cursor.com">Cursor</a>;
+const Claude = () => <a href="https://anthropic.com/claude">Claude 3.7</a>;
+const ClaudeCode = () => <a href="https://www.anthropic.com/claude-code">Claude Code</a>;
+const WebStorm = () => <a href="https://www.jetbrains.com/webstorm/">WebStorm</a>;
+const PyCharm = () => <a href="https://www.jetbrains.com/pycharm/">PyCharm</a>;
+const DataGrip = () => <a href="https://www.jetbrains.com/datagrip/">DataGrip</a>;
 const Arc = () => <a href="https://arc.net">Arc</a>;
 const Fork = () => <a href="https://fork.dev">Fork</a>;
 const Qbserve = () => <a href="https://qotoqot.com/qbserve">Qbserve</a>;
@@ -68,16 +71,14 @@ const Xcode = () => <a href="https://developer.apple.com/xcode/">Xcode</a>;
 const Adstio = () => <a href="https://developer.android.com/studio">Android Studio</a>;
 const Skype = () => <a href="https://skype.com">Skype</a>;
 const Toky = () => <a href="https://toky.co">Toky</a>;
-const Cursor = () => <a href="https://cursor.com">Cursor</a>;
 const Zed = () => <a href="https://zed.dev">Zed</a>;
 const MacVim = () => <a href="https://github.com/macvim-dev/macvim">MacVim</a>;
 const SvelteKit = () => <a href="https://svelte.dev">SvelteKit</a>;
-const Claude = () => <a href="https://anthropic.com/claude">Claude 3.7</a>;
 
 // Experimental code formatting to maximize HTML content per line
 const Content = () => (<>
 <p>A list of current and past hardware and software tools.</p>
-<p>Last updated: May 19, 2025.</p>
+<p>Last updated: August 11, 2025.</p>
 
 Table of contents:
 <ul>
@@ -107,7 +108,7 @@ Table of contents:
 {/* ============================ Software ============================ */}
 <h2 id="software">Software</h2>
 <ul>
-  <li><strong>IDEs</strong>: <Cursor />, <a href={webstorm}>WebStorm</a>, <a href={pycharm}>PyCharm</a>, <a href={datagrip}>DataGrip</a></li>
+  <li><strong>Code</strong>: <Cursor />, <ClaudeCode />, <WebStorm />, <PyCharm />, <DataGrip /></li>
   <li>
     <strong>Browsers</strong>:
     <ul>
@@ -161,6 +162,11 @@ Table of contents:
 
 {/* =========================== Changelog ============================ */}
 <h2 id="changelog">Changelog</h2>
+<h3>5th Aug 2025</h3>
+<p>
+  Started using <ClaudeCode />.
+</p>
+
 <h3>19th May 2025</h3>
 <p>
   Upgraded to a <MbpM4 /> from 13.6" MacBook Air M2. 
