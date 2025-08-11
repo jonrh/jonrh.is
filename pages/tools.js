@@ -50,6 +50,8 @@ const kagi = "https://kagi.com/";
 {/* =============================== Hardware =============================== */}
 const RodeWirelessGo2 = () => <a href="https://rode.com/en-us/microphones/wireless/wirelessgoii">Røde Wireless Go II</a>;
 const AnkerPowerCore24K = () => <a href="https://www.anker.com/products/a1289">Anker PowerCore 24K</a>;
+const AnkerPowerBank25K165W = () => <a href="https://www.anker.com/products/a1695-anker-power-bank-25000mah-165w">Anker Power Bank (25K, 165W)</a>;
+const AnkerNanoCharger100W = () => <a href="https://www.anker.com/products/b2679-nano-100w-usb-c-charger">Anker Nano Charger (100W)</a>;
 const MagSafeDuoCharger = () => <a href="https://support.apple.com/en-us/HT211925">MagSafe Duo Charger</a>;
 const Compact35WDualUSBC = () => <a href="https://support.apple.com/en-us/HT213263">Compact 35W Dual USB-C</a>;
 const InmotionV9 = () => <a href="https://www.inmotionworld.com/electric-unicycle/v9-detail-page">Inmotion V9</a>;
@@ -99,8 +101,8 @@ Table of contents:
   <li><strong>Phone</strong>: <a href={phone}>iPhone 13 mini</a> 256GB</li>
   <li><strong>Headphones</strong>: <a href={airpodspro}>AirPods Pro 2nd gen</a></li>
   <li><strong>Gaming</strong>: Nintendo <a href={nswitch}>Switch</a> & <a href={procontroller}>Pro Controller</a></li>
-  <li><strong>Battery</strong>: <AnkerPowerCore24K /></li>
-  <li><strong>Chargers</strong>: <MagSafeDuoCharger /> & <Compact35WDualUSBC /></li>
+  <li><strong>Battery</strong>: <AnkerPowerBank25K165W /> & <AnkerPowerCore24K /></li>
+  <li><strong>Chargers</strong>: <AnkerNanoCharger100W />, <MagSafeDuoCharger /> & <Compact35WDualUSBC /></li>
   <li><strong>2FA</strong>: <a href={yubikey}>Yubikey</a></li>
   <li><strong>EUC</strong>: <InmotionV9 /></li>
 </ul>
@@ -165,6 +167,26 @@ Table of contents:
 <h3>5th Aug 2025</h3>
 <p>
   Started using <ClaudeCode />.
+</p>
+
+<h3>15th Jul 2025</h3>
+<p>
+  Bought <AnkerPowerBank25K165W /> and <AnkerNanoCharger100W /> for an improved
+  charging setup with the <MbpM4 />.
+</p>
+<p>
+  The new power bank has been great. Feels like a modern update to the{" "}
+  <AnkerPowerCore24K/> which has been fantastic and is still in regular use.
+  Was initially skeptical of the attached and retractable cables but have
+  come around and really like it. A lot less cable faff.
+</p>
+<p>
+  The 14" MBP is considerably more power hungry than my previous MBA. My flow
+  is to alternate between the power banks as they hit 0-20%. The{" "}
+  <AnkerNanoCharger100W /> then chargers the other power bank in about 1 - 2
+  hours. Lugging 2 large power banks like this is heavier than the stock Apple
+  charger but I much prefer this setup because there are no cables to trip over
+  in a shared space or plug-proximity worries.
 </p>
 
 <h3>19th May 2025</h3>
