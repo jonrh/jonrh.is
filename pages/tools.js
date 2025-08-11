@@ -8,7 +8,6 @@ import { Page } from "../components/Post";
 // + update Asana
 // + review other software used
 // + maybe: add Revolut as business banking
-// + list 15" MacBook Pro Late-2013
 // + list 37.5" ultrasharp
 // + list brother printer
 // + list scanner used in Ireland
@@ -17,6 +16,7 @@ import { Page } from "../components/Post";
 // + Services: Rollbar / Sentry / Imgix, etc
 // + Maybe: airtags, bought oct 4th 2021
 
+const mbp2013 = "https://everymac.com/systems/apple/macbook_pro/specs/macbook-pro-core-i7-2.6-15-dual-graphics-late-2013-retina-display-specs.html";
 const macmini = "https://everymac.com/systems/apple/mac_mini/specs/mac-mini-core-i7-3.2-late-2018-specs.html";
 const mba = "https://everymac.com/systems/apple/macbook-air/specs/macbook-air-m2-8-core-cpu-10-core-gpu-13-2022-specs.html";
 const mbp_m4 = "https://everymac.com/systems/apple/macbook_pro/specs/macbook-pro-m4-max-16-core-cpu-40-core-gpu-16-2024-specs.html";
@@ -191,8 +191,8 @@ Table of contents:
 
 <h3>19th May 2025</h3>
 <p>
-  Upgraded to a <MbpM4 /> from 13.6" MacBook Air M2. 
-  16-core CPU, 40-core GPU, 128GB RAM, 4TB SSD.
+  Upgraded to a <MbpM4 /> from 13.6" MacBook Air M2. 16-core CPU, 40-core GPU,
+  128GB RAM, 4TB SSD.
 </p>
 
 <h3>8th Apr 2025</h3>
@@ -429,8 +429,15 @@ Table of contents:
 History of hardware used in the past.
 
 <ul>
+  <li><strong>Computers</strong>:
+    <ul>
+      <li><a href={mba}>13" MacBook Air M2</a>, 8c/10g, 24GB RAM, 2TB SSD. Jul 2022 - May 2025.</li>
+      <li><a href={macmini}>Mac Mini Late-2018</a>, 6-core, 64GB RAM, 2TB SSD. Jan 2019 - May 2023.</li>
+      {/* Bought the 15" MBP Late-2013 1y used but not 100% when, 2014 is best guess. */}
+      <li><a href={mbp2013}>15" MacBook Pro Late-2013</a>, 4-core, 16GB RAM, 1TB SSD. Oct 2014 - Jul 2022.</li>
+    </ul>
+  </li>
   <li><strong>Microphone</strong>: <RodeWirelessGo2/>. Aug 2021 - Jul 2024.</li>
-  <li><strong>Workstation</strong>: <a href={macmini}>Mac Mini Late-2018</a>, 6-core, 64GB RAM, 2TB SSD. Jan 2019 - May 2023.</li>
   <li><strong>Keyboard</strong>: <a href={keyboard}>Apple Magic Keyboard</a>. Jan 2019 - May 2023.</li>
   <li><strong>Watch</strong>: <a href={watch}>Apple Watch 4</a>. Jan 2019 - Nov 2022.</li>
   <li><strong>Tablet</strong>: <a href={ipadpro}>iPad Pro 11</a> & <a href={applepencil}>Apple Pencil 2nd gen</a>. Jan 2019 - Nov 2022.</li>
