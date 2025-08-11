@@ -57,7 +57,7 @@ const MbpM4 = () => <a href={mbp_m4}>14" MacBook Pro M4 Max</a>;
 
 {/* =============================== Software =============================== */}
 const Cursor = () => <a href="https://cursor.com">Cursor</a>;
-const Claude = () => <a href="https://anthropic.com/claude">Claude 3.7</a>;
+const Claude = () => <a href="https://anthropic.com/claude">Claude</a>;
 const ClaudeCode = () => <a href="https://www.anthropic.com/claude-code">Claude Code</a>;
 const WebStorm = () => <a href="https://www.jetbrains.com/webstorm/">WebStorm</a>;
 const PyCharm = () => <a href="https://www.jetbrains.com/pycharm/">PyCharm</a>;
