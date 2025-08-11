@@ -102,7 +102,7 @@ Table of contents:
   <li><strong>Headphones</strong>: <a href={airpodspro}>AirPods Pro 2nd gen</a></li>
   <li><strong>Gaming</strong>: Nintendo <a href={nswitch}>Switch</a> & <a href={procontroller}>Pro Controller</a></li>
   <li><strong>Battery</strong>: <AnkerPowerBank25K165W /> & <AnkerPowerCore24K /></li>
-  <li><strong>Chargers</strong>: <AnkerNanoCharger100W />, <MagSafeDuoCharger /> & <Compact35WDualUSBC /></li>
+  <li><strong>Chargers</strong>: <AnkerNanoCharger100W /> & <MagSafeDuoCharger /></li>
   <li><strong>2FA</strong>: <a href={yubikey}>Yubikey</a></li>
   <li><strong>EUC</strong>: <InmotionV9 /></li>
 </ul>
@@ -187,6 +187,17 @@ Table of contents:
   hours. Lugging 2 large power banks like this is heavier than the stock Apple
   charger but I much prefer this setup because there are no cables to trip over
   in a shared space or plug-proximity worries.
+</p>
+
+<h3>29th June 2025</h3>
+<p>
+  13" MacBook Air M2 and <MagSafeDuoCharger /> passed down after 3 years of use.
+  Best computer I have owned so far. Such a perfect blend of performance,
+  portability, battery longevity, and silence. As the years went by and
+  software got more bloated the Apple silicon chips lost their performance
+  edge. My development workflows necessitated a more performant machine,
+  primarily more RAM. The charger was also fantastic. For those years it was
+  the only charger I needed.
 </p>
 
 <h3>19th May 2025</h3>
@@ -444,6 +455,7 @@ History of hardware used in the past.
   <li><strong>Headphones</strong>: <a href={airpodspro}>AirPods Pro 1st gen</a>. Aug 2021 - Nov 2022.</li>
   <li><strong>Monitors</strong>: 2x <a href={dell25}>Dell 25" UltraSharp U2515H</a>. Oct 2016 - Nov 2022.</li>
   <li><strong>Wireless mouse</strong>: <a href={mouse}>Logitech G903</a>. Nov 2017 - Nov 2022.</li>
+  <li><strong>Chargers</strong>: <Compact35WDualUSBC /></li>
 </ul>
 
 {/* ========================= Past software ========================== */}
