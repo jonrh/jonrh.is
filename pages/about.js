@@ -83,7 +83,7 @@ const About = () => {
           BSc in Computer Science from{" "}
           <a href="https://en.ru.is/">Reykjavík University</a>.
         </li>
-        <li>Interests: Deno & Deno Deploy, FaunaDB, serverless.</li>
+        <li>Interests: Zero, Deno & Deno Deploy, serverless.</li>
       </ul>
 
       <p>

@@ -36,8 +36,12 @@ const airpodspro = "https://en.wikipedia.org/wiki/AirPods_Pro";
 const phone = "https://en.wikipedia.org/wiki/IPhone_13";
 const ipadpro = "https://en.wikipedia.org/wiki/IPad_Pro";
 const watch = "https://en.m.wikipedia.org/wiki/Apple_Watch";
+const airpodsmax = "https://en.wikipedia.org/wiki/AirPods_Max";
+const airpodspro3 = "https://en.wikipedia.org/wiki/AirPods_Pro";
+const watchultra = "https://en.wikipedia.org/wiki/Apple_Watch_Ultra";
 const nswitch = "https://www.nintendo.com/switch/";
 const procontroller = "https://en.m.wikipedia.org/wiki/Nintendo_Switch_Pro_Controller";
+const ps5pro = "https://en.wikipedia.org/wiki/PlayStation_5_Pro";
 const yubikey = "https://www.yubico.com";
 const applepencil = "https://en.m.wikipedia.org/wiki/Apple_Pencil";
 const toothfairy = "https://apps.apple.com/us/app/toothfairy/id1191449274?mt=12";
@@ -86,7 +90,7 @@ const MacOsTerminal = () => <a href={macosTerminal}>Terminal</a>;
 // Experimental code formatting to maximize HTML content per line
 const Content = () => (<>
 <p>A list of current and past hardware and software tools.</p>
-<p>Last updated: August 11, 2025.</p>
+<p>Last updated: January 26, 2026.</p>
 
 Table of contents:
 <ul>
@@ -105,8 +109,9 @@ Table of contents:
   <li><strong>Laptop</strong>: <MbpM4 />, 16CPU/40GPU, 128GB RAM, 4TB SSD</li>
   <li><strong>Monitor / TV</strong>: Dell 42.5" UltraSharp <a href={dellU4320Q}>U4320Q</a>, 3840x2160</li>
   <li><strong>Phone</strong>: <a href={phone}>iPhone 13 mini</a> 256GB</li>
-  <li><strong>Headphones</strong>: <a href={airpodspro}>AirPods Pro 2nd gen</a></li>
-  <li><strong>Gaming</strong>: Nintendo <a href={nswitch}>Switch</a> & <a href={procontroller}>Pro Controller</a></li>
+  <li><strong>Watch</strong>: <a href={watchultra}>Apple Watch Ultra 3</a></li>
+  <li><strong>Headphones</strong>: <a href={airpodsmax}>AirPods Max</a> & <a href={airpodspro3}>AirPods Pro 3</a></li>
+  <li><strong>Gaming</strong>: <a href={ps5pro}>PS5 Pro</a> & <a href={nswitch}>Switch</a></li>
   <li><strong>Battery</strong>: <AnkerPowerBank25K165W /> & <AnkerPowerCore24K /></li>
   <li><strong>Chargers</strong>: <AnkerNanoCharger100W /> & <MagSafeDuoCharger /></li>
   <li><strong>2FA</strong>: <a href={yubikey}>Yubikey</a></li>
@@ -116,7 +121,7 @@ Table of contents:
 {/* ============================ Software ============================ */}
 <h2 id="software">Software</h2>
 <ul>
-  <li><strong>Code</strong>: <Cursor />, <ClaudeCode />, <WebStorm />, <PyCharm />, <DataGrip /></li>
+  <li><strong>Code</strong>: <Cursor />, <WebStorm />, <PyCharm />, <DataGrip /></li>
   <li>
     <strong>Browsers</strong>:
     <ul>
@@ -156,20 +161,33 @@ Table of contents:
 </ul>
 
 {/* ============================= Notes ============================== */}
+{/*
 <h2 id="notes">Notes</h2>
 <ul>
   <li>
-    Been trying to work mostly outdoors after acquiring the MacBook Air
-    M2 so the Dell 42.5" UltraSharp <a href={dellU4320Q}>U4320Q</a>{" "}
-    monitor is personally mostly used as a TV. Partner uses it a lot when
-    working from home. A great monitor with a massive screen real estate.
-    The monitor runs at a native 3840x2160 resolution (4K) which is like
-    having 4x 1920x1080 monitors except in one panel.
+    Note.
   </li>
 </ul>
+*/}
 
 {/* =========================== Changelog ============================ */}
 <h2 id="changelog">Changelog</h2>
+<h3>10th Jan 2026</h3>
+<p>
+  Bought <a href={airpodsmax}>AirPods Max</a> and{" "}
+  <a href={airpodspro3}>AirPods Pro 3</a>.
+</p>
+
+<h3>2nd Jan 2026</h3>
+<p>
+  Bought <a href={watchultra}>Apple Watch Ultra 3</a>.
+</p>
+
+<h3>1st Oct 2025</h3>
+<p>
+  Bought <a href={ps5pro}>PS5 Pro</a>.
+</p>
+
 <h3>5th Aug 2025</h3>
 <p>
   Started using <ClaudeCode />.
