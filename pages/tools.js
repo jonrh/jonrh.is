@@ -33,7 +33,8 @@ const mouse = "https://www.logitechg.com/en-us/products/gaming-mice/g903-wireles
 const chair = "https://en.m.wikipedia.org/wiki/Aeron_chair";
 const desk = "https://m2.ikea.com/us/en/p/vaestanby-table-dark-brown-vaestana-dark-brown-s59040344/";
 const airpodspro = "https://en.wikipedia.org/wiki/AirPods_Pro";
-const phone = "https://en.wikipedia.org/wiki/IPhone_13";
+const iphone17pro = "https://en.wikipedia.org/wiki/IPhone_17_Pro";
+const iphone13mini = "https://en.wikipedia.org/wiki/IPhone_13";
 const ipadpro = "https://en.wikipedia.org/wiki/IPad_Pro";
 const watch = "https://en.m.wikipedia.org/wiki/Apple_Watch";
 const airpodsmax = "https://en.wikipedia.org/wiki/AirPods_Max";
@@ -90,7 +91,7 @@ const MacOsTerminal = () => <a href={macosTerminal}>Terminal</a>;
 // Experimental code formatting to maximize HTML content per line
 const Content = () => (<>
 <p>A list of current and past hardware and software tools.</p>
-<p>Last updated: January 26, 2026.</p>
+<p>Last updated: February 26, 2026.</p>
 
 Table of contents:
 <ul>
@@ -108,7 +109,7 @@ Table of contents:
 <ul>
   <li><strong>Laptop</strong>: <MbpM4 />, 16CPU/40GPU, 128GB RAM, 4TB SSD</li>
   <li><strong>Monitor / TV</strong>: Dell 42.5" UltraSharp <a href={dellU4320Q}>U4320Q</a>, 3840x2160</li>
-  <li><strong>Phone</strong>: <a href={phone}>iPhone 13 mini</a> 256GB</li>
+  <li><strong>Phone</strong>: <a href={iphone17pro}>iPhone 17 Pro</a></li>
   <li><strong>Watch</strong>: <a href={watchultra}>Apple Watch Ultra 3</a></li>
   <li><strong>Headphones</strong>: <a href={airpodsmax}>AirPods Max</a> & <a href={airpodspro3}>AirPods Pro 3</a></li>
   <li><strong>Gaming</strong>: <a href={ps5pro}>PS5 Pro</a> & <a href={nswitch}>Switch</a></li>
@@ -172,10 +173,30 @@ Table of contents:
 
 {/* =========================== Changelog ============================ */}
 <h2 id="changelog">Changelog</h2>
+<h3>10th Feb 2026</h3>
+<p>
+  Bought <a href={iphone17pro}>iPhone 17 Pro</a>.
+</p>
+
+<h3>6th Feb 2026</h3>
+<p>
+  Stopped using <a href={iphone13mini}>iPhone 13 mini</a>. The screen took water
+  damage after being submerged in water for about a minute.
+</p>
+<p>
+  Really liked the phone and its small form factor. Never wanted a new phone
+  because the form factor was so good. Although the battery and performance had
+  started to become a problem. Replaced the battery once which helped. But the
+  phone really struggled on poorly programmed websites overloaded with trackers
+  and ads, for example Reuters.
+</p>
+
 <h3>10th Jan 2026</h3>
 <p>
   Bought <a href={airpodsmax}>AirPods Max</a> and{" "}
-  <a href={airpodspro3}>AirPods Pro 3</a>.
+  <a href={airpodspro3}>AirPods Pro 3</a>. The AirPods Max have been better
+  than expected. Sound quality, active noise cancellation, and comfort are all
+  better than the AirPods Pro 3. In retrospect I regret not getting them sooner.
 </p>
 
 <h3>2nd Jan 2026</h3>
@@ -495,6 +516,7 @@ History of hardware used in the past.
       <li><a href={mbp2013}>15" MacBook Pro Late-2013</a>, 4-core, 16GB RAM, 1TB SSD. Oct 2014 - Jul 2022.</li>
     </ul>
   </li>
+  <li><strong>Phone</strong>: <a href={iphone13mini}>iPhone 13 mini</a>. Oct 2021 - Feb 2026.</li>
   <li><strong>Microphone</strong>: <RodeWirelessGo2/>. Aug 2021 - Jul 2024.</li>
   <li><strong>Keyboard</strong>: <a href={keyboard}>Apple Magic Keyboard</a>. Jan 2019 - May 2023.</li>
   <li><strong>Watch</strong>: <a href={watch}>Apple Watch 4</a>. Jan 2019 - Nov 2022.</li>
