@@ -168,20 +168,10 @@ const Portfolio = () => {
       <p>
         Digital presence for individuals and companies. Branded email using
         leading providers such as Fastmail and Gmail. Websites showcasing area
-        of expertise, past projects or simple contact pages.
+        of expertise, past projects or simple contact pages.{" "}
+        <a href="https://litasyn.is">litasyn.is</a>,{" "}
+        <a href="https://konnismidur.is">konnismidur.is</a>, and malco.is.
       </p>
-
-      <ul>
-        <li>
-          <a href="https://litasyn.is">litasyn.is</a>
-        </li>
-        <li>
-          <a href="https://malco.is">malco.is</a>
-        </li>
-        <li>
-          <a href="https://konnismidur.is">konnismidur.is</a>
-        </li>
-      </ul>
 
       <br />
 
