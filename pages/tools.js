@@ -71,6 +71,7 @@ const MbpM4 = () => <a href={mbp_m4}>14" MacBook Pro M4 Max</a>;
 const Cursor = () => <a href="https://cursor.com">Cursor</a>;
 const Claude = () => <a href="https://anthropic.com/claude">Claude</a>;
 const ClaudeCode = () => <a href="https://www.anthropic.com/claude-code">Claude Code</a>;
+const Codex = () => <a href="https://openai.com/codex/">Codex</a>;
 const WebStorm = () => <a href="https://www.jetbrains.com/webstorm/">WebStorm</a>;
 const PyCharm = () => <a href="https://www.jetbrains.com/pycharm/">PyCharm</a>;
 const DataGrip = () => <a href="https://www.jetbrains.com/datagrip/">DataGrip</a>;
@@ -173,6 +174,11 @@ Table of contents:
 
 {/* =========================== Changelog ============================ */}
 <h2 id="changelog">Changelog</h2>
+<h3>17th May 2026</h3>
+<p>
+  Started using <Codex />.
+</p>
+
 <h3>10th Feb 2026</h3>
 <p>
   Bought <a href={iphone17pro}>iPhone 17 Pro</a>.
