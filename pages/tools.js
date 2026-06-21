@@ -124,7 +124,8 @@ Table of contents:
 {/* ============================ Software ============================ */}
 <h2 id="software">Software</h2>
 <ul>
-  <li><strong>Code</strong>: <Cursor />, <WebStorm />, <PyCharm />, <DataGrip /></li>
+  <li><strong>Agentic coding</strong>: <ClaudeCode />, <Codex />, <Cursor /></li>
+  <li><strong>IDEs</strong>: <WebStorm />, <PyCharm />, <DataGrip /></li>
   <li>
     <strong>Browsers</strong>:
     <ul>
