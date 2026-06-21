@@ -69,6 +69,7 @@ const MbpM4 = () => <a href={mbp_m4}>14" MacBook Pro M4 Max</a>;
 
 {/* =============================== Software =============================== */}
 const Cursor = () => <a href="https://cursor.com">Cursor</a>;
+const Composer = () => <a href="https://cursor.com">Composer</a>;
 const Claude = () => <a href="https://anthropic.com/claude">Claude</a>;
 const ClaudeCode = () => <a href="https://www.anthropic.com/claude-code">Claude Code</a>;
 const Codex = () => <a href="https://openai.com/codex/">Codex</a>;
@@ -182,6 +183,12 @@ Table of contents:
 <h3>10th Feb 2026</h3>
 <p>
   Bought <a href={iphone17pro}>iPhone 17 Pro</a>.
+</p>
+
+<h3>9th Feb 2026</h3>
+<p>
+  Started using <Composer /> v1.5. Cursor's own LLM for agentic coding,
+  focusing on speed and value.
 </p>
 
 <h3>6th Feb 2026</h3>
