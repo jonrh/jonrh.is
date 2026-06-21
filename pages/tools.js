@@ -72,7 +72,9 @@ const Cursor = () => <a href="https://cursor.com">Cursor</a>;
 const Composer = () => <a href="https://cursor.com">Composer</a>;
 const Claude = () => <a href="https://anthropic.com/claude">Claude</a>;
 const ClaudeCode = () => <a href="https://www.anthropic.com/claude-code">Claude Code</a>;
+const Opus = () => <a href="https://en.wikipedia.org/wiki/Claude_(AI)">Opus</a>;
 const Codex = () => <a href="https://openai.com/codex/">Codex</a>;
+const GPT = () => <a href="https://en.wikipedia.org/wiki/ChatGPT#Model_versions">GPT</a>;
 const WebStorm = () => <a href="https://www.jetbrains.com/webstorm/">WebStorm</a>;
 const PyCharm = () => <a href="https://www.jetbrains.com/pycharm/">PyCharm</a>;
 const DataGrip = () => <a href="https://www.jetbrains.com/datagrip/">DataGrip</a>;
@@ -93,7 +95,7 @@ const MacOsTerminal = () => <a href={macosTerminal}>Terminal</a>;
 // Experimental code formatting to maximize HTML content per line
 const Content = () => (<>
 <p>A list of current and past hardware and software tools.</p>
-<p>Last updated: February 26, 2026.</p>
+<p>Last updated: June 20, 2026.</p>
 
 Table of contents:
 <ul>
@@ -126,6 +128,13 @@ Table of contents:
 <ul>
   <li><strong>Agentic coding</strong>: <ClaudeCode />, <Codex />, <Cursor /></li>
   <li><strong>IDEs</strong>: <WebStorm />, <PyCharm />, <DataGrip /></li>
+  <li>
+    <strong>LLMs</strong>:
+    <ul>
+      <li>Anthropic <Opus /> - coding & personal</li>
+      <li>OpenAI <GPT /> - coding</li>
+    </ul>
+  </li>
   <li>
     <strong>Browsers</strong>:
     <ul>
