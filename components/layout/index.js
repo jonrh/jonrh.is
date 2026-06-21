@@ -13,11 +13,11 @@ const Layout = ({ children }) => {
         <a href="/">
           <picture>
             <source
-              srcSet="/images/jon-runar-helgason.webp"
+              srcSet="/images/jon-runar-helgason-2026.webp"
               type="image/webp"
             />
             <img
-              src="/images/jon-runar-helgason.png"
+              src="/images/jon-runar-helgason-2026.png"
               alt="Profile of Jón Rúnar Helgason"
             />
           </picture>
