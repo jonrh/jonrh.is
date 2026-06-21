@@ -145,7 +145,6 @@ Table of contents:
       <li><a href={firefox}>Firefox</a> - dev testing</li>
     </ul>
   </li>
-  <li><strong>AI</strong>: <Claude /> (coding), <ChatGPT /> (personal)</li>
   <li><strong>Search engine</strong>: <a href={kagi}>Kagi</a></li>
   <li><strong>Task management</strong>: <a href="https://asana.com/">Asana</a> (work), <a href="https://todoist.com">Todoist</a> (personal)</li>
   <li><strong>Chat</strong>: <a href="https://slack.com">Slack</a> (work), <a href="https://www.signal.org">Signal</a> & <a href="https://telegram.org">Telegram</a> (personal)</li>
