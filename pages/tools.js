@@ -95,7 +95,7 @@ const MacOsTerminal = () => <a href={macosTerminal}>Terminal</a>;
 // Experimental code formatting to maximize HTML content per line
 const Content = () => (<>
 <p>A list of current and past hardware and software tools.</p>
-<p>Last updated: June 20, 2026.</p>
+<p>Last updated: June 22, 2026.</p>
 
 Table of contents:
 <ul>
@@ -148,7 +148,6 @@ Table of contents:
   <li><strong>Search engine</strong>: <a href={kagi}>Kagi</a></li>
   <li><strong>Task management</strong>: <a href="https://asana.com/">Asana</a> (work), <a href="https://todoist.com">Todoist</a> (personal)</li>
   <li><strong>Chat</strong>: <a href="https://slack.com">Slack</a> (work), <a href="https://www.signal.org">Signal</a> & <a href="https://telegram.org">Telegram</a> (personal)</li>
-  <li><strong>VoIP</strong>: <Toky /> (work)</li>
   <li><strong>Notes</strong>: <a href="(https://en.wikipedia.org/wiki/Notes_(Apple)">Notes</a> on macOS & iOS</li>
   <li><strong>Text editors</strong>: <Zed /></li>
   <li><strong>Version control</strong>: <a href="https://www.gitkraken.com/">GitKraken</a></li>
@@ -184,6 +183,31 @@ Table of contents:
 
 {/* =========================== Changelog ============================ */}
 <h2 id="changelog">Changelog</h2>
+<h3>22nd June 2026</h3>
+<p>
+  Stopped using <Toky />. Used it as a business VoIP for an Icelandic number.
+  It was an okay service for the price. Fairly simple and intuitive. Used it
+  for about 4.5 years. Would consider using it again but probably also look
+  around what else there is on the market.
+</p>
+<p>
+  One major problem was the IS number could practically not make outbound calls
+  to other Icelandic numbers. Nearly all got classified as spam. Not sure why.
+  Best guess is that the entire 539 XXXX VoIP range was classified as spam so
+  likely not Toky's fault. Tried reaching out to the IS carriers to get the
+  number allow listed but to no avail. Not knocking Toky for it, experienced
+  similar issues with other VoIPs as well.
+</p>
+<p>
+  Incoming calls worked without a problem. Set it up so that all incoming calls
+  would immediately be redirected to a personal mobile number. Incoming calls
+  would go to voicemail if outside business hours. Used the Slack integration
+  which gave context to the rest of the team if the call was answered or not.
+  It was very nice being able to offer a public business phone number. Both for
+  customers that preferred phone calls and also when mandated when registering
+  for various company accounts.
+</p>
+
 <h3>17th May 2026</h3>
 <p>
   Started using <Codex />.
@@ -583,7 +607,13 @@ History of software used in the past.
       <li>TextEdit</li>
     </ul>
   </li>
-  <li><strong>VoIP</strong>: <Skype /> Jun 2017 - May 2025.</li>
+  <li>
+    <strong>VoIP</strong>:
+    <ul>
+      <li><Toky /> Jan 2022 - Jun 2026.</li>
+      <li><Skype /> Jun 2017 - May 2025.</li>
+    </ul>
+  </li>
   <li><strong>Terminals</strong>: <a href="https://sw.kovidgoyal.net/kitty/">Kitty</a>. Nov 2021 - May 2025.</li>
 </ul>
 
