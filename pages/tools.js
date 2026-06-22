@@ -148,7 +148,7 @@ Table of contents:
   <li><strong>Search engine</strong>: <a href={kagi}>Kagi</a></li>
   <li><strong>Task management</strong>: <a href="https://asana.com/">Asana</a> (work), <a href="https://todoist.com">Todoist</a> (personal)</li>
   <li><strong>Chat</strong>: <a href="https://slack.com">Slack</a> (work), <a href="https://www.signal.org">Signal</a> & <a href="https://telegram.org">Telegram</a> (personal)</li>
-  <li><strong>Notes</strong>: <a href="(https://en.wikipedia.org/wiki/Notes_(Apple)">Notes</a> on macOS & iOS</li>
+  <li><strong>Notes</strong>: <a href="https://en.wikipedia.org/wiki/Notes_(Apple)">Notes</a> on macOS & iOS</li>
   <li><strong>Text editors</strong>: <Zed /></li>
   <li><strong>Version control</strong>: <a href="https://www.gitkraken.com/">GitKraken</a></li>
   <li><strong>Time tracking</strong>: <a href="https://timavera.com/">Tímavera</a></li>
