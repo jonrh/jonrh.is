@@ -5,7 +5,6 @@ import { Page } from "../components/Post";
 // Todo
 // + maybe: list old phones + chargers
 // + maybe: mention a note that I do use Flask (Tímavera tech stack)
-// + update Asana
 // + review other software used
 // + maybe: add Revolut as business banking
 // + list 37.5" ultrasharp
@@ -91,6 +90,7 @@ const Zed = () => <a href="https://zed.dev">Zed</a>;
 const MacVim = () => <a href="https://github.com/macvim-dev/macvim">MacVim</a>;
 const SvelteKit = () => <a href="https://svelte.dev">SvelteKit</a>;
 const MacOsTerminal = () => <a href={macosTerminal}>Terminal</a>;
+const Asana = () => <a href="https://asana.com">Asana</a>;
 
 // Experimental code formatting to maximize HTML content per line
 const Content = () => (<>
@@ -146,7 +146,7 @@ Table of contents:
     </ul>
   </li>
   <li><strong>Search engine</strong>: <a href={kagi}>Kagi</a></li>
-  <li><strong>Task management</strong>: <a href="https://asana.com/">Asana</a> (work), <a href="https://todoist.com">Todoist</a> (personal)</li>
+  <li><strong>Task management</strong>: <a href="https://todoist.com">Todoist</a></li>
   <li><strong>Chat</strong>: <a href="https://slack.com">Slack</a> (work), <a href="https://www.signal.org">Signal</a> & <a href="https://telegram.org">Telegram</a> (personal)</li>
   <li><strong>Notes</strong>: <a href="https://en.wikipedia.org/wiki/Notes_(Apple)">Notes</a> on macOS & iOS</li>
   <li><strong>Text editors</strong>: <Zed /></li>
@@ -211,6 +211,17 @@ Table of contents:
 <h3>17th May 2026</h3>
 <p>
   Started using <Codex />.
+</p>
+
+<h3>31st Mar 2026</h3>
+<p>
+  Stopped using <Asana />. Used it for 7 years. Probably my favourite purpose
+  built team task management and issue tracking system I have used to date. Far
+  superior to Jira for example. Always liked the UX. However, over the years as
+  Asana moved up market and started to adjust the product towards the needs of
+  enterprise customers it lost the appeal. Would consider using again but as
+  with any task management system it is only good if the rest of the team
+  commits to using it well. Switched to using LLMs and text files.
 </p>
 
 <h3>10th Feb 2026</h3>
@@ -615,6 +626,7 @@ History of software used in the past.
     </ul>
   </li>
   <li><strong>Terminals</strong>: <a href="https://sw.kovidgoyal.net/kitty/">Kitty</a>. Nov 2021 - May 2025.</li>
+  <li><strong>Task management</strong>: <Asana />. Apr 2019 - Mar 2026.</li>
 </ul>
 
 </>);
