@@ -13,7 +13,6 @@ import { Page } from "../components/Post";
 // + other tech used in Ireland?
 // + logitech brio
 // + Services: Rollbar / Sentry / Imgix, etc
-// + Maybe: airtags, bought oct 4th 2021
 // + Handbrake
 // + Termius
 // + MacTex / TexShop
@@ -65,6 +64,7 @@ const MagSafeDuoCharger = () => <a href="https://support.apple.com/en-us/HT21192
 const Compact35WDualUSBC = () => <a href="https://support.apple.com/en-us/HT213263">Compact 35W Dual USB-C</a>;
 const InmotionV9 = () => <a href="https://www.inmotionworld.com/electric-unicycle/v9-detail-page">Inmotion V9</a>;
 const MbpM4 = () => <a href={mbp_m4}>14" MacBook Pro M4 Max</a>;
+const AirTags = () => <a href="https://www.apple.com/airtag/">AirTags</a>;
 
 {/* =============================== Software =============================== */}
 const Cursor = () => <a href="https://cursor.com">Cursor</a>;
@@ -121,6 +121,7 @@ Table of contents:
   <li><strong>Chargers</strong>: <AnkerNanoCharger100W /> & <MagSafeDuoCharger /></li>
   <li><strong>2FA</strong>: <a href={yubikey}>Yubikey</a></li>
   <li><strong>EUC</strong>: <InmotionV9 /></li>
+  <li><strong>Miscellaneous</strong>: <AirTags /></li>
 </ul>
 
 {/* ============================ Software ============================ */}
@@ -553,7 +554,7 @@ Table of contents:
 <p>Subscribed to <Toky /> business VoIP.</p>
 
 <h3>4th Oct 2021</h3>
-<p>Bought <MagSafeDuoCharger/>.</p>
+<p>Bought <MagSafeDuoCharger/> & <AirTags />.</p>
 
 <h3>25th Aug 2021</h3>
 <p>Bought <RodeWirelessGo2 /> wireless microphone.</p>
