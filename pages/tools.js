@@ -95,7 +95,7 @@ const Asana = () => <a href="https://asana.com">Asana</a>;
 // Experimental code formatting to maximize HTML content per line
 const Content = () => (<>
 <p>A list of current and past hardware and software tools.</p>
-<p>Last updated: June 22, 2026.</p>
+<p>Last updated: July 5, 2026.</p>
 
 Table of contents:
 <ul>
@@ -117,7 +117,7 @@ Table of contents:
   <li><strong>Watch</strong>: <a href={watchultra}>Apple Watch Ultra 3</a></li>
   <li><strong>Headphones</strong>: <a href={airpodsmax}>AirPods Max</a> & <a href={airpodspro3}>AirPods Pro 3</a></li>
   <li><strong>Gaming</strong>: <a href={ps5pro}>PS5 Pro</a> & <a href={nswitch}>Switch</a></li>
-  <li><strong>Battery</strong>: <AnkerPowerBank25K165W /> & <AnkerPowerCore24K /></li>
+  <li><strong>Battery</strong>: 2x <AnkerPowerBank25K165W /></li>
   <li><strong>Chargers</strong>: <AnkerNanoCharger100W /> & <MagSafeDuoCharger /></li>
   <li><strong>2FA</strong>: <a href={yubikey}>Yubikey</a></li>
   <li><strong>EUC</strong>: <InmotionV9 /></li>
@@ -212,6 +212,15 @@ Table of contents:
 <h3>17th May 2026</h3>
 <p>
   Started using <Codex />.
+</p>
+
+<h3>20th Apr 2026</h3>
+<p>
+  Bought two new <AnkerPowerBank25K165W />. Retired an older{" "}
+  <AnkerPowerBank25K165W /> and <AnkerPowerCore24K /> which were both above 300
+  cycles and had degraded in battery capacity for the purpose of laptop
+  charging. The older power banks are still being used but for lighter duties
+  like charging phones.
 </p>
 
 <h3>31st Mar 2026</h3>
@@ -572,6 +581,12 @@ History of hardware used in the past.
       <li><a href={mba}>13" MacBook Air M2</a>, 8c/10g, 24GB RAM, 2TB SSD. Jul 2022 - May 2025.</li>
       <li><a href={macmini}>Mac Mini Late-2018</a>, 6-core, 64GB RAM, 2TB SSD. Jan 2019 - May 2023.</li>
       <li><a href={mbp2013}>15" MacBook Pro Late-2013</a>, 4-core, 16GB RAM, 1TB SSD. Oct 2014 - Jul 2022.</li>
+    </ul>
+  </li>
+  <li><strong>Power banks</strong>:
+    <ul>
+      <li><AnkerPowerBank25K165W />. Jul 2025 - Apr 2026.</li>
+      <li><AnkerPowerCore24K />. Jul 2023 - Apr 2026.</li>
     </ul>
   </li>
   <li><strong>Phone</strong>: <a href={iphone13mini}>iPhone 13 mini</a>. Oct 2021 - Feb 2026.</li>
