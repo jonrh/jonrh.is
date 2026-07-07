@@ -59,6 +59,7 @@ const macosTerminal = "https://en.wikipedia.org/wiki/Terminal_%28macOS%29";
 const RodeWirelessGo2 = () => <a href="https://rode.com/en-us/microphones/wireless/wirelessgoii">Røde Wireless Go II</a>;
 const AnkerPowerCore24K = () => <a href="https://www.anker.com/products/a1289">Anker PowerCore 24K</a>;
 const AnkerPowerBank25K165W = () => <a href="https://www.anker.com/products/a1695-anker-power-bank-25000mah-165w">Anker Power Bank (25K, 165W)</a>;
+const AnkerZolo = () => <a href="https://www.amazon.com/Anker-Upgraded-Version-High-Speed-Portable/dp/B0CZ9M6X8Q?th=1">Anker Zolo 10,000mAh</a>;
 const AnkerNanoCharger100W = () => <a href="https://www.anker.com/products/b2679-nano-100w-usb-c-charger">Anker Nano Charger (100W)</a>;
 const MagSafeDuoCharger = () => <a href="https://support.apple.com/en-us/HT211925">MagSafe Duo Charger</a>;
 const Compact35WDualUSBC = () => <a href="https://support.apple.com/en-us/HT213263">Compact 35W Dual USB-C</a>;
@@ -374,6 +375,9 @@ Table of contents:
   If I end up liking the EUC riding style I could see myself complimenting
   the <InmotionV9 /> later with a larger and faster model. Like the Sherman L.
 </p>
+
+<h3>6th Feb 2025</h3>
+<p>Bought <AnkerZolo />.</p>
 
 <h3>16th Jan 2025</h3>
 <p>Started using <SvelteKit />.</p>
