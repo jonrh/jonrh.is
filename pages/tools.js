@@ -16,7 +16,7 @@ import { Page } from "../components/Post";
 // + Handbrake
 // + Termius
 // + MacTex / TexShop
-// + Remove ToothFairy
+// Add: Ollama, LM Studio, the other thing
 
 const mbp2013 = "https://everymac.com/systems/apple/macbook_pro/specs/macbook-pro-core-i7-2.6-15-dual-graphics-late-2013-retina-display-specs.html";
 const macmini = "https://everymac.com/systems/apple/mac_mini/specs/mac-mini-core-i7-3.2-late-2018-specs.html";
@@ -43,7 +43,6 @@ const procontroller = "https://en.m.wikipedia.org/wiki/Nintendo_Switch_Pro_Contr
 const ps5pro = "https://en.wikipedia.org/wiki/PlayStation_5_Pro";
 const yubikey = "https://www.yubico.com";
 const applepencil = "https://en.m.wikipedia.org/wiki/Apple_Pencil";
-const toothfairy = "https://apps.apple.com/us/app/toothfairy/id1191449274?mt=12";
 const orion = "https://browser.kagi.com/";
 const safari = "https://www.apple.com/safari/";
 const chrome = "https://www.google.com/chrome/";
@@ -92,6 +91,7 @@ const MacVim = () => <a href="https://github.com/macvim-dev/macvim">MacVim</a>;
 const SvelteKit = () => <a href="https://svelte.dev">SvelteKit</a>;
 const MacOsTerminal = () => <a href={macosTerminal}>Terminal</a>;
 const Asana = () => <a href="https://asana.com">Asana</a>;
+const ToothFairy = () => <a href="https://apps.apple.com/us/app/toothfairy/id1191449274">ToothFairy</a>
 
 // Experimental code formatting to maximize HTML content per line
 const Content = () => (<>
@@ -160,7 +160,6 @@ Table of contents:
   <li><strong>Images</strong>: <a href={photoshop}>Photoshop</a>, <a href={illustrator}>Illustrator</a></li>
   <li><strong>Window manager</strong>: <a href={rectangle}>Rectangle</a></li>
   <li><strong>Secrets</strong>: <a href={onep}>1Password</a></li>
-  <li><strong>Utils</strong>: <a href={toothfairy}>ToothFairy</a></li>
 </ul>
 
 {/* ====================== Preferred tech stack ====================== */}
@@ -300,6 +299,10 @@ Table of contents:
   hours. Lugging 2 large power banks like this is heavier than the stock Apple
   charger but I much prefer this setup because there are no cables to trip over
   in a shared space or plug-proximity worries.
+</p>
+<p>
+  Stopped using <ToothFairy />. Great little app, would use again. But did not
+  re-install it on the new laptop.
 </p>
 
 <h3>29th June 2025</h3>
@@ -647,6 +650,7 @@ History of software used in the past.
   </li>
   <li><strong>Terminals</strong>: <a href="https://sw.kovidgoyal.net/kitty/">Kitty</a>. Nov 2021 - May 2025.</li>
   <li><strong>Task management</strong>: <Asana />. Apr 2019 - Mar 2026.</li>
+  <li><strong>Utils</strong>: <ToothFairy />.</li>
 </ul>
 
 </>);
