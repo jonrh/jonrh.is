@@ -14,7 +14,6 @@ import { Page } from "../components/Post";
 // + logitech brio
 // + Services: Rollbar / Sentry / Imgix, etc
 // + Handbrake
-// + Termius
 // + MacTex / TexShop
 // Add: Ollama, LM Studio, the other thing
 
@@ -92,6 +91,7 @@ const SvelteKit = () => <a href="https://svelte.dev">SvelteKit</a>;
 const MacOsTerminal = () => <a href={macosTerminal}>Terminal</a>;
 const Asana = () => <a href="https://asana.com">Asana</a>;
 const ToothFairy = () => <a href="https://apps.apple.com/us/app/toothfairy/id1191449274">ToothFairy</a>
+const Termius = () => <a href="https://termius.com">Termius</a>;
 
 // Experimental code formatting to maximize HTML content per line
 const Content = () => (<>
@@ -154,10 +154,10 @@ Table of contents:
   <li><strong>Text editors</strong>: <Zed /></li>
   <li><strong>Version control</strong>: <a href="https://www.gitkraken.com/">GitKraken</a></li>
   <li><strong>Time tracking</strong>: <a href="https://timavera.com/">Tímavera</a></li>
-  <li><strong>Terminal</strong>: <MacOsTerminal /></li>
+  <li><strong>Terminals</strong>: <MacOsTerminal /> & <Termius /></li>
   <li><strong>Email</strong>: <a href="https://www.fastmail.com">Fastmail</a></li>
   <li><strong>VPN</strong>: <a href="https://www.ivpn.net">IVPN</a></li>
-  <li><strong>Images</strong>: <a href={photoshop}>Photoshop</a>, <a href={illustrator}>Illustrator</a></li>
+  <li><strong>Images</strong>: <a href={photoshop}>Photoshop</a> & <a href={illustrator}>Illustrator</a></li>
   <li><strong>Window manager</strong>: <a href={rectangle}>Rectangle</a></li>
   <li><strong>Secrets</strong>: <a href={onep}>1Password</a></li>
 </ul>
@@ -574,6 +574,9 @@ Table of contents:
 
 <h3>25th Aug 2021</h3>
 <p>Bought <RodeWirelessGo2 /> wireless microphone.</p>
+
+<h3>24th Feb 2021</h3>
+<p>Subscribed to <Termius />. A great terminal for shared team credentials.</p>
 
 <h3>6th May 2019</h3>
 <p>Subscribed to <Skype /> VoIP with phone numbers.</p>
