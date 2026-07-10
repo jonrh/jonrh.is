@@ -96,14 +96,14 @@ const Termius = () => <a href="https://termius.com">Termius</a>;
 // Experimental code formatting to maximize HTML content per line
 const Content = () => (<>
 <p>A list of current and past hardware and software tools.</p>
-<p>Last updated: July 5, 2026.</p>
+<p>Last updated: July 10, 2026.</p>
 
 Table of contents:
 <ul>
   <li><a href="#hardware">Hardware</a></li>
   <li><a href="#software">Software</a></li>
   <li><a href="#techstack">Preferred tech stack</a></li>
-  <li><a href="#notes">Notes</a></li>
+  {/*<li><a href="#notes">Notes</a></li>*/}
   <li><a href="#changelog">Changelog</a></li>
   <li><a href="#past-hardware">Past hardware</a></li>
   <li><a href="#past-software">Past software</a></li>
