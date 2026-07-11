@@ -1,11 +1,10 @@
-import Post from "../../components/Post";
-
-<Post
-  title="25February 2008 mix"
-  path="25february-2008-mix"
-  date="February 25, 2008"
-  metaDescription="30 min vocal house mixtape, done with Ableton Live 7 Demo."
->
+---
+layout: post.njk
+title: "25February 2008 mix"
+dateDisplay: "February 25, 2008"
+metaDescription: "30 min vocal house mixtape, done with Ableton Live 7 Demo."
+sourceFile: content/25february-2008-mix/index.md
+---
 
 Download link: 25February 2008 mix
 
@@ -22,5 +21,3 @@ Download link: 25February 2008 mix
 9. Arno Cost, Arias – “Magenta” – 26:00
 
 **Notes**: 30 min vocal house mixtape, done with [Ableton](https://www.ableton.com/) Live 7 Demo.
-
-</Post>

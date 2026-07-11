@@ -1,12 +1,10 @@
-import Post from "../../components/Post";
-
-<Post
-  title="Fix for “Cannot read property apply of undefined” using Reflux"
-  path="fix-for-cannot-read-property-apply-of-undefined-using-reflux"
-  date="January 22, 2015"
-  metaDescription="A solution to a silly user problem while using a Reflux
-  store with React."
->
+---
+layout: post.njk
+title: "Fix for “Cannot read property apply of undefined” using Reflux"
+dateDisplay: "January 22, 2015"
+metaDescription: "A solution to a silly user problem while using a Reflux store with React."
+sourceFile: content/fix-for-cannot-read-property-apply-of-undefined-using-reflux/index.md
+---
 
 At [Vaki][0] we are in the process of creating a new site and are using [React][1] and [Reflux][2]
 (a library implementation of [Flux][3] among other things. I had been struggling with a cryptic
@@ -54,5 +52,3 @@ this.listenTo(LeetActions.myEvent, this.onMyEvent);
 [2]: https://github.com/spoike/refluxjs
 [3]: https://facebook.github.io/flux/docs/overview.html#content
 [4]: https://github.com/spoike/refluxjs#creating-data-stores
-
-</Post>

@@ -1,12 +1,10 @@
-import Post from "../../components/Post";
-
-<Post
-  title="6October 2007 mix"
-  path="6october-2007-mix"
-  date="October 6, 2007"
-  metaDescription="30 min progressive house mixtape. Done with Serato Scratch
-  Live via Technics SL 1200/1210 turntables and a DJM 600 mixer."
->
+---
+layout: post.njk
+title: "6October 2007 mix"
+dateDisplay: "October 6, 2007"
+metaDescription: "30 min progressive house mixtape. Done with Serato Scratch Live via Technics SL 1200/1210 turntables and a DJM 600 mixer."
+sourceFile: content/6october-2007-mix/index.md
+---
 
 Download link: 6October 2007 mix
 
@@ -28,5 +26,3 @@ Download link: 6October 2007 mix
 [Technics SL 1200/1210](https://en.wikipedia.org/wiki/Technics_SL-1200) turntables and a
  [DJM 600 mixer](https://en.wikipedia.org/wiki/DJM). 6 months from my last mixtape, 1 year since I
  started out.
-
-</Post>

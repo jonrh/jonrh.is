@@ -1,12 +1,10 @@
-import Post from "../../components/Post";
-
-<Post
-  title="29December 2006 mix"
-  path="29december-2006-mix"
-  date="December 29, 2006"
-  metaDescription="Electro/Progressive House mix. Done with Traktor 3. Encoded
-  with Lame 3.97 using the V0 preset."
->
+---
+layout: post.njk
+title: "29December 2006 mix"
+dateDisplay: "December 29, 2006"
+metaDescription: "Electro/Progressive House mix. Done with Traktor 3. Encoded with Lame 3.97 using the V0 preset."
+sourceFile: content/29december-2006-mix/index.md
+---
 
 Download link: 29December 2006 mix
 
@@ -29,5 +27,3 @@ Download link: 29December 2006 mix
 
 **Notes**: Electro/Progressive House mix. Done with [Traktor 3](https://www.native-instruments.com/en/)
 and encoded with Lame 3.97 using the V0 preset.
-
-</Post>

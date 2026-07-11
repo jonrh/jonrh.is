@@ -1,12 +1,10 @@
-import Post from "../../components/Post";
-
-<Post
-  title="60x60 Meditation challenge"
-  path="60x60-meditation-challenge"
-  date="November 1, 2020"
-  metaDescription="A challenge designed to make meditation habit stick.
-  Meditate for at least 60 minutes in a single session for 60 days straight."
->
+---
+layout: post.njk
+title: "60x60 Meditation challenge"
+dateDisplay: "November 1, 2020"
+metaDescription: "A challenge designed to make meditation habit stick. Meditate for at least 60 minutes in a single session for 60 days straight."
+sourceFile: content/60x60-meditation-challenge/index.md
+---
 
 For the last 60 days, I meditated at least 60 minutes every day. It was hard but very much worth
 the effort. I discovered this [challenge by Naval][naval-tweets] while reading Vishnu Mohandas'
@@ -112,5 +110,3 @@ I would highly recommend this challenge. Please get in touch at hi@jonrh.is if y
 [shikantaza]: https://en.wikipedia.org/wiki/Shikantaza
 [donothing]: https://www.youtube.com/watch?v=cZ6cdIaUZCA
 [deconstruct]: https://deconstructingyourself.com/do-nothing-meditation.html
-
-</Post>

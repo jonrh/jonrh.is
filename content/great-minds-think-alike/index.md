@@ -1,12 +1,10 @@
-import Post from "../../components/Post";
-
-<Post
-  title="Great minds think alike"
-  path="great-minds-think-alike"
-  date="August 16, 2009"
-  metaDescription="While in university my group independently thought of the
-  same business idea as someone in the UK."
->
+---
+layout: post.njk
+title: "Great minds think alike"
+dateDisplay: "August 16, 2009"
+metaDescription: "While in university my group independently thought of the same business idea as someone in the UK."
+sourceFile: content/great-minds-think-alike/index.md
+---
 
 In the spring semester of 2008 me and 6 other students took a course on creating business models.
 We designed from the ground up an idea of a small non/low-profit company that would enable people
@@ -18,5 +16,3 @@ individuals to know when to deliver the information.
 Today I bumped into a [Slashdot article](https://tech.slashdot.org/story/09/08/16/0710254/How-To-Send-Email-When-Youre-Dead?from=rss)
 about a website providing about the same [service](http://www.lastmessagesclub.co.uk/) in the UK.
 The funny thing is we didn’t know about it when we designed ours. Great minds think alike I guess.
-
-</Post>

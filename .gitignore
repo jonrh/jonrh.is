@@ -8,7 +8,5 @@
 node_modules/
 npm-debug.log*
 
-# Next.js
-/.next/
-/out/
-/build
+# 11ty build output
+/_site/

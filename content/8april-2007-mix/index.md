@@ -1,11 +1,10 @@
-import Post from "../../components/Post";
-
-<Post
-  title="8April 2007 mix"
-  path="8april-2007-mix"
-  date="April 8, 2007"
-  metaDescription="Electronic dance music mixtape created 8th of April 2007."
->
+---
+layout: post.njk
+title: "8April 2007 mix"
+dateDisplay: "April 8, 2007"
+metaDescription: "Electronic dance music mixtape created 8th of April 2007."
+sourceFile: content/8april-2007-mix/index.md
+---
 
 Download link: 8April 2007 mix
 
@@ -25,5 +24,3 @@ Download link: 8April 2007 mix
 11. Mario Chris – “Color Dots” [Devilock Records] – 44:30
 12. The Freaks – “The Creeps (Vandalism remix)” [Azuli Records] – 50:00
 13. Roman Salzger – “Turn Up The Sun ft. Tiger Lily (Rough mix)” [Opaque Music] – 55:00
-
-</Post>

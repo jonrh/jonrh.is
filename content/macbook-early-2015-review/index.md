@@ -1,14 +1,10 @@
-import Image from "next/image";
-import Post from "../../components/Post";
-
-<Post
-  title="MacBook Early 2015 review"
-  path="macbook-early-2015-review"
-  date="January 13, 2016"
-  metaDescription="Initially very sceptical about the Early 2015 MacBook but
-  was pleasantly surprised after 3 weeks of use. Would recommend for casual
-  users and school."
->
+---
+layout: post.njk
+title: "MacBook Early 2015 review"
+dateDisplay: "January 13, 2016"
+metaDescription: "Initially very sceptical about the Early 2015 MacBook but was pleasantly surprised after 3 weeks of use. Would recommend for casual users and school."
+sourceFile: content/macbook-early-2015-review/index.md
+---
 
 Over the holidays I had a chance to try for 3 weeks the new MacBook, Early 2015 model. When it was
 announced I was pretty sceptical of it.
@@ -20,12 +16,7 @@ My initial concerns:
 + Gold is a gimmicky colour
 + Force touchpad would not feel as good
 
-<Image
-  src="/images/macbook-early-2015-review/macbook_2015.png"
-  alt="MacBook Early 2015 gold"
-  width={1834}
-  height={1000}
-/>
+<img src="/images/macbook-early-2015-review/macbook_2015.png" alt="MacBook Early 2015 gold" width="1834" height="1000" loading="lazy" decoding="async" />
 
 To my surprise the CPU held up very well. I was running two IDEs (WebStorm & DataGrip), Sublime,
 10 - 20 tabs in Chrome, plus some other smaller programs. I was pleasantly surprised to see no
@@ -60,5 +51,3 @@ programming on it but I'd rather have my 15" MBP for longer sessions.
 
 **Tl;dr**: *Initially very sceptical about the Early 2015 MacBook but was pleasantly
 surprised after 3 weeks of use. Would recommend for casual users and school*.
-
-</Post>

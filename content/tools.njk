@@ -1,103 +1,106 @@
-import React from "react";
+---
+layout: post.njk
+title: Tools
+sourceFile: content/tools.njk
+metaDescription: A list of current and past hardware and software tools.
+---
 
-import { Page } from "../components/Post";
+{#
+  Todo
+  + maybe: list old phones + chargers
+  + maybe: mention a note that I do use Flask (Tímavera tech stack)
+  + review other software used
+  + maybe: add Revolut as business banking
+  + list 37.5" ultrasharp
+  + list brother printer
+  + list scanner used in Ireland
+  + other tech used in Ireland?
+  + logitech brio
+  + Services: Rollbar / Sentry / Imgix, etc
+  + Handbrake
+  + MacTex / TexShop
+  Add: Ollama, LM Studio, the other thing
+  Add: the local LLMs I have been trying out
+  Maybe: that I used CloudTalk for a while
+  Add old phones I have used
+#}
 
-// Todo
-// + maybe: list old phones + chargers
-// + maybe: mention a note that I do use Flask (Tímavera tech stack)
-// + review other software used
-// + maybe: add Revolut as business banking
-// + list 37.5" ultrasharp
-// + list brother printer
-// + list scanner used in Ireland
-// + other tech used in Ireland?
-// + logitech brio
-// + Services: Rollbar / Sentry / Imgix, etc
-// + Handbrake
-// + MacTex / TexShop
-// Add: Ollama, LM Studio, the other thing
-// Add: the local LLMs I have been trying out
-// Maybe: that I used CloudTalk for a while
-// Add old phones I have used
+{% set mbp2013 = "https://everymac.com/systems/apple/macbook_pro/specs/macbook-pro-core-i7-2.6-15-dual-graphics-late-2013-retina-display-specs.html" %}
+{% set macmini = "https://everymac.com/systems/apple/mac_mini/specs/mac-mini-core-i7-3.2-late-2018-specs.html" %}
+{% set mba = "https://everymac.com/systems/apple/macbook-air/specs/macbook-air-m2-8-core-cpu-10-core-gpu-13-2022-specs.html" %}
+{% set mbp_m4 = "https://everymac.com/systems/apple/macbook_pro/specs/macbook-pro-m4-max-16-core-cpu-40-core-gpu-16-2024-specs.html" %}
+{% set dellU4320Q = "https://www.dell.com/en-us/work/shop/dell-ultrasharp-43-4k-usb-c-monitor-u4320q/apd/210-avke/monitors-monitor-accessories" %}
+{% set dell25 = "https://www.tftcentral.co.uk/reviews/dell_u2515h.htm" %}
+{% set silverstone22 = "https://www.silverstonetek.com/product.php?pid=412" %}
+{% set silverstone11 = "https://www.silverstonetek.com/product.php?pid=408" %}
+{% set keyboard = "https://en.m.wikipedia.org/wiki/Magic_Keyboard" %}
+{% set mouse = "https://www.logitechg.com/en-us/products/gaming-mice/g903-wireless-gaming-mouse.html" %}
+{% set chair = "https://en.m.wikipedia.org/wiki/Aeron_chair" %}
+{% set desk = "https://m2.ikea.com/us/en/p/vaestanby-table-dark-brown-vaestana-dark-brown-s59040344/" %}
+{% set airpodspro = "https://en.wikipedia.org/wiki/AirPods_Pro" %}
+{% set iphone17pro = "https://en.wikipedia.org/wiki/IPhone_17_Pro" %}
+{% set iphone13mini = "https://en.wikipedia.org/wiki/IPhone_13" %}
+{% set ipadpro = "https://en.wikipedia.org/wiki/IPad_Pro" %}
+{% set watch = "https://en.m.wikipedia.org/wiki/Apple_Watch" %}
+{% set airpodsmax = "https://en.wikipedia.org/wiki/AirPods_Max" %}
+{% set airpodspro3 = "https://en.wikipedia.org/wiki/AirPods_Pro" %}
+{% set watchultra = "https://en.wikipedia.org/wiki/Apple_Watch_Ultra" %}
+{% set nswitch = "https://www.nintendo.com/switch/" %}
+{% set procontroller = "https://en.m.wikipedia.org/wiki/Nintendo_Switch_Pro_Controller" %}
+{% set ps5pro = "https://en.wikipedia.org/wiki/PlayStation_5_Pro" %}
+{% set yubikey = "https://www.yubico.com" %}
+{% set applepencil = "https://en.m.wikipedia.org/wiki/Apple_Pencil" %}
+{% set orion = "https://browser.kagi.com/" %}
+{% set safari = "https://www.apple.com/safari/" %}
+{% set chrome = "https://www.google.com/chrome/" %}
+{% set firefox = "https://www.mozilla.org/en-US/firefox/new/" %}
+{% set onep = "https://1password.com/" %}
+{% set rectangle = "https://rectangleapp.com/" %}
+{% set photoshop = "https://en.wikipedia.org/wiki/Adobe_Photoshop" %}
+{% set illustrator = "https://en.wikipedia.org/wiki/Adobe_Illustrator" %}
+{% set kagi = "https://kagi.com/" %}
+{% set macosTerminal = "https://en.wikipedia.org/wiki/Terminal_%28macOS%29" %}
 
-const mbp2013 = "https://everymac.com/systems/apple/macbook_pro/specs/macbook-pro-core-i7-2.6-15-dual-graphics-late-2013-retina-display-specs.html";
-const macmini = "https://everymac.com/systems/apple/mac_mini/specs/mac-mini-core-i7-3.2-late-2018-specs.html";
-const mba = "https://everymac.com/systems/apple/macbook-air/specs/macbook-air-m2-8-core-cpu-10-core-gpu-13-2022-specs.html";
-const mbp_m4 = "https://everymac.com/systems/apple/macbook_pro/specs/macbook-pro-m4-max-16-core-cpu-40-core-gpu-16-2024-specs.html";
-const dellU4320Q = "https://www.dell.com/en-us/work/shop/dell-ultrasharp-43-4k-usb-c-monitor-u4320q/apd/210-avke/monitors-monitor-accessories";
-const dell25 = "https://www.tftcentral.co.uk/reviews/dell_u2515h.htm";
-const silverstone22 = "https://www.silverstonetek.com/product.php?pid=412";
-const silverstone11 = "https://www.silverstonetek.com/product.php?pid=408";
-const keyboard = "https://en.m.wikipedia.org/wiki/Magic_Keyboard";
-const mouse = "https://www.logitechg.com/en-us/products/gaming-mice/g903-wireless-gaming-mouse.html";
-const chair = "https://en.m.wikipedia.org/wiki/Aeron_chair";
-const desk = "https://m2.ikea.com/us/en/p/vaestanby-table-dark-brown-vaestana-dark-brown-s59040344/";
-const airpodspro = "https://en.wikipedia.org/wiki/AirPods_Pro";
-const iphone17pro = "https://en.wikipedia.org/wiki/IPhone_17_Pro";
-const iphone13mini = "https://en.wikipedia.org/wiki/IPhone_13";
-const ipadpro = "https://en.wikipedia.org/wiki/IPad_Pro";
-const watch = "https://en.m.wikipedia.org/wiki/Apple_Watch";
-const airpodsmax = "https://en.wikipedia.org/wiki/AirPods_Max";
-const airpodspro3 = "https://en.wikipedia.org/wiki/AirPods_Pro";
-const watchultra = "https://en.wikipedia.org/wiki/Apple_Watch_Ultra";
-const nswitch = "https://www.nintendo.com/switch/";
-const procontroller = "https://en.m.wikipedia.org/wiki/Nintendo_Switch_Pro_Controller";
-const ps5pro = "https://en.wikipedia.org/wiki/PlayStation_5_Pro";
-const yubikey = "https://www.yubico.com";
-const applepencil = "https://en.m.wikipedia.org/wiki/Apple_Pencil";
-const orion = "https://browser.kagi.com/";
-const safari = "https://www.apple.com/safari/";
-const chrome = "https://www.google.com/chrome/";
-const firefox = "https://www.mozilla.org/en-US/firefox/new/";
-const onep = "https://1password.com/";
-const rectangle = "https://rectangleapp.com/";
-const photoshop = "https://en.wikipedia.org/wiki/Adobe_Photoshop";
-const illustrator = "https://en.wikipedia.org/wiki/Adobe_Illustrator";
-const kagi = "https://kagi.com/";
-const macosTerminal = "https://en.wikipedia.org/wiki/Terminal_%28macOS%29";
+{# =============================== Hardware =============================== #}
+{% macro RodeWirelessGo2() %}<a href="https://rode.com/en-us/microphones/wireless/wirelessgoii">Røde Wireless Go II</a>{% endmacro %}
+{% macro AnkerPowerCore24K() %}<a href="https://www.anker.com/products/a1289">Anker PowerCore 24K</a>{% endmacro %}
+{% macro AnkerPowerBank25K165W() %}<a href="https://www.anker.com/products/a1695-anker-power-bank-25000mah-165w">Anker Power Bank (25K, 165W)</a>{% endmacro %}
+{% macro AnkerZolo() %}<a href="https://www.amazon.com/Anker-Upgraded-Version-High-Speed-Portable/dp/B0CZ9M6X8Q?th=1">Anker Zolo 10,000mAh</a>{% endmacro %}
+{% macro AnkerNanoCharger100W() %}<a href="https://www.anker.com/products/b2679-nano-100w-usb-c-charger">Anker Nano Charger (100W)</a>{% endmacro %}
+{% macro MagSafeDuoCharger() %}<a href="https://support.apple.com/en-us/HT211925">MagSafe Duo Charger</a>{% endmacro %}
+{% macro Compact35WDualUSBC() %}<a href="https://support.apple.com/en-us/HT213263">Compact 35W Dual USB-C</a>{% endmacro %}
+{% macro InmotionV9() %}<a href="https://www.inmotionworld.com/electric-unicycle/v9-detail-page">Inmotion V9</a>{% endmacro %}
+{% macro MbpM4() %}<a href="{{ mbp_m4 }}">14" MacBook Pro M4 Max</a>{% endmacro %}
+{% macro AirTags() %}<a href="https://www.apple.com/airtag/">AirTags</a>{% endmacro %}
 
-{/* =============================== Hardware =============================== */}
-const RodeWirelessGo2 = () => <a href="https://rode.com/en-us/microphones/wireless/wirelessgoii">Røde Wireless Go II</a>;
-const AnkerPowerCore24K = () => <a href="https://www.anker.com/products/a1289">Anker PowerCore 24K</a>;
-const AnkerPowerBank25K165W = () => <a href="https://www.anker.com/products/a1695-anker-power-bank-25000mah-165w">Anker Power Bank (25K, 165W)</a>;
-const AnkerZolo = () => <a href="https://www.amazon.com/Anker-Upgraded-Version-High-Speed-Portable/dp/B0CZ9M6X8Q?th=1">Anker Zolo 10,000mAh</a>;
-const AnkerNanoCharger100W = () => <a href="https://www.anker.com/products/b2679-nano-100w-usb-c-charger">Anker Nano Charger (100W)</a>;
-const MagSafeDuoCharger = () => <a href="https://support.apple.com/en-us/HT211925">MagSafe Duo Charger</a>;
-const Compact35WDualUSBC = () => <a href="https://support.apple.com/en-us/HT213263">Compact 35W Dual USB-C</a>;
-const InmotionV9 = () => <a href="https://www.inmotionworld.com/electric-unicycle/v9-detail-page">Inmotion V9</a>;
-const MbpM4 = () => <a href={mbp_m4}>14" MacBook Pro M4 Max</a>;
-const AirTags = () => <a href="https://www.apple.com/airtag/">AirTags</a>;
+{# =============================== Software =============================== #}
+{% macro Cursor() %}<a href="https://cursor.com">Cursor</a>{% endmacro %}
+{% macro Composer() %}<a href="https://cursor.com">Composer</a>{% endmacro %}
+{% macro Claude() %}<a href="https://anthropic.com/claude">Claude</a>{% endmacro %}
+{% macro ClaudeCode() %}<a href="https://www.anthropic.com/claude-code">Claude Code</a>{% endmacro %}
+{% macro Opus() %}<a href="https://en.wikipedia.org/wiki/Claude_(AI)">Opus</a>{% endmacro %}
+{% macro Codex() %}<a href="https://openai.com/codex/">Codex</a>{% endmacro %}
+{% macro GPT() %}<a href="https://en.wikipedia.org/wiki/ChatGPT#Model_versions">GPT</a>{% endmacro %}
+{% macro WebStorm() %}<a href="https://www.jetbrains.com/webstorm/">WebStorm</a>{% endmacro %}
+{% macro PyCharm() %}<a href="https://www.jetbrains.com/pycharm/">PyCharm</a>{% endmacro %}
+{% macro DataGrip() %}<a href="https://www.jetbrains.com/datagrip/">DataGrip</a>{% endmacro %}
+{% macro Arc() %}<a href="https://arc.net">Arc</a>{% endmacro %}
+{% macro Fork() %}<a href="https://fork.dev">Fork</a>{% endmacro %}
+{% macro Qbserve() %}<a href="https://qotoqot.com/qbserve">Qbserve</a>{% endmacro %}
+{% macro Timing() %}<a href="https://timingapp.com">Timing</a>{% endmacro %}
+{% macro ChatGPT() %}<a href="https://openai.com">ChatGPT Plus</a>{% endmacro %}
+{% macro Xcode() %}<a href="https://developer.apple.com/xcode/">Xcode</a>{% endmacro %}
+{% macro Adstio() %}<a href="https://developer.android.com/studio">Android Studio</a>{% endmacro %}
+{% macro Skype() %}<a href="https://skype.com">Skype</a>{% endmacro %}
+{% macro Toky() %}<a href="https://toky.co">Toky</a>{% endmacro %}
+{% macro Zed() %}<a href="https://zed.dev">Zed</a>{% endmacro %}
+{% macro MacVim() %}<a href="https://github.com/macvim-dev/macvim">MacVim</a>{% endmacro %}
+{% macro SvelteKit() %}<a href="https://svelte.dev">SvelteKit</a>{% endmacro %}
+{% macro MacOsTerminal() %}<a href="{{ macosTerminal }}">Terminal</a>{% endmacro %}
+{% macro Asana() %}<a href="https://asana.com">Asana</a>{% endmacro %}
+{% macro ToothFairy() %}<a href="https://apps.apple.com/us/app/toothfairy/id1191449274">ToothFairy</a>{% endmacro %}
+{% macro Termius() %}<a href="https://termius.com">Termius</a>{% endmacro %}
 
-{/* =============================== Software =============================== */}
-const Cursor = () => <a href="https://cursor.com">Cursor</a>;
-const Composer = () => <a href="https://cursor.com">Composer</a>;
-const Claude = () => <a href="https://anthropic.com/claude">Claude</a>;
-const ClaudeCode = () => <a href="https://www.anthropic.com/claude-code">Claude Code</a>;
-const Opus = () => <a href="https://en.wikipedia.org/wiki/Claude_(AI)">Opus</a>;
-const Codex = () => <a href="https://openai.com/codex/">Codex</a>;
-const GPT = () => <a href="https://en.wikipedia.org/wiki/ChatGPT#Model_versions">GPT</a>;
-const WebStorm = () => <a href="https://www.jetbrains.com/webstorm/">WebStorm</a>;
-const PyCharm = () => <a href="https://www.jetbrains.com/pycharm/">PyCharm</a>;
-const DataGrip = () => <a href="https://www.jetbrains.com/datagrip/">DataGrip</a>;
-const Arc = () => <a href="https://arc.net">Arc</a>;
-const Fork = () => <a href="https://fork.dev">Fork</a>;
-const Qbserve = () => <a href="https://qotoqot.com/qbserve">Qbserve</a>;
-const Timing = () => <a href="https://timingapp.com">Timing</a>;
-const ChatGPT = () => <a href="https://openai.com">ChatGPT Plus</a>;
-const Xcode = () => <a href="https://developer.apple.com/xcode/">Xcode</a>;
-const Adstio = () => <a href="https://developer.android.com/studio">Android Studio</a>;
-const Skype = () => <a href="https://skype.com">Skype</a>;
-const Toky = () => <a href="https://toky.co">Toky</a>;
-const Zed = () => <a href="https://zed.dev">Zed</a>;
-const MacVim = () => <a href="https://github.com/macvim-dev/macvim">MacVim</a>;
-const SvelteKit = () => <a href="https://svelte.dev">SvelteKit</a>;
-const MacOsTerminal = () => <a href={macosTerminal}>Terminal</a>;
-const Asana = () => <a href="https://asana.com">Asana</a>;
-const ToothFairy = () => <a href="https://apps.apple.com/us/app/toothfairy/id1191449274">ToothFairy</a>
-const Termius = () => <a href="https://termius.com">Termius</a>;
-
-// Experimental code formatting to maximize HTML content per line
-const Content = () => (<>
 <p>A list of current and past hardware and software tools.</p>
 <p>Last updated: July 10, 2026.</p>
 
@@ -106,66 +109,66 @@ Table of contents:
   <li><a href="#hardware">Hardware</a></li>
   <li><a href="#software">Software</a></li>
   <li><a href="#techstack">Preferred tech stack</a></li>
-  {/*<li><a href="#notes">Notes</a></li>*/}
+  {# <li><a href="#notes">Notes</a></li> #}
   <li><a href="#changelog">Changelog</a></li>
   <li><a href="#past-hardware">Past hardware</a></li>
   <li><a href="#past-software">Past software</a></li>
 </ul>
 
-{/* ============================ Hardware ============================ */}
+{# ============================ Hardware ============================ #}
 <h2 id="hardware">Hardware</h2>
 <ul>
-  <li><strong>Laptop</strong>: <MbpM4 />, 16CPU/40GPU, 128GB RAM, 4TB SSD</li>
-  <li><strong>Monitor / TV</strong>: Dell 42.5" UltraSharp <a href={dellU4320Q}>U4320Q</a>, 3840x2160</li>
-  <li><strong>Phone</strong>: <a href={iphone17pro}>iPhone 17 Pro</a></li>
-  <li><strong>Watch</strong>: <a href={watchultra}>Apple Watch Ultra 3</a></li>
-  <li><strong>Headphones</strong>: <a href={airpodsmax}>AirPods Max</a> & <a href={airpodspro3}>AirPods Pro 3</a></li>
-  <li><strong>Gaming</strong>: <a href={ps5pro}>PS5 Pro</a> & <a href={nswitch}>Switch</a></li>
-  <li><strong>Battery</strong>: 2x <AnkerPowerBank25K165W /></li>
-  <li><strong>Chargers</strong>: <AnkerNanoCharger100W /> & <MagSafeDuoCharger /></li>
-  <li><strong>2FA</strong>: <a href={yubikey}>Yubikey</a></li>
-  <li><strong>EUC</strong>: <InmotionV9 /></li>
-  <li><strong>Miscellaneous</strong>: <AirTags /></li>
+  <li><strong>Laptop</strong>: {{ MbpM4() }}, 16CPU/40GPU, 128GB RAM, 4TB SSD</li>
+  <li><strong>Monitor / TV</strong>: Dell 42.5" UltraSharp <a href="{{ dellU4320Q }}">U4320Q</a>, 3840x2160</li>
+  <li><strong>Phone</strong>: <a href="{{ iphone17pro }}">iPhone 17 Pro</a></li>
+  <li><strong>Watch</strong>: <a href="{{ watchultra }}">Apple Watch Ultra 3</a></li>
+  <li><strong>Headphones</strong>: <a href="{{ airpodsmax }}">AirPods Max</a> & <a href="{{ airpodspro3 }}">AirPods Pro 3</a></li>
+  <li><strong>Gaming</strong>: <a href="{{ ps5pro }}">PS5 Pro</a> & <a href="{{ nswitch }}">Switch</a></li>
+  <li><strong>Battery</strong>: 2x {{ AnkerPowerBank25K165W() }}</li>
+  <li><strong>Chargers</strong>: {{ AnkerNanoCharger100W() }} & {{ MagSafeDuoCharger() }}</li>
+  <li><strong>2FA</strong>: <a href="{{ yubikey }}">Yubikey</a></li>
+  <li><strong>EUC</strong>: {{ InmotionV9() }}</li>
+  <li><strong>Miscellaneous</strong>: {{ AirTags() }}</li>
 </ul>
 
-{/* ============================ Software ============================ */}
+{# ============================ Software ============================ #}
 <h2 id="software">Software</h2>
 <ul>
-  <li><strong>Agentic coding</strong>: <ClaudeCode />, <Codex />, <Cursor /></li>
-  <li><strong>IDEs</strong>: <WebStorm />, <PyCharm />, <DataGrip /></li>
+  <li><strong>Agentic coding</strong>: {{ ClaudeCode() }}, {{ Codex() }}, {{ Cursor() }}</li>
+  <li><strong>IDEs</strong>: {{ WebStorm() }}, {{ PyCharm() }}, {{ DataGrip() }}</li>
   <li>
     <strong>LLMs</strong>:
     <ul>
-      <li>Anthropic <Opus /> - coding & personal</li>
-      <li>OpenAI <GPT /> - coding</li>
+      <li>Anthropic {{ Opus() }} - coding & personal</li>
+      <li>OpenAI {{ GPT() }} - coding</li>
     </ul>
   </li>
   <li>
     <strong>Browsers</strong>:
     <ul>
-      <li><a href={orion}>Orion</a> - primary</li>
-      <li><a href={safari}>Safari</a> - secondary</li>
-      <li><Arc /> - work, multiple profiles</li>
-      <li><a href={chrome}>Chrome</a> - work</li>
-      <li><a href={firefox}>Firefox</a> - dev testing</li>
+      <li><a href="{{ orion }}">Orion</a> - primary</li>
+      <li><a href="{{ safari }}">Safari</a> - secondary</li>
+      <li>{{ Arc() }} - work, multiple profiles</li>
+      <li><a href="{{ chrome }}">Chrome</a> - work</li>
+      <li><a href="{{ firefox }}">Firefox</a> - dev testing</li>
     </ul>
   </li>
-  <li><strong>Search engine</strong>: <a href={kagi}>Kagi</a></li>
+  <li><strong>Search engine</strong>: <a href="{{ kagi }}">Kagi</a></li>
   <li><strong>Task management</strong>: <a href="https://todoist.com">Todoist</a></li>
   <li><strong>Chat</strong>: <a href="https://slack.com">Slack</a> (work), <a href="https://www.signal.org">Signal</a> & <a href="https://telegram.org">Telegram</a> (personal)</li>
   <li><strong>Notes</strong>: <a href="https://en.wikipedia.org/wiki/Notes_(Apple)">Notes</a> on macOS & iOS</li>
-  <li><strong>Text editors</strong>: <Zed /></li>
+  <li><strong>Text editors</strong>: {{ Zed() }}</li>
   <li><strong>Version control</strong>: <a href="https://www.gitkraken.com/">GitKraken</a></li>
   <li><strong>Time tracking</strong>: <a href="https://timavera.com/">Tímavera</a></li>
-  <li><strong>Terminals</strong>: <MacOsTerminal /> & <Termius /></li>
+  <li><strong>Terminals</strong>: {{ MacOsTerminal() }} & {{ Termius() }}</li>
   <li><strong>Email</strong>: <a href="https://www.fastmail.com">Fastmail</a></li>
   <li><strong>VPN</strong>: <a href="https://www.ivpn.net">IVPN</a></li>
-  <li><strong>Images</strong>: <a href={photoshop}>Photoshop</a> & <a href={illustrator}>Illustrator</a></li>
-  <li><strong>Window manager</strong>: <a href={rectangle}>Rectangle</a></li>
-  <li><strong>Secrets</strong>: <a href={onep}>1Password</a></li>
+  <li><strong>Images</strong>: <a href="{{ photoshop }}">Photoshop</a> & <a href="{{ illustrator }}">Illustrator</a></li>
+  <li><strong>Window manager</strong>: <a href="{{ rectangle }}">Rectangle</a></li>
+  <li><strong>Secrets</strong>: <a href="{{ onep }}">1Password</a></li>
 </ul>
 
-{/* ====================== Preferred tech stack ====================== */}
+{# ====================== Preferred tech stack ====================== #}
 <h2 id="techstack">Preferred tech stack</h2>
 <ul>
   <li><strong>Infrastructure</strong>: AWS, Vercel, Deno Deploy</li>
@@ -175,21 +178,21 @@ Table of contents:
   <li><strong>Database</strong>: PostgreSQL</li>
 </ul>
 
-{/* ============================= Notes ============================== */}
-{/*
+{# ============================= Notes ============================== #}
+{#
 <h2 id="notes">Notes</h2>
 <ul>
   <li>
     Note.
   </li>
 </ul>
-*/}
+#}
 
-{/* =========================== Changelog ============================ */}
+{# =========================== Changelog ============================ #}
 <h2 id="changelog">Changelog</h2>
 <h3>22nd June 2026</h3>
 <p>
-  Stopped using <Toky />. Used it as a business VoIP for an Icelandic number.
+  Stopped using {{ Toky() }}. Used it as a business VoIP for an Icelandic number.
   It was an okay service for the price. Fairly simple and intuitive. Used it
   for about 4.5 years. Would consider using it again but probably also look
   around what else there is on the market.
@@ -214,13 +217,13 @@ Table of contents:
 
 <h3>17th May 2026</h3>
 <p>
-  Started using <Codex />.
+  Started using {{ Codex() }}.
 </p>
 
 <h3>20th Apr 2026</h3>
 <p>
-  Bought two new <AnkerPowerBank25K165W />. Retired an older{" "}
-  <AnkerPowerBank25K165W /> and <AnkerPowerCore24K /> which were both above 300
+  Bought two new {{ AnkerPowerBank25K165W() }}. Retired an older
+  {{ AnkerPowerBank25K165W() }} and {{ AnkerPowerCore24K() }} which were both above 300
   cycles and had degraded in battery capacity for the purpose of laptop
   charging. The older power banks are still being used but for lighter duties
   like charging phones.
@@ -228,7 +231,7 @@ Table of contents:
 
 <h3>31st Mar 2026</h3>
 <p>
-  Stopped using <Asana />. Used it for 7 years. Probably my favourite purpose
+  Stopped using {{ Asana() }}. Used it for 7 years. Probably my favourite purpose
   built team task management and issue tracking system I have used to date. Far
   superior to Jira for example. Always liked the UX. However, over the years as
   Asana moved up market and started to adjust the product towards the needs of
@@ -239,18 +242,18 @@ Table of contents:
 
 <h3>10th Feb 2026</h3>
 <p>
-  Bought <a href={iphone17pro}>iPhone 17 Pro</a>.
+  Bought <a href="{{ iphone17pro }}">iPhone 17 Pro</a>.
 </p>
 
 <h3>9th Feb 2026</h3>
 <p>
-  Started using <Composer /> v1.5. Cursor's own LLM for agentic coding,
+  Started using {{ Composer() }} v1.5. Cursor's own LLM for agentic coding,
   focusing on speed and value.
 </p>
 
 <h3>6th Feb 2026</h3>
 <p>
-  Stopped using <a href={iphone13mini}>iPhone 13 mini</a>. The screen took water
+  Stopped using <a href="{{ iphone13mini }}">iPhone 13 mini</a>. The screen took water
   damage after being submerged in water for about a minute.
 </p>
 <p>
@@ -263,54 +266,54 @@ Table of contents:
 
 <h3>10th Jan 2026</h3>
 <p>
-  Bought <a href={airpodsmax}>AirPods Max</a> and{" "}
-  <a href={airpodspro3}>AirPods Pro 3</a>. The AirPods Max have been better
+  Bought <a href="{{ airpodsmax }}">AirPods Max</a> and
+  <a href="{{ airpodspro3 }}">AirPods Pro 3</a>. The AirPods Max have been better
   than expected. Sound quality, active noise cancellation, and comfort are all
   better than the AirPods Pro 3. In retrospect I regret not getting them sooner.
 </p>
 
 <h3>2nd Jan 2026</h3>
 <p>
-  Bought <a href={watchultra}>Apple Watch Ultra 3</a>.
+  Bought <a href="{{ watchultra }}">Apple Watch Ultra 3</a>.
 </p>
 
 <h3>1st Oct 2025</h3>
 <p>
-  Bought <a href={ps5pro}>PS5 Pro</a>.
+  Bought <a href="{{ ps5pro }}">PS5 Pro</a>.
 </p>
 
 <h3>5th Aug 2025</h3>
 <p>
-  Started using <ClaudeCode />.
+  Started using {{ ClaudeCode() }}.
 </p>
 
 <h3>15th Jul 2025</h3>
 <p>
-  Bought <AnkerPowerBank25K165W /> and <AnkerNanoCharger100W /> for an improved
-  charging setup with the <MbpM4 />.
+  Bought {{ AnkerPowerBank25K165W() }} and {{ AnkerNanoCharger100W() }} for an improved
+  charging setup with the {{ MbpM4() }}.
 </p>
 <p>
-  The new power bank has been great. Feels like a modern update to the{" "}
-  <AnkerPowerCore24K/> which has been fantastic and is still in regular use.
+  The new power bank has been great. Feels like a modern update to the
+  {{ AnkerPowerCore24K() }} which has been fantastic and is still in regular use.
   Was initially skeptical of the attached and retractable cables but have
   come around and really like it. A lot less cable faff.
 </p>
 <p>
   The 14" MBP is considerably more power hungry than my previous MBA. My flow
-  is to alternate between the power banks as they hit 0-20%. The{" "}
-  <AnkerNanoCharger100W /> then chargers the other power bank in about 1 - 2
+  is to alternate between the power banks as they hit 0-20%. The
+  {{ AnkerNanoCharger100W() }} then chargers the other power bank in about 1 - 2
   hours. Lugging 2 large power banks like this is heavier than the stock Apple
   charger but I much prefer this setup because there are no cables to trip over
   in a shared space or plug-proximity worries.
 </p>
 <p>
-  Stopped using <ToothFairy />. Great little app, would use again. But did not
+  Stopped using {{ ToothFairy() }}. Great little app, would use again. But did not
   re-install it on the new laptop.
 </p>
 
 <h3>29th June 2025</h3>
 <p>
-  13" MacBook Air M2 and <MagSafeDuoCharger /> passed down after 3 years of use.
+  13" MacBook Air M2 and {{ MagSafeDuoCharger() }} passed down after 3 years of use.
   Best computer I have owned so far. Such a perfect blend of performance,
   portability, battery longevity, and silence. As the years went by and
   software got more bloated the Apple silicon chips lost their performance
@@ -321,14 +324,14 @@ Table of contents:
 
 <h3>22nd May 2025</h3>
 <p>
-  Did not re-install <MacVim /> as a general purpose text editor after getting
-  a new computer. Over time <Zed /> took over as the default text editor when
+  Did not re-install {{ MacVim() }} as a general purpose text editor after getting
+  a new computer. Over time {{ Zed() }} took over as the default text editor when
   having a quick peak or writing few lines in a config file. Nothing wrong
   with MacVim, made Zed win over was being better at quickly browsing multiple
   files or repositories. Zed booted up just about as quickly as MacVim did.
 </p>
 <p>
-  Likewise, did not re-install{" "}
+  Likewise, did not re-install
   <a href="https://sw.kovidgoyal.net/kitty/">Kitty</a>. A cool app but my
   terminal use mostly takes place in panels in IDEs. For the rare exceptions
   the default macOS Terminal app has been more than sufficient.
@@ -336,13 +339,13 @@ Table of contents:
 
 <h3>19th May 2025</h3>
 <p>
-  Upgraded to a <MbpM4 /> from 13.6" MacBook Air M2. 16-core CPU, 40-core GPU,
+  Upgraded to a {{ MbpM4() }} from 13.6" MacBook Air M2. 16-core CPU, 40-core GPU,
   128GB RAM, 4TB SSD.
 </p>
 
 <h3>5th May 2025</h3>
 <p>
-  Microsoft discontinued <Skype /> which was a real shame. Used it regularly
+  Microsoft discontinued {{ Skype() }} which was a real shame. Used it regularly
   for 8 years to make international phone calls and send SMS using a
   personal mobile phone number as a caller ID. Looked for other VoIP
   alternatives throughout the years but none came close to the reliability,
@@ -351,7 +354,7 @@ Table of contents:
 
 <h3>8th Apr 2025</h3>
 <p>
-  Received the <InmotionV9 /> electric unicycle (EUC).
+  Received the {{ InmotionV9() }} electric unicycle (EUC).
 </p>
 <p>
   From Jan 2023 to Apr 2025 I rode 836km and 270 times on Lime scooters and eBikes.
@@ -363,14 +366,14 @@ Table of contents:
   <li>Slow speed and weak torque. Hills and inclines were a challenge.</li>
 </ul>
 <p>
-  Being able to tap into higher top speed and torque is a massive safety advantage when 
-  riding in the street to be able to better keep up with car traffic. The Lime scooters and eBikes 
-  really struggle going uphill which limits routes. Despite those limitations I think Lime is fantastic and will continue using it where bringing 
-  my own transport would be problematic. 
+  Being able to tap into higher top speed and torque is a massive safety advantage when
+  riding in the street to be able to better keep up with car traffic. The Lime scooters and eBikes
+  really struggle going uphill which limits routes. Despite those limitations I think Lime is fantastic and will continue using it where bringing
+  my own transport would be problematic.
 </p>
 <p>
-  Originally I was leaning mostly towards Leaperkim Patton S, Lynx or Sherman L for my first EUC. 
-  Decided to go with the <InmotionV9 /> for these reasons:
+  Originally I was leaning mostly towards Leaperkim Patton S, Lynx or Sherman L for my first EUC.
+  Decided to go with the {{ InmotionV9() }} for these reasons:
 </p>
 <ul>
   <li>Tubeless tires for riding safety.</li>
@@ -379,30 +382,30 @@ Table of contents:
 </ul>
 <p>
   If I end up liking the EUC riding style I could see myself complimenting
-  the <InmotionV9 /> later with a larger and faster model. Like the Sherman L.
+  the {{ InmotionV9() }} later with a larger and faster model. Like the Sherman L.
 </p>
 
 <h3>6th Feb 2025</h3>
-<p>Bought <AnkerZolo />.</p>
+<p>Bought {{ AnkerZolo() }}.</p>
 
 <h3>16th Jan 2025</h3>
-<p>Started using <SvelteKit />.</p>
+<p>Started using {{ SvelteKit() }}.</p>
 
 <h3>8th Jan 2025</h3>
 <p>
-  Started using <Cursor /> as an IDE. An AI-first code editor built on top of 
+  Started using {{ Cursor() }} as an IDE. An AI-first code editor built on top of
   VSCode.
 </p>
 
 <h3>1st Dec 2024</h3>
 <p>
-  Started using <Zed /> as a text editor. A high-performance, 
+  Started using {{ Zed() }} as a text editor. A high-performance,
   multiplayer code editor written in Rust.
 </p>
 
 <h3>1st Jul 2024</h3>
 <p>
-  Loaned a friend the <RodeWirelessGo2/> wireless microphone. May or may not
+  Loaned a friend the {{ RodeWirelessGo2() }} wireless microphone. May or may not
   turn out to be a permanent loan.
 </p>
 <p>
@@ -436,36 +439,36 @@ Table of contents:
 <h3>10th Jun 2024</h3>
 <p>
   Wrote a <a href="/anker-powercore-24k-review">review</a> on
-  the <AnkerPowerCore24K/> external battery after 1 year of use. It has
+  the {{ AnkerPowerCore24K() }} external battery after 1 year of use. It has
   become a must have companion for the MacBook Air M2.
 </p>
 
 <h3>5th Oct 2023</h3>
 <p>
-  Stopped using <Fork />. It is still installed and serves as a fallback
+  Stopped using {{ Fork() }}. It is still installed and serves as a fallback
   if GitKraken acts up. Ultimately found the flow of GitKraken to be
   more suitable.
 </p>
 
 <h3>2nd Jul 2023</h3>
 <p>
-  Bought <AnkerPowerCore24K />. Intended as an external battery for the
+  Bought {{ AnkerPowerCore24K() }}. Intended as an external battery for the
   MacBook Air M2. Lasts for about 1.2x charges.
 </p>
 
 <h3>28th Jun 2023</h3>
-<p>Started trying out <Fork /> as an alternative to GitKraken.</p>
+<p>Started trying out {{ Fork() }} as an alternative to GitKraken.</p>
 
 <h3>22nd May 2023</h3>
 <p>
-  <a href={macmini}>Mac Mini Late-2018</a> given away as a hand-me-down.
+  <a href="{{ macmini }}">Mac Mini Late-2018</a> given away as a hand-me-down.
   A great machine that still has a lot left in it. Did not see much use
   after acquiring the 13.6" MacBook Air M2. Have owned three Mac Minis in
   the past and they have all been great, small, and cost effective
   machines. Some of Apple's finest work.
 </p>
 <p>
-  Also gave away <a href={keyboard}>Apple Magic Keyboard</a> to go along
+  Also gave away <a href="{{ keyboard }}">Apple Magic Keyboard</a> to go along
   with the Mac Mini. Fantastic keyboard. Been a big fan of Apple
   keyboards throughout the years. Best tried so far. Even prefer it to
   mechanical keyboards because of the much shorter key travel distance.
@@ -473,12 +476,12 @@ Table of contents:
 
 <h3>16th Mar 2023</h3>
 <p>
-  Subscribed to a <ChatGPT /> subscription with OpenAI for access to ChatGPT 4.
+  Subscribed to a {{ ChatGPT() }} subscription with OpenAI for access to ChatGPT 4.
 </p>
 
 <h3>26th Jan 2023</h3>
 <p>
-  Started using <Arc />. A Chromium based browser for power users.
+  Started using {{ Arc() }}. A Chromium based browser for power users.
   First-class support for multiple profiles and better tab management.
   Convenient when managing multiple separate logins for the same or
   similar set of websites (Gmail, Google Ads, etc). Non-pinned tabs
@@ -490,13 +493,13 @@ Table of contents:
 
 <h3>8th Nov 2022</h3>
 <p>
-  <a href={watch}>Apple Watch 4</a> given away as a hand-me-down. Did not
+  <a href="{{ watch }}">Apple Watch 4</a> given away as a hand-me-down. Did not
   get a new watch. Liked the sleep and health tracking of the device but
   not enough to warrant buying a new watch. Enjoy having a free arm more.
 </p>
 
 <p>
-  <a href={ipadpro}>iPad Pro 11"</a> & <a href={applepencil}>Apple Pencil
+  <a href="{{ ipadpro }}">iPad Pro 11"</a> & <a href="{{ applepencil }}">Apple Pencil
   2nd gen</a> given away as hand-me-down. The iPad and pencil was great
   for signing PDFs and general browsing. However the device did not live
   up to expectations doing frontend development work. The hardware is
@@ -504,7 +507,7 @@ Table of contents:
 </p>
 
 <p>
-  <a href={airpodspro}>AirPods Pro</a> given away as hand-me-down.
+  <a href="{{ airpodspro }}">AirPods Pro</a> given away as hand-me-down.
   Amazing headphones that still had decent amount of life left. Although
   they had been used a lot (4-8h per day) and battery capacity was
   reduced. Upgraded to the AirPods Pro 2nd gen. Was initially very
@@ -519,10 +522,10 @@ Table of contents:
 
 <h3>5th Nov 2022</h3>
 <p>
-  Handed down two Dell 25" UltraSharp <a href={dell25}>U2515H</a>{" "}
-  (2560x1440) monitors along with SilverStone{" "}
-  <a href={silverstone22}>SST-ARM22BC</a> &{" "}
-  <a href={silverstone11}>SST-ARM11BC</a> monitor mounts. Great monitors
+  Handed down two Dell 25" UltraSharp <a href="{{ dell25 }}">U2515H</a>
+  (2560x1440) monitors along with SilverStone
+  <a href="{{ silverstone22 }}">SST-ARM22BC</a> &
+  <a href="{{ silverstone11 }}">SST-ARM11BC</a> monitor mounts. Great monitors
   and mounts that have many more years left. The exact monitors are no
   longer sold but a Dell UltraSharp has always proved exceptional. Would
   not hesitate to buy the exact monitor mounts again. It was such a game
@@ -530,7 +533,7 @@ Table of contents:
   and easier to clean.
 </p>
 <p>
-  Handed down as well a <a href={mouse}>Logitech G903</a> wireless mouse.
+  Handed down as well a <a href="{{ mouse }}">Logitech G903</a> wireless mouse.
   It was okay. Expensive and ugly but tracked exceptionally well. Used it
   directly on the desk. After some time the left clicker started to ghost
   and occasionally double click on single clicks which was annoying. The
@@ -542,7 +545,7 @@ Table of contents:
 <h3>29th Jul 2022</h3>
 <p>
   After upgrading to the M2 MacBook Air the Mac Mini did not see much use
-  any more. Also did not install <Qbserve /> nor <Timing /> again. Both
+  any more. Also did not install {{ Qbserve() }} nor {{ Timing() }} again. Both
   great software. Would recommend for keeping track of productivity and
   time ledger programs used. Might use again later but do not currently
   have as much use for them.
@@ -551,15 +554,15 @@ Table of contents:
 <h3>28th Jul 2022</h3>
 <p>
   Upgraded to a 13.6" MacBook Air M2 from 15" MacBook Pro Late-2013. Came
-  with <Compact35WDualUSBC />.
+  with {{ Compact35WDualUSBC() }}.
 </p>
 
 <h3>12th Jul 2022</h3>
 <p>
   The Tímavera production app was converted from a standard React Native
   project to Expo. In that transition there were no longer any underlying
-  native iOS and Android projects and hence I did not have to use{" "}
-  <Xcode /> and <Adstio /> anymore. I reluctantly had to use those for 6 years
+  native iOS and Android projects and hence I did not have to use
+  {{ Xcode() }} and {{ Adstio() }} anymore. I reluctantly had to use those for 6 years
   while managing standard React Native projects since August 2016. Of the two
   Android Studio was a clear winner. Google made a very smart move to build on
   top of IntelliJ, in my opinion the best Java IDE there was at the time. A
@@ -570,50 +573,50 @@ Table of contents:
 </p>
 
 <h3>6th Jan 2022</h3>
-<p>Subscribed to <Toky /> business VoIP.</p>
+<p>Subscribed to {{ Toky() }} business VoIP.</p>
 
 <h3>4th Oct 2021</h3>
-<p>Bought <MagSafeDuoCharger/> & <AirTags />.</p>
+<p>Bought {{ MagSafeDuoCharger() }} & {{ AirTags() }}.</p>
 
 <h3>25th Aug 2021</h3>
-<p>Bought <RodeWirelessGo2 /> wireless microphone.</p>
+<p>Bought {{ RodeWirelessGo2() }} wireless microphone.</p>
 
 <h3>24th Feb 2021</h3>
-<p>Subscribed to <Termius />. A great terminal for shared team credentials.</p>
+<p>Subscribed to {{ Termius() }}. A great terminal for shared team credentials.</p>
 
 <h3>6th May 2019</h3>
-<p>Subscribed to <Skype /> VoIP with phone numbers.</p>
+<p>Subscribed to {{ Skype() }} VoIP with phone numbers.</p>
 
-{/* ========================= Past hardware ========================== */}
+{# ========================= Past hardware ========================== #}
 <h2 id="past-hardware">Past hardware</h2>
 History of hardware used in the past.
 
 <ul>
   <li><strong>Computers</strong>:
     <ul>
-      <li><a href={mba}>13" MacBook Air M2</a>, 8c/10g, 24GB RAM, 2TB SSD. Jul 2022 - May 2025.</li>
-      <li><a href={macmini}>Mac Mini Late-2018</a>, 6-core, 64GB RAM, 2TB SSD. Jan 2019 - May 2023.</li>
-      <li><a href={mbp2013}>15" MacBook Pro Late-2013</a>, 4-core, 16GB RAM, 1TB SSD. Oct 2014 - Jul 2022.</li>
+      <li><a href="{{ mba }}">13" MacBook Air M2</a>, 8c/10g, 24GB RAM, 2TB SSD. Jul 2022 - May 2025.</li>
+      <li><a href="{{ macmini }}">Mac Mini Late-2018</a>, 6-core, 64GB RAM, 2TB SSD. Jan 2019 - May 2023.</li>
+      <li><a href="{{ mbp2013 }}">15" MacBook Pro Late-2013</a>, 4-core, 16GB RAM, 1TB SSD. Oct 2014 - Jul 2022.</li>
     </ul>
   </li>
   <li><strong>Power banks</strong>:
     <ul>
-      <li><AnkerPowerBank25K165W />. Jul 2025 - Apr 2026.</li>
-      <li><AnkerPowerCore24K />. Jul 2023 - Apr 2026.</li>
+      <li>{{ AnkerPowerBank25K165W() }}. Jul 2025 - Apr 2026.</li>
+      <li>{{ AnkerPowerCore24K() }}. Jul 2023 - Apr 2026.</li>
     </ul>
   </li>
-  <li><strong>Phone</strong>: <a href={iphone13mini}>iPhone 13 mini</a>. Oct 2021 - Feb 2026.</li>
-  <li><strong>Microphone</strong>: <RodeWirelessGo2/>. Aug 2021 - Jul 2024.</li>
-  <li><strong>Keyboard</strong>: <a href={keyboard}>Apple Magic Keyboard</a>. Jan 2019 - May 2023.</li>
-  <li><strong>Watch</strong>: <a href={watch}>Apple Watch 4</a>. Jan 2019 - Nov 2022.</li>
-  <li><strong>Tablet</strong>: <a href={ipadpro}>iPad Pro 11</a> & <a href={applepencil}>Apple Pencil 2nd gen</a>. Jan 2019 - Nov 2022.</li>
-  <li><strong>Headphones</strong>: <a href={airpodspro}>AirPods Pro 1st gen</a>. Aug 2021 - Nov 2022.</li>
-  <li><strong>Monitors</strong>: 2x <a href={dell25}>Dell 25" UltraSharp U2515H</a>. Oct 2016 - Nov 2022.</li>
-  <li><strong>Wireless mouse</strong>: <a href={mouse}>Logitech G903</a>. Nov 2017 - Nov 2022.</li>
-  <li><strong>Chargers</strong>: <Compact35WDualUSBC /></li>
+  <li><strong>Phone</strong>: <a href="{{ iphone13mini }}">iPhone 13 mini</a>. Oct 2021 - Feb 2026.</li>
+  <li><strong>Microphone</strong>: {{ RodeWirelessGo2() }}. Aug 2021 - Jul 2024.</li>
+  <li><strong>Keyboard</strong>: <a href="{{ keyboard }}">Apple Magic Keyboard</a>. Jan 2019 - May 2023.</li>
+  <li><strong>Watch</strong>: <a href="{{ watch }}">Apple Watch 4</a>. Jan 2019 - Nov 2022.</li>
+  <li><strong>Tablet</strong>: <a href="{{ ipadpro }}">iPad Pro 11</a> & <a href="{{ applepencil }}">Apple Pencil 2nd gen</a>. Jan 2019 - Nov 2022.</li>
+  <li><strong>Headphones</strong>: <a href="{{ airpodspro }}">AirPods Pro 1st gen</a>. Aug 2021 - Nov 2022.</li>
+  <li><strong>Monitors</strong>: 2x <a href="{{ dell25 }}">Dell 25" UltraSharp U2515H</a>. Oct 2016 - Nov 2022.</li>
+  <li><strong>Wireless mouse</strong>: <a href="{{ mouse }}">Logitech G903</a>. Nov 2017 - Nov 2022.</li>
+  <li><strong>Chargers</strong>: {{ Compact35WDualUSBC() }}</li>
 </ul>
 
-{/* ========================= Past software ========================== */}
+{# ========================= Past software ========================== #}
 <h2 id="past-software">Past software</h2>
 History of software used in the past.
 
@@ -621,15 +624,15 @@ History of software used in the past.
   <li>
     <strong>IDEs</strong>:
     <ul>
-      <li><Xcode /> Aug 2016 - Jul 2022.</li>
-      <li><Adstio /> Aug 2016 - Jul 2022.</li>
+      <li>{{ Xcode() }} Aug 2016 - Jul 2022.</li>
+      <li>{{ Adstio() }} Aug 2016 - Jul 2022.</li>
     </ul>
   </li>
   <li>
     <strong>Productivity</strong>:
     <ul>
-      <li><Qbserve /> Jun 2016 - May 2023.</li>
-      <li><Timing /> May 2018 - May 2023.</li>
+      <li>{{ Qbserve() }} Jun 2016 - May 2023.</li>
+      <li>{{ Timing() }} May 2018 - May 2023.</li>
     </ul>
   </li>
   <li>
@@ -642,7 +645,7 @@ History of software used in the past.
   <li>
     <strong>Text editors</strong>:
     <ul>
-      <li><MacVim /> Nov 2022 - May 2025.</li>
+      <li>{{ MacVim() }} Nov 2022 - May 2025.</li>
       <li>Sublime</li>
       <li>TextEdit</li>
     </ul>
@@ -650,29 +653,17 @@ History of software used in the past.
   <li>
     <strong>VoIP</strong>:
     <ul>
-      <li><Toky /> Jan 2022 - Jun 2026.</li>
-      <li><Skype /> Jun 2017 - May 2025.</li>
+      <li>{{ Toky() }} Jan 2022 - Jun 2026.</li>
+      <li>{{ Skype() }} Jun 2017 - May 2025.</li>
     </ul>
   </li>
   <li><strong>Terminals</strong>: <a href="https://sw.kovidgoyal.net/kitty/">Kitty</a>. Nov 2021 - May 2025.</li>
-  <li><strong>Task management</strong>: <Asana />. Apr 2019 - Mar 2026.</li>
-  <li><strong>Utils</strong>: <ToothFairy />.</li>
+  <li><strong>Task management</strong>: {{ Asana() }}. Apr 2019 - Mar 2026.</li>
+  <li><strong>Utils</strong>: {{ ToothFairy() }}.</li>
 </ul>
 
-</>);
-
-// Best guesses on start/end times:
-//  - Kitty start time.
-//  - Bought the 15" MBP Late-2013 1y used but not 100% when.
-
-const Tools = () => (
-  <Page
-    title="Tools"
-    path="tools"
-    metaDescription="A list of current and past hardware and software tools."
-  >
-    <Content />
-  </Page>
-);
-
-export default Tools;
+{#
+  Best guesses on start/end times:
+   - Kitty start time.
+   - Bought the 15" MBP Late-2013 1y used but not 100% when.
+#}

@@ -1,20 +1,12 @@
-import Post from "../../components/Post";
-import Dither from "../../components/Dither";
+---
+layout: post.njk
+title: "My Remote Setup in 2019"
+dateDisplay: "August 18, 2019"
+metaDescription: "A list of the hardware and software I used while working from home in 2019."
+sourceFile: content/2019-setup/index.md
+---
 
-<Post
-  title="My Remote Setup in 2019"
-  path="2019-setup"
-  date="August 18, 2019"
-  metaDescription="A list of the hardware and software I used while working
-  from home in 2019."
->
-
-<Dither
-  src="/images/2019-setup/desk_cover.jpg"
-  alt="My desk showing a notebook, fountain pen, Mac Mini, monitors, keyboard and mouse"
-  width={2646}
-  height={1180}
-/>
+<a href="/images/2019-setup/desk_cover.jpg"><img src="/images/2019-setup/desk_cover-dither.png" alt="My desk showing a notebook, fountain pen, Mac Mini, monitors, keyboard and mouse" width="2646" height="1180" loading="lazy" decoding="async" /></a>
 
 ## Hardware
 
@@ -30,7 +22,7 @@ import Dither from "../../components/Dither";
 + **Desk**: [Västanby][desk] 170x78x5cm
 + **2FA**: [Yubikey][2fa]
 
-{/*
+<!--
   **Cable managment**:
 	+ TODO-IRON-ROD
 	+ TODO-REUSABLE-ZIPTIES
@@ -38,7 +30,7 @@ import Dither from "../../components/Dither";
 	+ TODO-SLEAVES
 	+ TODO-DOUBLE-SIDED-SQUARES
 + TODO: USB hub mounted underneath & Small Micro-USB charging cables
-*/}
+-->
 
 ### Other gear
 
@@ -63,21 +55,11 @@ import Dither from "../../components/Dither";
 + **Email**: [Fastmail](https://www.fastmail.com)
 + **VPN**: [IVPN](https://www.ivpn.net)
 
-<Dither
-  src="/images/2019-setup/desk_front.jpg"
-  alt="My desk and chair"
-  width={1500}
-  height={1000}
-/>
+<a href="/images/2019-setup/desk_front.jpg"><img src="/images/2019-setup/desk_front-dither.png" alt="My desk and chair" width="1500" height="1000" loading="lazy" decoding="async" /></a>
 
 <br />
 
-<Dither
-  src="/images/2019-setup/desk_side.jpg"
-  alt="My desk and chair"
-  width={1500}
-  height={1000}
-/>
+<a href="/images/2019-setup/desk_side.jpg"><img src="/images/2019-setup/desk_side-dither.png" alt="My desk and chair" width="1500" height="1000" loading="lazy" decoding="async" /></a>
 
 
 [macmini]: https://everymac.com/systems/apple/mac_mini/specs/mac-mini-core-i7-3.2-late-2018-specs.html
@@ -98,5 +80,3 @@ import Dither from "../../components/Dither";
 [procontroller]: https://en.m.wikipedia.org/wiki/Nintendo_Switch_Pro_Controller
 [2fa]: https://www.yubico.com
 [applepencil]: https://en.m.wikipedia.org/wiki/Apple_Pencil
-
-</Post>

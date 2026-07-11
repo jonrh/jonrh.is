@@ -1,13 +1,10 @@
-import Post from "../../components/Post";
-import Dither from "../../components/Dither";
-
-<Post
-  title="Back into Cryptocurrencies"
-  path="back-into-cryptocurrencies"
-  date="August 7, 2017"
-  metaDescription="Recomendations on how to get started with crypto currencies.
-  Use a hardware wallet for the bulk, do not store too much on exchanges, etc."
->
+---
+layout: post.njk
+title: "Back into Cryptocurrencies"
+dateDisplay: "August 7, 2017"
+metaDescription: "Recomendations on how to get started with crypto currencies. Use a hardware wallet for the bulk, do not store too much on exchanges, etc."
+sourceFile: content/back-into-cryptocurrencies/index.md
+---
 
 Recently, I got back into cryptocurrencies. I got interested in bitcoin around 2010/2011, did a bit
 of CPU mining on my laptop (never won a block) and got ₿0.05 bitcoins for free from the Bitcoin
@@ -18,13 +15,7 @@ loosely up-to-date over the years. Until now.
 
 This blog post was put together after a few exchanges on Twitter:
 
-<Dither
-  src="/images/back-into-cryptocurrencies/tweet.png"
-  alt="Tweets that inspired this blog post"
-  width={1276}
-  height={990}
-  webp={true}
-/>
+<a href="/images/back-into-cryptocurrencies/tweet.png"><img src="/images/back-into-cryptocurrencies/tweet-dither.webp" alt="Tweets that inspired this blog post" width="1276" height="990" loading="lazy" decoding="async" /></a>
 
 ## Getting Started
 I recommend reading through the [getting started guide on bitcoin.org][0]. bitcoin.com also has
@@ -109,8 +100,3 @@ into cryptocurrencies than I would be okay with loosing entirely. A hard earned 
 [11]: https://en.wikipedia.org/wiki/Dollar_cost_averaging
 [trezor]: https://trezor.io/
 [ledger]: https://www.ledgerwallet.com/products/ledger-nano-s
-
-</Post>
-
-
-

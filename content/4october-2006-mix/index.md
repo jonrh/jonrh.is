@@ -1,12 +1,9 @@
-import Post from "../../components/Post";
-
-<Post
-  title="4October 2006 mix"
-  path="4october-2006-mix"
-  date="October 4, 2006"
-  metaDescription="Electronic dance music mixtape created 4th of October 2006."
->
+---
+layout: post.njk
+title: "4October 2006 mix"
+dateDisplay: "October 4, 2006"
+metaDescription: "Electronic dance music mixtape created 4th of October 2006."
+sourceFile: content/4october-2006-mix/index.md
+---
 
 Download link: 4October 2006 mix
-
-</Post>

@@ -1,12 +1,10 @@
-import Post from "../../components/Post";
-
-<Post
-  title="Getting the Asus USB-BT211 Bluetooth dongle to work on a Hackintosh"
-  path="getting-the-asus-usb-bt211-bluetooth-dongle-to-work-on-a-hackintosh"
-  date="September 30, 2011"
-  metaDescription="When building a Hackintosh I ran into an issue using the
-  Apple Wireless Keyboard. These steps helped me resolve the issue."
->
+---
+layout: post.njk
+title: "Getting the Asus USB-BT211 Bluetooth dongle to work on a Hackintosh"
+dateDisplay: "September 30, 2011"
+metaDescription: "When building a Hackintosh I ran into an issue using the Apple Wireless Keyboard. These steps helped me resolve the issue."
+sourceFile: content/getting-the-asus-usb-bt211-bluetooth-dongle-to-work-on-a-hackintosh/index.md
+---
 
 I just received my Asus USB-BT211 Bluetooth dongle in the mail today and was excited to finally get
 to use my trusty Apple Wireless keyboard again. I ordered it from Amazon after I read [this][0]
@@ -57,7 +55,7 @@ Now the limits? People are reporting that the Magic Mouse and Magic Trackpad do 
 "... wireless keyboard[s], audio and phones." As I just wanted to use my Wireless Apple keyboard,
 I got what I wanted -_-. Thanks *drcrack* and *ajg0r* for the help!
 
-{/*
+<!--
 
 Comments:
 
@@ -130,7 +128,7 @@ built for intel not for ppc.can anybody help me?!
 Alex: I think you’re right. The dongle will probably not work because the drivers were written for
 a different CPU architecture. I’m really sorry for not being able to be of more help.
 
-*/}
+-->
 
 
 [0]: http://tonymacx86.blogspot.com/2011/06/building-sandy-bridge-customac.html
@@ -138,5 +136,3 @@ a different CPU architecture. I’m really sorry for not being able to be of mor
 [2]: http://www.amazon.com/Asus-Mini-Bluetooth-Dongle-USB-BT211/dp/B0041UJVI2/ref=sr_1_1?s=electronics&ie=UTF8&qid=1317344674&sr=1-1
 [3]: http://tonymacx86.com/index.php
 [4]: http://www.tonymacx86.com/viewtopic.php?f=79&t=18410
-
-</Post>

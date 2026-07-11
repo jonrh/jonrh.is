@@ -1,20 +1,12 @@
-import Post from "../../components/Post";
-import { DitherV2 } from "../../components/Dither";
+---
+layout: post.njk
+title: "Static preview subdomain for Next.js & Vercel"
+dateDisplay: "December 1, 2023"
+metaDescription: "How to set up a staging subdomain like preview.example.com for Next.js & Vercel with latest changes."
+sourceFile: content/preview-subdomain-nextj-vercel/index.md
+---
 
-import pic1o from "./vercel-subdomain-branch.png";
-import pic1d from "./vercel-subdomain-branch-dither.png";
-
-import pic2o from "./vercel-system-environment-variables.png";
-import pic2d from "./vercel-system-environment-variables-dither.png";
-
-<Post
-  title="Static preview subdomain for Next.js & Vercel"
-  path="preview-subdomain-nextj-vercel"
-  date="December 1, 2023"
-  metaDescription="How to set up a staging subdomain like preview.example.com
-  for Next.js & Vercel with latest changes."
->
-  A recipe for a staging or preview environment on a static subdomain with the
+A recipe for a staging or preview environment on a static subdomain with the
   latest changes when using Next.js v14, Vercel, and GitHub Actions. Examples:
 
   + preview.example.com
@@ -48,11 +40,7 @@ import pic2d from "./vercel-system-environment-variables-dither.png";
   4. Change *Git Branch* to `preview`
   5. Hit Save
 
-  <DitherV2 original={pic1o} dither={pic1d} alt="A configuration panel for a
-  subdomain with fields for Domain set to 'preview.example.com', Redirect
-  option set to 'No Redirect', and Git Branch set to 'preview'. Below are
-  buttons for 'Remove', 'Cancel', and 'Save', with a link to 'View DNS Records
-  & More for plinth.is'." />
+  <a href="/preview-subdomain-nextj-vercel/vercel-subdomain-branch.png"><img src="/preview-subdomain-nextj-vercel/vercel-subdomain-branch-dither.png" alt="A configuration panel for a subdomain with fields for Domain set to 'preview.example.com', Redirect option set to 'No Redirect', and Git Branch set to 'preview'. Below are buttons for 'Remove', 'Cancel', and 'Save', with a link to 'View DNS Records &amp; More for plinth.is'." width="1268" height="756" loading="lazy" decoding="async" /></a>
 
   Something to be aware of is that when adding a subdomain for a branch is
   that Next.js / Vercel will no longer automatically add the
@@ -70,9 +58,7 @@ import pic2d from "./vercel-system-environment-variables-dither.png";
   When the branch name is `main` production is assumed, and then a staging
   environment is assumed when the branch name is `preview`.
 
-  <DitherV2 original={pic2o} dither={pic2d} alt="Screenshot from the Vercel
-  dashboard, the option Automatically expose System Environment Variables is
-  ticked" />
+  <a href="/preview-subdomain-nextj-vercel/vercel-system-environment-variables.png"><img src="/preview-subdomain-nextj-vercel/vercel-system-environment-variables-dither.png" alt="Screenshot from the Vercel dashboard, the option Automatically expose System Environment Variables is ticked" width="932" height="182" loading="lazy" decoding="async" /></a>
 
   ## noindex HTTP header
   Adds a `x-robots-tag: noindex` HTTP header to all endpoints when a deployment
@@ -183,4 +169,3 @@ import pic2d from "./vercel-system-environment-variables-dither.png";
   In the current configuration the `preview` branch is also updated with
   changes pushed to production (`main` branch). If that is not desirable
   just add "`- main`" to the `branches-ignore` list.
-</Post>

@@ -1,14 +1,10 @@
-import Image from "next/image";
-import Post from "../../components/Post";
-
-<Post
-  title="React Native locale strings"
-  path="react-native-locale-strings"
-  date="May 24, 2017"
-  metaDescription="Use NativeModules in React Native or
-  react-native-device-info to get the device language locale strings “en”,
-  “fr”, “es”, etc."
->
+---
+layout: post.njk
+title: "React Native locale strings"
+dateDisplay: "May 24, 2017"
+metaDescription: "Use NativeModules in React Native or react-native-device-info to get the device language locale strings “en”, “fr”, “es”, etc."
+sourceFile: content/react-native-locale-strings/index.md
+---
 
 **Tl;dr**: Use NativeModules in [React Native](https://facebook.github.io/react-native/) or
 [react-native-device-info](https://github.com/rebeccahughes/react-native-device-info) to get the
@@ -19,12 +15,7 @@ nearing completion, just a few more bugs and edge cases to handle. The app is tr
 languages with the excellent library [i18next](https://github.com/i18next/i18next) by
 [Jan Mühlemann](https://twitter.com/jamuhl).
 
-<Image
-  src="/images/react-native-locale-strings/bd_monitor_language_settings.png"
-  alt="BD Monitor language settings"
-  width={1270}
-  height={848}
-/>
+<img src="/images/react-native-locale-strings/bd_monitor_language_settings.png" alt="BD Monitor language settings" width="1270" height="848" loading="lazy" decoding="async" />
 
 Users of my app can change the language in the Settings view but one user experience improvement I
 wanted was to have the app switch automatically according to the language specified by the
@@ -75,5 +66,3 @@ domain specific things for my app. This was inspired from
 The library [react-native-device-info](https://github.com/rebeccahughes/react-native-device-info)
 might be suitable if there is some other device information you need. Requires third party native 
 code to be linked.
-
-</Post>

@@ -1,12 +1,10 @@
-import Post from "../../components/Post";
-
-<Post
-  title="28January 2007 mix"
-  path="28january-2007-mix"
-  date="January 28, 2007"
-  metaDescription="Electro/Progressive House mix. Done with Traktor 3. My first
-  attempt at a 2 hours harmonic mix."
->
+---
+layout: post.njk
+title: "28January 2007 mix"
+dateDisplay: "January 28, 2007"
+metaDescription: "Electro/Progressive House mix. Done with Traktor 3. My first attempt at a 2 hours harmonic mix."
+sourceFile: content/28january-2007-mix/index.md
+---
 
 Download link: 29December 2006 mix
 
@@ -41,5 +39,3 @@ Download link: 29December 2006 mix
 **Notes**: Electro/Progressive House mix. Done with [Traktor 3](https://www.native-instruments.com/en/)
 and encoded with Lame 3.97 using –preset standard. Also my first attempt at a 2 hours
 [harmonic](http://www.mixedinkey.com/) mix.
-
-</Post>

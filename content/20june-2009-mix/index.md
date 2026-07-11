@@ -1,11 +1,10 @@
-import Post from "../../components/Post";
-
-<Post
-  title="20June 2009 mix"
-  path="20june-2009-mix"
-  date="June 21, 2009"
-  metaDescription="45 min hard techno mixtape done with Ableton Live 7."
->
+---
+layout: post.njk
+title: "20June 2009 mix"
+dateDisplay: "June 21, 2009"
+metaDescription: "45 min hard techno mixtape done with Ableton Live 7."
+sourceFile: content/20june-2009-mix/index.md
+---
 
 Download link: 20June 2009 mix
 
@@ -33,5 +32,3 @@ Download link: 20June 2009 mix
 20. Green Velvet – “La La Land (Zzino vs Filterheadz remix)” – 39:37
 
 **Notes**: 45 min hard techno mixtape, done with Ableton Live 7.
-
-</Post>
