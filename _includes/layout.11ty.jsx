@@ -1,55 +1,66 @@
-import React from "react";
-import Link from "next/link";
-import Head from "next/head";
+/** @jsxRuntime automatic */
+/** @jsxImportSource preact */
 
-const Layout = ({ children }) => {
+// Base HTML document with the header and navigation. Every page renders into
+// data.content, which is a pre-rendered HTML string injected below.
+export default function (data) {
   return (
-    <div>
-      <Head>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>{data.title}</title>
         <meta name="author" content="Jón Rúnar Helgason" />
-      </Head>
+        {data.metaDescription && (
+          <meta name="description" content={data.metaDescription} />
+        )}
+        <link rel="stylesheet" href="/css/reset.css" />
+        <link rel="stylesheet" href="/css/jonrh.css" />
+        <link rel="stylesheet" href="/css/layout.css" />
+      </head>
+      <body>
+        <div>
+          <div class="header">
+            <a href="/">
+              <picture>
+                <source
+                  srcset="/images/jon-runar-helgason-2026.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="/images/jon-runar-helgason-2026.png"
+                  alt="Profile of Jón Rúnar Helgason"
+                />
+              </picture>
+            </a>
 
-      <div className="header">
-        <a href="/">
-          <picture>
-            <source
-              srcSet="/images/jon-runar-helgason-2026.webp"
-              type="image/webp"
-            />
-            <img
-              src="/images/jon-runar-helgason-2026.png"
-              alt="Profile of Jón Rúnar Helgason"
-            />
-          </picture>
-        </a>
+            <a href="/" class="profileName">
+              Jón Rúnar Helgason
+            </a>
+          </div>
 
-        <a href="/" className="profileName">
-          Jón Rúnar Helgason
-        </a>
-      </div>
+          <div class="container">
+            <nav>
+              <ul>
+                <li>
+                  <a href="/blog">Blog</a>
+                </li>
+                <li>
+                  <a href="/tools">Tools</a>
+                </li>
+                <li>
+                  <a href="/portfolio">Portfolio</a>
+                </li>
+                <li>
+                  <a href="/about">About</a>
+                </li>
+              </ul>
+            </nav>
 
-      <div className="container">
-        <nav>
-          <ul>
-            <li>
-              <Link href="/blog">Blog</Link>
-            </li>
-            <li>
-              <Link href="/tools">Tools</Link>
-            </li>
-            <li>
-              <Link href="/portfolio">Portfolio</Link>
-            </li>
-            <li>
-              <Link href="/about">About</Link>
-            </li>
-          </ul>
-        </nav>
-
-        <main>{children}</main>
-      </div>
-    </div>
+            <main dangerouslySetInnerHTML={{ __html: data.content }} />
+          </div>
+        </div>
+      </body>
+    </html>
   );
-};
-
-export default Layout;
+}

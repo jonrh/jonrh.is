@@ -1,11 +1,10 @@
-import Post from "../../components/Post";
-
-<Post
-  title="asdf with Nix on macOS"
-  path="asdf-with-nix-on-macos"
-  date="April 25, 2022"
-  metaDescription="How to install asdf dependencies on macOS with Nix instead of Homebrew"
->
+---
+layout: post.11ty.jsx
+title: "asdf with Nix on macOS"
+dateDisplay: "April 25, 2022"
+metaDescription: "How to install asdf dependencies on macOS with Nix instead of Homebrew"
+sourceFile: content/asdf-with-nix-on-macos/index.md
+---
 
 In the past I have used [nvm](https://github.com/nvm-sh/nvm),
 [pyenv](https://github.com/pyenv/pyenv), and [rvm](http://rvm.io) for
@@ -73,10 +72,6 @@ $ asdf global nodejs 16.14.2
 $ node --version
 v16.14.2
 ```
-
-
-</Post>
-
 
 [nix-install]: https://nixos.org/download.html#nix-install-macos
 [asdf-install]: https://asdf-vm.com/guide/getting-started.html#_3-install-asdf

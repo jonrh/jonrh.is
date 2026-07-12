@@ -1,6 +1,19 @@
-import React from "react";
+/** @jsxRuntime automatic */
+/** @jsxImportSource preact */
+// Preact JSX page, rendered to a static HTML string at build time by the
+// "11ty.jsx" extension in eleventy.config.js (11ty's official JSX approach).
+// No React, no client-side runtime, no state or effects. The two pragmas
+// above tell tsx to transpile this JSX with the automatic runtime pointed at
+// Preact instead of the default React. This is essentially the old Next.js
+// tools.js minus the React import and the <Page> wrapper.
 
-import { Page } from "../components/Post";
+export const data = {
+  layout: "post.11ty.jsx",
+  title: "Tools",
+  sourceFile: "content/tools.11ty.jsx",
+  metaDescription: "A list of current and past hardware and software tools.",
+};
+
 
 // Todo
 // + maybe: list old phones + chargers
@@ -665,14 +678,8 @@ History of software used in the past.
 //  - Kitty start time.
 //  - Bought the 15" MBP Late-2013 1y used but not 100% when.
 
-const Tools = () => (
-  <Page
-    title="Tools"
-    path="tools"
-    metaDescription="A list of current and past hardware and software tools."
-  >
-    <Content />
-  </Page>
-);
-
-export default Tools;
+// 11ty invokes the default export via this.defaultRenderer; it returns a
+// Preact element which the extension serializes with preact-render-to-string.
+export default function () {
+  return <Content />;
+}

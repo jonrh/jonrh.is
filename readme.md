@@ -1,7 +1,9 @@
 # jonrh.is
 
-Source code for my personal website [jonrh.is](https://jonrh.is), made with JavaScript,
-[Next.js](https://nextjs.org/) and [React](https://reactjs.org/). The site is hosted and
+Source code for my personal website [jonrh.is](https://jonrh.is), statically
+generated with [11ty](https://www.11ty.dev/). Pages and layouts are written in
+[Preact](https://preactjs.com/) JSX (rendered to static HTML at build time, no
+client-side JavaScript), blog posts in Markdown. The site is hosted and
 automatically deployed with [Vercel](https://vercel.com/).
 
 ## Coding conventions

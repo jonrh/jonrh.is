@@ -1,13 +1,10 @@
-import Image from "next/image";
-import Post from "../../components/Post";
-
-<Post
-  title="Oddities in Google docs spreadsheet"
-  path="oddities-in-scripting-for-google-docs-spreadsheet"
-  date="April 24, 2010"
-  metaDescription="A record of issues I had with custom functions, data
-  validation, and sorting in Google docs spreadhseet."
->
+---
+layout: post.11ty.jsx
+title: "Oddities in Google docs spreadsheet"
+dateDisplay: "April 24, 2010"
+metaDescription: "A record of issues I had with custom functions, data validation, and sorting in Google docs spreadhseet."
+sourceFile: content/oddities-in-scripting-for-google-docs-spreadsheet/index.md
+---
 
 ## Custom Functions
 
@@ -17,21 +14,11 @@ item that just fetches the values it needed and wrote the outputs in the cell.
 
 What I initially had in mind was something like this:
 
-<Image
-  src="/images/oddities-in-scripting-for-google-docs-spreadsheet/1.png"
-  alt="Screenshot from a Google Drive spreadsheet"
-  width={344}
-  height={103}
-/>
+<img src="/images/oddities-in-scripting-for-google-docs-spreadsheet/1.png" alt="Screenshot from a Google Drive spreadsheet" width="344" height="103" loading="lazy" decoding="async" />
 
 Where myCustomFunction() is:
 
-<Image
-  src="/images/oddities-in-scripting-for-google-docs-spreadsheet/2.png"
-  alt="Screenshot of a custom JavaScript function"
-  width={399}
-  height={97}
-/>
+<img src="/images/oddities-in-scripting-for-google-docs-spreadsheet/2.png" alt="Screenshot of a custom JavaScript function" width="399" height="97" loading="lazy" decoding="async" />
 
 But as stated above this doesn’t work. The following error message is displayed: **You do not have
 permission to call setValue**. The reason as to why it’s not allowed is beyond me but the same
@@ -60,5 +47,3 @@ validation from the column it returned the right index.
 You can’t sort individual columns apart from others. You can freeze up to the first 5 rows and
 columns, meaning they won’t be affected by the sorting. Beyond that I guess the only solution is to
 spread to multiple sheets.
-
-</Post>

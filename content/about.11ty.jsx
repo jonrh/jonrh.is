@@ -1,27 +1,20 @@
-import React from "react";
-import Link from "next/link";
-import Head from "next/head";
+/** @jsxRuntime automatic */
+/** @jsxImportSource preact */
 
-import Layout from "../components/layout";
-import { DitherV2 } from "../components/Dither";
+export const data = {
+  layout: "layout.11ty.jsx",
+  title: "jonrh - About",
+  metaDescription:
+    "Jón Rúnar Helgason is an Icelandic fullstack founder and software " +
+    "engineer. He is a Co-Founder of Tímavera, a time tracking app for " +
+    "contractors.",
+};
 
-import jonrhDither from "../public/images/about/jonrh-dither.png";
-
-const About = () => {
+export default function () {
   const frontendYearsOfExperience = new Date().getUTCFullYear() - 2014;
 
   return (
-    <Layout>
-      <Head>
-        <title>jonrh - About</title>
-        <meta
-          name="description"
-          content="Jón Rúnar Helgason is an Icelandic fullstack founder and
-          software engineer. He is a Co-Founder of Tímavera, a time tracking
-          app for contractors."
-        />
-      </Head>
-
+    <>
       <h1>About</h1>
 
       <p>
@@ -57,12 +50,11 @@ const About = () => {
           painter in Iceland.
         </li>
         <li>
-          <Link href="/portfolio#bd-monitor">BD Monitor</Link>: mobile dashboard
-          app.
+          <a href="/portfolio#bd-monitor">BD Monitor</a>: mobile dashboard app.
         </li>
         <li>
-          <Link href="/portfolio#biomass-daily">Biomass Daily</Link> web
-          dashboard for <a href="https://vakiiceland.is/">Vaki</a>.
+          <a href="/portfolio#biomass-daily">Biomass Daily</a> web dashboard for{" "}
+          <a href="https://vakiiceland.is/">Vaki</a>.
         </li>
       </ul>
 
@@ -106,13 +98,16 @@ const About = () => {
         <li>IRC, Libre.chat: jonrh</li>
       </ul>
 
-      <DitherV2
-        original={jonrhDither}
-        dither={jonrhDither}
-        alt="Jón Rúnar Helgason profile picture."
-      />
-    </Layout>
+      <a href="/images/about/jonrh-dither.png">
+        <img
+          src="/images/about/jonrh-dither.png"
+          alt="Jón Rúnar Helgason profile picture."
+          width="750"
+          height="750"
+          loading="lazy"
+          decoding="async"
+        />
+      </a>
+    </>
   );
-};
-
-export default About;
+}

@@ -1,20 +1,16 @@
-import React from "react";
-import Head from "next/head";
+/** @jsxRuntime automatic */
+/** @jsxImportSource preact */
 
-import Layout from "./layout";
-
-const dateStyle = {
-  display: "block",
-  marginTop: "-1em",
-  marginBottom: "1.5em",
+// Blog post template. Wraps the rendered post body (data.content) with a
+// heading, date, and a link back to the source on GitHub, then chains into
+// the base layout.
+export const data = {
+  layout: "layout.11ty.jsx",
 };
 
-/**
- * Ensure that each post has a meta description for better SEO. If the checks
- * fail an error will be thrown and the build will fail. This ensures that a
- * change can not be accidentally deployed.
- */
-function metaDescriptionQualityCheck(metaDescription, title, date) {
+// Ensure that each post has a meta description for better SEO. Throwing here
+// fails the build so a change can not be accidentally deployed without one.
+function validateMetaDescription(metaDescription, title, date) {
   if (!metaDescription) {
     throw new Error(
       `Meta description is missing. Post: ${title}, date: ${date}.`,
@@ -23,61 +19,35 @@ function metaDescriptionQualityCheck(metaDescription, title, date) {
 
   if (metaDescription.length < 50 || metaDescription.length > 160) {
     throw new Error(
-      `Meta description is ${metaDescription.length} characters, should be 50-160.`,
+      `Meta description is ${metaDescription.length} characters, ` +
+        `should be 50-160. Post: ${title}.`,
     );
   }
 }
 
-/** A direct link to the GitHub source if path is defined */
-const Path = ({ path }) => {
-  if (!path) return null;
-
-  const url = `https://github.com/jonrh/jonrh.is/blob/main/pages/${path}/index.mdx`;
+export default function (data) {
+  validateMetaDescription(data.metaDescription, data.title, data.dateDisplay);
 
   return (
-    <p style={{ textAlign: "center", marginTop: "5em" }}>
-      <a href={url}>History & source</a>
-    </p>
+    <>
+      <h1>{data.title}</h1>
+      {data.dateDisplay && (
+        <p style="display: block; margin-top: -1em; margin-bottom: 1.5em">
+          {data.dateDisplay}
+        </p>
+      )}
+
+      <div dangerouslySetInnerHTML={{ __html: data.content }} />
+
+      {data.sourceFile && (
+        <p style="text-align: center; margin-top: 5em">
+          <a
+            href={`https://github.com/jonrh/jonrh.is/blob/main/${data.sourceFile}`}
+          >
+            History & source
+          </a>
+        </p>
+      )}
+    </>
   );
-};
-
-/** A template for a blog post page */
-const Post = ({ title, path, date, metaDescription, children }) => {
-  metaDescriptionQualityCheck(metaDescription, title, date);
-
-  return (
-    <Layout>
-      <Head>
-        <title>{title}</title>
-        <meta name="author" content="Jón Rúnar Helgason" />
-        <meta name="description" content={metaDescription} />
-      </Head>
-
-      <h1>{title}</h1>
-      <p style={dateStyle}>{date}</p>
-
-      <div>{children}</div>
-
-      <Path path={path} />
-    </Layout>
-  );
-};
-
-export const Page = ({ title, path, metaDescription, children }) => {
-  return (
-    <Layout>
-      <Head>
-        <title>{title}</title>
-        <meta name="author" content="Jón Rúnar Helgason" />
-        <meta name="description" content={metaDescription} />
-      </Head>
-
-      <h1>{title}</h1>
-      {children}
-
-      <Path path={path} />
-    </Layout>
-  );
-};
-
-export default Post;
+}

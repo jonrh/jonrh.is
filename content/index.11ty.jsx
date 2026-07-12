@@ -1,23 +1,20 @@
-import React from "react";
-import Head from "next/head";
+/** @jsxRuntime automatic */
+/** @jsxImportSource preact */
 
-import Layout from "../components/layout";
+// The frontpage or root route of the website.
+export const data = {
+  layout: "layout.11ty.jsx",
+  permalink: "/",
+  title: "jonrh - Jón Rúnar Helgason",
+  metaDescription:
+    "Jón Rúnar Helgason is an Icelandic fullstack founder and software " +
+    "engineer. Cofounder of Tímavera, a time tracking app for contractors.",
+};
 
-/** The frontpage or root route of the website */
-const Index = () => {
+export default function () {
   return (
-    <Layout>
-      <Head>
-        <title>jonrh - Jón Rúnar Helgason</title>
-        <meta
-          name="description"
-          content="Jón Rúnar Helgason is an Icelandic fullstack founder and
-          software engineer. Cofounder of Tímavera, a time tracking app for
-          contractors."
-        />
-      </Head>
-
-      <h1 style={{ textAlign: "center" }}>Jón Rúnar Helgason</h1>
+    <>
+      <h1 style="text-align: center">Jón Rúnar Helgason</h1>
 
       <p>
         Cofounder of <a href="https://timavera.com">Tímavera</a>, a time
@@ -25,8 +22,6 @@ const Index = () => {
         timesheets. Icelander living in Seattle. Want to get in touch? Drop an
         email at <a href="mailto:hi@jonrh.is">hi@jonrh.is</a>.
       </p>
-    </Layout>
+    </>
   );
-};
-
-export default Index;
+}

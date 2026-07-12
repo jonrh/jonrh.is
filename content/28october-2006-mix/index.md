@@ -1,11 +1,10 @@
-import Post from "../../components/Post";
-
-<Post
-  title="28October 2006 mix"
-  path="28october-2006-mix"
-  date="October 28, 2006"
-  metaDescription="A 68 minute drum and bass mixtape made with Traktor 3."
->
+---
+layout: post.11ty.jsx
+title: "28October 2006 mix"
+dateDisplay: "October 28, 2006"
+metaDescription: "A 68 minute drum and bass mixtape made with Traktor 3."
+sourceFile: content/28october-2006-mix/index.md
+---
 
 Download link: 28October 2006 mix
 
@@ -31,5 +30,3 @@ Download link: 28October 2006 mix
 
 **Notes**: Done with [Traktor 3](https://www.native-instruments.com/en/) and encoded with
 Lame 3.97 using the V0 preset.
-
-</Post>

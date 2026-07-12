@@ -1,19 +1,17 @@
-import Post from "../../components/Post";
-
-<Post
-  title="Deadmau5 – Ghosts ‘n’ Stuff lyrics"
-  path="deadmau5-ghosts-and-stuff-lyrics"
-  date="October 17, 2008"
-  metaDescription="Lyrics for the song Ghosts 'n' Stuff by Deadmau5. Original
-  and Rob Swire vocals."
->
+---
+layout: post.11ty.jsx
+title: "Deadmau5 – Ghosts ‘n’ Stuff lyrics"
+dateDisplay: "October 17, 2008"
+metaDescription: "Lyrics for the song Ghosts 'n' Stuff by Deadmau5. Original and Rob Swire vocals."
+sourceFile: content/deadmau5-ghosts-and-stuff-lyrics/index.md
+---
 
 ## Rob Swire vocals
 
-{/*
+<!--
   Todo: format better. Markdown blockquotes
   doesn't respect line breaks as expected
-*/}
+-->
 
 > it’s been so long I’ve been out of my body with you
 > I feel alone, feel at home, feel like nothing is true
@@ -62,10 +60,10 @@ better so when I’m not high on cocaine I’ll sit in front of this computer ti
 and continue ranting and raving about artists that actually living out their dreams because I never
 will!”
 
-{/*
+<!--
   He did it again. Lovely face melter! Btw, Deadmau5 playing in Iceland 19.
   dec 2008 (and he pwned the place)!
-*/}
+-->
 
 ## Updates
 1. This post previously only contained the original vocals but now there is a new version out
@@ -77,5 +75,3 @@ and asked couple of my friends about the lyrics and most of them agreed on T-Bag
 most agreed that it was “we’re gonna…” instead of “we, you gonna…” in the chorus.
 4. 31 Jan 2011: changed “I only had a chase, …” to “I only had a taste, …”. Thanx for the input
 InternetGuy, ThunderPwny, ntrval & pablo!
-
-</Post>

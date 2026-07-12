@@ -1,15 +1,12 @@
-import Image from "next/image";
-import Post from "../../components/Post";
+---
+layout: post.11ty.jsx
+title: "26″ slim bicycle tire review"
+dateDisplay: "October 1, 2010"
+metaDescription: "A comparison review between Bontrager Road Warrior 26\"x1.5\" and Continental Ultra Gatorskin 26\"x1.25\" slim bicycle tires."
+sourceFile: content/26-slim-bicycle-tire-review/index.md
+---
 
-{/* Todo: center images */}
-
-<Post
-  title="26″ slim bicycle tire review"
-  path="26-slim-bicycle-tire-review"
-  date="October 1, 2010"
-  metaDescription='A comparison review between Bontrager Road Warrior 26"x1.5"
-  and Continental Ultra Gatorskin 26"x1.25" slim bicycle tires.'
->
+<!-- Todo: center images -->
 
 Two years ago I started cycling on a regular basis and after a while it became evident to me that
 there must have existed better suited tires than the [tractor grooved](./scott_onzo.jpg) ones that I
@@ -20,14 +17,9 @@ inches in thickness when inflated. I did use them for about 1000km but in the en
 becoming too frequent, or about once every 2 weeks (to put that in perspective I commute 8km per
 day 5 days a week).
 
-<Image
-  src="/images/26-slim-bicycle-tire-review/bontrager_road_warrior.png"
-  alt='Bontrager Road Warrior 26"x1.5"'
-  width={318}
-  height={395}
-/>
+<img src="/images/26-slim-bicycle-tire-review/bontrager_road_warrior.png" alt="Bontrager Road Warrior 26&quot;x1.5&quot;" width="318" height="395" loading="lazy" decoding="async" />
 
-<table style={{ textAlign: "left" }}>
+<table style="text-align: left">
     <tbody>
         <tr>
             <th>Pros</th>
@@ -65,14 +57,9 @@ on. In retrospect I learned
 and error. As mentioned earlier I’ve once had to change a flat tire on these but that change was
 a lot smoother.
 
-<Image
-  src="/images/26-slim-bicycle-tire-review/ultra_gatorskin.jpg"
-  alt='Continental Ultra Gatorskin 26"x1.25"'
-  width={470}
-  height={251}
-/>
+<img src="/images/26-slim-bicycle-tire-review/ultra_gatorskin.jpg" alt="Continental Ultra Gatorskin 26&quot;x1.25&quot;" width="470" height="251" loading="lazy" decoding="async" />
 
-<table style={{ textAlign: "left" }}>
+<table style="text-align: left">
     <tbody>
         <tr>
             <th>Pros</th>
@@ -110,5 +97,3 @@ tires are better than Bontrager Road Warrior. Although more expensive I firmly b
 they’ll pay up multiple times in the long run when it comes to mileage. On top of that, if the
 tires will maintain it’s excellent puncture resistance, allot of time and pain will be saved from
 fixing flat tires.
-
-</Post>

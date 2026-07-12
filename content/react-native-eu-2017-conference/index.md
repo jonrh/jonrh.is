@@ -1,21 +1,12 @@
-import Post from "../../components/Post";
-import Dither from "../../components/Dither";
+---
+layout: post.11ty.jsx
+title: "React Native EU 2017 Conference"
+dateDisplay: "September 20, 2017"
+metaDescription: "In 2017 I attended the first React Native conference. Organised by Callstack in Wrocław in Poland. Very well executed and a lot of fun."
+sourceFile: content/react-native-eu-2017-conference/index.md
+---
 
-<Post
-  title="React Native EU 2017 Conference"
-  path="react-native-eu-2017-conference"
-  date="September 20, 2017"
-  metaDescription="In 2017 I attended the first React Native conference.
-  Organised by Callstack in Wrocław in Poland. Very well executed and a lot of
-  fun."
->
-
-<Dither
-  src="/images/react-native-eu-2017-conference/react_native_banner.jpg"
-  alt="React Native EU 2017 conference banner at Hotel Ibis"
-  width={1536}
-  height={1024}
-/>
+<a href="/images/react-native-eu-2017-conference/react_native_banner.jpg"><img src="/images/react-native-eu-2017-conference/react_native_banner-dither.png" alt="React Native EU 2017 conference banner at Hotel Ibis" width="1536" height="1024" loading="lazy" decoding="async" /></a>
 
 Photo by [Callstack][rneuphotos].
 
@@ -24,34 +15,19 @@ Between September 4. - 7. I attended the first [React Native conference](https:/
 Poland and Wrocław really surprised me in a good way, great food and night life. Really affordable, for example a beer at a bar was €1-2 compared to the €5 that I'm used to in Ireland. Really loved pierogi and steak tartare (raw minced beef with a raw egg yolk). I was very pleased to have my Poland stereotype busted. A nice place I hope to visit again.
 
 ## Workshops
-<Dither
-  src="/images/react-native-eu-2017-conference/jonrh_workshop.jpg"
-  alt="Me at the workshop"
-  width={1536}
-  height={1024}
-/>
+<a href="/images/react-native-eu-2017-conference/jonrh_workshop.jpg"><img src="/images/react-native-eu-2017-conference/jonrh_workshop-dither.png" alt="Me at the workshop" width="1536" height="1024" loading="lazy" decoding="async" /></a>
 
 Me at the workshop. Photo by [Callstack][rneuphotos].
 
 Due to flight rescheduling I was unfortunately not able to make it to the first day of the workshops. On the second day I attended *Track I* which covered *GraphQL* with [Ville Immonen][ville] & [Mikhail Novikov][mikhail].
 
-<Dither
-  src="/images/react-native-eu-2017-conference/graphql_workshop.jpg"
-  alt="Ville & Mikhail"
-  width={1536}
-  height={1024}
-/>
+<a href="/images/react-native-eu-2017-conference/graphql_workshop.jpg"><img src="/images/react-native-eu-2017-conference/graphql_workshop-dither.png" alt="Ville &amp; Mikhail" width="1536" height="1024" loading="lazy" decoding="async" /></a>
 
 Ville & Mikhail. Photo by [Callstack][rneuphotos].
 
 The second workshop of the day was *Animation and Interaction* by [Phil Plückthun][phil] & [Jani Eväkallio][jani]. Before the workshop I had always shied away from animations and interactions, thinking they were too complicated. It was brilliant to be shown wrong. To animate or make things interactive you essentially wrap your views with components and tweak some number props until things look & feel nice.
 
-<Dither
-  src="/images/react-native-eu-2017-conference/animation_workshop.jpg"
-  alt="Phil & Jani"
-  width={1536}
-  height={1024}
-/>
+<a href="/images/react-native-eu-2017-conference/animation_workshop.jpg"><img src="/images/react-native-eu-2017-conference/animation_workshop-dither.png" alt="Phil &amp; Jani" width="1536" height="1024" loading="lazy" decoding="async" /></a>
 
 Phil & Jani. Photo by [Callstack][rneuphotos].
 
@@ -67,12 +43,7 @@ The talks were varied but one strong theme that I noticed was work on how React 
 
 All the talks are available on YouTube on the [React Native EU channel](https://www.youtube.com/channel/UCUNE_g1mQPuyW975WjgjYxA/videos).
 
-<Dither
-  src="/images/react-native-eu-2017-conference/audience.jpg"
-  alt="Audience at a presentation"
-  width={1536}
-  height={1024}
-/>
+<a href="/images/react-native-eu-2017-conference/audience.jpg"><img src="/images/react-native-eu-2017-conference/audience-dither.png" alt="Audience at a presentation" width="1536" height="1024" loading="lazy" decoding="async" /></a>
 
 Photo by [Callstack][rneuphotos].
 
@@ -92,43 +63,23 @@ My favourite talks in no specific order:
 ## Dinner Party
 The highlight of the conference for me was the the dinner party. Callstack leased a beautiful outdoor venue by the river with booze and a marvellous selection of grilled food.
 
-<Dither
-  src="/images/react-native-eu-2017-conference/dinnerparty.jpg"
-  alt="Dinner party outdoor venue"
-  width={1536}
-  height={1024}
-/>
+<a href="/images/react-native-eu-2017-conference/dinnerparty.jpg"><img src="/images/react-native-eu-2017-conference/dinnerparty-dither.png" alt="Dinner party outdoor venue" width="1536" height="1024" loading="lazy" decoding="async" /></a>
 
 Photo by [Callstack][rneuphotos].
 
 The event started at 18:00 and the last few people left at 01:00. This was the perfect environment to have great conversations and to really get to know people. 
 
-<Dither
-  src="/images/react-native-eu-2017-conference/dinner_bbq.jpg"
-  alt="Dinner BBQ"
-  width={1536}
-  height={1024}
-/>
+<a href="/images/react-native-eu-2017-conference/dinner_bbq.jpg"><img src="/images/react-native-eu-2017-conference/dinner_bbq-dither.png" alt="Dinner BBQ" width="1536" height="1024" loading="lazy" decoding="async" /></a>
 
 Photo by [Callstack][rneuphotos].
 
-<Dither
-  src="/images/react-native-eu-2017-conference/dinnerparty2.jpg"
-  alt="Bogdan, me, Josef, Álvaro and Emil at the dinner party."
-  width={1280}
-  height={719}
-/>
+<a href="/images/react-native-eu-2017-conference/dinnerparty2.jpg"><img src="/images/react-native-eu-2017-conference/dinnerparty2-dither.png" alt="Bogdan, me, Josef, Álvaro and Emil at the dinner party." width="1280" height="719" loading="lazy" decoding="async" /></a>
 
 From left: [Bogdan][bogdan], [me][jonrhtwitter], [Josef][josef], [Álvaro][alvaro], [Emil][emil].
 Photo by Emil
 Lindell.
 
-<Dither
-  src="/images/react-native-eu-2017-conference/callstack_afterparty.jpg"
-  alt="Afterparty at Callstack's office"
-  width={1131}
-  height={472}
-/>
+<a href="/images/react-native-eu-2017-conference/callstack_afterparty.jpg"><img src="/images/react-native-eu-2017-conference/callstack_afterparty-dither.png" alt="Afterparty at Callstack's office" width="1131" height="472" loading="lazy" decoding="async" /></a>
 
 Day 2 afterparty at Callstack's office. [Photo](https://twitter.com/annalankauf/status/905872231544352768) by Anna Lankauf.
 
@@ -169,5 +120,3 @@ It was absolutely worth it to go. So many brilliant and smart individuals to cha
 [josef]: https://twitter.com/jsfroth
 [bogdan]: https://twitter.com/nothossu
 [jonrhtwitter]: https://twitter.com/jonrh
-
-</Post>

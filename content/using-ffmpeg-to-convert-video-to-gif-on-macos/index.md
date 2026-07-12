@@ -1,12 +1,10 @@
-import Post from "../../components/Post";
-
-<Post
-  title="Using FFmpeg to convert video to gif on macOS"
-  path="using-ffmpeg-to-convert-video-to-gif-on-macos"
-  date="November 4, 2016"
-  metaDescription="A command to create a .gif from a .mov on macOS using
-  ffmpeg."
->
+---
+layout: post.11ty.jsx
+title: "Using FFmpeg to convert video to gif on macOS"
+dateDisplay: "November 4, 2016"
+metaDescription: "A command to create a .gif from a .mov on macOS using ffmpeg."
+sourceFile: content/using-ffmpeg-to-convert-video-to-gif-on-macos/index.md
+---
 
 I use [Nix][nix] for package management on macOS. To install [FFmpeg][ffmpeg] I ran the following
 command in a terminal: `nix-env -i ffmpeg-3.1.4`. If you prefer Homebrew I believe the equivalent
@@ -39,14 +37,12 @@ inputfile=input_video.mov && outputfile=output.gif && fps=10 && scale=200 && ffm
 This is essentially [LordNeckbeard's][lordneckbeard] [answer on SuperUser][soa] merged into a
 single convenience copy/paste command that doesn't leave a temporary file (*palette.png*) behind.
 
-{/* Todo: figure out how to do videos in Markdown
+<!-- Todo: figure out how to do videos in Markdown
 [video autoplay="true" loop="true" preload="auto" width="1312" height="1076" mp4="http://jonrh.is/wp-content/uploads/2016/11/ffmpeg_video_to_gif_demo.mp4"][/video]
-*/}
+-->
 
 
 [nix]: https://nixos.org/nix/
 [ffmpeg]: https://ffmpeg.org/
 [lordneckbeard]: http://superuser.com/users/110524/lordneckbeard
 [soa]: http://superuser.com/a/556031
-
-</Post>

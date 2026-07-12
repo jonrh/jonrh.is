@@ -1,12 +1,10 @@
-import Image from "next/image";
-import Post from "../../components/Post";
-
-<Post
-  title="Mac App Store problems"
-  path="mac-app-store-problems"
-  date="March 21, 2011"
-  metaDescription="Two workarounds to solve problems logging into the macOS App Store."
->
+---
+layout: post.11ty.jsx
+title: "Mac App Store problems"
+dateDisplay: "March 21, 2011"
+metaDescription: "Two workarounds to solve problems logging into the macOS App Store."
+sourceFile: content/mac-app-store-problems/index.md
+---
 
 If you're here because the Mac App Store is giving you troubles then you've
 come to the right place. In my search I found two distinct problems and
@@ -29,12 +27,7 @@ If you get a never ending loading screen that reads "One moment please.
 Connecting to the Mac App Store. Loading..." then you'll need to delete two
 files and restart.
 
-<Image
-  src="/images/mac-app-store-problems/mac_app_store_one_moment_please.png"
-  alt="The One moment please loading screen for the Mac App Store"
-  width={409}
-  height={201}
-/>
+<img src="/images/mac-app-store-problems/mac_app_store_one_moment_please.png" alt="The One moment please loading screen for the Mac App Store" width="409" height="201" loading="lazy" decoding="async" />
 
 To delete the files paste the two lines below into Terminal and press enter:
 
@@ -48,7 +41,7 @@ some extra folder. If deletion of the two files plus a restart didn't help I'd
 definitely give that solution a try. If you find some other problems/solutions
 please post in the comments and I'll update the post.
 
-{/*
+<!--
 
 Comments:
 
@@ -57,6 +50,4 @@ Thanks jonrh, perfect. I was on the phone with Apple tech and he had no clue wha
 Went to terminal, deleted the two files from terminal and wala!! Thanks for the info and help. Now
 I can download FCP X and Mountain Lion finally!!
 
-*/}
-
-</Post>
+-->

@@ -1,29 +1,21 @@
-import Image from "next/image";
-import Post from "../../components/Post";
-
-<Post
-  title="Custom TotalFinder Icon in OSX El Capitan"
-  path="custom-totalfinder-icon-in-osx-el-capitan"
-  date="April 14, 2016"
-  metaDescription="A roundabout way of using custom Finder icon. A cumbersome
-  way that is not recommended due to security risks."
->
+---
+layout: post.11ty.jsx
+title: "Custom TotalFinder Icon in OSX El Capitan"
+dateDisplay: "April 14, 2016"
+metaDescription: "A roundabout way of using custom Finder icon. A cumbersome way that is not recommended due to security risks."
+sourceFile: content/custom-totalfinder-icon-in-osx-el-capitan/index.md
+---
 
 Recently I had to upgrade Xcode from 7.2 to 7.3 which in turn forced me to upgrade from OSX
 Mavericks to El Capitan. I had been holding out for as long as I could to upgrade to El Capitan
-because my all time favourite OSX app [TotalFinder][totalfinder} would not work
+because my all time favourite OSX app [TotalFinder][totalfinder] would not work
 [without partially compromising][tf-integrity] Apple's new [SIP anti-malware mechanism][apple-sec].
 
 In an [exchange][4] on Twitter [@BinaryAge][5] advised me that [there was now a way][6] to run
 TotalFinder without compromising SIP on OSX El Capitan. The process made me sweat on my fingers but
 ultimately it worked!
 
-<Image
-  src="/images/custom-totalfinder-icon-in-osx-el-capitan/mighty_finder.png"
-  alt="MightyFinder OSX icon by Max Rudberg"
-  width={512}
-  height={512}
-/>
+<img src="/images/custom-totalfinder-icon-in-osx-el-capitan/mighty_finder.png" alt="MightyFinder OSX icon by Max Rudberg" width="512" height="512" loading="lazy" decoding="async" />
 
 There was now only one missing piece: to get the MightyFinder icon back! I've been using that icon
 as a replacement for Finder for almost a decade. If you'd like to get it you can still download it
@@ -38,16 +30,11 @@ recommend the below approach because it breaks TotalFinder's code signature. The
 however mentioned to include a hidden feature to more easily use a custom icon in a future
 TotalFinder release. Fingers crossed!
 
-<div style={{ textAlign: "left", overflowWrap: "break-word" }}>
+<div style="text-align: left; overflow-wrap: break-word">
 
 1. In TotalFinder preferences, make sure "Keep original Dock icon" is unchecked.
 
-<Image
-  src="/images/custom-totalfinder-icon-in-osx-el-capitan/preferences.png"
-  alt="TotalFinder Preferences"
-  width={1630}
-  height={1538}
-/>
+<img src="/images/custom-totalfinder-icon-in-osx-el-capitan/preferences.png" alt="TotalFinder Preferences" width="1630" height="1538" loading="lazy" decoding="async" />
 
 
 2. Go to: `/System/Library/ScriptingAdditions/`, right click on *TotalFinder.osax* and pick
@@ -60,12 +47,7 @@ TotalFinder release. Fingers crossed!
 5. The icon you have to replace is the file <strong>TotalFinderIcon2.icns</strong>. Replace it with
 your desired icon.
 
-<Image
-  src="/images/custom-totalfinder-icon-in-osx-el-capitan/icon_location.png"
-  alt="The location of TotalFinderIcon2.icns"
-  width={1906}
-  height={1498}
-/>
+<img src="/images/custom-totalfinder-icon-in-osx-el-capitan/icon_location.png" alt="The location of TotalFinderIcon2.icns" width="1906" height="1498" loading="lazy" decoding="async" />
 
 6. Restart TotalFinder. One way is Cmd + Alt + Esc -> Relaunch Finder. Another is typing into
 Terminal: `killall Finder`
@@ -74,12 +56,7 @@ Terminal: `killall Finder`
 
 </div>
 
-<Image
-  src="/images/custom-totalfinder-icon-in-osx-el-capitan/cmd_tab.png"
-  alt="TotalFinder working on El Capitan with MightyFinder icon"
-  width={2250}
-  height={1514}
-/>
+<img src="/images/custom-totalfinder-icon-in-osx-el-capitan/cmd_tab.png" alt="TotalFinder working on El Capitan with MightyFinder icon" width="2250" height="1514" loading="lazy" decoding="async" />
 
 Voilà! If everything worked you should now have TotalFinder running on OSX El Capitan with a custom
 icon. Hope it will help someone.
@@ -95,5 +72,3 @@ icon. Hope it will help someone.
 [8]: http://www.dailymotion.com/video/x68k6z_free-animations-gates-vs-jobs_fun
 [9]: http://discuss.binaryage.com/t/totalfinder-corrupted-after-icon-change-how-do-you-change-the-icon-then/1370
 [10]: https://twitter.com/binaryage/status/720673757367369728
-
-</Post>

@@ -1,58 +1,66 @@
-import React from "react";
-import Head from "next/head";
+/** @jsxRuntime automatic */
+/** @jsxImportSource preact */
 
-import Layout from "../components/layout";
-import Dither from "../components/Dither";
+export const data = {
+  layout: "layout.11ty.jsx",
+  title: "jonrh - Portfolio",
+  metaDescription:
+    "Jón Rúnar Helgason's portfolio consists of frontend engineering work in " +
+    "JavaScript, React and React Native. Dashboards, websites and apps.",
+};
 
-/**
- * Custom h2 - h4 headings with a visible # link in the front. Enables linking
- * directly to a certain heading. Suitable on a large page like the portfolio.
- */
-const noUnderline = { textDecoration: "none" };
+// A dithered image that links to the original source image in colour.
+// File name convention: image.png (colour) -> image-dither.png (dithered).
+function Dither({ src, alt, width, height, webp }) {
+  const ext = webp ? "webp" : "png";
+  const ditherSrc = src.replace(/\.(jpe?g|gif|png)/, `-dither.${ext}`);
+  return (
+    <a href={src}>
+      <img
+        src={ditherSrc}
+        alt={alt}
+        width={width}
+        height={height}
+        loading="lazy"
+        decoding="async"
+      />
+    </a>
+  );
+}
+
+// h2 - h4 headings with a visible # link in the front. Enables linking
+// directly to a certain heading. Suitable on a large page like the portfolio.
 const Anchor = ({ id }) => (
-  <a href={`#${id}`} style={noUnderline}>
+  <a href={`#${id}`} style="text-decoration: none">
     #
   </a>
 );
-const H2 = ({ id, title }) => (
+const H2 = ({ id, children }) => (
   <h2 id={id}>
-    <Anchor id={id} /> {title}
+    <Anchor id={id} /> {children}
   </h2>
 );
-const H3 = ({ id, title }) => (
+const H3 = ({ id, children }) => (
   <h3 id={id}>
-    <Anchor id={id} /> {title}
+    <Anchor id={id} /> {children}
   </h3>
 );
-const H4 = ({ id, title }) => (
+const H4 = ({ id, children }) => (
   <h4 id={id}>
-    <Anchor id={id} /> {title}
+    <Anchor id={id} /> {children}
   </h4>
 );
 
-/** 2-column grid wrapper */
-const TwoImagesSideBySide = ({ children }) => {
-  const style = {
-    display: "grid",
-    gridTemplateColumns: "repeat(2, minmax(0, 1fr))",
-  };
+// 2-column grid wrapper for side-by-side images.
+const Grid = ({ children }) => (
+  <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr))">
+    {children}
+  </div>
+);
 
-  return <div style={style}>{children}</div>;
-};
-
-const Portfolio = () => {
+export default function () {
   return (
-    <Layout>
-      <Head>
-        <title>jonrh - Portfolio</title>
-        <meta
-          name="description"
-          content="Jón Rúnar Helgason's portfolio consists of frontend
-          engineering work in JavaScript, React and React Native. Dashboards,
-          websites and apps."
-        />
-      </Head>
-
+    <>
       <h1>Portfolio</h1>
       <p>
         Specialised in product development over the years. Mostly focused on
@@ -84,7 +92,7 @@ const Portfolio = () => {
         </li>
       </ul>
 
-      <H2 id="timavera" title="Tímavera" />
+      <H2 id="timavera">Tímavera</H2>
       <p>2017 - Current</p>
       <p>
         Time tracking for contractors. Designed for small companies with simple
@@ -95,75 +103,59 @@ const Portfolio = () => {
         <a href="https://timavera.com">timavera.com</a>
       </p>
 
-      <TwoImagesSideBySide>
+      <Grid>
         <Dither
           src="/images/portfolio/timavera/1_login.png"
-          alt="Tímavera mobile app on the login screen. Inputs: company,
-           employee name, and password."
+          alt="Tímavera mobile app on the login screen. Inputs: company, employee name, and password."
           width={1659}
           height={2622}
         />
         <Dither
           src="/images/portfolio/timavera/2_projects.png"
-          alt="Tímavera mobile app on the projects screen. Shows buttons for
-           Project A, Jobsite B, Contract C, and Installation D."
+          alt="Tímavera mobile app on the projects screen. Shows buttons for Project A, Jobsite B, Contract C, and Installation D."
           width={1659}
           height={2622}
         />
-      </TwoImagesSideBySide>
+      </Grid>
 
-      <TwoImagesSideBySide>
+      <Grid>
         <Dither
           src="/images/portfolio/timavera/3_clocked_in.png"
-          alt="Tímavera mobile app on the clocked in screen. Clocked into
-           Project A, elapsed time is 03:13:37. A square stop buttons to stop
-           or clock out and a plus button for adding a comment or an image."
+          alt="Tímavera mobile app on the clocked in screen. Clocked into Project A, elapsed time is 03:13:37. A square stop buttons to stop or clock out and a plus button for adding a comment or an image."
           width={1659}
           height={2622}
         />
         <Dither
           src="/images/portfolio/timavera/4_comment.png"
-          alt="Tímavera mobile app on a screen to add a comment to a time
-           entry. Comment: Foudation complete. Bought materials for $1337.
-           Buttons shown are to add the comment and a button for adding an
-           image."
+          alt="Tímavera mobile app on a screen to add a comment to a time entry. Comment: Foudation complete. Bought materials for $1337. Buttons shown are to add the comment and a button for adding an image."
           width={1659}
           height={2622}
         />
-      </TwoImagesSideBySide>
+      </Grid>
 
-      <TwoImagesSideBySide>
+      <Grid>
         <Dither
           src="/images/portfolio/timavera/5_entries.png"
-          alt="Tímavera mobile app screen showing a list of time entries.
-           Time entries are grouped by day and show the time when clocked in
-           and clocked out along with total duration in hours as well as
-           the name of the project."
+          alt="Tímavera mobile app screen showing a list of time entries. Time entries are grouped by day and show the time when clocked in and clocked out along with total duration in hours as well as the name of the project."
           width={1659}
           height={2622}
         />
         <Dither
           src="/images/portfolio/timavera/6_entry.png"
-          alt="Tímavera mobile app screen showing a detail screen for a single
-           time entry. Duration: 7.00 hours. Start: 08:00 Wed 4 Jan 2023.
-           End: 15:00, Wed 4 Jan 2023. Project: Project A. Comment: 12:00,
-           Foundation complete. Bought materials for $1337."
+          alt="Tímavera mobile app screen showing a detail screen for a single time entry. Duration: 7.00 hours. Start: 08:00 Wed 4 Jan 2023. End: 15:00, Wed 4 Jan 2023. Project: Project A. Comment: 12:00, Foundation complete. Bought materials for $1337."
           width={1659}
           height={2622}
         />
-      </TwoImagesSideBySide>
+      </Grid>
 
       <Dither
         src="/images/portfolio/timavera/timavera_dashboard.png"
-        alt="Screenshot of the Tímavera web dashboard. Shown is a table
-        containing 3 time entries. The main pages are Time Entries, Projects,
-        Employees, Report. The time entries table can then be filtered by
-        calendar dates, project, and or employee."
+        alt="Screenshot of the Tímavera web dashboard. Shown is a table containing 3 time entries. The main pages are Time Entries, Projects, Employees, Report. The time entries table can then be filtered by calendar dates, project, and or employee."
         width={1650}
         height={748}
       />
 
-      <H2 id="websitesemail" title="Branded Websites & Email" />
+      <H2 id="websitesemail">Branded Websites & Email</H2>
       <p>2018 - Current</p>
       <p>
         Digital presence for individuals and companies. Branded email using
@@ -188,7 +180,7 @@ const Portfolio = () => {
         height={1078}
       />
 
-      <H2 id="tinycrm" title="Tiny CRM" />
+      <H2 id="tinycrm">Tiny CRM</H2>
       <p>2021 - Current</p>
       <p>
         Hobby project with a friend. Experimenting with new tech, UI & UX. Aimed
@@ -200,7 +192,7 @@ const Portfolio = () => {
         <a href="mailto:tinycrm@tinycrm.app">tinycrm@tinycrm.app</a>.
       </p>
 
-      <H2 id="activitystream" title="Activity Stream" />
+      <H2 id="activitystream">Activity Stream</H2>
       <p>2017 - 2018</p>
       <p>
         Business intelligence for Live Entertainment & Sports. Iceland’s Startup
@@ -216,7 +208,7 @@ const Portfolio = () => {
         height={1119}
       />
 
-      <H2 id="vaki" title="Vaki" />
+      <H2 id="vaki">Vaki</H2>
       <p>
         Vaki Aquaculture Systems Ltd. is the industry leader in fish counting
         and size estimation of live fish. Worked on the{" "}
@@ -234,10 +226,10 @@ const Portfolio = () => {
         height={272}
       />
 
-      <H3 id="bd-monitor" title="iPhone App: BD Monitor" />
+      <H3 id="bd-monitor">iPhone App: BD Monitor</H3>
       <p>2016 - 2017</p>
       <p>
-        This project was about creating an auxiliary mobile app to monitor the
+        This project was about creating an auxiliary mobile app to monitor the
         status of the hardware frames that run 24/7 capturing size estimations.
         Before this app, users would check the current hardware status on a PC.
         With an app the process became more convenient for the site managers,
@@ -284,11 +276,11 @@ const Portfolio = () => {
         height={700}
       />
 
-      <H4 id="biomass-daily" title="Web Dashboard: biomassdaily.com" />
+      <H4 id="biomass-daily">Web Dashboard: biomassdaily.com</H4>
       <p>2014 - 2015</p>
       <p>
         Access is restricted to users of the Biomass Daily system. The system
-        has been in daily active use by Vaki's customers and employees since its
+        has been in daily active use by Vaki's customers and employees since its
         launch in 2015.
       </p>
 
@@ -312,10 +304,10 @@ const Portfolio = () => {
           privileges.
         </li>
         <li>
-          <strong>Secure Login</strong> with username and email.
+          <strong>Secure Login</strong> with username and email.
         </li>
         <li>
-          <strong>Multiple languages</strong>: English, Spanish, Norwegian &amp;
+          <strong>Multiple languages</strong>: English, Spanish, Norwegian &
           Icelandic.
         </li>
       </ul>
@@ -324,7 +316,7 @@ const Portfolio = () => {
 
       <ul>
         <li>
-          <strong>Single page application</strong> web site. Written in
+          <strong>Single page application</strong> web site. Written in
           JavaScript (version ES5) and structured in the{" "}
           <a href="https://facebook.github.io/react/">React</a> library. User
           interface structure provided by Bootstrap. More technical details can
@@ -372,7 +364,7 @@ const Portfolio = () => {
         height={1860}
       />
 
-      <H2 id="ja-gadget-widget" title="Já.is Gadget & Widget" />
+      <H2 id="ja-gadget-widget">Já.is Gadget & Widget</H2>
       <p>
         A small 1-2 week summer internship project back in 2010 for{" "}
         <a href="https://ja.is/">Já.is</a>, the official phonebook registry of
@@ -388,7 +380,7 @@ const Portfolio = () => {
         website.
       </p>
 
-      <div style={{ display: "flex", justifyContent: "center" }}>
+      <div style="display: flex; justify-content: center">
         <Dither
           src="/images/portfolio/ja_combined.png"
           alt="Screenshot of the Já.is OSX Widget and Windows Gadget"
@@ -402,8 +394,6 @@ const Portfolio = () => {
         project planted a seed that would eventually grow into a career in
         frontend and product development.
       </p>
-    </Layout>
+    </>
   );
-};
-
-export default Portfolio;
+}

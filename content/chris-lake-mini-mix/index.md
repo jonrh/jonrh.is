@@ -1,12 +1,10 @@
-import Post from "../../components/Post";
-
-<Post
-  title="Chris Lake mini mix"
-  path="chris-lake-mini-mix"
-  date="April 16, 2007"
-  metaDescription="A mini mix with Chris Lake songs. Made as a promotion for
-  his gig in Iceland."
->
+---
+layout: post.11ty.jsx
+title: "Chris Lake mini mix"
+dateDisplay: "April 16, 2007"
+metaDescription: "A mini mix with Chris Lake songs. Made as a promotion for his gig in Iceland."
+sourceFile: content/chris-lake-mini-mix/index.md
+---
 
 Download link: Chris Lake mini mix
 
@@ -21,5 +19,3 @@ Download link: Chris Lake mini mix
 7. Sebastien Leger & Chris Lake – “Aqualight” – 17:30
 8. Ramsay (aka Chris Lake) – “Shake That Thing” – 19:30
 9. Chris Lake ft. Laura V – “Changes (Dirty South remix)” – 23:30
-
-</Post>
