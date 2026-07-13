@@ -8,8 +8,10 @@ export const data = {
   layout: "layout.11ty.jsx",
 };
 
-// Ensure that each post has a meta description for better SEO. Throwing here
-// fails the build so a change can not be accidentally deployed without one.
+/**
+ * Ensure that each post has a meta description for better SEO. Throwing here
+ * fails the build so a change can not be accidentally deployed without one.
+ */
 function validateMetaDescription(metaDescription, title, date) {
   if (!metaDescription) {
     throw new Error(
@@ -25,29 +27,39 @@ function validateMetaDescription(metaDescription, title, date) {
   }
 }
 
+/** A direct link to the GitHub source if path is defined */
+const Path = ({ path }) => {
+  if (!path) return null;
+
+  const url = `https://github.com/jonrh/jonrh.is/blob/main/${path}`;
+
+  return (
+    <p style="text-align: center; margin-top: 5em">
+      <a href={url}>History & source</a>
+    </p>
+  );
+};
+
+const Date = ({ date }) => {
+  if (!date) return null;
+
+  return (
+    <p style="display: block; margin-top: -1em; margin-bottom: 1.5em">{date}</p>
+  );
+};
+
 export default function (data) {
   validateMetaDescription(data.metaDescription, data.title, data.dateDisplay);
 
   return (
     <>
       <h1>{data.title}</h1>
-      {data.dateDisplay && (
-        <p style="display: block; margin-top: -1em; margin-bottom: 1.5em">
-          {data.dateDisplay}
-        </p>
-      )}
+
+      <Date date={data.dateDisplay} />
 
       <div dangerouslySetInnerHTML={{ __html: data.content }} />
 
-      {data.sourceFile && (
-        <p style="text-align: center; margin-top: 5em">
-          <a
-            href={`https://github.com/jonrh/jonrh.is/blob/main/${data.sourceFile}`}
-          >
-            History & source
-          </a>
-        </p>
-      )}
+      <Path path={data.sourceFile} />
     </>
   );
 }
