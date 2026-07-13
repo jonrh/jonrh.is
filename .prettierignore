@@ -9,3 +9,6 @@ css/reset.css
 # Blog posts are manually formatted markdown. Ignored so that Prettier does
 # not churn prose and list markers in published content.
 content/**/*.md
+
+# Manually formatted so avoid unnecessary indents
+content/tools.11ty.jsx
