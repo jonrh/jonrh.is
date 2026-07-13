@@ -1,10 +1,20 @@
 /* Global styles */
 html {
-  font-family: serif;
   line-height: 1.75;
 }
 
 body {
+  /*
+    The body is the single reading column: capped width, centred in the
+    viewport, with a side gutter so text never touches the screen edges. The
+    background still fills the whole viewport (CSS propagates the body
+    background to the canvas when html has none), so only the content is
+    constrained, not the dark backdrop.
+    */
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 0 1.3rem 2.6rem;
+
   /* Make all text justified on the page. This might be too broad, p and li might be enough. */
   text-align: justify;
   background: #191919;

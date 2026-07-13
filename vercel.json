@@ -1,0 +1,12 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "_site",
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/images/:path*",
+      "destination": "/:path*",
+      "permanent": true
+    }
+  ]
+}

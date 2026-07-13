@@ -1,0 +1,63 @@
+// Registers a Node loader that transpiles JSX/TS on import. Must run before
+// any .11ty.jsx template is imported below.
+import "tsx/esm";
+import { render as renderToStaticMarkup } from "preact-render-to-string";
+import prettier from "prettier";
+
+export default function (eleventyConfig) {
+  // Preact JSX templates (.11ty.jsx), following 11ty's official JSX approach:
+  // https://www.11ty.dev/docs/languages/jsx/
+  // Every page and layout is JSX. tsx transpiles the JSX on import, the
+  // template's default export returns a Preact element, and
+  // preact-render-to-string serializes it to a static HTML string at build
+  // time. No React and no client-side JavaScript is shipped. Preact is used
+  // in place of the docs' react-dom/server so the site stays React-free.
+  //
+  // preact-render-to-string does not emit a doctype, so it is prepended for
+  // the one template whose output is a full document (the base layout, the
+  // only render that starts with <html>). Page and layout-fragment renders
+  // start with other tags and are passed through unchanged.
+  eleventyConfig.addTemplateFormats("11ty.jsx");
+  eleventyConfig.addExtension("11ty.jsx", {
+    key: "11ty.js",
+    compile: function () {
+      return async function (data) {
+        const content = await this.defaultRenderer(data);
+        const html = renderToStaticMarkup(content);
+        const doc = html.startsWith("<html") ? "<!doctype html>" + html : html;
+
+        // Pretty-print the output so view-source is human-readable and
+        // indented. Prettier also formats the inlined <style> CSS and leaves
+        // whitespace-sensitive <pre>/<code> blocks untouched. This inflates the
+        // on-disk HTML with indentation, but gzip/brotli erase almost all of it
+        // on the wire. It is not perfect. <a> links with long hrefs line wraps
+        // in strange ways but it at least keeps it byte-to-byte identical with
+        // no extra spaces inserted into text. 120ch width remedies it slightly.
+        return prettier.format(doc, { parser: "html", printWidth: 120 });
+      };
+    },
+  });
+
+  // Static assets served as-is from the output root, same as Next.js /public
+  eleventyConfig.addPassthroughCopy({ "public/": "/" });
+
+  // Images co-located with blog posts and pages, copied next to the
+  // generated page. Covers every raster/vector format the content uses so
+  // images can live in their post/page folder instead of public/images.
+  eleventyConfig.addPassthroughCopy(
+    "content/**/*.{png,jpg,jpeg,gif,svg,webp,avif}",
+  );
+
+  return {
+    dir: {
+      input: "content",
+      includes: "../_includes",
+      output: "_site",
+    },
+
+    // Blog posts are plain Markdown. No template preprocessing so that code
+    // examples containing template syntax (for example ${{ github.sha }} in
+    // GitHub Action YAML) are never accidentally interpreted.
+    markdownTemplateEngine: false,
+  };
+}
