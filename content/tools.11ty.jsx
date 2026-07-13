@@ -1,11 +1,5 @@
 /** @jsxRuntime automatic */
 /** @jsxImportSource preact */
-// Preact JSX page, rendered to a static HTML string at build time by the
-// "11ty.jsx" extension in eleventy.config.js (11ty's official JSX approach).
-// No React, no client-side runtime, no state or effects. The two pragmas
-// above tell tsx to transpile this JSX with the automatic runtime pointed at
-// Preact instead of the default React. This is essentially the old Next.js
-// tools.js minus the React import and the <Page> wrapper.
 
 export const data = {
   layout: "post.11ty.jsx",
@@ -109,8 +103,7 @@ const Asana = () => <a href="https://asana.com">Asana</a>;
 const ToothFairy = () => <a href="https://apps.apple.com/us/app/toothfairy/id1191449274">ToothFairy</a>
 const Termius = () => <a href="https://termius.com">Termius</a>;
 
-// Experimental code formatting to maximize HTML content per line
-const Content = () => (<>
+export default function () {return (<>
 <p>A list of current and past hardware and software tools.</p>
 <p>Last updated: July 10, 2026.</p>
 
@@ -673,13 +666,8 @@ History of software used in the past.
 </ul>
 
 </>);
+}
 
 // Best guesses on start/end times:
 //  - Kitty start time.
 //  - Bought the 15" MBP Late-2013 1y used but not 100% when.
-
-// 11ty invokes the default export via this.defaultRenderer; it returns a
-// Preact element which the extension serializes with preact-render-to-string.
-export default function () {
-  return <Content />;
-}

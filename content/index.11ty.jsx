@@ -1,7 +1,7 @@
 /** @jsxRuntime automatic */
 /** @jsxImportSource preact */
 
-// The frontpage or root route of the website.
+/** The frontpage or root route of the website. */
 export const data = {
   layout: "layout.11ty.jsx",
   permalink: "/",
