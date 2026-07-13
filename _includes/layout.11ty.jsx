@@ -1,8 +1,10 @@
 /** @jsxRuntime automatic */
 /** @jsxImportSource preact */
 
-// Base HTML document with the header and navigation. Every page renders into
-// data.content, which is a pre-rendered HTML string injected below.
+/**
+ * Base HTML document with the header and navigation. Every page renders into
+ * data.content, which is a pre-rendered HTML string injected below.
+ */
 export default function (data) {
   return (
     <html lang="en">
