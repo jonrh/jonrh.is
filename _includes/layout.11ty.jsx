@@ -1,6 +1,23 @@
 /** @jsxRuntime automatic */
 /** @jsxImportSource preact */
 
+import { readFileSync } from "node:fs";
+
+/**
+ * All CSS is read from the /css/ source files at build time and concatenated
+ * into a single inline <style> below, so every page ships its styles in the
+ * same request with no extra round-trips. modern-normalize (the reset) comes
+ * first, then the global styles, then layout. Paths resolve relative to this
+ * module so the build works regardless of the working directory.
+ */
+const css = [
+  "../css/modern-normalize.css",
+  "../css/jonrh.css",
+  "../css/layout.css",
+]
+  .map((path) => readFileSync(new URL(path, import.meta.url), "utf8"))
+  .join("\n");
+
 /**
  * Base HTML document with the header and navigation. Every page renders into
  * data.content, which is a pre-rendered HTML string injected below.
@@ -16,9 +33,7 @@ export default function (data) {
         {data.metaDescription && (
           <meta name="description" content={data.metaDescription} />
         )}
-        <link rel="stylesheet" href="/css/reset.css" />
-        <link rel="stylesheet" href="/css/jonrh.css" />
-        <link rel="stylesheet" href="/css/layout.css" />
+        <style dangerouslySetInnerHTML={{ __html: css }} />
       </head>
       <body>
         <div>

@@ -32,7 +32,7 @@ Pages and layouts are `.11ty.jsx` files following 11ty's [official JSX approach]
 - **Layouts**: JSX templates in `/_includes/`
   - `layout.11ty.jsx` - Base HTML document with header and navigation
   - `post.11ty.jsx` - Blog post template with SEO validation, chains into `layout.11ty.jsx`
-- **Styling**: CSS files in `/css/`, copied through to `/css/` on the site
+- **Styling**: CSS source files in `/css/` (`modern-normalize.css` is the vendored, minified reset), read and concatenated into a single inline `<style>` at build time by `layout.11ty.jsx` — not served as separate stylesheets
 - **Static assets**: Images and files in `/public/`, copied to the output root
 
 ### Content Management

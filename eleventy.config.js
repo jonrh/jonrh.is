@@ -30,7 +30,6 @@ export default function (eleventyConfig) {
 
   // Static assets served as-is from the output root, same as Next.js /public
   eleventyConfig.addPassthroughCopy({ "public/": "/" });
-  eleventyConfig.addPassthroughCopy({ "css/": "/css/" });
 
   // Images co-located with blog posts and pages, copied next to the
   // generated page. Covers every raster/vector format the content uses so
