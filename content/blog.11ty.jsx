@@ -14,6 +14,7 @@ export default function () {
 
       {/* prettier-ignore */}
       <ul>
+        <li><a href="/from-nextjs-to-eleventy">From Next.js to Eleventy</a></li>
         <li><a href="/anker-powercore-24k-review">Anker PowerCore 24K power bank review</a></li>
         <li><a href="/preview-subdomain-nextj-vercel">Static preview subdomain for Next.js & Vercel</a></li>
         <li><a href="/using-husky-and-asdf-with-fork">Using Husky and asdf with Fork</a></li>
