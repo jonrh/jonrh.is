@@ -15,7 +15,7 @@ loosely up-to-date over the years. Until now.
 
 This blog post was put together after a few exchanges on Twitter:
 
-<a href="/images/back-into-cryptocurrencies/tweet.png"><img src="/images/back-into-cryptocurrencies/tweet-dither.webp" alt="Tweets that inspired this blog post" width="1276" height="990" loading="lazy" decoding="async" /></a>
+<a href="/back-into-cryptocurrencies/tweet.png"><img src="/back-into-cryptocurrencies/tweet-dither.webp" alt="Tweets that inspired this blog post" width="1276" height="990" loading="lazy" decoding="async" /></a>
 
 ## Getting Started
 I recommend reading through the [getting started guide on bitcoin.org][0]. bitcoin.com also has

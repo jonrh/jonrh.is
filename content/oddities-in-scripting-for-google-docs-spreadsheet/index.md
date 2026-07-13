@@ -14,11 +14,11 @@ item that just fetches the values it needed and wrote the outputs in the cell.
 
 What I initially had in mind was something like this:
 
-<img src="/images/oddities-in-scripting-for-google-docs-spreadsheet/1.png" alt="Screenshot from a Google Drive spreadsheet" width="344" height="103" loading="lazy" decoding="async" />
+<img src="/oddities-in-scripting-for-google-docs-spreadsheet/1.png" alt="Screenshot from a Google Drive spreadsheet" width="344" height="103" loading="lazy" decoding="async" />
 
 Where myCustomFunction() is:
 
-<img src="/images/oddities-in-scripting-for-google-docs-spreadsheet/2.png" alt="Screenshot of a custom JavaScript function" width="399" height="97" loading="lazy" decoding="async" />
+<img src="/oddities-in-scripting-for-google-docs-spreadsheet/2.png" alt="Screenshot of a custom JavaScript function" width="399" height="97" loading="lazy" decoding="async" />
 
 But as stated above this doesn’t work. The following error message is displayed: **You do not have
 permission to call setValue**. The reason as to why it’s not allowed is beyond me but the same

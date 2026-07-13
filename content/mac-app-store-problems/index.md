@@ -27,7 +27,7 @@ If you get a never ending loading screen that reads "One moment please.
 Connecting to the Mac App Store. Loading..." then you'll need to delete two
 files and restart.
 
-<img src="/images/mac-app-store-problems/mac_app_store_one_moment_please.png" alt="The One moment please loading screen for the Mac App Store" width="409" height="201" loading="lazy" decoding="async" />
+<img src="/mac-app-store-problems/mac_app_store_one_moment_please.png" alt="The One moment please loading screen for the Mac App Store" width="409" height="201" loading="lazy" decoding="async" />
 
 To delete the files paste the two lines below into Terminal and press enter:
 

@@ -39,7 +39,7 @@ Happens very rarely. Start charging from 40% - 50% most of the time.
 + It is a heavy brick, 630g. Volume is similar to a 330ml (12oz) tall can.
 Measures 155.7 × 54.6 × 49.5 mm.
 
-<a href="/images/anker-powercore-24k-review/anker-powercore-24k.png"><img src="/images/anker-powercore-24k-review/anker-powercore-24k-dither.png" alt="The Anker PowerCore 24K external battery. A black and grey square brick with a similar volume as a 330ml tall can. Has a small display on the front." width="1801" height="1800" loading="lazy" decoding="async" /></a>
+<a href="/anker-powercore-24k-review/anker-powercore-24k.png"><img src="/anker-powercore-24k-review/anker-powercore-24k-dither.png" alt="The Anker PowerCore 24K external battery. A black and grey square brick with a similar volume as a 330ml tall can. Has a small display on the front." width="1801" height="1800" loading="lazy" decoding="async" /></a>
 
 [apc24k]: https://www.anker.com/products/a1289
 [c35wdu]: https://support.apple.com/en-us/HT213263

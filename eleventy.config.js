@@ -32,8 +32,12 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "public/": "/" });
   eleventyConfig.addPassthroughCopy({ "css/": "/css/" });
 
-  // Images co-located with blog posts, copied next to the generated page
-  eleventyConfig.addPassthroughCopy("content/**/*.png");
+  // Images co-located with blog posts and pages, copied next to the
+  // generated page. Covers every raster/vector format the content uses so
+  // images can live in their post/page folder instead of public/images.
+  eleventyConfig.addPassthroughCopy(
+    "content/**/*.{png,jpg,jpeg,gif,svg,webp,avif}",
+  );
 
   return {
     dir: {

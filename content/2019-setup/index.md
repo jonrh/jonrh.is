@@ -6,7 +6,7 @@ metaDescription: "A list of the hardware and software I used while working from 
 sourceFile: content/2019-setup/index.md
 ---
 
-<a href="/images/2019-setup/desk_cover.jpg"><img src="/images/2019-setup/desk_cover-dither.png" alt="My desk showing a notebook, fountain pen, Mac Mini, monitors, keyboard and mouse" width="2646" height="1180" loading="lazy" decoding="async" /></a>
+<a href="/2019-setup/desk_cover.jpg"><img src="/2019-setup/desk_cover-dither.png" alt="My desk showing a notebook, fountain pen, Mac Mini, monitors, keyboard and mouse" width="2646" height="1180" loading="lazy" decoding="async" /></a>
 
 ## Hardware
 
@@ -55,11 +55,11 @@ sourceFile: content/2019-setup/index.md
 + **Email**: [Fastmail](https://www.fastmail.com)
 + **VPN**: [IVPN](https://www.ivpn.net)
 
-<a href="/images/2019-setup/desk_front.jpg"><img src="/images/2019-setup/desk_front-dither.png" alt="My desk and chair" width="1500" height="1000" loading="lazy" decoding="async" /></a>
+<a href="/2019-setup/desk_front.jpg"><img src="/2019-setup/desk_front-dither.png" alt="My desk and chair" width="1500" height="1000" loading="lazy" decoding="async" /></a>
 
 <br />
 
-<a href="/images/2019-setup/desk_side.jpg"><img src="/images/2019-setup/desk_side-dither.png" alt="My desk and chair" width="1500" height="1000" loading="lazy" decoding="async" /></a>
+<a href="/2019-setup/desk_side.jpg"><img src="/2019-setup/desk_side-dither.png" alt="My desk and chair" width="1500" height="1000" loading="lazy" decoding="async" /></a>
 
 
 [macmini]: https://everymac.com/systems/apple/mac_mini/specs/mac-mini-core-i7-3.2-late-2018-specs.html

@@ -98,9 +98,9 @@ export default function () {
         <li>IRC, Libre.chat: jonrh</li>
       </ul>
 
-      <a href="/images/about/jonrh-dither.png">
+      <a href="/about/jonrh-dither.png">
         <img
-          src="/images/about/jonrh-dither.png"
+          src="/about/jonrh-dither.png"
           alt="Jón Rúnar Helgason profile picture."
           width="750"
           height="750"

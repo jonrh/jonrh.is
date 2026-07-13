@@ -25,7 +25,7 @@ utilizes [Prettier][prettier] for automatic code formatting, in combination
 with [Husky][husky] and [lint-staged][lintstaged], which ensures no
 unformatted code can be committed.
 
-<a href="/images/using-husky-and-asdf-with-fork/fork-husky-asdf-error-1.png"><img src="/images/using-husky-and-asdf-with-fork/fork-husky-asdf-error-1-dither.png" alt="My desk showing a notebook, fountain pen, Mac Mini, monitors, keyboard and mouse" width="992" height="588" loading="lazy" decoding="async" /></a>
+<a href="/using-husky-and-asdf-with-fork/fork-husky-asdf-error-1.png"><img src="/using-husky-and-asdf-with-fork/fork-husky-asdf-error-1-dither.png" alt="My desk showing a notebook, fountain pen, Mac Mini, monitors, keyboard and mouse" width="992" height="588" loading="lazy" decoding="async" /></a>
 
 <details>
 <summary>Click to see text version of error:</summary>

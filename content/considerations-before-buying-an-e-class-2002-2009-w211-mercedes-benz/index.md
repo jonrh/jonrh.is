@@ -14,7 +14,7 @@ to hopefully allow others to avoid the mistakes that I made in the buying proces
 Back in September 2014 I finally realised a long running dream to buy a Mercedes Benz. I was pretty
 stoked about it. The model was Avantgarde E270 2002 CDI (disel).
 
-<img src="/images/considerations-before-buying-an-e-class-2002-2009-w211-mercedes-benz/jonrh-benz.jpg" alt="Me and then newly bought Mercedes" width="1024" height="641" loading="lazy" decoding="async" />
+<img src="/considerations-before-buying-an-e-class-2002-2009-w211-mercedes-benz/jonrh-benz.jpg" alt="Me and then newly bought Mercedes" width="1024" height="641" loading="lazy" decoding="async" />
 
 Before buying the car I searched for months for a suitable candidate and test drove about 5 other
 cars. I read a lot of guides but what I found most helpful in my pre-buy research was
@@ -23,7 +23,7 @@ lot of good advice but if I were to pick one tip it'd be the how important it is
 inspected by a professional before committing to the purchase. This point was also raised in all
 the guides I read and as well by my friends.
 
-<img src="/images/considerations-before-buying-an-e-class-2002-2009-w211-mercedes-benz/benz-meetup-2014.jpg" alt="A picture of lined up cars from an Icelandic Mercedes Benz meet up" width="960" height="720" loading="lazy" decoding="async" />
+<img src="/considerations-before-buying-an-e-class-2002-2009-w211-mercedes-benz/benz-meetup-2014.jpg" alt="A picture of lined up cars from an Icelandic Mercedes Benz meet up" width="960" height="720" loading="lazy" decoding="async" />
 
 Initial inspection by me revealed that the car had been very well taken care of by its prior
 owners, it looked incredibly good for being 12 years old. The car had been driven 137,000 KM
@@ -32,7 +32,7 @@ times. The car had 3 previous owners, first owner had the car for about 6 years,
 months, and the third owner about 6 years. In the initial test drive the car drove incredibly well,
 very stable and shifting was tight. One thing had me worried though:
 
-<img src="/images/considerations-before-buying-an-e-class-2002-2009-w211-mercedes-benz/service-brake-visit-workshop.jpg" alt="Picture of dashboard in Mercedes W211 displaying the &quot;Service brake Visit workshop!&quot; warning message." width="1035" height="972" loading="lazy" decoding="async" />
+<img src="/considerations-before-buying-an-e-class-2002-2009-w211-mercedes-benz/service-brake-visit-workshop.jpg" alt="Picture of dashboard in Mercedes W211 displaying the &quot;Service brake Visit workshop!&quot; warning message." width="1035" height="972" loading="lazy" decoding="async" />
 
 Before the test drive I asked the prior owner about this warning message and he said that he had
 the car inspected before listing it on sale and that the front brake pads needed replacement (more
@@ -70,7 +70,7 @@ When picking the car up I queried Bíla-Doktorinn if he was able to clear the wa
 brain of the braking system was due for a replacement. The cost, about 200,000 - 400,000 ISK (about
 $1500 - $3000).
 
-<img src="/images/considerations-before-buying-an-e-class-2002-2009-w211-mercedes-benz/say-what.gif" alt="A surprised woman saying &quot;Say what?&quot;" width="500" height="220" loading="lazy" decoding="async" />
+<img src="/considerations-before-buying-an-e-class-2002-2009-w211-mercedes-benz/say-what.gif" alt="A surprised woman saying &quot;Say what?&quot;" width="500" height="220" loading="lazy" decoding="async" />
 
 Very shocked and a bit mad I asked:
 
@@ -86,7 +86,7 @@ hoping that I did not have a proof that the error message had indeed been in the
 start. His gamble payed off as I had not taken a picture and error codes did not include mileage
 numbers until in later models.
 
-<img src="/images/considerations-before-buying-an-e-class-2002-2009-w211-mercedes-benz/sbc-mercedes-benz.jpg" alt="SBC unit in the engine compartment of a Mercedes Benz" width="800" height="600" loading="lazy" decoding="async" />
+<img src="/considerations-before-buying-an-e-class-2002-2009-w211-mercedes-benz/sbc-mercedes-benz.jpg" alt="SBC unit in the engine compartment of a Mercedes Benz" width="800" height="600" loading="lazy" decoding="async" />
 
 After bitterly digesting this all and finding that I had no legal rights to a damage claim due to
 my lack of evidence, I find 3 things disturbing:

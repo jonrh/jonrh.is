@@ -50,7 +50,7 @@ circumstances. When this post was written I was in a course on Swift programming
 next few weeks I'll create an iOS app for the Biomass Daily system. Had we gone for a traditional
 ASP.Net website that would not have been possible.
 
-<img src="/images/retrospective-on-react/biomassdaily_login.png" alt="Login for the new Biomass Daily system" width="1986" height="1616" loading="lazy" decoding="async" />
+<img src="/retrospective-on-react/biomassdaily_login.png" alt="Login for the new Biomass Daily system" width="1986" height="1616" loading="lazy" decoding="async" />
 
 
 ## JS framework/library selection
@@ -78,7 +78,7 @@ I looked at a lot of frameworks/libs but the ones that stood out in my opinion w
 + [Mithril](https://lhorie.github.io/mithril/)
 + [React](https://facebook.github.io/react/)
 
-<img src="/images/retrospective-on-react/js_frameworks.png" alt="Logos of the JavaScript frameworks I looked at: Angular, Vue, Mithril, React, Reactive.js" width="602" height="122" loading="lazy" decoding="async" />
+<img src="/retrospective-on-react/js_frameworks.png" alt="Logos of the JavaScript frameworks I looked at: Angular, Vue, Mithril, React, Reactive.js" width="602" height="122" loading="lazy" decoding="async" />
 
 Ultimately we picked React with Vue in 2nd place and Mithril 3rd. The primary appeal of React was
 being able to more easily reuse our filters (components). Additionally we had heard very good
@@ -114,7 +114,7 @@ mere 30 lines of code, 15 of which are comments.
 After that experience I got renewed respect for Webpack. It's an incredibly powerful tool that can
 tackle really complicated builds, but it does require you to understand how it works.
 
-<img src="/images/retrospective-on-react/concept_trendgraph_simple.png" alt="Trend graph concept before implementation" width="976" height="695" loading="lazy" decoding="async" />
+<img src="/retrospective-on-react/concept_trendgraph_simple.png" alt="Trend graph concept before implementation" width="976" height="695" loading="lazy" decoding="async" />
 
 
 ### Flux
@@ -134,7 +134,7 @@ size. However towards the end I recall starting to have some difficulties expres
 data flows. I managed to express them so it wasn't a show stopper but I had started to look into
 alternatives to Reflux but never got around to it.
 
-<img src="/images/retrospective-on-react/biomassdaily_trendgraph.png" alt="Trend Graph after implementation" width="2758" height="1860" loading="lazy" decoding="async" />
+<img src="/retrospective-on-react/biomassdaily_trendgraph.png" alt="Trend Graph after implementation" width="2758" height="1860" loading="lazy" decoding="async" />
 
 
 ### Other Libraries

@@ -15,7 +15,7 @@ nearing completion, just a few more bugs and edge cases to handle. The app is tr
 languages with the excellent library [i18next](https://github.com/i18next/i18next) by
 [Jan Mühlemann](https://twitter.com/jamuhl).
 
-<img src="/images/react-native-locale-strings/bd_monitor_language_settings.png" alt="BD Monitor language settings" width="1270" height="848" loading="lazy" decoding="async" />
+<img src="/react-native-locale-strings/bd_monitor_language_settings.png" alt="BD Monitor language settings" width="1270" height="848" loading="lazy" decoding="async" />
 
 Users of my app can change the language in the Settings view but one user experience improvement I
 wanted was to have the app switch automatically according to the language specified by the

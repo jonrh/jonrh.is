@@ -9,7 +9,7 @@ sourceFile: content/26-slim-bicycle-tire-review/index.md
 <!-- Todo: center images -->
 
 Two years ago I started cycling on a regular basis and after a while it became evident to me that
-there must have existed better suited tires than the [knobby](/images/26-slim-bicycle-tire-review/scott_onzo.jpg) ones that I
+there must have existed better suited tires than the [knobby](/26-slim-bicycle-tire-review/scott_onzo.jpg) ones that I
 had on my mountain bike. My first slim bicycle tires where
 Bontrager Road Warrior 26″x1.5″. What those numbers mean is
 that the tire measures 26 inches in diameter, which is pretty much all mountain bikes, and 1.5
@@ -17,7 +17,7 @@ inches in thickness when inflated. I did use them for about 1000km but in the en
 becoming too frequent, or about once every 2 weeks (to put that in perspective I commute 8km per
 day 5 days a week).
 
-<img src="/images/26-slim-bicycle-tire-review/bontrager_road_warrior.png" alt="Bontrager Road Warrior 26&quot;x1.5&quot;" width="318" height="395" loading="lazy" decoding="async" />
+<img src="/26-slim-bicycle-tire-review/bontrager_road_warrior.png" alt="Bontrager Road Warrior 26&quot;x1.5&quot;" width="318" height="395" loading="lazy" decoding="async" />
 
 <table style="text-align: left">
     <tbody>
@@ -57,7 +57,7 @@ on. In retrospect I learned
 and error. As mentioned earlier I’ve once had to change a flat tire on these but that change was
 a lot smoother.
 
-<img src="/images/26-slim-bicycle-tire-review/ultra_gatorskin.jpg" alt="Continental Ultra Gatorskin 26&quot;x1.25&quot;" width="470" height="251" loading="lazy" decoding="async" />
+<img src="/26-slim-bicycle-tire-review/ultra_gatorskin.jpg" alt="Continental Ultra Gatorskin 26&quot;x1.25&quot;" width="470" height="251" loading="lazy" decoding="async" />
 
 <table style="text-align: left">
     <tbody>

@@ -16,7 +16,7 @@ My initial concerns:
 + Gold is a gimmicky colour
 + Force touchpad would not feel as good
 
-<img src="/images/macbook-early-2015-review/macbook_2015.png" alt="MacBook Early 2015 gold" width="1834" height="1000" loading="lazy" decoding="async" />
+<img src="/macbook-early-2015-review/macbook_2015.png" alt="MacBook Early 2015 gold" width="1834" height="1000" loading="lazy" decoding="async" />
 
 To my surprise the CPU held up very well. I was running two IDEs (WebStorm & DataGrip), Sublime,
 10 - 20 tabs in Chrome, plus some other smaller programs. I was pleasantly surprised to see no

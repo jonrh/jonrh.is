@@ -105,13 +105,13 @@ export default function () {
 
       <Grid>
         <Dither
-          src="/images/portfolio/timavera/1_login.png"
+          src="/portfolio/timavera/1_login.png"
           alt="Tímavera mobile app on the login screen. Inputs: company, employee name, and password."
           width={1659}
           height={2622}
         />
         <Dither
-          src="/images/portfolio/timavera/2_projects.png"
+          src="/portfolio/timavera/2_projects.png"
           alt="Tímavera mobile app on the projects screen. Shows buttons for Project A, Jobsite B, Contract C, and Installation D."
           width={1659}
           height={2622}
@@ -120,13 +120,13 @@ export default function () {
 
       <Grid>
         <Dither
-          src="/images/portfolio/timavera/3_clocked_in.png"
+          src="/portfolio/timavera/3_clocked_in.png"
           alt="Tímavera mobile app on the clocked in screen. Clocked into Project A, elapsed time is 03:13:37. A square stop buttons to stop or clock out and a plus button for adding a comment or an image."
           width={1659}
           height={2622}
         />
         <Dither
-          src="/images/portfolio/timavera/4_comment.png"
+          src="/portfolio/timavera/4_comment.png"
           alt="Tímavera mobile app on a screen to add a comment to a time entry. Comment: Foudation complete. Bought materials for $1337. Buttons shown are to add the comment and a button for adding an image."
           width={1659}
           height={2622}
@@ -135,13 +135,13 @@ export default function () {
 
       <Grid>
         <Dither
-          src="/images/portfolio/timavera/5_entries.png"
+          src="/portfolio/timavera/5_entries.png"
           alt="Tímavera mobile app screen showing a list of time entries. Time entries are grouped by day and show the time when clocked in and clocked out along with total duration in hours as well as the name of the project."
           width={1659}
           height={2622}
         />
         <Dither
-          src="/images/portfolio/timavera/6_entry.png"
+          src="/portfolio/timavera/6_entry.png"
           alt="Tímavera mobile app screen showing a detail screen for a single time entry. Duration: 7.00 hours. Start: 08:00 Wed 4 Jan 2023. End: 15:00, Wed 4 Jan 2023. Project: Project A. Comment: 12:00, Foundation complete. Bought materials for $1337."
           width={1659}
           height={2622}
@@ -149,7 +149,7 @@ export default function () {
       </Grid>
 
       <Dither
-        src="/images/portfolio/timavera/timavera_dashboard.png"
+        src="/portfolio/timavera/timavera_dashboard.png"
         alt="Screenshot of the Tímavera web dashboard. Shown is a table containing 3 time entries. The main pages are Time Entries, Projects, Employees, Report. The time entries table can then be filtered by calendar dates, project, and or employee."
         width={1650}
         height={748}
@@ -168,13 +168,13 @@ export default function () {
       <br />
 
       <Dither
-        src="/images/portfolio/litasyn/litasyn.png"
+        src="/portfolio/litasyn/litasyn.png"
         alt="Screenshot from litasyn.is"
         width={1974}
         height={1634}
       />
       <Dither
-        src="/images/portfolio/malco_dark.png"
+        src="/portfolio/malco_dark.png"
         alt="Screenshot from malco.is, a simple site with contact details"
         width={1202}
         height={1078}
@@ -202,7 +202,7 @@ export default function () {
         <a href="https://www.activitystream.com/">activitystream.com</a>
       </p>
       <Dither
-        src="/images/portfolio/activitystream_dashboard_framed.png"
+        src="/portfolio/activitystream_dashboard_framed.png"
         alt="UI Design of Activity Stream dashboard"
         width={1921}
         height={1119}
@@ -220,7 +220,7 @@ export default function () {
         <a href="https://vakiiceland.is/">vakiiceland.is</a>
       </p>
       <Dither
-        src="/images/portfolio/bd_frames_and_fish.png"
+        src="/portfolio/bd_frames_and_fish.png"
         alt="Biomass Daily frames"
         width={655}
         height={272}
@@ -239,38 +239,38 @@ export default function () {
       <p>The app was written in JavaScript ES2015 and React Native.</p>
 
       <Dither
-        src="/images/portfolio/mockup.png"
+        src="/portfolio/mockup.png"
         alt="Early mockups demonstrating bottom navigation and History view"
         width={1024}
         height={508}
       />
 
       <Dither
-        src="/images/portfolio/bdmonitor1.png"
+        src="/portfolio/bdmonitor1.png"
         alt="BD Monitor login and home screen"
         width={700}
         height={700}
       />
       <Dither
-        src="/images/portfolio/bdmonitor2.png"
+        src="/portfolio/bdmonitor2.png"
         alt="BD Monitor Summary & Settings"
         width={700}
         height={700}
       />
       <Dither
-        src="/images/portfolio/bdmonitor3.png"
+        src="/portfolio/bdmonitor3.png"
         alt="BD Monitor History"
         width={700}
         height={700}
       />
       <Dither
-        src="/images/portfolio/bdmonitor4.png"
+        src="/portfolio/bdmonitor4.png"
         alt="BD Monitor Utilisation"
         width={700}
         height={700}
       />
       <Dither
-        src="/images/portfolio/bdmonitor5.png"
+        src="/portfolio/bdmonitor5.png"
         alt="BD Monitor sea cage detail view"
         width={700}
         height={700}
@@ -334,31 +334,31 @@ export default function () {
       </ul>
 
       <Dither
-        src="/images/portfolio/bd_dashboard.png"
+        src="/portfolio/bd_dashboard.png"
         alt="Biomass Daily sea cages dashboard"
         width={2758}
         height={1860}
       />
       <Dither
-        src="/images/portfolio/bd_trendgraph.png"
+        src="/portfolio/bd_trendgraph.png"
         alt="Biomass Daily weight trendgraph"
         width={2758}
         height={1860}
       />
       <Dither
-        src="/images/portfolio/bd_distribution.png"
+        src="/portfolio/bd_distribution.png"
         alt="Biomass Daily weight distribution"
         width={2758}
         height={1860}
       />
       <Dither
-        src="/images/portfolio/bd_fcr.png"
+        src="/portfolio/bd_fcr.png"
         alt="Biomass Daily Feed Conversion Ratio"
         width={2758}
         height={1860}
       />
       <Dither
-        src="/images/portfolio/bd_login.png"
+        src="/portfolio/bd_login.png"
         alt="Biomass Daily Login"
         width={2758}
         height={1860}
@@ -382,7 +382,7 @@ export default function () {
 
       <div style="display: flex; justify-content: center">
         <Dither
-          src="/images/portfolio/ja_combined.png"
+          src="/portfolio/ja_combined.png"
           alt="Screenshot of the Já.is OSX Widget and Windows Gadget"
           width={369}
           height={230}

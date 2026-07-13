@@ -15,7 +15,7 @@ In an [exchange][4] on Twitter [@BinaryAge][5] advised me that [there was now a 
 TotalFinder without compromising SIP on OSX El Capitan. The process made me sweat on my fingers but
 ultimately it worked!
 
-<img src="/images/custom-totalfinder-icon-in-osx-el-capitan/mighty_finder2.png" alt="MightyFinder OSX icon by Max Rudberg" width="512" height="512" loading="lazy" decoding="async" />
+<img src="/custom-totalfinder-icon-in-osx-el-capitan/mighty_finder2.png" alt="MightyFinder OSX icon by Max Rudberg" width="512" height="512" loading="lazy" decoding="async" />
 
 There was now only one missing piece: to get the MightyFinder icon back! I've been using that icon
 as a replacement for Finder for almost a decade. If you'd like to get it you can still download it
@@ -34,7 +34,7 @@ TotalFinder release. Fingers crossed!
 
 1. In TotalFinder preferences, make sure "Keep original Dock icon" is unchecked.
 
-<img src="/images/custom-totalfinder-icon-in-osx-el-capitan/preferences.png" alt="TotalFinder Preferences" width="1630" height="1538" loading="lazy" decoding="async" />
+<img src="/custom-totalfinder-icon-in-osx-el-capitan/preferences.png" alt="TotalFinder Preferences" width="1630" height="1538" loading="lazy" decoding="async" />
 
 
 2. Go to: `/System/Library/ScriptingAdditions/`, right click on *TotalFinder.osax* and pick
@@ -47,7 +47,7 @@ TotalFinder release. Fingers crossed!
 5. The icon you have to replace is the file <strong>TotalFinderIcon2.icns</strong>. Replace it with
 your desired icon.
 
-<img src="/images/custom-totalfinder-icon-in-osx-el-capitan/icon_location.png" alt="The location of TotalFinderIcon2.icns" width="1906" height="1498" loading="lazy" decoding="async" />
+<img src="/custom-totalfinder-icon-in-osx-el-capitan/icon_location.png" alt="The location of TotalFinderIcon2.icns" width="1906" height="1498" loading="lazy" decoding="async" />
 
 6. Restart TotalFinder. One way is Cmd + Alt + Esc -> Relaunch Finder. Another is typing into
 Terminal: `killall Finder`
@@ -56,7 +56,7 @@ Terminal: `killall Finder`
 
 </div>
 
-<img src="/images/custom-totalfinder-icon-in-osx-el-capitan/cmd_tab.png" alt="TotalFinder working on El Capitan with MightyFinder icon" width="2250" height="1514" loading="lazy" decoding="async" />
+<img src="/custom-totalfinder-icon-in-osx-el-capitan/cmd_tab.png" alt="TotalFinder working on El Capitan with MightyFinder icon" width="2250" height="1514" loading="lazy" decoding="async" />
 
 Voilà! If everything worked you should now have TotalFinder running on OSX El Capitan with a custom
 icon. Hope it will help someone.
