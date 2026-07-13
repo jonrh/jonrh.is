@@ -9,9 +9,9 @@ sourceFile: content/26-slim-bicycle-tire-review/index.md
 <!-- Todo: center images -->
 
 Two years ago I started cycling on a regular basis and after a while it became evident to me that
-there must have existed better suited tires than the [tractor grooved](./scott_onzo.jpg) ones that I
+there must have existed better suited tires than the [knobby](/images/26-slim-bicycle-tire-review/scott_onzo.jpg) ones that I
 had on my mountain bike. My first slim bicycle tires where
-[Bontrager Road Warrior 26″x1.5″](http://bontrager.com/model/00447). What those numbers mean is
+Bontrager Road Warrior 26″x1.5″. What those numbers mean is
 that the tire measures 26 inches in diameter, which is pretty much all mountain bikes, and 1.5
 inches in thickness when inflated. I did use them for about 1000km but in the end punctures were
 becoming too frequent, or about once every 2 weeks (to put that in perspective I commute 8km per
@@ -45,7 +45,7 @@ day 5 days a week).
     </tbody>
 </table>
 
-My second slim tires where [Continental Ultra GatorSkin 26″x1.25″](http://www.conti-online.com/generator/www/de/en/continental/bicycle/themes/race/recetyres/ultra_gatorskin/ultragatorskin_en.html).
+My second slim tires where Continental Ultra GatorSkin 26″x1.25″.
 As of this writing I’ve put around 500km on them and so far no punctures or visual cuts on the
 tires but one pinch flat. I’ve on many occasions rolled directly over broken glass on the street
 and never achieved a puncture, where in the same situation the Road Warrior would have. The
@@ -91,8 +91,8 @@ a lot smoother.
 
 If you’re only doing urban commuting and want to try out the benefits of slim tires but unsure if
 it’s your thing, I definitely recommend the
-[Bontrager Road Warrior](http://bontrager.com/model/00447) as a entry level tires. However there
-is no question about it that the [Ultra Gatorskin](http://www.conti-online.com/generator/www/de/en/continental/bicycle/themes/race/recetyres/ultra_gatorskin/ultragatorskin_en.html)
+Bontrager Road Warrior as a entry level tires. However there
+is no question about it that the Ultra Gatorskin
 tires are better than Bontrager Road Warrior. Although more expensive I firmly believe that
 they’ll pay up multiple times in the long run when it comes to mileage. On top of that, if the
 tires will maintain it’s excellent puncture resistance, allot of time and pain will be saved from
