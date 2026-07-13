@@ -26,11 +26,11 @@ export default function (data) {
             <a href="/">
               <picture>
                 <source
-                  srcset="/images/jon-runar-helgason-2026.webp"
+                  srcset="/jon-runar-helgason-2026.webp"
                   type="image/webp"
                 />
                 <img
-                  src="/images/jon-runar-helgason-2026.png"
+                  src="/jon-runar-helgason-2026.png"
                   alt="Profile of Jón Rúnar Helgason"
                 />
               </picture>
