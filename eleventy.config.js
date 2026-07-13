@@ -2,6 +2,7 @@
 // any .11ty.jsx template is imported below.
 import "tsx/esm";
 import { render as renderToStaticMarkup } from "preact-render-to-string";
+import prettier from "prettier";
 
 export default function (eleventyConfig) {
   // Preact JSX templates (.11ty.jsx), following 11ty's official JSX approach:
@@ -23,7 +24,16 @@ export default function (eleventyConfig) {
       return async function (data) {
         const content = await this.defaultRenderer(data);
         const html = renderToStaticMarkup(content);
-        return html.startsWith("<html") ? "<!doctype html>" + html : html;
+        const doc = html.startsWith("<html") ? "<!doctype html>" + html : html;
+
+        // Pretty-print the output so view-source is human-readable and
+        // indented. Prettier also formats the inlined <style> CSS and leaves
+        // whitespace-sensitive <pre>/<code> blocks untouched. This inflates the
+        // on-disk HTML with indentation, but gzip/brotli erase almost all of it
+        // on the wire. It is not perfect. <a> links with long hrefs line wraps
+        // in strange ways but it at least keeps it byte-to-byte identical with
+        // no extra spaces inserted into text. 120ch width remedies it slightly.
+        return prettier.format(doc, { parser: "html", printWidth: 120 });
       };
     },
   });
