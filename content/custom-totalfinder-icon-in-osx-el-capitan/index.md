@@ -15,7 +15,7 @@ In an [exchange][4] on Twitter [@BinaryAge][5] advised me that [there was now a 
 TotalFinder without compromising SIP on OSX El Capitan. The process made me sweat on my fingers but
 ultimately it worked!
 
-<img src="/images/custom-totalfinder-icon-in-osx-el-capitan/mighty_finder.png" alt="MightyFinder OSX icon by Max Rudberg" width="512" height="512" loading="lazy" decoding="async" />
+<img src="/images/custom-totalfinder-icon-in-osx-el-capitan/mighty_finder2.png" alt="MightyFinder OSX icon by Max Rudberg" width="512" height="512" loading="lazy" decoding="async" />
 
 There was now only one missing piece: to get the MightyFinder icon back! I've been using that icon
 as a replacement for Finder for almost a decade. If you'd like to get it you can still download it
