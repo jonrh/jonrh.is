@@ -44,10 +44,3 @@ nav li a {
   text-decoration: none;
   box-shadow: 0 1px 0 0 currentColor;
 }
-
-.container {
-  max-width: 42rem;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 1.3rem 2.6rem 1.3rem;
-}

@@ -36,47 +36,43 @@ export default function (data) {
         <style dangerouslySetInnerHTML={{ __html: css }} />
       </head>
       <body>
-        <div>
-          <div class="header">
-            <a href="/">
-              <picture>
-                <source
-                  srcset="/jon-runar-helgason-2026.webp"
-                  type="image/webp"
-                />
-                <img
-                  src="/jon-runar-helgason-2026.png"
-                  alt="Profile of Jón Rúnar Helgason"
-                />
-              </picture>
-            </a>
+        <header class="header">
+          <a href="/">
+            <picture>
+              <source
+                srcset="/jon-runar-helgason-2026.webp"
+                type="image/webp"
+              />
+              <img
+                src="/jon-runar-helgason-2026.png"
+                alt="Profile of Jón Rúnar Helgason"
+              />
+            </picture>
+          </a>
 
-            <a href="/" class="profileName">
-              Jón Rúnar Helgason
-            </a>
-          </div>
+          <a href="/" class="profileName">
+            Jón Rúnar Helgason
+          </a>
 
-          <div class="container">
-            <nav>
-              <ul>
-                <li>
-                  <a href="/blog">Blog</a>
-                </li>
-                <li>
-                  <a href="/tools">Tools</a>
-                </li>
-                <li>
-                  <a href="/portfolio">Portfolio</a>
-                </li>
-                <li>
-                  <a href="/about">About</a>
-                </li>
-              </ul>
-            </nav>
+          <nav>
+            <ul>
+              <li>
+                <a href="/blog">Blog</a>
+              </li>
+              <li>
+                <a href="/tools">Tools</a>
+              </li>
+              <li>
+                <a href="/portfolio">Portfolio</a>
+              </li>
+              <li>
+                <a href="/about">About</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
 
-            <main dangerouslySetInnerHTML={{ __html: data.content }} />
-          </div>
-        </div>
+        <main dangerouslySetInnerHTML={{ __html: data.content }} />
       </body>
     </html>
   );

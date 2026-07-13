@@ -34,9 +34,9 @@ const Path = ({ path }) => {
   const url = `https://github.com/jonrh/jonrh.is/blob/main/${path}`;
 
   return (
-    <p style="text-align: center; margin-top: 5em">
+    <footer style="text-align: center; margin-top: 5em">
       <a href={url}>History & source</a>
-    </p>
+    </footer>
   );
 };
 
@@ -52,7 +52,7 @@ export default function (data) {
   validateMetaDescription(data.metaDescription, data.title, data.dateDisplay);
 
   return (
-    <>
+    <article>
       <h1>{data.title}</h1>
 
       <Date date={data.dateDisplay} />
@@ -60,6 +60,6 @@ export default function (data) {
       <div dangerouslySetInnerHTML={{ __html: data.content }} />
 
       <Path path={data.sourceFile} />
-    </>
+    </article>
   );
 }
