@@ -4,7 +4,7 @@ coverage
 _site
 
 # Project specific:
-css/reset.css
+css/modern-normalize.css
 
 # Blog posts are manually formatted markdown. Ignored so that Prettier does
 # not churn prose and list markers in published content.
