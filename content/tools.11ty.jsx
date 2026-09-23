@@ -68,7 +68,8 @@ const RodeWirelessGo2 = () => <a href="https://rode.com/en-us/microphones/wirele
 const AnkerPowerCore24K = () => <a href="https://www.anker.com/products/a1289">Anker PowerCore 24K</a>;
 const AnkerPowerBank25K165W = () => <a href="https://www.anker.com/products/a1695-anker-power-bank-25000mah-165w">Anker Power Bank (25K, 165W)</a>;
 const AnkerZolo = () => <a href="https://www.amazon.com/Anker-Upgraded-Version-High-Speed-Portable/dp/B0CZ9M6X8Q?th=1">Anker Zolo 10,000mAh</a>;
-const AnkerNanoCharger100W = () => <a href="https://www.anker.com/products/b2679-nano-100w-usb-c-charger">Anker Nano Charger (100W)</a>;
+const AnkerNanoCharger100W = () => <a href="https://www.amazon.com/dp/B0D91GKXLP">Anker Nano Charger (100W)</a>;
+const AnkerPrime3PortCharger100W = () => <a href="https://www.amazon.com/dp/B0CZ6LXL8R">Anker Prime 3-Port Charger (100W)</a>;
 const MagSafeDuoCharger = () => <a href="https://support.apple.com/en-us/HT211925">MagSafe Duo Charger</a>;
 const Compact35WDualUSBC = () => <a href="https://support.apple.com/en-us/HT213263">Compact 35W Dual USB-C</a>;
 const InmotionV9 = () => <a href="https://www.inmotionworld.com/electric-unicycle/v9-detail-page">Inmotion V9</a>;
@@ -105,7 +106,7 @@ const Termius = () => <a href="https://termius.com">Termius</a>;
 
 export default function () {return (<>
 <p>A list of current and past hardware and software tools.</p>
-<p>Last updated: July 10, 2026.</p>
+<p>Last updated: September 23, 2026.</p>
 
 Table of contents:
 <ul>
@@ -128,7 +129,7 @@ Table of contents:
   <li><strong>Headphones</strong>: <a href={airpodsmax}>AirPods Max</a> & <a href={airpodspro3}>AirPods Pro 3</a></li>
   <li><strong>Gaming</strong>: <a href={ps5pro}>PS5 Pro</a> & <a href={nswitch}>Switch</a></li>
   <li><strong>Battery</strong>: 2x <AnkerPowerBank25K165W /></li>
-  <li><strong>Chargers</strong>: <AnkerNanoCharger100W /> & <MagSafeDuoCharger /></li>
+  <li><strong>Chargers</strong>: <AnkerPrime3PortCharger100W /> & <MagSafeDuoCharger /></li>
   <li><strong>2FA</strong>: <a href={yubikey}>Yubikey</a></li>
   <li><strong>EUC</strong>: <InmotionV9 /></li>
   <li><strong>Miscellaneous</strong>: <AirTags /></li>
@@ -193,6 +194,21 @@ Table of contents:
 
 {/* =========================== Changelog ============================ */}
 <h2 id="changelog">Changelog</h2>
+<h3>7th July 2026</h3>
+<p>
+  Upgraded to the <AnkerPrime3PortCharger100W /> after losing the{" "}
+  <AnkerNanoCharger100W /> on a train. Both great chargers.
+</p>
+<p>
+  The Prime version is 50g (+42%) heavier (120g vs 170g) and takes up +20% more
+  volume, but after using it for 3 months it is worth it and the charger I
+  would recommend. For the extra weight and size you get an extra USB-C port
+  and a USB-A port. A great convenience when travelling (only charger I need)
+  and when both of my power banks need charging at the same time. The foldable
+  AC prongs are also slightly thicker so the charger stays firm in vertical
+  sockets whereas the Nano was prone to gradually falling out.
+</p>
+
 <h3>22nd June 2026</h3>
 <p>
   Stopped using <Toky />. Used it as a business VoIP for an Icelandic number.
@@ -608,6 +624,7 @@ History of hardware used in the past.
       <li><AnkerPowerCore24K />. Jul 2023 - Apr 2026.</li>
     </ul>
   </li>
+  <li><strong>Charger</strong>: <AnkerNanoCharger100W /></li>
   <li><strong>Phone</strong>: <a href={iphone13mini}>iPhone 13 mini</a>. Oct 2021 - Feb 2026.</li>
   <li><strong>Microphone</strong>: <RodeWirelessGo2/>. Aug 2021 - Jul 2024.</li>
   <li><strong>Keyboard</strong>: <a href={keyboard}>Apple Magic Keyboard</a>. Jan 2019 - May 2023.</li>
