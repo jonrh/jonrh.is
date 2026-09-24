@@ -22,8 +22,6 @@ export const data = {
 // + Services: Rollbar / Sentry / Imgix, etc
 // + Handbrake
 // + MacTex / TexShop
-// Add: Ollama, LM Studio, the other thing
-// Add: the local LLMs I have been trying out
 // Maybe: that I used CloudTalk for a while
 // Add old phones I have used
 
@@ -83,6 +81,11 @@ const Claude = () => <a href="https://anthropic.com/claude">Claude</a>;
 const ClaudeCode = () => <a href="https://www.anthropic.com/claude-code">Claude Code</a>;
 const Opus = () => <a href="https://en.wikipedia.org/wiki/Claude_(AI)">Opus</a>;
 const Codex = () => <a href="https://openai.com/codex/">Codex</a>;
+const Pi = () => <a href="https://github.com/badlogic/pi-mono">Pi</a>;
+const Ollama = () => <a href="https://ollama.com">Ollama</a>;
+const LMStudio = () => <a href="https://lmstudio.ai">LM Studio</a>;
+const OMLX = () => <a href="https://github.com/jundot/omlx">oMLX</a>;
+const Qwen = () => <a href="https://en.wikipedia.org/wiki/Qwen">Qwen</a>;
 const GPT = () => <a href="https://en.wikipedia.org/wiki/ChatGPT#Model_versions">GPT</a>;
 const WebStorm = () => <a href="https://www.jetbrains.com/webstorm/">WebStorm</a>;
 const PyCharm = () => <a href="https://www.jetbrains.com/pycharm/">PyCharm</a>;
@@ -106,7 +109,7 @@ const Termius = () => <a href="https://termius.com">Termius</a>;
 
 export default function () {return (<>
 <p>A list of current and past hardware and software tools.</p>
-<p>Last updated: September 23, 2026.</p>
+<p>Last updated: September 24, 2026.</p>
 
 Table of contents:
 <ul>
@@ -138,15 +141,18 @@ Table of contents:
 {/* ============================ Software ============================ */}
 <h2 id="software">Software</h2>
 <ul>
-  <li><strong>Agentic coding</strong>: <ClaudeCode />, <Codex /></li>
-  <li><strong>IDEs</strong>: <WebStorm />, <PyCharm />, <DataGrip /></li>
+  <li><strong>AI coding harnesses</strong>: <ClaudeCode />, <Codex />, <Pi /></li>
+
   <li>
     <strong>LLMs</strong>:
     <ul>
       <li>Anthropic <Opus /> - coding & personal</li>
       <li>OpenAI <GPT /> - coding</li>
+      <li><Qwen /> 3.8 27B - local coding</li>
     </ul>
   </li>
+  <li><strong>Local LLM runners</strong>: <Ollama />, <LMStudio />, <OMLX /></li>
+  <li><strong>IDEs</strong>: <WebStorm />, <PyCharm />, <DataGrip /></li>
   <li>
     <strong>Browsers</strong>:
     <ul>
@@ -163,7 +169,6 @@ Table of contents:
   <li><strong>Notes</strong>: <a href="https://en.wikipedia.org/wiki/Notes_(Apple)">Notes</a> on macOS & iOS</li>
   <li><strong>Text editors</strong>: <Zed /></li>
   <li><strong>Version control</strong>: <a href="https://www.gitkraken.com/">GitKraken</a></li>
-  <li><strong>Time tracking</strong>: <a href="https://timavera.com/">Tímavera</a></li>
   <li><strong>Terminals</strong>: <MacOsTerminal /> & <Termius /></li>
   <li><strong>Email</strong>: <a href="https://www.fastmail.com">Fastmail</a></li>
   <li><strong>VPN</strong>: <a href="https://www.ivpn.net">IVPN</a></li>
@@ -194,6 +199,30 @@ Table of contents:
 
 {/* =========================== Changelog ============================ */}
 <h2 id="changelog">Changelog</h2>
+<h3>15th Aug 2026</h3>
+<p>
+  Switched to <Qwen /> 3.8 27B as the main local model. Run through{" "}
+  <Ollama />. Replaced Qwen 3.6.
+</p>
+<p>
+  A really impressive upgrade. In my subjective view this model is as good as
+  Opus 4.5 and 4.6 were. And the{" "}
+  <a href="https://artificialanalysis.ai/models/qwen3-8-27b">Artificial Analysis Intelligence Index</a>{" "}
+  scores point the same way. Incredibly impressive for a model that runs for free on
+  my laptop.
+</p>
+<p>
+  It also feels like the gap between frontier and local LLMs is closing.
+  Opus 4.5 and 4.6 were Anthropic's best models when they were released in
+  November 2025 and February 2026. Only 6 to 9 months later a model of the same
+  calibre runs locally on a laptop.
+</p>
+<p>
+  The drawback compared to today's frontier models is context. On paper the
+  context window is 256K tokens, but running locally long contexts are slow to
+  process, so it is not as capable when doing edits that cover a lot of files.
+</p>
+
 <h3>8th August 2026</h3>
 <p>
   Cancelled a <Cursor /> subscription after 1.5 years of use. The first AI
@@ -217,8 +246,8 @@ Table of contents:
   eventually become the Netscape of coding harnesses.
 </p>
 <p>
-  Mostly replaced by Claude Code, Codex, and local harness (Pi) & model
-  (Qwen 3.8).
+  Mostly replaced by Claude Code, Codex, and a local harness (Pi) with local
+  models (Qwen 3.6 at the time, later Qwen 3.8).
 </p>
 
 <h3>7th July 2026</h3>
@@ -261,9 +290,23 @@ Table of contents:
   for various company accounts.
 </p>
 
+<h3>15th June 2026</h3>
+<p>
+  Started trying <OMLX />, an MLX based LLM inference server for Apple Silicon
+  with SSD caching of the KV cache. Used it with Qwen 3.6 27B (MLX 8-bit) as
+  the model for <Pi />.
+</p>
+
 <h3>17th May 2026</h3>
 <p>
   Started using <Codex />.
+</p>
+
+<h3>28th Apr 2026</h3>
+<p>
+  Started using <Pi />, a minimal open source coding harness, together with
+  local models. First paired with <Qwen /> 3.6 35B-A3B, run through{" "}
+  <LMStudio /> and <Ollama />.
 </p>
 
 <h3>20th Apr 2026</h3>
@@ -275,6 +318,12 @@ Table of contents:
   like charging phones.
 </p>
 
+<h3>16th Apr 2026</h3>
+<p>
+  Started using <LMStudio />. Handy for browsing and trying out models, and
+  supports both GGUF (llama.cpp) and MLX.
+</p>
+
 <h3>31st Mar 2026</h3>
 <p>
   Stopped using <Asana />. Used it for 7 years. Probably my favourite purpose
@@ -284,6 +333,13 @@ Table of contents:
   enterprise customers it lost the appeal. Would consider using again but as
   with any task management system it is only good if the rest of the team
   commits to using it well. Switched to using LLMs and text files.
+</p>
+
+<h3>30th Mar 2026</h3>
+<p>
+  Started running LLMs locally with <Ollama />. The first model tried was{" "}
+  <Qwen /> 3 30B. With 128GB of RAM the M4 Max can run surprisingly capable
+  models.
 </p>
 
 <h3>10th Feb 2026</h3>
