@@ -138,7 +138,7 @@ Table of contents:
 {/* ============================ Software ============================ */}
 <h2 id="software">Software</h2>
 <ul>
-  <li><strong>Agentic coding</strong>: <ClaudeCode />, <Codex />, <Cursor /></li>
+  <li><strong>Agentic coding</strong>: <ClaudeCode />, <Codex /></li>
   <li><strong>IDEs</strong>: <WebStorm />, <PyCharm />, <DataGrip /></li>
   <li>
     <strong>LLMs</strong>:
@@ -194,6 +194,33 @@ Table of contents:
 
 {/* =========================== Changelog ============================ */}
 <h2 id="changelog">Changelog</h2>
+<h3>8th August 2026</h3>
+<p>
+  Cancelled a <Cursor /> subscription after 1.5 years of use. The first AI
+  coding harness that I used. A great time saver and a productivity boon over
+  the previous copying and pasting. Took some time getting used to and
+  learning when to hold the reins tight or let them loose.
+</p>
+<p>
+  Initially powered mostly by Anthropic Sonnet 3.5 and 3.7 models. Switched
+  later almost exclusively to using Opus from version 4 and onward. Peak
+  monthly usage was about $200 - $500. Downgraded to a $20/m subscription in
+  late 2025 / early 2026 using mostly Cursor's own Composer model which was
+  cheap and effective at simpler tasks. Big fan of their BugBot early on but
+  later lost its luster.
+</p>
+<p>
+  Things got really tough after Anthropic and OpenAI started competing with
+  their own products (Claude Code & Codex) with subsidised first-party
+  subscriptions. Cursor tried to stay long-term relevant with the Composer
+  model but their only real play was to sell out as they did. Cursor may
+  eventually become the Netscape of coding harnesses.
+</p>
+<p>
+  Mostly replaced by Claude Code, Codex, and local harness (Pi) & model
+  (Qwen 3.8).
+</p>
+
 <h3>7th July 2026</h3>
 <p>
   Upgraded to the <AnkerPrime3PortCharger100W /> after losing the{" "}
@@ -641,6 +668,7 @@ History of hardware used in the past.
 History of software used in the past.
 
 <ul>
+  <li><strong>Agentic coding</strong>: <Cursor /> Jan 2025 - Aug 2026.</li>
   <li>
     <strong>IDEs</strong>:
     <ul>
