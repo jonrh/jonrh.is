@@ -17,10 +17,10 @@ export default function () {
       <h1 style="text-align: center">Jón Rúnar Helgason</h1>
 
       <p>
-        Cofounder of <a href="https://timavera.com">Tímavera</a>, a time
-        tracking app that helps contractors eliminate the burden & guesswork of
-        timesheets. Icelander living in Seattle. Want to get in touch? Drop an
-        email at <a href="mailto:hi@jonrh.is">hi@jonrh.is</a>.
+        Cofounder of Tímavera, a time tracking app that helps contractors
+        eliminate the burden & guesswork of timesheets. Icelander living in
+        Bergen, Norway. Want to get in touch? Drop an email at{" "}
+        <a href="mailto:hi@jonrh.is">hi@jonrh.is</a>.
       </p>
     </>
   );
