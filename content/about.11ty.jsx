@@ -21,41 +21,9 @@ export default function () {
         <strong>Currently</strong>:
       </p>
       <ul>
-        <li>
-          Helping contractors <a href="https://timavera.com">track time</a> so
-          they can focus on their trade.
-        </li>
         <li>Founder & Software Engineer.</li>
         <li>Living in Seattle, Washington, USA.</li>
-      </ul>
-
-      <p>
-        <strong>Recent work</strong>:
-      </p>
-      <ul>
-        <li>
-          <a href="https://timavera.is">Tímavera</a>: Time tracking for
-          contractors SaaS.{" "}
-          <a href="https://itunes.apple.com/us/app/klukkinn/id1309092162">
-            iOS
-          </a>{" "}
-          &{" "}
-          <a href="https://play.google.com/store/apps/details?id=is.klukkinn.app">
-            Android
-          </a>{" "}
-          apps.
-        </li>
-        <li>
-          <a href="https://litasyn.is">litasyn.is</a>: website for a master
-          painter in Iceland.
-        </li>
-        <li>
-          <a href="/portfolio#bd-monitor">BD Monitor</a>: mobile dashboard app.
-        </li>
-        <li>
-          <a href="/portfolio#biomass-daily">Biomass Daily</a> web dashboard for{" "}
-          <a href="https://vakiiceland.is/">Vaki</a>.
-        </li>
+        <li>Moving to Bergen in Norway in November 2026.</li>
       </ul>
 
       <p>
